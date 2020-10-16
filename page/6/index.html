@@ -70,481 +70,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.-35" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/31/Orange-Boy-Can-You-Solve-It-Out--Ep.-35/" class="article-date">
-  <time datetime="2019-12-31T13:17:09.000Z" itemprop="datePublished">2019-12-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/31/Orange-Boy-Can-You-Solve-It-Out--Ep.-35/">Orange Boy Can You Solve It Out? Ep. 35</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>思考题 for 2020</p>
-<h1>DuiLian</h1>
-
-<pre><code class="line-numbers">二十年飞花不尽
-一几度落月无穷
-九州同乐
-
-Of twenty years, the flower never withers
-In one eternity, the moon forever remains
-Enjoy it together
-</code></pre>
-
-<p>It’s 2020 soon. It’s time for the biggest holiday - The Yuandan and the Chinese New Year is coming!</p>
-<p>Orange Boy is writing DuiLian(对联) for the 2020 Chinese New Year. He wrote a ShangLian(上联) and was going to write XiaLian(下联).</p>
-<p>In Chinese DuiLian, it’s important for us to match the rhythm and property of the words. For example “飞花”(flying flower) can match “落月”(falling moon) because they are all noun and match the rhythm.</p>
-<p>Now the OB has determined some of the words, while blanking the others. He knows how many spaces has been left for each space.</p>
-<p>Red Girl has thought a XiaLian for him. Now OB has Q queries, in each query he wants to change some space numbers and ask you whether Red Girl’s XiaLian matches the requirements.</p>
-<p>Formally, you are given a model string T. T contains characters and wildcard matcher ‘*’. It is known that the i-th matcher should match A[i] characters. In each query, a single A[i] is changed. For each query, you need to print whether a given string S matches the model string T.</p>
-<p>For example, T=<code>aa<em>bb</code> and S=<code>aaccbb</code> matches when A={2} (</em>=cc)<br>T=<code>aa<em>bb</code> and S=<code>aaccbb</code> don’t match when A={1}<br>T=<code>aa</em>bb</code> and S=<code>aacdbc</code> don’t match when A={1} or A={2}</p>
-<p><strong>Note: use UTF-8 input</strong></p>
-<h1>Examples</h1>
-
-<p>T=<code>一几度**</code><br>A={2,2}<br>S=<code>一几度落月无穷</code><br>Q={A_1=3,A_2=1,A_1=2,A_2=2}<br><strong>Output</strong><br>NO<br>YES<br>NO<br>YES<br><strong>Explain</strong><br>After query 2, the string can be matched as: 一几度(落月无)(穷)<br>After query 4, the string can be matched as: 一几度(落月)(无穷)</p>
-<h1>Constriants</h1>
-
-<p>Subtask 1(30&#37;):1&lt;=|S|,|T|,q&lt;=1000<br>Subtask 2(30&#37;):S and T contains character “甲乙丙丁戊己庚辛壬癸子丑寅卯辰巳午未申酉戌亥”(22) only<br>Subtask 3(40&#37;):1&lt;=|S|,|T|,q&lt;=100000 S,T contains all possible Chinese characters.</p>
-<h1>Happy New Year in 2020!</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/12/31/Orange-Boy-Can-You-Solve-It-Out--Ep.-35/" data-id="ckgcb0fzs006z1hoa503e1r16" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.-34" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/10/Orange-Boy-Can-You-Solve-It-Out--Ep.-34/" class="article-date">
-  <time datetime="2019-12-10T11:02:22.000Z" itemprop="datePublished">2019-12-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/10/Orange-Boy-Can-You-Solve-It-Out--Ep.-34/">Orange Boy Can You Solve It Out? Ep. 34</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>思考题 about cheating</p>
-<h1>Lottery Cheating</h1>
-
-<p>Let’s have some lottery!</p>
-<p>In this lottery system, a number string S and an array of integers A is predetermined. It is known that |A|=|S| and let’s define <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.375ex" xmlns="http://www.w3.org/2000/svg" width="6.758ex" height="1.994ex" role="img" focusable="false" viewBox="0 -716 2987.1 881.6" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-15-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-15-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-15-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use xlink:href="#MJX-15-TEX-I-1D434"></use></g><g data-mml-node="mn" transform="translate(750, -150) scale(0.707)"><use xlink:href="#MJX-15-TEX-N-30"></use></g></g><g data-mml-node="mo" transform="translate(1431.3, 0)"><use xlink:href="#MJX-15-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(2487.1, 0)"><use xlink:href="#MJX-15-TEX-N-30"></use></g></g></g></svg></mjx-container>.</p>
-<p>Each user chooses a number string T(|T|=|S|). The amount of money he will get equals to <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.464ex" xmlns="http://www.w3.org/2000/svg" width="10.405ex" height="3.084ex" role="img" focusable="false" viewBox="0 -716 4599 1363.2" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-11-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-11-TEX-SO-2211" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path><path id="MJX-11-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-11-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-11-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-11-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-11-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-11-TEX-N-5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path><path id="MJX-11-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path><path id="MJX-11-TEX-N-5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use xlink:href="#MJX-11-TEX-I-1D434"></use></g><g data-mml-node="TeXAtom" transform="translate(750, -395.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="munderover"><g data-mml-node="mo"><use xlink:href="#MJX-11-TEX-SO-2211"></use></g><g data-mml-node="TeXAtom" transform="translate(1056, 530) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mo"><use xlink:href="#MJX-11-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(278, 0)"><use xlink:href="#MJX-11-TEX-I-1D447"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(982, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-11-TEX-N-7C"></use></g></g></g><g data-mml-node="TeXAtom" transform="translate(1056, -297.3) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use xlink:href="#MJX-11-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(345, 0)"><use xlink:href="#MJX-11-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1123, 0)"><use xlink:href="#MJX-11-TEX-N-31"></use></g></g></g><g data-mml-node="mo" transform="translate(2253.6, 0)"><use xlink:href="#MJX-11-TEX-N-5B"></use></g><g data-mml-node="msub" transform="translate(2531.6, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-11-TEX-I-1D446"></use></g><g data-mml-node="mi" transform="translate(613, -150) scale(0.707)"><use xlink:href="#MJX-11-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(3438.6, 0)"><use xlink:href="#MJX-11-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(4216.6, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-11-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(584, -150) scale(0.707)"><use xlink:href="#MJX-11-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(5094.5, 0)"><use xlink:href="#MJX-11-TEX-N-5D"></use></g></g></g></g></g></svg></mjx-container>. That is to say, it depends on the number of identical digits of S and T.</p>
-<p>For example, if A=[1,10,100] and S=”019”</p>
-<p>if T=”000” you will get 1 yuan<br>if T=”011” or “119” you will get 10 yuan<br>if T=”019” you will get 100 yuan<br>if T=”888” you will get 0 yuan sadly</p>
-<p>But as a bussinessman, you want to do some cheats. You are given the users’ chosen numbers Ts and the sequence A, find such a string S that you need to pay the least money. Print the string.</p>
-<h1>Example</h1>
-
-<p><strong>Input 1</strong><br>A={1,10,100}<br>Ts={“110”,”512”,”777”}<br><strong>Output 1</strong><br>999<br><strong>Explain 1</strong><br>The total money you need to pay is 0. Hooray!<br><strong>Input 1</strong><br>A={1,10,100,1000,10000}<br>Ts={“12345”,”23456”,”34567”,”45678”,”56789”,”67890”,”78901”,”89012”,”90123”,”01234”}<br><strong>Output 1</strong><br>11111<br><strong>Explain 1</strong><br>The total money you need to pay is 1+0+0+0+0+0+1+1+1+1=5</p>
-<h1>Constriants</h1>
-
-<p>Subtask 1(20&#37;):For each <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.564ex" xmlns="http://www.w3.org/2000/svg" width="12.601ex" height="2.26ex" role="img" focusable="false" viewBox="0 -749.5 5569.8 999" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-9-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-9-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-9-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-9-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-9-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJX-9-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-9-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use xlink:href="#MJX-9-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(777.8, 0)"><use xlink:href="#MJX-9-TEX-N-2264"></use></g><g data-mml-node="mi" transform="translate(1833.6, 0)"><use xlink:href="#MJX-9-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(2178.6, 0)"><use xlink:href="#MJX-9-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(2623.2, 0)"><use xlink:href="#MJX-9-TEX-I-1D457"></use></g><g data-mml-node="mo" transform="translate(3313, 0)"><use xlink:href="#MJX-9-TEX-N-2264"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4368.8, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-9-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(4646.8, 0)"><use xlink:href="#MJX-9-TEX-I-1D446"></use></g><g data-mml-node="mo" transform="translate(5291.8, 0)"><use xlink:href="#MJX-9-TEX-N-7C"></use></g></g></g></svg></mjx-container>, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.666ex" xmlns="http://www.w3.org/2000/svg" width="22.299ex" height="2.286ex" role="img" focusable="false" viewBox="0 -716 9856.4 1010.2" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-7-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-7-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-7-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path id="MJX-7-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-7-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-7-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use xlink:href="#MJX-7-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750, -150) scale(0.707)"><use xlink:href="#MJX-7-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(1266.2, 0)"><use xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(2266.4, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-7-TEX-I-1D434"></use></g><g data-mml-node="TeXAtom" transform="translate(750, -150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use xlink:href="#MJX-7-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(345, 0)"><use xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(1123, 0)"><use xlink:href="#MJX-7-TEX-N-31"></use></g></g></g><g data-mml-node="mo" transform="translate(4491.8, 0)"><use xlink:href="#MJX-7-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(5547.6, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-7-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750, -150) scale(0.707)"><use xlink:href="#MJX-7-TEX-I-1D457"></use></g></g><g data-mml-node="mo" transform="translate(6861.1, 0)"><use xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="msub" transform="translate(7861.4, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-7-TEX-I-1D434"></use></g><g data-mml-node="TeXAtom" transform="translate(750, -150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use xlink:href="#MJX-7-TEX-I-1D457"></use></g><g data-mml-node="mo" transform="translate(412, 0)"><use xlink:href="#MJX-7-TEX-N-2212"></use></g><g data-mml-node="mn" transform="translate(1190, 0)"><use xlink:href="#MJX-7-TEX-N-31"></use></g></g></g></g></g></svg></mjx-container><br>Subtask 2(20&#37;): For each <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.564ex" xmlns="http://www.w3.org/2000/svg" width="12.601ex" height="2.26ex" role="img" focusable="false" viewBox="0 -749.5 5569.8 999" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-6-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-6-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-6-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-6-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-6-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJX-6-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-6-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use xlink:href="#MJX-6-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(777.8, 0)"><use xlink:href="#MJX-6-TEX-N-2264"></use></g><g data-mml-node="mi" transform="translate(1833.6, 0)"><use xlink:href="#MJX-6-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(2178.6, 0)"><use xlink:href="#MJX-6-TEX-N-2C"></use></g><g data-mml-node="mi" transform="translate(2623.2, 0)"><use xlink:href="#MJX-6-TEX-I-1D457"></use></g><g data-mml-node="mo" transform="translate(3313, 0)"><use xlink:href="#MJX-6-TEX-N-2264"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4368.8, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-6-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(4646.8, 0)"><use xlink:href="#MJX-6-TEX-I-1D446"></use></g><g data-mml-node="mo" transform="translate(5291.8, 0)"><use xlink:href="#MJX-6-TEX-N-7C"></use></g></g></g></svg></mjx-container>,<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.666ex" xmlns="http://www.w3.org/2000/svg" width="7.848ex" height="2.286ex" role="img" focusable="false" viewBox="0 -716 3468.8 1010.2" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-6-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-6-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-6-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-6-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use xlink:href="#MJX-6-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750, -150) scale(0.707)"><use xlink:href="#MJX-6-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(1321.7, 0)"><use xlink:href="#MJX-6-TEX-N-3D"></use></g><g data-mml-node="msub" transform="translate(2377.5, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-6-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750, -150) scale(0.707)"><use xlink:href="#MJX-6-TEX-I-1D457"></use></g></g></g></g></svg></mjx-container><br>Subtask 3(20&#37;):<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.564ex" xmlns="http://www.w3.org/2000/svg" width="16.937ex" height="2.26ex" role="img" focusable="false" viewBox="0 -749.5 7486 999" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-5-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-5-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path><path id="MJX-5-TEX-N-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path><path id="MJX-5-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-5-TEX-I-1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path><path id="MJX-5-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-5-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-5-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use xlink:href="#MJX-5-TEX-N-7C"></use></g><g data-mml-node="mi" transform="translate(278, 0)"><use xlink:href="#MJX-5-TEX-I-1D446"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(923, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-5-TEX-N-7C"></use></g></g><g data-mml-node="mo" transform="translate(1423.2, 0)"><use xlink:href="#MJX-5-TEX-N-D7"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2423.4, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-5-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(2701.4, 0)"><use xlink:href="#MJX-5-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(3405.4, 0)"><use xlink:href="#MJX-5-TEX-I-1D460"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3874.4, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-5-TEX-N-7C"></use></g></g><g data-mml-node="mo" transform="translate(4430.2, 0)"><use xlink:href="#MJX-5-TEX-N-2264"></use></g><g data-mml-node="mn" transform="translate(5486, 0)"><use xlink:href="#MJX-5-TEX-N-32"></use><use xlink:href="#MJX-5-TEX-N-30" transform="translate(500, 0)"></use><use xlink:href="#MJX-5-TEX-N-30" transform="translate(1000, 0)"></use><use xlink:href="#MJX-5-TEX-N-30" transform="translate(1500, 0)"></use></g></g></g></svg></mjx-container><br>Subtask 4(40&#37;):<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.564ex" xmlns="http://www.w3.org/2000/svg" width="19.199ex" height="2.26ex" role="img" focusable="false" viewBox="0 -749.5 8486 999" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-4-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-4-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path><path id="MJX-4-TEX-N-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path><path id="MJX-4-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-4-TEX-I-1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path><path id="MJX-4-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-4-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use xlink:href="#MJX-4-TEX-N-7C"></use></g><g data-mml-node="mi" transform="translate(278, 0)"><use xlink:href="#MJX-4-TEX-I-1D446"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(923, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-4-TEX-N-7C"></use></g></g><g data-mml-node="mo" transform="translate(1423.2, 0)"><use xlink:href="#MJX-4-TEX-N-D7"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(2423.4, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-4-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(2701.4, 0)"><use xlink:href="#MJX-4-TEX-I-1D447"></use></g><g data-mml-node="mi" transform="translate(3405.4, 0)"><use xlink:href="#MJX-4-TEX-I-1D460"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(3874.4, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-4-TEX-N-7C"></use></g></g><g data-mml-node="mo" transform="translate(4430.2, 0)"><use xlink:href="#MJX-4-TEX-N-2264"></use></g><g data-mml-node="mn" transform="translate(5486, 0)"><use xlink:href="#MJX-4-TEX-N-31"></use><use xlink:href="#MJX-4-TEX-N-30" transform="translate(500, 0)"></use><use xlink:href="#MJX-4-TEX-N-30" transform="translate(1000, 0)"></use><use xlink:href="#MJX-4-TEX-N-30" transform="translate(1500, 0)"></use><use xlink:href="#MJX-4-TEX-N-30" transform="translate(2000, 0)"></use><use xlink:href="#MJX-4-TEX-N-30" transform="translate(2500, 0)"></use></g></g></g></svg></mjx-container>.For each <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.564ex" xmlns="http://www.w3.org/2000/svg" width="14.612ex" height="2.26ex" role="img" focusable="false" viewBox="0 -749.5 6458.7 999" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-4-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-4-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-4-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-4-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path><path id="MJX-4-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-4-TEX-I-1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use xlink:href="#MJX-4-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(777.8, 0)"><use xlink:href="#MJX-4-TEX-N-2264"></use></g><g data-mml-node="mi" transform="translate(1833.6, 0)"><use xlink:href="#MJX-4-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(2456.3, 0)"><use xlink:href="#MJX-4-TEX-N-2264"></use></g><g data-mml-node="mi" transform="translate(3512.1, 0)"><use xlink:href="#MJX-4-TEX-I-1D457"></use></g><g data-mml-node="mo" transform="translate(4201.9, 0)"><use xlink:href="#MJX-4-TEX-N-2264"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(5257.7, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-4-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(5535.7, 0)"><use xlink:href="#MJX-4-TEX-I-1D446"></use></g><g data-mml-node="mo" transform="translate(6180.7, 0)"><use xlink:href="#MJX-4-TEX-N-7C"></use></g></g></g></svg></mjx-container>, <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.666ex" xmlns="http://www.w3.org/2000/svg" width="7.848ex" height="2.286ex" role="img" focusable="false" viewBox="0 -716 3468.8 1010.2" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-4-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-4-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-4-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-4-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use xlink:href="#MJX-4-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750, -150) scale(0.707)"><use xlink:href="#MJX-4-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(1321.7, 0)"><use xlink:href="#MJX-4-TEX-N-2264"></use></g><g data-mml-node="msub" transform="translate(2377.5, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-4-TEX-I-1D434"></use></g><g data-mml-node="mi" transform="translate(750, -150) scale(0.707)"><use xlink:href="#MJX-4-TEX-I-1D457"></use></g></g></g></g></svg></mjx-container></p>
-<h1>No cheating!</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/12/10/Orange-Boy-Can-You-Solve-It-Out--Ep.-34/" data-id="ckgcb0fzr006w1hoa8o8h8avm" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.-33" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/09/Orange-Boy-Can-You-Solve-It-Out--Ep.-33/" class="article-date">
-  <time datetime="2019-12-09T14:00:40.000Z" itemprop="datePublished">2019-12-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/09/Orange-Boy-Can-You-Solve-It-Out--Ep.-33/">Orange Boy Can You Solve It Out? Ep. 33</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>思考题 Times</p>
-<h1>A shadow pokemon!</h1>
-
-<p>Recently the famous game Pokemon <del>Sword</del>String was released. XGN, one of the biggest fan of Pokemon, decided to have a try.</p>
-<p>In each battle, your Pokemon can be seen as a string A and the enemy can be seen as a string B. One can make a <em>critical hit</em> if B is a substring of A.</p>
-<p>XGN can weaken the foe first. He can remove a character from B each turn.</p>
-<p>What’s the minimum turn of weakening to make a critical hit?</p>
-<h1>Sample</h1>
-
-<h2>Example 1</h2>
-
-<p><strong>In</strong><br>A=eevee<br>B=eveee<br><strong>Output</strong><br>1<br><strong>Explain</strong><br>Remove the last ‘e’ in B and B will be a substring of A</p>
-<h2>Example 2</h2>
-
-<p><strong>In</strong><br>A=pikachu<br>B=reshiram<br><strong>Output</strong><br>7<br><strong>Explain</strong><br><img src="https://i.loli.net/2019/12/09/yIhCMQgkdLVbS3p.png" alt="" /><br>Screenshot from Pokemon Essentials</p>
-<h1>Constriants</h1>
-
-<p>Subtask 1(20&#37;):|A|,|B|&lt;=20<br>Subtask 2(40&#37;):|A|,|B|&lt;=1000<br>Subtask 3(40&#37;):|A|,|B|&lt;=100000</p>
-<p><em>Is it really good to release 2 simple questions at once?</em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/12/09/Orange-Boy-Can-You-Solve-It-Out--Ep.-33/" data-id="ckgcb0fzp006q1hoafy1147ud" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.-32" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/12/04/Orange-Boy-Can-You-Solve-It-Out--Ep.-32/" class="article-date">
-  <time datetime="2019-12-04T14:20:33.000Z" itemprop="datePublished">2019-12-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/04/Orange-Boy-Can-You-Solve-It-Out--Ep.-32/">Orange Boy Can You Solve It Out? Ep. 32</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>思考题 in one sentence</p>
-<h1>Yet Another Easy Problem</h1>
-
-<p>Find any positive integer pair a,b so that <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="28.997ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 12816.6 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-14-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-14-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-14-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-14-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-14-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path id="MJX-14-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z"></path><path id="MJX-14-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJX-14-TEX-N-64" d="M376 495Q376 511 376 535T377 568Q377 613 367 624T316 637H298V660Q298 683 300 683L310 684Q320 685 339 686T376 688Q393 689 413 690T443 693T454 694H457V390Q457 84 458 81Q461 61 472 55T517 46H535V0Q533 0 459 -5T380 -11H373V44L365 37Q307 -11 235 -11Q158 -11 96 50T34 215Q34 315 97 378T244 442Q319 442 376 393V495ZM373 342Q328 405 260 405Q211 405 173 369Q146 341 139 305T131 211Q131 155 138 120T173 59Q203 26 251 26Q322 26 373 103V342Z"></path><path id="MJX-14-TEX-I-1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path><path id="MJX-14-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-14-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use xlink:href="#MJX-14-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(389, 0)"><use xlink:href="#MJX-14-TEX-I-1D44E"></use></g><g data-mml-node="mo" transform="translate(1140.2, 0)"><use xlink:href="#MJX-14-TEX-N-2B"></use></g><g data-mml-node="mi" transform="translate(2140.4, 0)"><use xlink:href="#MJX-14-TEX-I-1D44F"></use></g><g data-mml-node="mo" transform="translate(2569.4, 0)"><use xlink:href="#MJX-14-TEX-N-29"></use></g><g data-mml-node="mo" transform="translate(3180.7, 0)"><use xlink:href="#MJX-14-TEX-N-2B"></use></g><g data-mml-node="mo" transform="translate(4180.9, 0)"><use xlink:href="#MJX-14-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(4569.9, 0)"><use xlink:href="#MJX-14-TEX-I-1D44E"></use></g><g data-mml-node="mo" transform="translate(5321.1, 0)"><use xlink:href="#MJX-14-TEX-N-2B"></use></g><g data-mml-node="mi" transform="translate(6321.3, 0)"><use xlink:href="#MJX-14-TEX-I-1D44F"></use></g><g data-mml-node="mo" transform="translate(6750.3, 0)"><use xlink:href="#MJX-14-TEX-N-29"></use></g><g data-mml-node="mspace" transform="translate(7139.3, 0)"></g><g data-mml-node="mi" transform="translate(7973, 0)"><use xlink:href="#MJX-14-TEX-N-6D"></use><use xlink:href="#MJX-14-TEX-N-6F" transform="translate(833, 0)"></use><use xlink:href="#MJX-14-TEX-N-64" transform="translate(1333, 0)"></use></g><g data-mml-node="mstyle" transform="translate(10028.7, 0)"><g data-mml-node="mspace"></g></g><g data-mml-node="mstyle" transform="translate(10195.3, 0)"><g data-mml-node="mspace"></g></g><g data-mml-node="mi" transform="translate(10362, 0)"><use xlink:href="#MJX-14-TEX-I-1D458"></use></g><g data-mml-node="mo" transform="translate(11160.8, 0)"><use xlink:href="#MJX-14-TEX-N-3D"></use></g><g data-mml-node="mi" transform="translate(12216.6, 0)"><use xlink:href="#MJX-14-TEX-I-1D45B"></use></g></g></g></svg></mjx-container> where k,n are given or -1 -1 if not found.</p>
-<h1>Examples</h1>
-
-<p><strong>Input</strong><br>K=100 N=268<br><strong>Output</strong><br>200 34<br><strong>Explain</strong><br>200+34+(200+34)mod 100=234+34=268<br><strong>Input</strong><br>K=100 N=101<br><strong>Output</strong><br>-1 -1</p>
-<h1>Constriants</h1>
-
-<p>Subtask 1(10&#37;):N,K=100<br>Subtask 2(10&#37;):N,K&lt;=1000<br>Subtask 3(10&#37;):N,K&lt;=1e5<br>Subtask 4(30&#37;):<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex" xmlns="http://www.w3.org/2000/svg" width="6.575ex" height="2.034ex" role="img" focusable="false" viewBox="0 -694 2906.1 899" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-10-TEX-I-1D459" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"></path><path id="MJX-10-TEX-I-1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path><path id="MJX-10-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path><path id="MJX-10-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-10-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-10-TEX-I-1D43E" d="M285 628Q285 635 228 637Q205 637 198 638T191 647Q191 649 193 661Q199 681 203 682Q205 683 214 683H219Q260 681 355 681Q389 681 418 681T463 682T483 682Q500 682 500 674Q500 669 497 660Q496 658 496 654T495 648T493 644T490 641T486 639T479 638T470 637T456 637Q416 636 405 634T387 623L306 305Q307 305 490 449T678 597Q692 611 692 620Q692 635 667 637Q651 637 651 648Q651 650 654 662T659 677Q662 682 676 682Q680 682 711 681T791 680Q814 680 839 681T869 682Q889 682 889 672Q889 650 881 642Q878 637 862 637Q787 632 726 586Q710 576 656 534T556 455L509 418L518 396Q527 374 546 329T581 244Q656 67 661 61Q663 59 666 57Q680 47 717 46H738Q744 38 744 37T741 19Q737 6 731 0H720Q680 3 625 3Q503 3 488 0H478Q472 6 472 9T474 27Q478 40 480 43T491 46H494Q544 46 544 71Q544 75 517 141T485 216L427 354L359 301L291 248L268 155Q245 63 245 58Q245 51 253 49T303 46H334Q340 37 340 35Q340 19 333 5Q328 0 317 0Q314 0 280 1T180 2Q118 2 85 2T49 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-10-TEX-I-1D459"></use></g><g data-mml-node="mi" transform="translate(298, 0)"><use xlink:href="#MJX-10-TEX-I-1D45C"></use></g><g data-mml-node="msub" transform="translate(783, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-10-TEX-I-1D454"></use></g><g data-mml-node="TeXAtom" transform="translate(477, -150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><use xlink:href="#MJX-10-TEX-N-31"></use><use xlink:href="#MJX-10-TEX-N-30" transform="translate(500, 0)"></use></g></g></g><g data-mml-node="mi" transform="translate(2017.1, 0)"><use xlink:href="#MJX-10-TEX-I-1D43E"></use></g></g></g></svg></mjx-container> is an integer.<br>Subtask 5(20&#37;):K is a prime<br>Subtask 6(20&#37;):1&lt;=N,K&lt;=1e9</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/12/04/Orange-Boy-Can-You-Solve-It-Out--Ep.-32/" data-id="ckgcb0fzq006t1hoa20xpd2hy" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.-31-(Hard)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/30/Orange-Boy-Can-You-Solve-It-Out--Ep.-31-(Hard)/" class="article-date">
-  <time datetime="2019-11-30T14:23:23.000Z" itemprop="datePublished">2019-11-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/30/Orange-Boy-Can-You-Solve-It-Out--Ep.-31-(Hard)/">Orange Boy Can You Solve It Out? Ep. 31 (Hard)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>If you prefer easier problem, please visit <a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/archives/330">here</a></p>
-<p>思考题 for dw</p>
-<h1>Childish War (Hard)</h1>
-
-<p>Miss. Broken Tail(Wei Duan) is the Math teacher of NFLS Class 8 Junior 3.She is a kind teacher.</p>
-<p>Miss. East(Fang Dong) is the Math teacher of NFLS Class 4 Junior 3.She is a kind teacher too.</p>
-<p>Tail loves walking around the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Xuanwu_Lake">Xuanwu Lake</a> to relax. So does East.</p>
-<p>There are N islands numbered from 1 to N on Xuanwu Lake and there are M bidirectional weighted edges connecting them. It is made sure that the islands are connected and no edge has negative weight.</p>
-<p>Tail is located at island S and East is located at island T. They decided to play a childish game.</p>
-<p>The game has Q rounds, in each round East chooses an positive integer R and draw a circle centered at her position with the radius R1.</p>
-<p>Tail will choose an radius R2 and draw a circle centered at her position with R2 as radius too. The <em>score</em> of Tail will be calculated as follows:</p>
-<p>Let’s call the number of islands included in Tail’s circle but not in East’s circle <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="1.928ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 852 683" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-13-TEX-I-1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-13-TEX-I-1D44B"></use></g></g></g></svg></mjx-container>.Let’s call the number of islands included in Tail’s circle and in East’s circle <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0" xmlns="http://www.w3.org/2000/svg" width="1.726ex" height="1.545ex" role="img" focusable="false" viewBox="0 -683 763 683" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-9-TEX-I-1D44C" d="M66 637Q54 637 49 637T39 638T32 641T30 647T33 664T42 682Q44 683 56 683Q104 680 165 680Q288 680 306 683H316Q322 677 322 674T320 656Q316 643 310 637H298Q242 637 242 624Q242 619 292 477T343 333L346 336Q350 340 358 349T379 373T411 410T454 461Q546 568 561 587T577 618Q577 634 545 637Q528 637 528 647Q528 649 530 661Q533 676 535 679T549 683Q551 683 578 682T657 680Q684 680 713 681T746 682Q763 682 763 673Q763 669 760 657T755 643Q753 637 734 637Q662 632 617 587Q608 578 477 424L348 273L322 169Q295 62 295 57Q295 46 363 46Q379 46 384 45T390 35Q390 33 388 23Q384 6 382 4T366 1Q361 1 324 1T232 2Q170 2 138 2T102 1Q84 1 84 9Q84 14 87 24Q88 27 89 30T90 35T91 39T93 42T96 44T101 45T107 45T116 46T129 46Q168 47 180 50T198 63Q201 68 227 171L252 274L129 623Q128 624 127 625T125 627T122 629T118 631T113 633T105 634T96 635T83 636T66 637Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-9-TEX-I-1D44C"></use></g></g></g></svg></mjx-container>. Then the score of Tail’s circle is <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex" xmlns="http://www.w3.org/2000/svg" width="8.587ex" height="1.756ex" role="img" focusable="false" viewBox="0 -694 3795.4 776" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-8-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-8-TEX-I-1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path><path id="MJX-8-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-8-TEX-I-1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path id="MJX-8-TEX-I-1D44C" d="M66 637Q54 637 49 637T39 638T32 641T30 647T33 664T42 682Q44 683 56 683Q104 680 165 680Q288 680 306 683H316Q322 677 322 674T320 656Q316 643 310 637H298Q242 637 242 624Q242 619 292 477T343 333L346 336Q350 340 358 349T379 373T411 410T454 461Q546 568 561 587T577 618Q577 634 545 637Q528 637 528 647Q528 649 530 661Q533 676 535 679T549 683Q551 683 578 682T657 680Q684 680 713 681T746 682Q763 682 763 673Q763 669 760 657T755 643Q753 637 734 637Q662 632 617 587Q608 578 477 424L348 273L322 169Q295 62 295 57Q295 46 363 46Q379 46 384 45T390 35Q390 33 388 23Q384 6 382 4T366 1Q361 1 324 1T232 2Q170 2 138 2T102 1Q84 1 84 9Q84 14 87 24Q88 27 89 30T90 35T91 39T93 42T96 44T101 45T107 45T116 46T129 46Q168 47 180 50T198 63Q201 68 227 171L252 274L129 623Q128 624 127 625T125 627T122 629T118 631T113 633T105 634T96 635T83 636T66 637Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-8-TEX-I-1D44E"></use></g><g data-mml-node="mi" transform="translate(529, 0)"><use xlink:href="#MJX-8-TEX-I-1D44B"></use></g><g data-mml-node="mo" transform="translate(1603.2, 0)"><use xlink:href="#MJX-8-TEX-N-2B"></use></g><g data-mml-node="mi" transform="translate(2603.4, 0)"><use xlink:href="#MJX-8-TEX-I-1D44F"></use></g><g data-mml-node="mi" transform="translate(3032.4, 0)"><use xlink:href="#MJX-8-TEX-I-1D44C"></use></g></g></g></svg></mjx-container> where a and b are given.</p>
-<p>For each query, find the max score of Tail’s circle.</p>
-<h1>Example</h1>
-
-<p><strong>Input</strong><br>graph={<br>[1,2,2],<br>[2,3,2],<br>[1,4,2],<br>[4,3,2],<br>[1,3,3],<br>}</p>
-<p>S=1 T=3 a=3 b=1<br>Query={<br>[1],<br>[4]<br>}<br><strong>Output</strong><br>10<br>4<br><strong>Explain</strong><br>Q1:Tail can draw a circle of radius 3 so that X=3(1,2,4) Y=1(3).<br>Q2:Tail can draw a circle of radius 4 so that X=0 Y=4(1,2,3,4).</p>
-<h1>Constriants</h1>
-
-<p>Subtask 1(50&#37;):0&lt;=a,b&lt;=1e9,1&lt;=N,M,Q&lt;=1e5<br>Subtask 2(25&#37;):0&lt;=|a|,|b|&lt;=1e9,1&lt;=N,M,Q&lt;=1000<br>Subtask 3(25&#37;):0&lt;=|a|,|b|&lt;=1e9,1&lt;=N,M,Q&lt;=100000</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/11/30/Orange-Boy-Can-You-Solve-It-Out--Ep.-31-(Hard)/" data-id="ckgcb0fzp006n1hoa5bbnhicf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.-30-(Easy)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/30/Orange-Boy-Can-You-Solve-It-Out--Ep.-30-(Easy)/" class="article-date">
-  <time datetime="2019-11-30T14:13:50.000Z" itemprop="datePublished">2019-11-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/30/Orange-Boy-Can-You-Solve-It-Out--Ep.-30-(Easy)/">Orange Boy Can You Solve It Out? Ep. 30 (Easy)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>If you prefer harder problem, please visit <a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/archives/331">here</a></p>
-<p>思考题 for dw</p>
-<h1>Childish War (Easy)</h1>
-
-<p>Miss. Broken Tail(Wei Duan) is the Math teacher of NFLS Class 8 Junior 3.She is a kind teacher.</p>
-<p>Miss. East(Fang Dong) is the Math teacher of NFLS Class 4 Junior 3.She is a kind teacher too.</p>
-<p>Tail loves walking around the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Xuanwu_Lake">Xuanwu Lake</a> to relax. So does East.</p>
-<p>There are N islands numbered from 1 to N on Xuanwu Lake and there are M bidirectional weighted edges connecting them. It is made sure that the islands are connected and no edge has negative weight.</p>
-<p>Tail is located at island S and East is located at island T. They decided to play a childish game.</p>
-<p>The game has Q rounds, in each round Tail chooses an positive integer R1 and draw a circle centered at her position with the radius R1. East chooses an positive integer R2 and draw a circle centered at her position with the radius R2.</p>
-<p>For each round, print how many islands are included in Tail’s circle only and how many islands are included in East’s circle only and how many islands are included in both circles.</p>
-<h1>Example</h1>
-
-<p><strong>Input</strong><br>graph={<br>[1,2,2],<br>[2,3,2],<br>[1,4,2],<br>[4,3,2],<br>[1,3,3],<br>}</p>
-<p>S=1 T=3<br>Query={<br>[2,1],<br>[4,4]<br>}<br><strong>Output</strong><br>3 0 1<br>0 4 0<br><strong>Explain</strong><br><img src="https://i.loli.net/2019/11/30/lvUEH85uGJoA4kd.png" alt="Explain" /><br>Red for Tail, Blue For East, Green for All</p>
-<h1>Constriants</h1>
-
-<p>Subtask1(50&#37;):N,Q&lt;=1000<br>Subtask2(50&#37;):N,Q&lt;=100000</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/11/30/Orange-Boy-Can-You-Solve-It-Out--Ep.-30-(Easy)/" data-id="ckgcb0fzo006k1hoaejaidrz0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-rng_58@号家军-Training-2-Diary" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/29/rng_58@%E5%8F%B7%E5%AE%B6%E5%86%9B-Training-2-Diary/" class="article-date">
-  <time datetime="2019-11-29T14:38:44.000Z" itemprop="datePublished">2019-11-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/29/rng_58@%E5%8F%B7%E5%AE%B6%E5%86%9B-Training-2-Diary/">rng_58@号家军 Training 2 Diary</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天来到了rng_58的Training 2.难度是Div2.</p>
-<p>首先一如既往的开始，我和XIZCM,ZZZYT,MK一起乘坐2路到达锁金村，在那之前和ZKY吃了西安面馆，同时读了题目。</p>
-<p>RNG仍然先吃Pizzahut，dreamoon到场。</p>
-<p>开始讲题，先统计过的人数（7，7，1，4，1，1）之后讲了4题，休息。</p>
-<p>之后RNG开始表演做题，但是他的电脑和大屏幕不兼容，只好使用同学的电脑。联网连了半天。HB让我们找一道题让RNG现场做，大家齐声高呼：“CSP Day1 T3！” RNG做了10分钟无果，只好换成DAY 1 T2。</p>
-<p>RNG想了五分钟便开始使用不熟悉的DevC++。经过一番教导和低级错误(<code>scanf("&#37;d",x);</code>)后终于写完了程序，一次AC。场上响起经久不息的掌声。</p>
-<p>RNG开始将自己的思路。然后剩下两题就不讲了，直接进入签名环节。RNG：“怎么来了这么多人？？！！”</p>
-<p>RNG签名方式：找到”rng”的子序列画圈，然后补上”58”。</p>
-<p>XGN的问题：回去会写日记吗？会发到Youtube上吗？<br>答：不会写日记，Youtube上有日语讲解视频。<del>RNG英语口语真的不好，听不懂</del></p>
-<p>SYR泄露天机，将此网站和XGN的CF号告诉rng。</p>
-<p>ZJS的问题：听说过东方吗？<br>答：听说过，没有玩过。</p>
-<p>结束。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/11/29/rng_58@%E5%8F%B7%E5%AE%B6%E5%86%9B-Training-2-Diary/" data-id="ckgcb0g2500d01hoa1ot2erw6" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.29" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/11/29/Orange-Boy-Can-You-Solve-It-Out--Ep.29/" class="article-date">
-  <time datetime="2019-11-29T12:56:31.000Z" itemprop="datePublished">2019-11-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/29/Orange-Boy-Can-You-Solve-It-Out--Ep.29/">Orange Boy Can You Solve It Out? Ep.29</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>思考题 with NFLS teachers</p>
-<h1>Husky</h1>
-
-<p>Miss Husky (Shiqi Hao) is the Art teacher of NFLS Class 8 Junior 3. She is a kind teacher.</p>
-<p>But in fact, she is a spy working for NFLS. One day, she received the task to observe all the schools in Nanjing.</p>
-<p>There are N schools numbered from 1 to N in Nanjing and some of them are connected by bidirectional roads. Each road has a length l_i and they form a shape of a tree. NFLS is the number 1.</p>
-<p>Husky is going to choose a school she hasn’t observed yet and move to that school by walking along the shortest path.</p>
-<p>We define the <em>tiredness</em> of Husky as the sum of length of roads she walked along.</p>
-<p>But things are getting harder. Each school has an anti-spy system. Formally, each school has an extra attribute safety point <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="13.781ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 6091 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-37-TEX-I-1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path><path id="MJX-37-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-37-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-37-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-37-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-37-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-37-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use xlink:href="#MJX-37-TEX-I-1D44E"></use></g><g data-mml-node="mi" transform="translate(529, -150) scale(0.707)"><use xlink:href="#MJX-37-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(823, 0)"><use xlink:href="#MJX-37-TEX-N-28"></use></g><g data-mml-node="mn" transform="translate(1212, 0)"><use xlink:href="#MJX-37-TEX-N-30"></use></g><g data-mml-node="mo" transform="translate(1989.7, 0)"><use xlink:href="#MJX-37-TEX-N-2264"></use></g><g data-mml-node="msub" transform="translate(3045.5, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-37-TEX-I-1D44E"></use></g><g data-mml-node="mi" transform="translate(529, -150) scale(0.707)"><use xlink:href="#MJX-37-TEX-I-1D456"></use></g></g><g data-mml-node="mo" transform="translate(4146.2, 0)"><use xlink:href="#MJX-37-TEX-N-2264"></use></g><g data-mml-node="mn" transform="translate(5202, 0)"><use xlink:href="#MJX-37-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(5702, 0)"><use xlink:href="#MJX-37-TEX-N-29"></use></g></g></g></svg></mjx-container>. If Husky is going to observe a school with safety point s, then there’s a probability of s that Husky is found out spying. If Husky is found out spying, she will have to be sent back to the last school she observed by the headmaster of the school. Note that being sent back doesn’t increase the tiredness of Husky.</p>
-<p>What’s more amazing is that Husky can turn into real Husky for at most K times. She can use this skill after having observed one school. Then she won’t be found out nor feel tired at all. The skill’s power goes out when she has observed another school.</p>
-<p>What’s the minimum expected value of tiredness of Husky? Note she don’t need to return to NFLS.</p>
-<h1>Example</h1>
-
-<p><strong>Input</strong><br>tree={<br>[1,2,10],<br>[2,3,20]<br>}</p>
-<p>safety={0,0.5,1}</p>
-<p>K=1<br><strong>Output</strong><br>20<br><strong>Explain</strong><br>Husky can go from school 1 to 2 then to 3.<br>She can use the power when going from 2 to 3.<br>Then the total expected tiredness is <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.848ex" xmlns="http://www.w3.org/2000/svg" width="21.595ex" height="2.805ex" role="img" focusable="false" viewBox="0 -864.9 9545.2 1239.8" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-30-TEX-SO-2211" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path><path id="MJX-30-TEX-N-221E" d="M55 217Q55 305 111 373T254 442Q342 442 419 381Q457 350 493 303L507 284L514 294Q618 442 747 442Q833 442 888 374T944 214Q944 128 889 59T743 -11Q657 -11 580 50Q542 81 506 128L492 147L485 137Q381 -11 252 -11Q166 -11 111 57T55 217ZM907 217Q907 285 869 341T761 397Q740 397 720 392T682 378T648 359T619 335T594 310T574 285T559 263T548 246L543 238L574 198Q605 158 622 138T664 94T714 61T765 51Q827 51 867 100T907 217ZM92 214Q92 145 131 89T239 33Q357 33 456 193L425 233Q364 312 334 337Q285 380 233 380Q171 380 132 331T92 214Z"></path><path id="MJX-30-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-30-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-30-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-30-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-30-TEX-N-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path><path id="MJX-30-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="munderover"><g data-mml-node="mo"><use xlink:href="#MJX-30-TEX-SO-2211"></use></g><g data-mml-node="TeXAtom" transform="translate(1056, 477.1) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use xlink:href="#MJX-30-TEX-N-221E"></use></g></g><g data-mml-node="TeXAtom" transform="translate(1056, -285.4) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use xlink:href="#MJX-30-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(345, 0)"><use xlink:href="#MJX-30-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(1123, 0)"><use xlink:href="#MJX-30-TEX-N-31"></use></g></g></g><g data-mml-node="mfrac" transform="translate(2420.3, 0)"><g data-mml-node="mn" transform="translate(323.9, 394) scale(0.707)"><use xlink:href="#MJX-30-TEX-N-31"></use></g><g data-mml-node="msup" transform="translate(220, -374.9) scale(0.707)"><g data-mml-node="mn"><use xlink:href="#MJX-30-TEX-N-32"></use></g><g data-mml-node="mi" transform="translate(500, 289) scale(0.707)"><use xlink:href="#MJX-30-TEX-I-1D456"></use></g></g><rect width="761.4" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(3643.9, 0)"><use xlink:href="#MJX-30-TEX-N-D7"></use></g><g data-mml-node="mn" transform="translate(4644.2, 0)"><use xlink:href="#MJX-30-TEX-N-31"></use><use xlink:href="#MJX-30-TEX-N-30" transform="translate(500, 0)"></use></g><g data-mml-node="mo" transform="translate(5866.4, 0)"><use xlink:href="#MJX-30-TEX-N-D7"></use></g><g data-mml-node="mi" transform="translate(6866.6, 0)"><use xlink:href="#MJX-30-TEX-I-1D456"></use></g><g data-mml-node="mo" transform="translate(7489.4, 0)"><use xlink:href="#MJX-30-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(8545.2, 0)"><use xlink:href="#MJX-30-TEX-N-32"></use><use xlink:href="#MJX-30-TEX-N-30" transform="translate(500, 0)"></use></g></g></g></svg></mjx-container></p>
-<h1>Constriant</h1>
-
-<p>Subtask 1(40&#37;):N&lt;=100000,K=0,Ai=0<br>Subtask 2(30&#37;):N&lt;=100000,K=0<br>Subtask 3(10&#37;):N&lt;=20<br>Subtask 4(10&#37;):N&lt;=1000<br>Subtask 5(10&#37;):N&lt;=100000</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/11/29/Orange-Boy-Can-You-Solve-It-Out--Ep.29/" data-id="ckgcb0g0n00981hoa3r3sfli9" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-NFLSPC-Round-2-(XGN-perspective)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/29/NFLSPC-Round-2-(XGN-perspective)/" class="article-date">
@@ -589,7 +114,7 @@ Enjoy it together
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/11/29/NFLSPC-Round-2-(XGN-perspective)/" data-id="ckgcb0fzh00601hoa7nisdm3v" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2019/11/29/NFLSPC-Round-2-(XGN-perspective)/" data-id="ckgcb4y7f005g1hqn668e1o1e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
@@ -632,7 +157,402 @@ Enjoy it together
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2019/11/28/NFLS-PC-Round-2-(Carott%E8%A7%86%E8%A7%92)/" data-id="ckgcb0fzg005x1hoacfilfozi" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2019/11/28/NFLS-PC-Round-2-(Carott%E8%A7%86%E8%A7%92)/" data-id="ckgcb4y7e005d1hqngr6479lp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-rng_58@号家军-Training-1-Diary" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/25/rng_58@%E5%8F%B7%E5%AE%B6%E5%86%9B-Training-1-Diary/" class="article-date">
+  <time datetime="2019-11-25T14:35:01.000Z" itemprop="datePublished">2019-11-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/25/rng_58@%E5%8F%B7%E5%AE%B6%E5%86%9B-Training-1-Diary/">rng_58@号家军 Training 1 Diary</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>不知道可不可以发……先写了吧。</p>
+<p>首先，一放学就从南外乘坐2路到锁金村站下车，中间吃饭略，然后到达<del>非常破烂</del>的校园。教室在211，有DXM妈接待。</p>
+<p>桌子上铺满了绿色的毯子，十分柔软，椅子上也是黄色的像大餐厅一样的布。得知没有网络和电源插座，非常sad :(</p>
+<p>然后发了一本<del>语法书</del>小册子，是今天的题目（6题Topcoder）和RNG的解法（Java），大概有50几页，甚至有两页全是样例！（其实题目早就发了电子稿）</p>
+<p>插曲：厕所灯是坏的，闪瞎狗眼，跟鬼屋似的。这时，dreamoon到场听课。</p>
+<p>18：20，RNG到场，<del>题都没看，饭也没吃</del>于是先拿出预先准备好的必胜客开始恰饭，我们继续想题。（飞机不出意外的晚点）</p>
+<p>RNG很高很瘦穿着蓝色衣服，和Youtube上看到的差不多，口头禅都一样。</p>
+<p>RNG表明自己是第一次上课，不会教。被告知只需要把6道题目讲一讲就好了。</p>
+<p>RNG和翻译官讲日语（翻译会翻的情况下），英语（otherwise）。RNG和HB讲英语。HB和翻译官和我们讲中文。</p>
+<p>RNG统计了每道题作对的人数。（5，1，3，4，4，1）</p>
+<p>RNG讲题，喜欢喝水。翻译官翻译得非常简略。</p>
+<p>RNG多次忘记自己怎么做的，要对照自己的代码看。</p>
+<p>RNG多次看题现场思考。</p>
+<p>全程摄影师录像。</p>
+<p>讲完第一题后，XGN问了傻X问题一个。</p>
+<p>讲完三题后，休息十分钟。</p>
+<p>RNG不会讲第六题，讲到一半尴尬了，发现自己其实不会做。然后YJZ主力补上了。</p>
+<p>插曲：NFLSPC出题人发现题目和讲义上题目出重了。</p>
+<p>合影留恋。 :)</p>
+<p>RNG最后索要明天的题目。</p>
+<h1>Link</h1>
+
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCtG3StnbhxHxXfE6Q4cPZwQ">Youtube Channel For You To Hear RNG58’s voice</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/25/rng_58@%E5%8F%B7%E5%AE%B6%E5%86%9B-Training-1-Diary/" data-id="ckgcb4ya900ce1hqn08fvbhh4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Github被墙，Desktop用不了，就算开了VPN怎么办？" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/24/Github%E8%A2%AB%E5%A2%99%EF%BC%8CDesktop%E7%94%A8%E4%B8%8D%E4%BA%86%EF%BC%8C%E5%B0%B1%E7%AE%97%E5%BC%80%E4%BA%86VPN%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/" class="article-date">
+  <time datetime="2019-11-24T10:04:40.000Z" itemprop="datePublished">2019-11-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/24/Github%E8%A2%AB%E5%A2%99%EF%BC%8CDesktop%E7%94%A8%E4%B8%8D%E4%BA%86%EF%BC%8C%E5%B0%B1%E7%AE%97%E5%BC%80%E4%BA%86VPN%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/">Github被墙，Desktop用不了，就算开了VPN怎么办？</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天TM研究了一天这个破烂问题。</p>
+<p>问题本质是git不走系统代理，再加上Github Desktop又不支持手动设置代理，只知道憨憨的调用git命令。解决问题的方法非常简单，就是设置git代理：</p>
+<p>在命令行中输入(确保git在目录或path下)：</p>
+<pre><code class="language-bash line-numbers">git config --global https.proxy 127.0.0.1:****
+git config --global http.proxy 127.0.0.1:****
+</code></pre>
+
+<p>嗯，然后就完事了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/24/Github%E8%A2%AB%E5%A2%99%EF%BC%8CDesktop%E7%94%A8%E4%B8%8D%E4%BA%86%EF%BC%8C%E5%B0%B1%E7%AE%97%E5%BC%80%E4%BA%86VPN%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/" data-id="ckgcb4y5r002l1hqnemxxgvj2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-raw.githubusercontent.com镜像" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/23/raw.githubusercontent.com%E9%95%9C%E5%83%8F/" class="article-date">
+  <time datetime="2019-11-23T14:45:53.000Z" itemprop="datePublished">2019-11-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/23/raw.githubusercontent.com%E9%95%9C%E5%83%8F/">raw.githubusercontent.com镜像</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近github的源代码存放仓库raw.githubusercontent.com被GFW了，使用不方便…<br>所以自建了一个镜像站raw.xizcm.site<br>暂时不会做限制，先看看吧…<br>e.g.<br><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/2dust/v2rayN/master/README.md">https://raw.githubusercontent.com/2dust/v2rayN/master/README.md</a><br>的镜像为<br><a target="_blank" rel="noopener" href="https://raw.xizcm.site/2dust/v2rayN/master/README.md">https://raw.xizcm.site/2dust/v2rayN/master/README.md</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/23/raw.githubusercontent.com%E9%95%9C%E5%83%8F/" data-id="ckgcb4ya700c81hqngnc8d5bb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-zhuky.RLG的CSP2019游记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/17/zhuky.RLG%E7%9A%84CSP2019%E6%B8%B8%E8%AE%B0/" class="article-date">
+  <time datetime="2019-11-17T12:28:03.000Z" itemprop="datePublished">2019-11-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/17/zhuky.RLG%E7%9A%84CSP2019%E6%B8%B8%E8%AE%B0/">zhuky.RLG的CSP2019游记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今年CSP已经结束,oitiku自测325,luogu自测335,区别在D2T3常数上,最后成绩应该也大差不差吧,CSP一切都已经尘埃落定了<br>Day1开局看完T1直接15分钟秒了，明明是对的的结果测试了20分钟（貌似是不相信眼睛的我fc错文件了？）不过这不碍事，看了T2发现50分是送的，20分钟写完了测过了，T3看上去特别难15分钟写了个10分<br>You got one shot to make it out alive so<br>higher and higher you chase it<br>It’s deep in your BONEs,go and take it<br>然后的事情就不是那么顺利了，T2的剩下50分怎么都想不出来，各种想树上是不是dp呢？不行没法dp吧？先考虑如果是链呢？。。。然后又考虑是不是T3可做，一脸懵逼的在比赛的后2h30min中连键盘都没碰，160分全部前一个小时左右搞完了，出来就觉得自己肯定考砸了————我什么高级一点，像样子一点的算法都没用<br>Day2幻想翻盘，T1先考虑了一下84分十分显然，n三方m就算是100分的数据也是2e9，都有可能过（至少在两个自测的oj上都没有过），然后又考虑day2，看着像个决策单调，但是我也不大会，我也不确定，36分暴力先拿好（当时还误以为每个点5分自己拿了45分，其实每个点4分），T3暴力很好打，链也很简单，部分分十分丰厚。<br>于是我开始写程序了，本来预估剩下的3h全部要花掉的，可是手感特别好，T1好歹是60 lines的码量，一遍写对连warning和error都没有，T2更不用说，本身暴力半个k，T3还稍稍花了点时间，也没太久，这是才1.5h左右。这项任务对于我而言本是不可能的，可是不知为何到这里就是如此顺利。84+36+55=175<br>This is your moment<br>now is your time so<br>prove yourself and …<br>我感到一种冲破限制的感觉<br>Push through hell and…<br>不知道多少年来，被一个个大佬神犇死死压制，曾经的美好，和温暖的回忆都随着岁月远去，早已无法透过时空的云烟去看清，希望与梦想一点点的失去，如鲜艳的花朵凋谢，在风中一瓣一瓣地飘零，如骨灰被吹散，远去，不见。灰色的世界是五位的，即使是难得的谈笑风生，开怀大笑，如此短暂，湮灭于高维的痛苦之中。痛苦是感知不到努力的意义，只是有一种追求奇迹的执念，支持着走下去。看不到路，在黑暗中摸索，苦于自己的物质形态甚至支持不了强大的精神力量，永远心有余而力不足，前段时间想要修仙多训练，心甘情愿付出更多的苦，到头来击败自己的不是人追求安逸的本性，而是走着路头晕要摔倒，晚上失眠半夜惊醒精神恍惚。抬起头面对一位位老师对我的期待一次次落空，我能感受到他们的失落————更是我自己的。宇宙啊，你让我有了这样的意愿，却又把我的愿望无情碾碎，你究竟想把我置于如何境地？<br>I become so numb I can’t feel you there<br>可是你永远不知道那一天，决心的力量点燃了你的内心，这个宇宙间每一丝力量聚合于鲜红的灵魂之中，合一，迸发，Spear of justice穿透了恐惧，最后长廊的Karma撕裂了仇恨，没有任何形式能够形容其冰山一角的力量冲破了极限，冲破了极限的极限，冲破了时空的定义，冲破了种种不可能，打碎了宇宙规律，成为超越生死轮回的存在。而你，夺回了你梦想的一切，重获被夺走的冠冕和荣耀，也成为the absolute God of Hyperdeath……或许也只是有资格可以在梦寐以求的THU校园里漫步，在高等学府中接受最好的教育，这一切已经很美好了，对吗。<br>What you gonna do now?<br>接下来1h57min，一脸懵逼连键盘都没碰，165分前一个半小时左右都搞完了。最后三分钟发现n=2的18次方-1，那是个满二叉树，完了！送的20分我都没拿！<br>后来听说人均day2 190左右，想到day1又比大众分低了50分，心中不禁悲凉<br>God of Hyperdeath，超越生死轮回的存在。那都是你美好的幻想，现实随时都将它打破，露出不堪入目的现实。你只是zky，你RLG的flag都5年了还没兑现好意思吗你？！随便拎出来个大佬把你摁在地上你对得起任何对你有期待的人吗？<br>简直是开除人籍啊！<br>为什么这么难受，因为我是这个年级职业oier的倒数第一名！<br>Is there still<br>A glimmer of hope?<br>Will you choose<br>To do the right thing?<br>走下去，你不能失去你最后一样有价值的东西：</p>
+<p>【决心】Determination<br>It’s your reflection looking back to pull you down</p>
+<p>明年此时，是成是败，是去是留，取决于接下来关键一年，我希望如今的苦难是因为天将降大任于斯人也。<br>So you’re gonna die today or make it out alive<br>咕，加油吧~</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/17/zhuky.RLG%E7%9A%84CSP2019%E6%B8%B8%E8%AE%B0/" data-id="ckgcb4yac00cn1hqng7hqekyq" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-HHS-announces-bankruptcy!" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/17/HHS-announces-bankruptcy!/" class="article-date">
+  <time datetime="2019-11-17T09:45:39.000Z" itemprop="datePublished">2019-11-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/17/HHS-announces-bankruptcy!/">HHS announces bankruptcy!</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Sadly, HHS has no money to afford servers and domains :(</p>
+<p><strong>After 6 months</strong>, OJ will be shut down and the blog will be transferred to Github. The detailed link will be announced soon. Our project list and Discord servers will be still open. The datailed time this site is closed is still unknown.</p>
+<p>Sorry but thanks for your support!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/17/HHS-announces-bankruptcy!/" data-id="ckgcb4y69002z1hqn7zp719v8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-CSP-S-2019-XIZCM日记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/16/CSP-S-2019-XIZCM%E6%97%A5%E8%AE%B0/" class="article-date">
+  <time datetime="2019-11-16T13:48:16.000Z" itemprop="datePublished">2019-11-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/16/CSP-S-2019-XIZCM%E6%97%A5%E8%AE%B0/">CSP-S 2019 XIZCM日记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>早上好！<del>尽管现在已经是晚上了</del> 我是旅游人xizcm.<br>今年是第1次提高组，听从了xgn的建议，入住了<strong>翠屏山</strong>宾馆，<del>贵的一批</del></p>
+<h1>Before Contest</h1>
+
+<p>周五恰完晚饭，就从家里出发驾车前往翠屏山宾馆（因为太困睡了一路），到宾馆办完手续差不多21:30的样子。<br>本来是想直接睡觉的，但想着好歹复习一下假认真，就简简单单地复习了dijkstra&amp;segtree.22:00睡觉</p>
+<h1>Day ONE</h1>
+
+<p>早上6:50起床，精神萎靡，吃完面包就上路了（???），因为走错路导致到的时候是学校倒数第二个，甚至差点找不到老师拿参赛证。<br>因为我是Sxxxxxxx所以不太认识啥人，装傻充楞站了半个小时，听前面大佬大谈fread,freopen,cin,scanf寻思着考场上一定用fread,<del>最后还是用freopen+scanf</del><br>进考场坐在前排，惊喜地发现监考老师和去年pj一模一样<del>脸型像巨魔草</del>。试机时随便敲了几个板子，又瞪着电脑屏不知道干什么，瞎tm探索noi-linux的骚操作.老师宣读了<strong>NOIP</strong>考场规则，非常认真地听着并且继续瞪着电脑屏（大嘘），千万要简单点啊!!!<br>8:30试题准时下发,打开题面，名字起得一看就一脸不会做的样子.<br>还好第一题题目难度和pj相近，半小时内敲完代码再加对拍，<del>心里略高兴</del><br>再看第二题，自我感觉继续良好，强推正解，认为与某题相似（不过确实相似），自以为是地继续推，最后发现时间复杂度还是<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex" xmlns="http://www.w3.org/2000/svg" width="2.27ex" height="1.912ex" role="img" focusable="false" viewBox="0 -833.9 1003.6 844.9" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-3-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-3-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><use xlink:href="#MJX-3-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600, 363) scale(0.707)"><use xlink:href="#MJX-3-TEX-N-32"></use></g></g></g></g></svg></mjx-container>，甚至和暴力相同（大悲），调了1.5h。<br>抽空看了第3题，发现10分大力全排列即可，然后一发就错了，题读错(sob)，time-=20min<br>继续死怼第三题，发现怎么调也调不对，又怀疑第二题写的有问题，就写了一个弱智生成器和暴力对拍，一测果然错了（草），欢乐的死调第2题时间，终于在考试完前30min前调出来了。<br>回到第三题，依旧懵逼，不知道锅何在，开始怀疑自己，time-=15min<br>最后15min想到了第二题假做法的真优化，应该是可过，可惜需要主席树，链的subtask可以写线段树，但没时间了，就放弃了.<br>寻思着就当这次旅游吧，就继续玩弄noi-linux知道考试结束.<br>收卷大概10min，核对核对了10min，<del>CCF工作效率低下</del><br>12:20出了考场，再nm的见一等奖<br>在食堂门口看见Z某，发现第二题其实贼jb简单，大骂三声，恰午饭。<br>整个下午+晚上=游戏+糊文化课作业<br>自测150<br>总结:空调太热，头脑不清，时间分配严重不合理，希望Day2能好点8.</p>
+<h1>DAY TWO</h1>
+
+<p>ＯＮＥＤＡＹＯＦＹＷ<br>再次6:50，早上吃的方便面，味道不错(??)<br>进考场再次进行激烈的对视大赛<br>第一题一眼dp,indeed true.<br>一开始只会64分的subtask，就写了,代码量略大，在9:15分完工，开始思索满分dp<br>9:30想出可以从反面入手，然后就真的想不出来了，大力开了6个dp数组计数，并尝试测出样例，失败,<del>然后subtask1 if写错了就爆零</del><br>10:00惊醒，去上了个厕所，寻思着那就64吧开始思索T2<br>一开始只会n^3的作法，觉得36分不太行，继续思索<br>想到可以用线段树维护一段的最小值，大力开了<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex" xmlns="http://www.w3.org/2000/svg" width="15.712ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 6944.9 699" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-1-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-1-TEX-N-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path><path id="MJX-1-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use xlink:href="#MJX-1-TEX-N-35"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(500, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1000, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1500, 0)"></use></g><g data-mml-node="mo" transform="translate(2222.2, 0)"><use xlink:href="#MJX-1-TEX-N-D7"></use></g><g data-mml-node="mn" transform="translate(3222.4, 0)"><use xlink:href="#MJX-1-TEX-N-35"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(500, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1000, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1500, 0)"></use></g><g data-mml-node="mo" transform="translate(5444.7, 0)"><use xlink:href="#MJX-1-TEX-N-D7"></use></g><g data-mml-node="mn" transform="translate(6444.9, 0)"><use xlink:href="#MJX-1-TEX-N-34"></use></g></g></g></svg></mjx-container>的数组,再加上<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex" xmlns="http://www.w3.org/2000/svg" width="11.815ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 5222.4 688" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-1-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-1-TEX-N-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mn"><use xlink:href="#MJX-1-TEX-N-35"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(500, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1000, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1500, 0)"></use></g><g data-mml-node="mo" transform="translate(2222.2, 0)"><use xlink:href="#MJX-1-TEX-N-D7"></use></g><g data-mml-node="mn" transform="translate(3222.4, 0)"><use xlink:href="#MJX-1-TEX-N-35"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(500, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1000, 0)"></use><use xlink:href="#MJX-1-TEX-N-30" transform="translate(1500, 0)"></use></g></g></g></svg></mjx-container>，没有考虑到内存的问题，欢乐MLE<br>t3唯一拿了分，临时瞎想了一个找重心的作法，胡测了一下对的，一测大样例错了，motherfxxker，开始怀疑作法的正确性，途中又去上了个厕所，调了半个小时，才发现答案未清空，<strong>多测不清空，爆零两行泪</strong><br>出来自我感觉良好，感觉如果t2卡到时限内，应该能168，没想到t1,t2都出锅了，motherfxxker+1<br>总结：考场心态太紧张，最后过于慌乱，没有再次测试小样例，也没有估计内存，就很motherfxxker+2</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/16/CSP-S-2019-XIZCM%E6%97%A5%E8%AE%B0/" data-id="ckgcb4y5a001k1hqn6g254iog" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-[XGN]-CSP-S-2019-Diary" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/16/%5BXGN%5D-CSP-S-2019-Diary/" class="article-date">
+  <time datetime="2019-11-16T13:35:26.000Z" itemprop="datePublished">2019-11-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/16/%5BXGN%5D-CSP-S-2019-Diary/">【XGN】 CSP-S 2019 Diary</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>趁着XIZCM正在编辑，我也胡一篇</p>
+<h1>序章 「南京繁华夜」</h1>
+
+<p>周五晚上上完LD之后就来了，到达翠屏山宾馆9：40，没有干任何事情，睡觉<del>睡不着</del>。<br>路况不太好，晚上回江宁的人很多。</p>
+<h1>首章 「霸权不在晨」</h1>
+
+<p>11-16是第一天，看了一下，T1可做，不过要开ull很是奇妙。<br>T2可做，但是想了一个假算法忘记考虑右括号比左括号之前的情况，-1h<br>然后想起SYR在HB课上的教诲，但是打算先开T3。<br>上厕所。<br>T3可做（指10分），然后就写了，看错题×3，花了30分钟。<br>然后又做了Chain的数据部分，感觉过不去，测了30分钟终于过了样例，然后发现好像不行。<br>最后在Linux下测试15分钟，交卷，160。<br>ZKY同学帮忙自测，看来没丢分。<br>不过看来没希望了</p>
+<h1>终章 「你萎了」</h1>
+
+<p>T1很简单，DP瞎搞看上去像满分<br>T2想了一个假做法，看上去<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex" xmlns="http://www.w3.org/2000/svg" width="6.479ex" height="2.351ex" role="img" focusable="false" viewBox="0 -833.9 2863.6 1038.9" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-47-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-47-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-47-TEX-I-1D459" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"></path><path id="MJX-47-TEX-I-1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path><path id="MJX-47-TEX-I-1D454" d="M311 43Q296 30 267 15T206 0Q143 0 105 45T66 160Q66 265 143 353T314 442Q361 442 401 394L404 398Q406 401 409 404T418 412T431 419T447 422Q461 422 470 413T480 394Q480 379 423 152T363 -80Q345 -134 286 -169T151 -205Q10 -205 10 -137Q10 -111 28 -91T74 -71Q89 -71 102 -80T116 -111Q116 -121 114 -130T107 -144T99 -154T92 -162L90 -164H91Q101 -167 151 -167Q189 -167 211 -155Q234 -144 254 -122T282 -75Q288 -56 298 -13Q311 35 311 43ZM384 328L380 339Q377 350 375 354T369 368T359 382T346 393T328 402T306 405Q262 405 221 352Q191 313 171 233T151 117Q151 38 213 38Q269 38 323 108L331 118L384 328Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><use xlink:href="#MJX-47-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600, 363) scale(0.707)"><use xlink:href="#MJX-47-TEX-N-32"></use></g></g><g data-mml-node="mi" transform="translate(1003.6, 0)"><use xlink:href="#MJX-47-TEX-I-1D459"></use></g><g data-mml-node="mi" transform="translate(1301.6, 0)"><use xlink:href="#MJX-47-TEX-I-1D45C"></use></g><g data-mml-node="mi" transform="translate(1786.6, 0)"><use xlink:href="#MJX-47-TEX-I-1D454"></use></g><g data-mml-node="mi" transform="translate(2263.6, 0)"><use xlink:href="#MJX-47-TEX-I-1D45B"></use></g></g></g></svg></mjx-container>实则萎<br>T3看上去75分so easy。<br>上厕所<br>T2发现做法假掉了，准备先写T3<br>T3发现二叉树的不是很好写。<br>继续写T2，写了<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex" xmlns="http://www.w3.org/2000/svg" width="2.27ex" height="1.91ex" role="img" focusable="false" viewBox="0 -833.2 1003.6 844.2" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-39-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-39-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><use xlink:href="#MJX-39-TEX-I-1D45B"></use></g><g data-mml-node="mn" transform="translate(600, 363) scale(0.707)"><use xlink:href="#MJX-39-TEX-N-33"></use></g></g></g></g></svg></mjx-container><br>最后自测15分钟，交卷，191<br>CSP太吃屎了。</p>
+<img src="https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=4194695977,1268688233&amp;fm=85&amp;s=A922CC126AA03E844C9B54A403003020" alt="poop" />
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/16/[XGN]-CSP-S-2019-Diary/" data-id="ckgcb4ya200bw1hqngzq97onw" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-THHHS-Beta-3-Release" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/28/THHHS-Beta-3-Release/" class="article-date">
+  <time datetime="2019-10-28T14:35:08.000Z" itemprop="datePublished">2019-10-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/28/THHHS-Beta-3-Release/">THHHS Beta 3 Release</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Go here to see!<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/archives/169">here</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/10/28/THHHS-Beta-3-Release/" data-id="ckgcb4y9k00aj1hqnbaawge0z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
@@ -648,7 +568,7 @@ Enjoy it together
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/5/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/7/">Next &amp;raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/5/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/7/">Next &amp;raquo;</a>
   </nav>
 
 </section>
@@ -701,23 +621,23 @@ Enjoy it together
       <ul>
         
           <li>
-            <a href="/2020/10/16/BUY%20NOW!%20FRENCH%20HELICOPTER%20ONLY%20%E2%82%AC650%20!/">(no title)</a>
+            <a href="/2020/10/11/CSP-S%E5%88%9D%E8%B5%9B%E6%B1%87%E6%8A%A5/">2020 CSP-S初赛汇报</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/Codeforces%20Global%20Round%202/">(no title)</a>
+            <a href="/2020/10/11/Welcome-Post/">Welcome Post</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/Dev%20Log%20of%20HHSOJ%20(4-4)/">(no title)</a>
+            <a href="/2020/10/11/Manual-Test/">Test Blog (Manual)</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/ICPC%20WORLD%20FINAL%202019/">(no title)</a>
+            <a href="/2020/10/11/Test-Blog/">Test Blog</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/JSOI%202019%20Diary%20Day%20-1/">(no title)</a>
+            <a href="/2020/05/16/%E6%B5%85%E8%B0%88%E8%96%9B%E5%AE%9A%E8%B0%94%E6%96%B9%E7%A8%8B%E7%9A%84%E4%B8%8D%E5%90%AB%E6%97%B6%E8%A7%A3/">浅谈薛定谔方程的不含时解</a>
           </li>
         
       </ul>
