@@ -70,10 +70,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-HHSOJ-Dev-Log-19-4-14" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Orange-Boy-Got-T-shirt!!!" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/16/HHSOJ-Dev-Log-19-4-14/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
+    <a href="/2020/10/16/Orange-Boy-Got-T-shirt!!!/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
 </a>
     
   </div>
@@ -82,25 +82,233 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>“title”: “HHSOJ Dev Log 19/4/14”,<br>“date”: “2019-04-14 06:23:39”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;</p>
-<h1>更新内容</h1>
-
+        <hr>
+<p>title: Orange Boy Got T-shirt!!!<br>date: 2019-07-21 13:37:31<br>categories:</p>
 <ul>
-<li>根据SYR神犇要求，在网站上添加代码编辑器。使用了ACE，而且还贴心的设计了自定义编辑器的功能。可以自己调样式、字体、自动补全等……</li>
-<li>同时提供了可供管理员自定义的Preference系统（就是用户参数表……）。可以修改源码增加Preference。</li>
-<li>修复了一些BUG</li>
-<li>注意：向下兼容性未测试。不保证可以和1.11版本的HHSOJ文件夹兼容</li>
-<li>在用户界面上添加了目录</li>
-<li>修复了一些CSS (By ZJS)</li>
-<li>暴打了ZJS</li>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<br>In a recent Codeforces Contest Codeforces Global Round 4, the Orange Boy MonkeyKing got a T-shirt by getting rank 449.</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://codeforces.com/bestRatingChanges/2214536">BEST RATING CHANGE</a></p>
+<img src="https://userpic.codeforces.com/585307/title/fffec0879f92df58.jpg" alt="Orange Boy" title="Orange Boy" />
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Orange-Boy-Got-T-shirt!!!/" data-id="ckgcay80p004d1knx0t0lgjon" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Orange-Boy-Red-Girl-Legendary-Grandmeow-Can-You-Solve-It-Out--Ep.2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/16/Orange-Boy-Red-Girl-Legendary-Grandmeow-Can-You-Solve-It-Out--Ep.2/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: Orange Boy/Red Girl/Legendary Grandmeow Can You Solve It Out? Ep.2<br>date: 2019-10-01 13:56:56<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<br>思考题 for implementing</li>
+</ul>
+<h1>CPP Program</h1>
+
+<p>You are given a C++ Program without any compiler command (without ‘#’). It’s made sure it will pass compilation when tested on Codeforces C++ 11 compiler after adding necessary imports.</p>
+<p>You have to solve the problems according to your character.</p>
+<h2>For Orange Boy</h2>
+
+<p>You need to print the function list as example stated.</p>
+<p><strong>Example</strong></p>
+<pre><code class="language-cpp line-numbers">using namespace std;
+
+class SomeClass&#123;
+public:
+void solve()&#123;
+
+&#125;
+&#125;
+inline template&lt;typename T&gt; T add(T a,T b)&#123;
+return a+b;
+&#125;
+int main()&#123;
+int x,y;
+cin&gt;&gt;x&gt;&gt;y;
+add(1,2);
+cout&lt;&lt;x+y;
+&#125;
+</code></pre>
+
+<p><strong>Output</strong></p>
+<pre><code class="line-numbers">SomeClass.solve arg="" ret="void" wor=""
+add arg="a(T),b(T)" ret="T" wor="inline template&lt;typename T&gt;"
+main arg="" ret="int" wor=""
+</code></pre>
+
+<h2>For Red Girl</h2>
+
+<p>You are asked to shorten the program as example stated.<br><strong>Example</strong></p>
+<pre><code class="language-cpp line-numbers">using namespace std;
+long long a,b;
+int main()&#123;
+cin&gt;&gt;a&gt;&gt;b; //read two long long
+cout&lt;&lt;"the sum of the two long long is "&lt;&lt;a+b&lt;&lt;endl;
+&#125;
+</code></pre>
+
+<p>Query: change “long long” to “ll”<br><strong>Output</strong></p>
+<pre><code class="language-cpp line-numbers">using namespace std;
+ll a,b;
+int main()&#123;
+cin&gt;&gt;a&gt;&gt;b; //read two long long
+cout&lt;&lt;"the sum of the two long long is "&lt;&lt;a+b&lt;&lt;endl;
+&#125;
+</code></pre>
+
+<h2>For L.Meow</h2>
+
+<p>You are asked to make the program not recursive without changing the meaning of the original program.<br><strong>Example</strong></p>
+<pre><code class="language-cpp line-numbers">using namespace std;
+int f(int n)&#123;
+if(n==0)&#123;
+return 1;
+&#125;else&#123;
+return f(n-1)*n;
+&#125;
+&#125;
+
+int main()&#123;
+cout&lt;&lt;f(10);
+&#125;
+</code></pre>
+
+<p><strong>Output</strong><br><code>c++<br>int main()&#123;<br>int x=1;<br>for(int i=1;i&lt;=10;i++) x*=i;<br>cout&lt;&lt;x&lt;&lt;endl;<br>&#125;</code></p>
+<h1>Implementation Dragon is watching you</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Orange-Boy-Red-Girl-Legendary-Grandmeow-Can-You-Solve-It-Out--Ep.2/" data-id="ckgcay80q004e1knx3mwafwtl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Orange-Boy-Red-Girl-Legendary-Grandmeow-Can-You-Solve-It-Out-" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/16/Orange-Boy-Red-Girl-Legendary-Grandmeow-Can-You-Solve-It-Out-/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: Orange Boy/Red Girl/Legendary Grandmeow Can You Solve It Out?<br>date: 2019-07-26 13:45:45<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<br>思考题 for grand contest</li>
+</ul>
+<blockquote>
+Orange Boy(Monk.eyk.ing),Red girl(Mack.erel.pike) and their cat LGM(Legendary.Grand.Meow) are a happy family. But in fact, they are the heroes that is helping the world in silent.
+One day, the earth is under the attack by the Implementation Dragon. So the three went off to divide and conquer.
+</blockquote>
+
+<p>The three must <strong>fight together</strong> to solve the OI question by the I.D.(Implementation Dragon)</p>
+<p>As we know, a <strong>Regex</strong> is a kind of pattern to match strings. The pattern can be seen as many subpatterns. In this problem, we will consider a easy problem.</p>
+<p>Patterns could be:</p>
+<ol>
+<li>"a" - any lower-case letter. This will match the exactly character. For example, Regex "a" will only match string "a"</p></li>
+<li><p>"a|b" - match a or b. For example, Regex "y|p" will match "y" or "p"</p></li>
+<li><p>"[abc]" - match exactly one in the bracket. eg. "[abc]" will match "a" or "b" or "c"</p></li>
+<li><p>"." - a dot will match any character. eg."." will match "a" "b" "c"... "z"</p></li>
+<li><p>"a<em>" - may match 0 or more times. eg. "a</em>" will match ""(empty string) "a" "aa" "aaa" ... "aaaaaa" etc</p></li>
+<li><p>"()" - to make things altogether. eg."(abc)|(def)" will match "abc" or "def"</p></li>
+</ol>
+
+<p>All together, for example, "https*" will match "http" "https" "httpss" ... etc
+
+<p>“([abc]*)|y|p” will match any string consisted only of abc and “y” and “p”.</p>
+<p>Now you are going to help one hero.</p>
+<h1>Helping LGM</h1>
+
+<p>You are given a Regex pattern. Your task is to find out if it is a valid pattern.</p>
+<p>“abc” answer is YES</p>
+<p>“(xx*” answer is NO</p>
+<h1>Helping Orange Boy</h1>
+
+<p>You are given a Regex pattern. Your task is to find out any string that matches this pattern.</p>
+<p>“([abc]*)|y|p” Output:”abc”</p>
+<h1>Helping Red Girl</h1>
+
+<p>You are given a Regex pattern and a string. Your task is to find out whether the string matches the pattern.</p>
+<p>“([abc]*)|y|p” and “y” answer is YES<br>“x” and “y” answer is NO</p>
+<h1>Constriants</h1>
+
+<p>The string consists of only lower-case letters and necessary special characters. The length does not exceed 50.</p>
+<h1>Solution By XGN</h1>
+
+<p>Problem is too easy to give out my answer. Use Python and Java will be useful.</p>
+<img src="https://img-eshop.cdn.nintendo.net/i/47593cce855c2bfe39b2ea6125c03eaad939ce1daa49eba337f8e4f6f1fd0549.jpg?w=1000" alt="shit" title="shit" />
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Orange-Boy-Red-Girl-Legendary-Grandmeow-Can-You-Solve-It-Out-/" data-id="ckgcay80r004f1knxf7qm72dy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Orange-gwq-come-and-solve-it!!" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/16/Orange-gwq-come-and-solve-it!!/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: Orange gwq come and solve it!!<br>date: 2019-07-18 05:01:34<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<br>You are given something, what is it?<br>You don’t know, but you are curious about it.<br>You want to know what it is, but you can’t.<br>It made you unpleasant, you are somewhat angry.<br>当你的野心还撑不起你的才华时，就应该静下心来评论一下。<br>Formally,you are given a 3-dimensional object. It is discribed a <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex" xmlns="http://www.w3.org/2000/svg" width="6.11ex" height="1.136ex" role="img" focusable="false" viewBox="0 -491 2700.4 502" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-41-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-41-TEX-N-D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path><path id="MJX-41-TEX-I-1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-41-TEX-I-1D45B"></use></g><g data-mml-node="mo" transform="translate(822.2, 0)"><use xlink:href="#MJX-41-TEX-N-D7"></use></g><g data-mml-node="mi" transform="translate(1822.4, 0)"><use xlink:href="#MJX-41-TEX-I-1D45A"></use></g></g></g></svg></mjx-container> grid, which has its height on each grid, such like this.<img src="https://i.loli.net/2019/07/18/5d2ffb9e3e92429387.jpg" alt="blob.jpg" />
+This can be discribed as
+2,1,2
+1,1,0
+1,1,1
+And you want to start from the left-bottom-lower corner to the right-top-upper corner.
+<img src="https://i.loli.net/2019/07/18/5d2ffcc052ac772265.jpg" alt="blob.jpg" />
+Find the shortest path, you only need to output the distance.
+btw, i don't know the answer for the picture above :)</li>
 </ul>
 
-<p>Custom Test什么的下周再说啦</p>
-
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/HHSOJ-Dev-Log-19-4-14/" data-id="ckgcaokpm001x1ho8h0cv1ocy" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Orange-gwq-come-and-solve-it!!/" data-id="ckgcay80r004g1knx0ticc2if" class="article-share-link">Share</a>
       
       
     </footer>
@@ -110,10 +318,10 @@
 
 
   
-    <article id="post-HHSOJ-Dev-Log-4-21" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-PKU-SC-2019-Diary-Day-0" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/16/HHSOJ-Dev-Log-4-21/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
+    <a href="/2020/10/16/PKU-SC-2019-Diary-Day-0/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
 </a>
     
   </div>
@@ -122,176 +330,63 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>“title”: “HHSOJ Dev Log 4/21”,<br>“date”: “2019-04-21 04:35:20”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;<br>期中考试不更新 :)</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/HHSOJ-Dev-Log-4-21/" data-id="ckgcaokpn001z1ho8gw7s54mr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HHSOJ-Dev-Log-2019-5-19" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/16/HHSOJ-Dev-Log-2019-5-19/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>“title”: “HHSOJ Dev Log 2019/5/19”,<br>“date”: “2019-05-19 07:23:46”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;<br>Added:</p>
+        <hr>
+<p>title: PKU SC 2019 Diary Day 0<br>date: 2019-05-25 12:38:48<br>categories:</p>
 <ul>
-<li>User talk</li>
-<li>A change to the nav.jsp</li>
-<li>Some random changes</li>
-<li>Beat ZJS</li>
-<li>New bugs and bug fix</li>
-<li>readme.md</li>
-<li>getoj.py &amp; getoj.sh</li>
-<li>status bug fix</li>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<h1>PKU SC 2019 Day 0</h1>
+
+</li>
 </ul>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/HHSOJ-Dev-Log-2019-5-19/" data-id="ckgcaokpn00211ho8e0l2al63" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+<p>又是一个学期来PKU……这次来到了真正的北京<del>上次是假北京真广州</del></p>
+<h2>Nanjing ~ On the way ~</h2>
 
+<p>走的时候就在堵车……早上8点的火车，7点出发，途中经过宁海中学和鼓楼实验小学，然后，你们也知道的。对，路堵死了……结果堵了半天。<del>你美死了</del></p>
+<h2>Nanjing ~ On the train ~</h2>
 
-  
-    <article id="post-Happy-Summer-Holiday-2019!" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/16/Happy-Summer-Holiday-2019!/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>“title”: “Happy Summer Holiday 2019!”,<br>“date”: “2019-07-11 14:24:24”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;<br>Hi, for everyone watching this. If you are in China, you may know that it is the Great Summer Holiday(Jul.1~Aug.31)! During the summer holiday, we will do updates and new stuffs. Here’s the plan:</p>
-<p><em>Note:We are not doing this full-time. We have lessons to take.So don’t complain if some projects delay</em></p>
-<h1>Programming</h1>
+<p>上车啦！G6复兴号就是爽！345KPH跑满。在车上写了会儿Touhou HHS，决定就叫东方地狱洞了。随手把一面写好了。顺便一提，前面的人一直把座位往后调，害得我电脑也在往后跑……差点从小桌板上掉下来。<del>你美死了</del></p>
+<h2>Beijing ~ Traffic ~</h2>
 
-<p><strong>Orange Boy Can You Solve It Out</strong> will continue without resting!</p>
-<p><strong>Codeforces Contests</strong> Maybe Sometimes.</p>
-<p><strong>Atcoder Contests</strong> Maybe. After night lessons end.</p>
-<p><strong>HHSOJ Web Edition</strong> Main Feature continues after August. You can test this stupid OJ at <a target="_blank" rel="noopener" href="https://oj.hellholestudios.club">here</a></p>
-<h1>Games</h1>
-
-<p><strong>THHHS</strong> May release v1 for a full collection of stages and extra.</p>
-<p><strong>TestSTG2</strong> Working hard! You can look forward to this.</p>
-<p><strong>RocketSimulator</strong> Keep working without pausing. Android version released.</p>
-<p><strong>Slap</strong> This game is already dead. Maybe nope…</p>
-<h1>Other</h1>
-
-<p><strong>Story of Tengfei</strong> maybe…nope :P</p>
-<h1>Games we are playing</h1>
-
-<p><strong>INM Craft II</strong> It’s a 1.14.2 vanilla Minecraft server. See the article written for this!</p>
-<p><strong>Hypixel Bedwar</strong> Team in 2 or 3. (Hypixel is a Minecraft server)</p>
-<p><strong>Hypixel Skyblock</strong> XGN and XIZCM. Online sometimes.</p>
-<p><strong>Touhou</strong> Almost everyone plays at any moment.</p>
-<p><strong>Gartic.io</strong> 3~5 people. Usually after Codeforces contests.</p>
-<p><strong>BeatZJS</strong> every day everywhere everyone.</p>
-<p><strong>Nintendo Games</strong> XGN only.</p>
-<p><strong>PUBG</strong> XIZCM only.</p>
-<h1>Any ideas? Comment Below!</h1>
-
-<img src="https://codeforces.com/predownloaded/23/8e/238e0f685f8b7b53a6aeee7099936d271eebb13f.png" alt="pic" title="pic" />
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Happy-Summer-Holiday-2019!/" data-id="ckgcaokpo00231ho85zk9f7mk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Hell-Hole-Legend-2-Episode-1---The-Hamburger-Turnabout-Release" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/16/Hell-Hole-Legend-2-Episode-1---The-Hamburger-Turnabout-Release/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>“title”: “Hell Hole Legend 2 Episode 1 - The Hamburger Turnabout Release”,<br>“date”: “2019-04-20 03:40:08”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.club/wp-content/uploads/2019/04/hhl2.png" title="HHL2 EP1"><img src="https://blog.hellholestudios.club/wp-content/uploads/2019/04/hhl2.png" alt="HHL2 EP1" title="HHL2 EP1" /></a></p>
-<p>What’s the story behind the hamburgers?<br>Welcome to Hell Hole Legend 2 Episode 1!</p>
-<h1>Installing</h1>
-
-<p>Download the game zip and run the PyWright.exe</p>
-<p>Click “Games” and click on the episode title to play:)</p>
-<p>Follow ingame instructions.</p>
-<h1>Download</h1>
-
-<p>For HHS Members, View the Skype PS Group</p>
-<p>Others, please move to <a target="_blank" rel="noopener" href="http://drive.xizcm.ml/A:/HHS&#37;20Projects">XZM’s drive</a> for file “HHL2-CH1.zip”</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Hell-Hole-Legend-2-Episode-1---The-Hamburger-Turnabout-Release/" data-id="ckgcaokpw00241ho81lcuc09j" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Hellholestudios网站域名更改通知" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/16/Hellholestudios%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E9%80%9A%E7%9F%A5/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>“title”: “Hellholestudios网站域名更改通知”,<br>“date”: “2019-09-09 11:47:57”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;<br>因为hellholestudios.club即将过期，我们决定启用新的域名hellholestudios.top，所有hellholestudios网站域名均使用hellholestudios.top域名</p>
-<p>Due to the domain “hellholestudios.club” is expiring, we decide to use the new domain “hellholestudios.top”. All the websites of <em>hellholestudios</em> will use the “hellholestudios.top” domain.</p>
-<p>现使用hellholestudios.club访问会自动跳转到hellholestudios.top，到10月5日.club域名将停止解析，届时只能使用hellholestudios.top访问，请各位悉知</p>
-<p>Now visiting hellholestudios.club domains will be forwarded to hellholestudios.top automatically. The hellholestudios.club domain will stop using after 5th Oct. You can only use “hellholestudios.top” domain to visit after that.</p>
-<p>谢谢！</p>
-<p>Thank you!</p>
+<p>从北京站到江苏大厦，堵了至少半个小时……二环爆炸，三环爆炸，四环爆炸……途中与司机发生了神秘的对♂话。</p>
 <blockquote>
-Cloudflare is the best!
+北京七环跑一圈据说要1000KM，相当于南京到北京的距离哦
+--司机
+
+<p>四环房价6W/M2，便宜了一点<br>–司机</p>
 </blockquote>
 
-<img src="https://blog.hellholestudios.top/wp-content/uploads/2019/09/Xinwen_Lianbo-300x169.png" alt="" />
+<p><del>北京交通你美死了</del></p>
+<h2>Beijing ~ Weather ~</h2>
+
+<p>热死人，搞什么啊？ 38度是什么鬼？？！！明天好像要下暴雨……？</p>
+<h2>PKU ~ First Impression ~</h2>
+
+<p>第一次进PKU的校园，进去的时候审查非常严格，要我们拿出身份证件比对。进去了以后道路两旁都是古色古香的建筑，路两侧的行道树将道路上的太阳光遮得严严实实。路上走着各式各样的学生，还有老外。</p>
+<h2>PKU ~ Sign up ~</h2>
+
+<p>签到，在1117.两个<del>大妈</del>老师给了我们价值50￥的饭卡两张！（虽然是有时限的）和狗牌（还要回收？！？！）。签到要排队，一个一个的进去，一个个的出来，秩序井然。看到了YCS大佬和DXM神犇等。</p>
+<p>签到的地方有咖啡机，可以自助购买咖啡和各色饮料，价格在8￥到12￥不等。<del>难怪教学楼附近一股咖啡味</del></p>
+<h2>PKU ~ Testing The Machine~</h2>
+
+<p>重点？和WC一样（可以看看我的WC日记哦，在HHS BLOG上），在openjudge上提交和看题。PKU给的机子什么都有，看到了SQL管理工具，Eclipse各种版本，VS各种版本，不认识的命令行，还有Scratch。除此之外，还有网易云音乐，微信（什么鬼啊）。电脑还是Win10的（有钱！）。</p>
+<p>试机题和WC一样，两道题，一道比较简单，一道比较难。<strong>又是两道计数题，我佛了</strong></p>
+<h3>Problem A</h3>
+
+<p>二分+逆元。随便搞搞。100分轻松拿到。就是要知道C(a,b)=a!/b!/(a-b)!</p>
+<h3>Problem B</h3>
+
+<p>不会，也懒得想。 0分随便拿。</p>
+<h2>Evening</h2>
+
+<p>好好休息，懒得复习板子……<del>马上复习板子哩</del></p>
+<h1>备注</h1>
+
+<p>好像HHS BLOG炸了，这篇文章先传在Github上吧</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Hellholestudios%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%E6%9B%B4%E6%94%B9%E9%80%9A%E7%9F%A5/" data-id="ckgcaokpw00251ho878h7c12g" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/PKU-SC-2019-Diary-Day-0/" data-id="ckgcay80s004h1knx2js96x10" class="article-share-link">Share</a>
       
       
     </footer>
@@ -301,10 +396,10 @@ Cloudflare is the best!
 
 
   
-    <article id="post-Huawei-Honorcup-Round-2-比赛小记" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-PKU-SC-2019-Diary-Day-1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/16/Huawei-Honorcup-Round-2-%E6%AF%94%E8%B5%9B%E5%B0%8F%E8%AE%B0/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
+    <a href="/2020/10/16/PKU-SC-2019-Diary-Day-1/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
 </a>
     
   </div>
@@ -313,14 +408,54 @@ Cloudflare is the best!
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>“title”: “Huawei Honorcup Round 2 比赛小记”,<br>“date”: “2019-10-01 04:47:18”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;<br>随缘更新，写出一点progress就更一点</p>
-<p>UPD1: 10.1 12:00 把图片读入转像素点完毕<br>UPD2: 10.1 14:15 jgh爆写restore,xgn写出checker<br>UPD3: 10.1 19:00 考虑用颜色的相似度来判断两个block是否相似，再使用模拟退火找出答案,jgh NB!<br>UPD4: 10.2 写了一个combination,进行自动化改造,其实一天都在摸(((<br>UPD5: 10.3-10.10 CNN TRAIN+模拟退火 冲冲冲!</p>
-<p><a target="_blank" rel="noopener" href="https://assets.codeforces.com/images/honorcup-marathon-logo.png"><img src="https://assets.codeforces.com/images/honorcup-marathon-logo.png" alt="" /></a></p>
+        <hr>
+<p>title: PKU SC 2019 Diary Day 1<br>date: 2019-05-25 12:53:47<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<h1>PKU SC 2019 Diary Day 1</h1>
+
+</li>
+</ul>
+<p><strong>备注：如果您是大佬，请不要往下阅读</strong></p>
+<h1>Morning</h1>
+
+<p>在Hotel吃的早餐，虽然很想睡觉，但是早饭就糊过去。早饭的时候有一对日本<del>金松</del>夫妇和一个翻译……翻译一直在说：“それそれ”什么的……</p>
+<p>然后参加了开营仪式，和冬令营的一模一样，嗯，太好了，<del>浪费50分钟</del>。途中不忘损“隔壁家（指清华）”</p>
+<p>然后就没事干了，在农园Cafe呆了一个多小时吧，喝了杯奶茶，看了看大学教材，然后就11：00，该恰饭了。</p>
+<p>午饭吃了鹌鹑蛋烧肉（8￥）、鸡米花（4.5￥好像）和杂七杂八的东西，花了13.5￥，在南外我敢保证21￥+，可见北大还是很良心的。刷完后饭卡还有3.55￥，买了瓶可乐，但是喝不下了。</p>
+<h1>Afternoon</h1>
+
+<p>好吧，做题。A题出锅了，所以先看了B。</p>
+<h2>Problem B First Look</h2>
+
+<p>看了一眼，不会做，虽然数据范围很小，状压搜索感觉明显。于是想了半天，还是不会。</p>
+<p>这时<del>偷瞄了旁边同学</del>灵机一动想了一个线性DP，然后挂了，是错的……样例都过不去。</p>
+<h2>Problem C First Look</h2>
+
+<p>7分可做，但是第一眼看上去可以100分贪心？然后就写了，然后WA了，然后，就没有然后了……当初以为long long写挂了，一直在瞎调，浪费了几个小时，然后一看<del>旁边同学A题100分了</del>时间不够了，于是看了眼A。</p>
+<h2>Problem A First Look</h2>
+
+<p>不会做，不喜欢</p>
+<h2>Problem B Second Look</h2>
+
+<p>然后<del>看到旁边的人B题拿了9分</del>感觉该打暴力了，于是开始写B。写个9分然后交了几发，全WA了。又不会改了，正确不能。</p>
+<h2>Problem C Second Look</h2>
+
+<p>想写7分的又觉得不好写……最后还是决定调贪心。对了几下拍发现算法是挂的（单侧错误）……这个时候就已经17：30了。中午刚看过《随机算法的错误分类》中的单侧错误，下午还就真犯了。温馨提示：考前不要看书。</p>
+<h2>Play</h2>
+
+<p>改不对，写不对，想不对，考NM，接下来是HACK openjudge时间。抓了几个包瞎玩了几下。</p>
+<h1>Evening</h1>
+
+<p>吃饭……回来的路上出租车司机又在扯淡。然后晚上吃饭，上菜贼慢……等了1个小时。</p>
+<h1>Conclusion</h1>
+
+<p>爆零两行泪<br>XGN D1 SCORE=0+0+0=0</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Huawei-Honorcup-Round-2-%E6%AF%94%E8%B5%9B%E5%B0%8F%E8%AE%B0/" data-id="ckgcaokpx00261ho86hdsbywa" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/PKU-SC-2019-Diary-Day-1/" data-id="ckgcay80t004i1knxbxz86gu0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -330,10 +465,10 @@ Cloudflare is the best!
 
 
   
-    <article id="post-Hypixel-Skyblock-简评&amp;amp;新手指导" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-PKU-SC-2019-Diary-Day-3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/16/Hypixel-Skyblock-%E7%AE%80%E8%AF%84&amp;%E6%96%B0%E6%89%8B%E6%8C%87%E5%AF%BC/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
+    <a href="/2020/10/16/PKU-SC-2019-Diary-Day-3/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
 </a>
     
   </div>
@@ -342,56 +477,35 @@ Cloudflare is the best!
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>“title”: “Hypixel Skyblock 简评&amp;新手指导”,<br>“date”: “2019-08-12 12:40:05”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;<br>Skyblock是Hypixel最近新出的一款模式，尽管刚刚推出，但已非常流行，同时在线人数15k+.</p>
-<p>当然，我不敢也没有资格对这个消耗了Hypixel工程师无数心血的游戏指点江山，所以只是说一说自我感受.</p>
-<h1>游玩经历</h1>
+        <hr>
+<p>title: PKU SC 2019 Diary Day 3<br>date: 2019-05-27 12:31:45<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<h1>PKU SC 2019 Diary Day 3</h1>
 
-<img src="https://i.loli.net/2019/08/12/zSOdxKnY349tFqb.png" alt="blob" />
-刚进游戏，大概的游戏界面就像这样（请忽略我丑陋作怪的皮肤）
-整个游戏看起来好像和普通的空岛生存无异，但你以为就这样了嘛？完成前几个新手任务，进入Lobby(大厅),真正的面纱才被揭开
+</li>
+</ul>
+<p>呃呃，最后一天了，也没什么好讲的了。</p>
+<h1>「早Mor」</h1>
 
-<img src="https://i.loli.net/2019/08/12/Ru3CsePmYtkwZNJ.png" alt="blob" />
-↑事我，大厅
-游戏风格逐渐RPG化，有非常多的NPC&amp;Objective，一步一步引导玩家熟悉地形&amp;玩法。
-整体建筑风格偏复古(?).Skyblock的神秘面纱被揭露一角.
-Noob们可以从Farming,Foresting,Mining,Combat这四条主线中获取自己日后非常重要的钱和Health,defense增益(HP和防御).
-大概3~5day的亚子就能把所有的任务完成,然后...
+<p>结营仪式，，，顺便请大家回顾一下前几期的BLOG就知道这一次去北京是干什么的了。先是致辞，然后讲题（By狐狸精本人），然后是颁奖……</p>
+<h1>「解Sol」</h1>
 
-<img src="https://i.loli.net/2019/08/12/6CZdrbDKv1Vu5Uo.png" alt="blob" />
+<p><strong>D1：数组轮</strong> 启发式合并，状压轮廓线<del>（好像很基础？？但是考场上还是挂了）</del>，bitset+trie<br><strong>D2：树上轮</strong> 树上DP，推结论+构造，树上DP+分支FFT</p>
+<h1>「午Non」</h1>
 
-<p>你又回到了你的island!</p>
-<img src="https://i.loli.net/2019/08/12/BruIb7ezXsKgqDl.png" alt="blob" />
+<p>拿剩下的钱买了雪碧和秋梨汁，还剩5￥。然后回南京啦！</p>
+<h1>「车Trn」</h1>
 
-<p>游戏风格再次大转弯，其实是空岛生存2333，逐渐地，你会体验到Skyblock最具特色的一点——Minion(即机器人)</p>
-<img src="https://i.loli.net/2019/08/12/pQvM4CISarYD1ih.png" alt="blob" />
+<p>车上写完了THHHS Stage3.</p>
+<h1>「夜Ngt」</h1>
 
-<blockquote>
-Minions are a fundamental part of Hypixel SkyBlock. They allow the player to receive resources even while offline. --Hypixel Skyblock Wiki
-</blockquote>
+<p>明天又要开始搞♂事♂情了<br><del>顺便说一下，该刷题了</del><br>又是摸鱼的一天。<del>摸鱼「这个引号好好看」</del></p>
 
-<p>简单来说，可以在任何时候为你工作，赚取你想要的资源.有了这个，你可以做出你所要的装备、武器。同时，由于他可以生成东西，所以可以用于建塔（狂喜），加快工作效率。然后就是漫长的等待，等待你的武器，等待你的装备，但如果你实在是等不及，你也可以在Auction House(即拍卖会)上购买，当然你也可以拍卖自己的东西</p>
-<img src="https://i.loli.net/2019/08/12/wQxNkmjiCpvOTyP.png" alt="blob" />
-你今天<strong>ah</strong>了嘛?
-Auction是全服最毒奶的地方。对于我这种非酋来说，别人轻轻松松卖200K的东西在我这里甚至10k都卖不到，我去买别人东西又贵的一批(((( ~我讨厌括号补全~
-当然这也是沟通~东西方~ 玩家之地，大概每天一半消息都和Auction有关.
-
-<p>大概了解了这些，你已经是一名合格的<del>云</del>Skyblock玩家啦！你可以自行探索其余地方，彩蛋不少哦</p>
-<h1>推荐Armor顺序:</h1>
-
-<p>Lapis Armor(获取:Deep Caverns|Auction House) -&gt; Hardened Diamond Armor (获取:Diamond Minion|Auction House) -&gt; Magma Armor (获取:Magma Minion|Auction House) -&gt; End Armor(获取:The End|Auction House) | Emerald Armor (获取:Emerald Minion|Auction House) | 杂套 (Skeleton Hat&amp;Obsdian Chestplate&amp;Creeper Pant&amp;Spider Boot) -&gt; 任意龙套 (获取:The End|Auction House)</p>
-<h1>Mining&amp;Combat线难度排序</h1>
-
-<p>Coal Mine&lt;Gold Mine&lt;Graveyard&lt;Spider’s Den&lt;Deep Caverns (与前者排名视哪个区域而定) &lt; Blazing Fortress &lt; The End</p>
-<h1>总评</h1>
-
-<p>总体来说是一款非常不错的mc server game!自由度非常高，你甚至可以建塔.玩法多样，你可以死命地怼一条线直至功德圆满. 氪金玩家和普通玩家相差不大.Hypixel几乎重写了一切mc原版的东西,使得一切东西拥有Hypixel的魅力.前期可玩度极高，但后期可玩度有所下降，直接上线<del>收点</del>摸鱼.衷心建议Hypixel添加更多PVP的地方，增加更多的Combat Point(The End和其他地方难度差距极大).</p>
-<blockquote>
-Skyblock is the best!
-</blockquote>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Hypixel-Skyblock-%E7%AE%80%E8%AF%84&amp;%E6%96%B0%E6%89%8B%E6%8C%87%E5%AF%BC/" data-id="ckgcaokpy00271ho8dndy7gmt" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/PKU-SC-2019-Diary-Day-3/" data-id="ckgcay80t004j1knxdfn17qtr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -401,10 +515,10 @@ Skyblock is the best!
 
 
   
-    <article id="post-ICPC-WORLD-FINAL-2019" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-PKU-SC-2019-Diary-Day-2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/16/ICPC-WORLD-FINAL-2019/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
+    <a href="/2020/10/16/PKU-SC-2019-Diary-Day-2/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
 </a>
     
   </div>
@@ -413,18 +527,57 @@ Skyblock is the best!
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>“title”: “ICPC WORLD FINAL 2019”,<br>“date”: “2019-04-04 09:38:07”,<br>“categories”:[“HHS Old Blog”],<br>“tags”:[“HHS Old Blog”],<br>;;;</p>
-<!-- wp:paragraph -->
-<p>ICPC WORLD FINAL IS ON TODAY!</p>
-<!-- /wp:paragraph -->
+        <hr>
+<p>title: PKU SC 2019 Diary Day 2<br>date: 2019-05-26 12:09:15<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<h1>PKU SC 2019 Diary Day 2</h1>
 
-<!-- wp:paragraph -->
-<p>Schedule here: <a target="_blank" rel="noopener" href="https://icpc.baylor.edu/worldfinals/schedule">https://icpc.baylor.edu/worldfinals/schedule</a></p>
-<!-- /wp:paragraph -->
+</li>
+</ul>
+<p><strong>如果您是大佬，请不要阅读</strong></p>
+<h1>Morning</h1>
+
+<p>恰早饭……</p>
+<p>重点是早上的大师讲坛。讲师是John <strong>Hop</strong>croft from <strong>Corn</strong>ell University.讲了一些杂谈，不过都是英语（汗）。凭借着我的<del>高超英语水平</del>猜测能力，大概讲了如下内容：</p>
+<ul>
+<li>一个D刺螈的球体的体积当D趋于∞时趋于0</li>
+<li>Law of Large Numbers (统计学公式)</li>
+<li>一堆Surprising Facts</li>
+<li>Random Walk on Graph<br>答疑内容：</li>
+<li>怎么看待女生在信息学方面被虐♂待</li>
+<li>怎么看待传统数学算法和新时代人工智能算法的区别</li>
+<li>“World is changing”的含义<br>然后，草率的拍了照。午饭。</li>
+</ul>
+<h1>Afternoon</h1>
+
+<p>废话不多说</p>
+<h2>Problem A</h2>
+
+<p>隐隐约约可以100，然后萎了。然后好像可以13+9，结果13不会写。最后写了个9分。</p>
+<h2>Problem B</h2>
+
+<p>第二个Subtask就值41分……第一个Subtask8分可做，于是8分。</p>
+<h2>Problem C</h2>
+
+<p>屁都看不懂，看懂了也TM的难求<br><del>狐狸精你美死了</del></p>
+<h2>Hack</h2>
+
+<p>打了会儿Java和Python，写了个一秒提交5个程序的HACK脚本，回顾了Openjudge上的以前的比赛，学到了新知识。<del>水过了3个小时</del></p>
+<h1>Evening</h1>
+
+<p>去了“老北京炸酱馆”，花了200+￥啥好吃的都没吃到，真浪费钱（呸）。</p>
+<h1>Conslusion</h1>
+
+<p>令人作呕的一天</p>
+<h1>Noob's Crying Out</h1>
+
+<p>说实在话，每天一堆计数题烦死了<br>狐狸精出题跟个SB一样<br>北大也亏能想得出来……<br>搞什么飞机啊……<br>比WC难到不知道哪里去了</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/ICPC-WORLD-FINAL-2019/" data-id="ckgcaokq000281ho8g8wb5o01" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/PKU-SC-2019-Diary-Day-2/" data-id="ckgcay80u004k1knx0drn4z07" class="article-share-link">Share</a>
       
       
     </footer>
@@ -434,10 +587,10 @@ Skyblock is the best!
 
 
   
-    <article id="post-ICPC WORLD FINAL 2019" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Reading-Comprehension-Challenge!" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/16/ICPC%20WORLD%20FINAL%202019/" class="article-date">
-  <time datetime="2020-10-16T13:35:20.889Z" itemprop="datePublished">2020-10-16</time>
+    <a href="/2020/10/16/Reading-Comprehension-Challenge!/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
 </a>
     
   </div>
@@ -446,23 +599,130 @@ Skyblock is the best!
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>        Export as ZJS
-    &lt;![CDATA[&lt;!-- wp:paragraph --&gt;</code></pre>
-<p>ICPC WORLD FINAL IS ON TODAY!</p>
+        <hr>
+<p>title: Reading Comprehension Challenge!<br>date: 2020-02-14 06:03:12<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<br>Readers, we present, the Ultimate Reading Comprehension Challenge! If you don’t know what Reading Comprehension is, it’s about you are given a passage, you read it and answer the question. Sounds neat, but this time we will something crazy! We’ll go through the passage by google translate, and see if you can solve the problems!</li>
+</ul>
+<p><strong>You are NOT allowed to copy/use the following passages without permission</strong></p>
+<p><strong>Answers at the bottom of the page</strong></p>
+<h1>English</h1>
 
-<!-- /wp:paragraph -->
+<p><strong>This version is translated from English -&gt; Hawaiian -&gt; English</strong><br>My heart fluttered when I saw the gun pointing to the car door as we pulled out of the building. This is not possibleabout me. There I felt the gun, the heat, in my head, and I heard my friend Jeremy say, “What are you doing?Take my backpack, ”but at the moment I didn’t think of anything.I remember being a little nervous when the shooter pulled me out of the car by the hair. I remember going tohouse — Jeremy to me, two people with two guns. I remember being scared and angry at police calls because of Jeremyit’s been a while, and I remember thinking how slow it was. I didn’t see Jeremy throwing the keysin the woods. But I remember that sound of a gun hitting Jeremy’s head and feelings like the guy holding mei let the hair go. And I remember a second time when I knew he was going to see Jeremy, and I remember being shockedhow long can i run before he pulls a shot. But I drove, until I got on the road, myselfIt didn’t slow down after that but it did come out.I remember thinking that it was funny and ridiculous to say “help, help!” at eight o’clockTuesday evening in December and changed my request to more details “Help, please allow me to get in.” Howeverthe houses were cold, closed, unfriendly, and I ran until I heard Jeremy’s thugs following me announcing ourthe reporters ran.Neighbors didn’t open their doors to us with baseball bags and helped Jeremy see his glasses.and the keys. In one group they were happy. We had to wait for the police to come and tell the othersThe mist was dry, and I just said, “Go ahead and eat. We’re O.K.”I’m glad to see them going. They spoke of severe penalties for criminals, to bring them back to deathpenalties and how the President cleans a government. I thought, maybe they could say all thismy dead body, and I think the words don’t change the words. I quickly get all the rage I can think ofmy army was led against these people sitting in front of their comfortable and comfortable homes.about all the guns they buy. What are the good dangers to Jeremy and myself?People everywhere called to report our reactions, and the police searched for twenty minutes.next. They are saddened by what they are accustomed to, very unhappy. After all, it didn’t hurt Jeremy much,and we were nervous when it came to explaining the shooters. “Usually,” said the police if we could not attendThe height of the men is quite high. The two of us were able to describe the guns and the threats, but both policeDoes not intend to make much of a comment.The police are all about the whole thing. The weak one says, “This is a foolish thing to do,throw away the keys. When the gunner has a gun to your head, do what is said. Jeremy looks rightshame on you.Then the greasy grin came and the weak one went to look outside the house. “That’s the bestwhat you can do, throw in the keys, “he said.” If you went with them … “and become weak. “They will hurt him” — he tilted his head on me - “and you will die.” Jeremy looked overbe happy. “The situation,” said the sheriff, “is neither right nor wrong in the situation. It’s all right.”Those sleepless nights I recaptured when those white buttons came in the car window. how longeverything? Three minutes, five, eight? Not the hours of my life I spend spending it on, I know thereNo way to prepare next time — no smart answer to a gun. The fat talent is right. Not only that. Of themaybe I’ll die later.I’m not sure what next time. It could be anywhere, anytime, anywhere. Safety is an illusion;No protection on locks or guns. The shoot kept some people safe and some thought they were strong, but they liedthemselves.<br><strong>Question</strong></p>
+<pre><code class="line-numbers">1. What drives two robbers?
+A. Let's not Jeremy. B. Teacher shouting.
+C. The behavior of their neighbor. D. Upon the arrival of the police.
 
+2. The author is excited to see the places that talk about ______.
+A. He wanted to hear their words
+B. He does not want to be a friend
+C. Angry by the lame to help him
+D. He just wants to leave Jeremy alone to get bored
 
+3. The police are very angry about the ______.
+A. The author was not injured and gave a false apology
+B. They thought it was a small thing
+C. could not and Jeremy and I told the police
+D. The troopers fled on their arrival at the site
 
-<!-- wp:paragraph -->
+4. What the person wants to tell us is that ______.
+A. Neighbors are no help during difficult times
+B. Police do not trust in case of emergency
+C. Prevent robbery from entering your house is a good choice
+D. Security clearance does not allow people to have guns
+</code></pre>
 
-<p>Schedule here: <a target="_blank" rel="noopener" href="https://icpc.baylor.edu/worldfinals/schedule">https://icpc.baylor.edu/worldfinals/schedule</a></p>
+<h1>Chinese</h1>
 
-<!-- /wp:paragraph -->]]>
+<p><strong>文章由英语翻译成夏威夷语再到中文</strong></p>
+<p>当我们从建筑物中拔出时，看到枪对准车门时，我的心跳了起来。这是不可能的关于我。在那儿，我感觉到脑袋里有枪，热，我听见我的朋友杰里米说：“你在做什么？带上我的背包，“但此刻我什么都没想到。我记得射手把我从头发里拉出车时有点紧张。我记得要去房子—杰里米（Jeremy）对我来说，两个人拿着两把枪。我记得因为杰里米（Jeremy）而在警察打招呼时感到害怕和愤怒已经有一段时间了，我记得当时在想有多慢。我没看到杰里米扔钥匙在树林里。但是我记得枪声敲打杰里米的头，感觉就像那个家伙抱着我我放头发。我记得第二次我知道他要去见杰里米，我记得当时很震惊在他投篮之前我能跑多久。但是我开车，直到我自己上路在那之后它并没有放慢速度，但是它确实出来了。我记得当时说“帮助，帮助！”真是可笑和荒谬。在八点钟12月的星期二晚上，将我的请求更改为更多详细信息““帮助，请允许我进入。”可是房子很冷，封闭，不友好，我一直奔跑直到听到杰里米的暴徒跟着我宣布我们记者跑了。邻居们没有拿着棒球袋向我们敞开大门，而是帮助杰里米看了他的眼镜。和钥匙。他们在一起很开心。我们不得不等警察来告诉其他人薄雾已经干了，我只是说，“继续吃饭。我们很好。”我很高兴看到他们继续前进。他们谈到对罪犯的严厉惩罚，以使他们重生。处罚以及总统如何选举政府。我以为，也许他们可以这么说我的尸体，我认为这些词不会改变这些词。我很快就想到了所有的愤怒我的军队被领导反对这些坐在舒适的房屋前的人。他们购买的所有枪支。对杰里米和我本人有什么危险？到处都有人打电话报告我们的反应，警察搜查了二十分钟。下一个他们为自己的习惯感到难过，非常不高兴。毕竟，这并没有给杰里米带来太大的伤害，当我们要解释射手时，我们很紧张。 “通常，”警察说如果我们不能参加男人的身高很高。我们两个人能够描述枪支和威胁，但两名警察无意对此发表过多评论。警察全盘负责。弱者说：“这是愚蠢的事，丢掉钥匙。当枪手的脑袋里有枪时，请按说的做。杰里米看起来不错真丢脸然后油腻的笑容来了，虚弱的人走到屋外看。 “那是最好的你可以做什么，把钥匙丢进去，“他说。”如果你和他们一起去……”变得虚弱“他们会伤害他的。” —他对我倾斜他的头-“你会死的。”杰里米环顾四周开心治安官说：“这种情况在这种情况下既不是对也不是错。没关系。”那些不眠之夜，当我的白色纽扣进入车窗时，我重新陷入了困境。多久一切吗？三分钟，五，八分钟？我不花一生的时间在上面，我知道下次没有准备的方法—没有明智的答案。胖子才是对的。不仅如此。的也许我以后会死。我不确定下次会怎样。它可以在任何地方，任何时间，任何地方。安全是一种幻想；锁或枪支没有保护。芽使一些人安全，有些人认为自己很坚强，但他们撒谎自己。</p>
+<p><strong>Questions</strong></p>
+<p>1.是什么驱动了两个抢劫犯？</p>
+<p>A：我们不要杰里米。 B.老师大喊。</p>
+<p>C.他们邻居的行为。 D.警察到达后。</p>
+<p>2.作者很高兴看到谈论______的地方。</p>
+<p>A：他想听听他们的话</p>
+<p>B.他不想成为朋友</p>
+<p>C. Angry脚的生气帮助他</p>
+<p>D.他只是想让杰里米一个人无聊</p>
+<p>3.警察对______很生气。</p>
+<p>A：提交人没有受伤，并作了虚假的道歉</p>
+<p>B.他们认为这是一件小事</p>
+<p>C.不能和杰里米和我告诉警察</p>
+<p>D.士兵逃到现场后逃离</p>
+<p>4.这个人想告诉我们的是______。</p>
+<p>A. 困难时期邻居无济于事</p>
+<p>B.警方不信任紧急情况</p>
+<p>C.防止抢劫进入您的房屋是一个不错的选择</p>
+<p>D. 安全许可不允许人们拥有枪支</p>
+<h1>Japanese</h1>
+
+<p><strong>英語-&gt;ハワイアン-&gt;日本語</strong></p>
+<p>私たちが建物から引き出されたときに車のドアを指す銃を見たとき、私の心は震えました。これは不可能です私について。そこで、頭の中で銃、熱を感じ、友人のジェレミーが「何してるの？バックパックを持って行きましょう。」しかし、現時点では何も考えていませんでした。射手が髪の毛で車から私を引き抜いたとき、私は少し緊張していたことを覚えています。行ったことを覚えている家—私にジェレミー、2つの銃を持つ2人。ジェレミーのせいで警察の呼び出しに怖くて怒ったのを覚えていますそれはしばらくして、私はそれがどれほど遅いかを考えたことを覚えています。ジェレミーが鍵を投げるのを見ませんでした森の中で。しかし、ジェレミーの頭に銃がぶつかる音と、私を抱きかかえた男のような気持ちを覚えています私は髪を手放します。そして、彼がジェレミーに会おうとしていることを知ったとき、私はもう一度覚えています。彼がショットを引く前にどれくらい走ることができますか。しかし、私は自分で道に出るまで運転しましたその後は遅くなりませんでしたが、出てきました。「助けて、助けて」と言うのはおかしくてばかげていると思ったことを覚えています。八時に12月の火曜日の夕方、リクエストを詳細に変更してください。しかし家は冷たくて、閉鎖的で、親しみがなく、ジェレミーの凶悪犯が私に続いて私を発表するのを聞くまで走りました記者が走った。近所の人たちは野球のバッグでドアを開けず、ジェレミーが眼鏡を見るのを助けました。キー。あるグループでは、彼らは幸せでした。警察が来て他の人に話すのを待たなければなりませんでした霧は乾いていたので、「先に進んで食べてください。私たちはイギリスです」と言いました。彼らが行くのを見てうれしいです。彼らは、彼らを死に戻すために、犯罪者に対する厳しい罰則について話しました。罰と大統領が政府をきれいにする方法。多分彼らはこれをすべて言うことができると思った私の死体、そして私は言葉が言葉を変えないと思います。私は考えられるすべての怒りをすぐに得る私の軍隊は、快適で快適な家の前に座っているこれらの人々に対して導かれました。彼らが買うすべての銃について。ジェレミーと私にとって良い危険は何ですか？各地の人々が私たちの反応を報告するように呼びかけ、警察は20分間捜索しました。次。彼らは慣れているものに悲しみ、非常に不幸です。結局のところ、それはジェレミーをあまり傷つけませんでした、射手について説明するときは緊張しました。 「通常、」私たちが出席できない場合、警察は言った男性の身長は非常に高いです。二人は銃と脅威を説明することができましたが、両方の警察多くのコメントをするつもりはありません。警察はすべてがすべてです。弱い人は「これは愚かなことだ、キーを捨てます。砲手があなたの頭に銃を持っているとき、言われたことをしてください。ジェレミーは正しく見えるあなたの恥。それから脂ぎったにやにや笑いが来て、弱いものは家の外を見に行きました。 「それが最高ですあなたができることは、キーを投げて、「彼は言った。」あなたがそれらと一緒に行った場合…」そして弱くなる。 「彼らは彼を傷つけるだろう」—彼は私に頭を傾けた-“そしてあなたは死ぬだろう。”ジェレミーは見渡した幸せ。 「状況は」と保安官は言った、「状況は正しくも悪くもない。それは大丈夫だ」。車の窓に白いボタンが来たとき、私は眠れぬ夜を取り戻しました。どれくらいすべて？ 3分、5、8？人生の何時間も費やしていない次回準備する方法はありません—銃に対する賢い答えはありません。太った才能は正しい。それだけではありません。の多分私は後で死ぬでしょう。次回はわかりません。どこでも、いつでも、どこでも可能です。安全性は幻想です。ロックや銃の保護はありません。撮影は何人かの人々を安全に保ち、何人かは彼らが強いと思ったが、彼らは嘘をついた自分自身。</p>
+<ol>
+<li>2人の強盗を駆り立てるものは何ですか？</li>
+</ol>
+
+<p>A.ジェレミーではありません。</p>
+<p>B.先生の叫び。</p>
+<p>C.隣人の行動。</p>
+<p>D.警察の到着時。</p>
+<p>2.著者は、______について話す場所を見て興奮しています。</p>
+<p>A.彼は彼らの言葉を聞きたかった</p>
+<p>B.彼は友達になりたくない</p>
+<p>C.彼を助けるために足の不自由な人に怒って</p>
+<p>D.退屈するために、ジェレミーをそのままにしておきたい</p>
+<p>3.警察は______について非常に怒っています。</p>
+<p>A.著者は負傷せず、誤った謝罪をした</p>
+<p>B.彼らはそれが小さなものだと思った</p>
+<p>C.できませんでした、ジェレミーと私は警察に言いました</p>
+<p>D.トルーパーは現場に到着したときに逃げました</p>
+<p>4.その人が私たちに伝えたいのは、______です。</p>
+<p>困難な時期には隣人は助けにはなりません</p>
+<p>B.緊急時に警察は信用しない</p>
+<p>C.強盗が家に入るのを防ぐことは良い選択です</p>
+<p>セキュリティクリアランスは、人々が銃を持っていることを許可しません</p>
+<h1>Answer</h1>
+
+<p>BABD</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/16/ICPC%20WORLD%20FINAL%202019/" data-id="ckgcaokq000291ho8fmds06pf" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Reading-Comprehension-Challenge!/" data-id="ckgcay80u004l1knx6fzv5rb8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Red-boy-can-you-solve-it-" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/16/Red-boy-can-you-solve-it-/" class="article-date">
+  <time datetime="2020-10-16T13:42:45.840Z" itemprop="datePublished">2020-10-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: Red boy can you solve it?<br>date: 2019-04-22 12:58:13<br>categories:</p>
+<ul>
+<li>HHS Old Blog<br>tags:</li>
+<li>HHS Old Blog<br>;;;<br>Rong Kong is a <del>filial</del> boy. There are N pears on the table. Both he and his brother can eat them. They both want to eat as much as they can. Each of them weighs a[i]. It costs a[i] time for a boy to eat a pear weighing a[i] and it gives him a[i] satisfaction. He can’t stop eating a pear once he started to do it.Kong Rong starts to eat at time 0 and his brother starts to eat at time 0.5. And obviously, no one can take the other’s pear when he is eating it. If both Rong Kong and his brother eat optimally, tell Rong Kong how to get the most satisfaction.<br>Example:<br>4<br>1 2 3 4<br>Answer:<br>6<br>Explanation:<br>Rong Kong first eats the pear weighing 2, then his parents will say he is a filial boy:)<br>Subtask 1:n&lt;=20<br>Subtask 2:n&lt;=1e5, a[i] can all be written as 2^k, k is a non-negative integer.<br>Subtask 3:n&lt;=1e5, a[i]=i holds.<br>Subtask 4:n&lt;=100<br>subtask 5:n&lt;=1e5<br>a[i]&lt;=1e5 always holds.<img src="https://i.loli.net/2019/04/22/5cbdba527796e.jpg" alt="blob.jpg" /></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/10/16/Red-boy-can-you-solve-it-/" data-id="ckgcay80v004m1knxhcb192t9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -529,23 +789,23 @@ Skyblock is the best!
       <ul>
         
           <li>
-            <a href="/2020/10/16/2019-HHS-Big-Event/">(no title)</a>
+            <a href="/2020/10/16/Orange-Boy-Can-You-Solve-It-Out--Ep.10/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/2019-%E5%A4%9A%E6%A0%A1(MUTC)-Diary-Round-2/">(no title)</a>
+            <a href="/2020/10/16/Orange-Boy-Can-You-Solve-It-Out--Ep.1/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/2019-%E5%A4%9A%E6%A0%A1(MUTC)-Diary-Round-3/">(no title)</a>
+            <a href="/2020/10/16/Orange-Boy-Can-You-Solve-It-Out--Ep.11/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/2019-%E5%A4%9A%E6%A0%A1(MUTC)-Diary-Round-4/">(no title)</a>
+            <a href="/2020/10/16/Orange-Boy-Can-You-Solve-It-Out--Ep.13/">(no title)</a>
           </li>
         
           <li>
-            <a href="/2020/10/16/2019-%E5%A4%9A%E6%A0%A1(MUTC)-Diary-Round-5/">(no title)</a>
+            <a href="/2020/10/16/Orange-Boy-Can-You-Solve-It-Out--Ep.12/">(no title)</a>
           </li>
         
       </ul>
