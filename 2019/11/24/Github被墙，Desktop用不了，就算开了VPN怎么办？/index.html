@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Github被墙，Desktop用不了，就算开了VPN怎么办？ | XGN&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今天TM研究了一天这个破烂问题。 问题本质是git不走系统代理，再加上Github Desktop又不支持手动设置代理，只知道憨憨的调用git命令。解决问题的方法非常简单，就是设置git代理： 在命令行中输入(确保git在目录或path下)： git config --global https.proxy 127.0.0.1:**** git config --global http.proxy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github被墙，Desktop用不了，就算开了VPN怎么办？">
+<meta property="og:url" content="https://xiaogenintendo.github.io/2019/11/24/Github%E8%A2%AB%E5%A2%99%EF%BC%8CDesktop%E7%94%A8%E4%B8%8D%E4%BA%86%EF%BC%8C%E5%B0%B1%E7%AE%97%E5%BC%80%E4%BA%86VPN%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/index.html">
+<meta property="og:site_name" content="XGN&#39;s blog">
+<meta property="og:description" content="今天TM研究了一天这个破烂问题。 问题本质是git不走系统代理，再加上Github Desktop又不支持手动设置代理，只知道憨憨的调用git命令。解决问题的方法非常简单，就是设置git代理： 在命令行中输入(确保git在目录或path下)： git config --global https.proxy 127.0.0.1:**** git config --global http.proxy">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-11-24T10:04:40.000Z">
+<meta property="article:modified_time" content="2020-10-16T13:44:34.495Z">
+<meta property="article:author" content="XGN">
+<meta property="article:tag" content="HHS Old Blog">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="XGN&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">XGN&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://xiaogenintendo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Github被墙，Desktop用不了，就算开了VPN怎么办？" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/24/Github%E8%A2%AB%E5%A2%99%EF%BC%8CDesktop%E7%94%A8%E4%B8%8D%E4%BA%86%EF%BC%8C%E5%B0%B1%E7%AE%97%E5%BC%80%E4%BA%86VPN%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/" class="article-date">
+  <time datetime="2019-11-24T10:04:40.000Z" itemprop="datePublished">2019-11-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Github被墙，Desktop用不了，就算开了VPN怎么办？
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天TM研究了一天这个破烂问题。</p>
+<p>问题本质是git不走系统代理，再加上Github Desktop又不支持手动设置代理，只知道憨憨的调用git命令。解决问题的方法非常简单，就是设置git代理：</p>
+<p>在命令行中输入(确保git在目录或path下)：</p>
+<pre><code class="language-bash line-numbers">git config --global https.proxy 127.0.0.1:****
+git config --global http.proxy 127.0.0.1:****
+</code></pre>
+
+<p>嗯，然后就完事了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2019/11/24/Github%E8%A2%AB%E5%A2%99%EF%BC%8CDesktop%E7%94%A8%E4%B8%8D%E4%BA%86%EF%BC%8C%E5%B0%B1%E7%AE%97%E5%BC%80%E4%BA%86VPN%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F/" data-id="ckgcb0fxu002u1hoa9ak7fhk0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/11/25/rng_58@%E5%8F%B7%E5%AE%B6%E5%86%9B-Training-1-Diary/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          rng_58@号家军 Training 1 Diary
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/11/23/raw.githubusercontent.com%E9%95%9C%E5%83%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">raw.githubusercontent.com镜像</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/" rel="tag">Test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Chinese/" style="font-size: 13.33px;">Chinese</a> <a href="/tags/English/" style="font-size: 16.67px;">English</a> <a href="/tags/HHS-Old-Blog/" style="font-size: 20px;">HHS Old Blog</a> <a href="/tags/LSS-Short/" style="font-size: 13.33px;">LSS Short</a> <a href="/tags/OC/" style="font-size: 13.33px;">OC</a> <a href="/tags/OI/" style="font-size: 10px;">OI</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/Test-Blog/" style="font-size: 13.33px;">Test Blog</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/16/BUY%20NOW!%20FRENCH%20HELICOPTER%20ONLY%20%E2%82%AC650%20!/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/Codeforces%20Global%20Round%202/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/Dev%20Log%20of%20HHSOJ%20(4-4)/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/ICPC%20WORLD%20FINAL%202019/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/JSOI%202019%20Diary%20Day%20-1/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 XGN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

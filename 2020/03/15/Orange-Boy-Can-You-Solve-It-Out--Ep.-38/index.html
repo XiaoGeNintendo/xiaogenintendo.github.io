@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Orange Boy Can You Solve It Out? Ep. 38 | XGN&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="思考题 long ago Chess  Ninetail and Doragon are playing Global Chess on a chessboard with N*M grids. The left-upper corner is (1,1) and the right-lower corner is (N,M) The Global Chess goes as follows:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Orange Boy Can You Solve It Out? Ep. 38">
+<meta property="og:url" content="https://xiaogenintendo.github.io/2020/03/15/Orange-Boy-Can-You-Solve-It-Out--Ep.-38/index.html">
+<meta property="og:site_name" content="XGN&#39;s blog">
+<meta property="og:description" content="思考题 long ago Chess  Ninetail and Doragon are playing Global Chess on a chessboard with N*M grids. The left-upper corner is (1,1) and the right-lower corner is (N,M) The Global Chess goes as follows:">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-15T10:40:27.000Z">
+<meta property="article:modified_time" content="2020-10-16T13:44:34.495Z">
+<meta property="article:author" content="XGN">
+<meta property="article:tag" content="HHS Old Blog">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="XGN&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">XGN&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://xiaogenintendo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Orange-Boy-Can-You-Solve-It-Out--Ep.-38" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/03/15/Orange-Boy-Can-You-Solve-It-Out--Ep.-38/" class="article-date">
+  <time datetime="2020-03-15T10:40:27.000Z" itemprop="datePublished">2020-03-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Orange Boy Can You Solve It Out? Ep. 38
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>思考题 long ago</p>
+<h1>Chess</h1>
+
+<p>Ninetail and Doragon are playing <em>Global Chess</em> on a chessboard with N*M grids. The left-upper corner is (1,1) and the right-lower corner is (N,M)</p>
+<p>The <em>Global Chess</em> goes as follows:</p>
+<ul>
+<li>Each player has some <em>soldiers</em>. Ninetail plays as White and Doragon plays as Black. All white soldiers face up. All black soldiers face down</p></li>
+<li><p>In one turn, Ninetail or Doragon can ask one of her soldiers to go forward by 1 step(ie. From (x,y) to (x-1,y) for Ninetail and (x,y) to (x+1,y) for Doragon).</p></li>
+<li><p>If there's an enemy soldier in the diagonal grid of a soldier's front. He can eat his enemy by moving into his grid and removing him from the board. (ie. A white soldier at (x,y) can eat (x-1,y-1) and (x-1,y+1) while a black soldier at (x,y) can eat (x+1,y-1) and (x+1,y+1)). If you still don't understand, this is similar to <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Chess">Chess</a>.</p></li>
+</ul>
+
+<p>If you don't know, Ninetail is a fox girl who can control others' minds. So today she controlled Doragon's mind and was going to have fun. She wonders, if she can control both sides and move despite the turn, can she move one of the white soldiers to (1,i) for each i from 1 to M?
+
+<h1>Example</h1>
+
+<p>Board=</p>
+<pre><code class="line-numbers">....
+.B..
+....
+..W.
+</code></pre>
+
+<p>Output=<br><code>NYYN</code></p>
+<p>Explain: The White soldier can move up, then eat the black soldier, then move up to reach (1,2)</p>
+<p>He can also move up 3 times to reach(1,3)</p>
+<h1>Constraints</h1>
+
+<p>Subtask1(50&#37;):there is only one soldier for each side</p>
+<p>Subtask2(50&#37;):N,M&lt;=1000</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/03/15/Orange-Boy-Can-You-Solve-It-Out--Ep.-38/" data-id="ckgcb0fzu00751hoa5yridqhe" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/03/15/Rune-Factory-4-Speical-%E6%B8%B8%E7%8E%A9%E6%84%9F%E6%83%B3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Rune Factory 4 Speical 游玩感想
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/14/%5BCrimson-boy-can-you-solve-it-%5D-ep3.14-Pi-day-special!!!!/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">【Crimson boy can you solve it?】 ep3.14 Pi day special!!!!</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/HHS-Old-Blog/">HHS Old Blog</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HHS-Old-Blog/" rel="tag">HHS Old Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/" rel="tag">Test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Chinese/" style="font-size: 13.33px;">Chinese</a> <a href="/tags/English/" style="font-size: 16.67px;">English</a> <a href="/tags/HHS-Old-Blog/" style="font-size: 20px;">HHS Old Blog</a> <a href="/tags/LSS-Short/" style="font-size: 13.33px;">LSS Short</a> <a href="/tags/OC/" style="font-size: 13.33px;">OC</a> <a href="/tags/OI/" style="font-size: 10px;">OI</a> <a href="/tags/Test/" style="font-size: 10px;">Test</a> <a href="/tags/Test-Blog/" style="font-size: 13.33px;">Test Blog</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">July 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/10/16/BUY%20NOW!%20FRENCH%20HELICOPTER%20ONLY%20%E2%82%AC650%20!/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/Codeforces%20Global%20Round%202/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/Dev%20Log%20of%20HHSOJ%20(4-4)/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/ICPC%20WORLD%20FINAL%202019/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/10/16/JSOI%202019%20Diary%20Day%20-1/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 XGN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
