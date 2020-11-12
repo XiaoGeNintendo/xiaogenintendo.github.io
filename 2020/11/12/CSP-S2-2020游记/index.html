@@ -5,16 +5,20 @@
   
 
   
-  <title>Tag: Dev | XGN&#39;s blog</title>
+  <title>XGN&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Blog of XiaoGeNintendo from HellHoleStudios">
-<meta property="og:type" content="website">
+  <meta name="description" content="啊，又是一年CSP（不过是第二年啊） T1一上来先看了T1，震惊！！竟然是大模拟！！数学BYEBYE,我要打表。 不过，当时打表的时候连续写错3次“求一个日期的下一天”。xs 然后40分钟不到大样例就过了。 T2我一看，好像很难的样子！！再一看，水题！！ 轻松秒掉，然后一看不对劲，1ll&lt;&lt;i 写成了 1&lt;&lt;i 再一看，要用 unsigned long long。怎么读入呢">
+<meta property="og:type" content="article">
 <meta property="og:title" content="XGN&#39;s blog">
-<meta property="og:url" content="https://xiaogenintendo.github.io/tags/Dev/index.html">
+<meta property="og:url" content="https://xiaogenintendo.github.io/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/index.html">
 <meta property="og:site_name" content="XGN&#39;s blog">
-<meta property="og:description" content="Blog of XiaoGeNintendo from HellHoleStudios">
+<meta property="og:description" content="啊，又是一年CSP（不过是第二年啊） T1一上来先看了T1，震惊！！竟然是大模拟！！数学BYEBYE,我要打表。 不过，当时打表的时候连续写错3次“求一个日期的下一天”。xs 然后40分钟不到大样例就过了。 T2我一看，好像很难的样子！！再一看，水题！！ 轻松秒掉，然后一看不对劲，1ll&lt;&lt;i 写成了 1&lt;&lt;i 再一看，要用 unsigned long long。怎么读入呢">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-12T22:07:27.000Z">
+<meta property="article:modified_time" content="2020-11-12T14:18:35.663Z">
 <meta property="article:author" content="XGN">
+<meta property="article:tag" content="Chinese">
+<meta property="article:tag" content="OI">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="XGN&#39;s blog" type="application/atom+xml">
@@ -68,59 +72,88 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/10/23/java-2/" class="archive-article-date">
-  <time datetime="2020-10-23T22:15:00.000Z" itemprop="datePublished">Oct 23</time>
+        <section id="main"><article id="CSP-S2 2020游记-CSP-S2-2020游记" class="article article-type-CSP-S2 2020游记" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" class="article-date">
+  <time datetime="2020-11-12T22:07:27.000Z" itemprop="datePublished">2020-11-12</time>
 </a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/23/java-2/">Dev Club Java Class Lesson 2</a>
-    </h1>
-  
-
-    </header>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/OI/">OI</a>
   </div>
-</article>
-  
+
+  </div>
+  <div class="article-inner">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/10/23/java-1/" class="archive-article-date">
-  <time datetime="2020-10-23T22:04:00.000Z" itemprop="datePublished">Oct 23</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/23/java-1/">Dev Club Java Class Lesson 1</a>
-    </h1>
-  
+        <p>啊，又是一年CSP（不过是第二年啊）</p>
+<h1 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h1><p>一上来先看了T1，震惊！！竟然是大模拟！！数学BYEBYE,我要打表。</p>
+<p>不过，当时打表的时候连续写错3次“求一个日期的下一天”。xs</p>
+<p>然后40分钟不到大样例就过了。</p>
+<h1 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h1><p>我一看，好像很难的样子！！再一看，水题！！</p>
+<p>轻松秒掉，然后一看不对劲，<code>1ll&lt;&lt;i</code> 写成了 <code>1&lt;&lt;i</code></p>
+<p>再一看，要用 <code>unsigned long long</code>。怎么读入呢？<code>%lld</code>，<code>%ull</code> 还是 <code>%llu</code>（是我） 呢？</p>
+<p>然后再一看答案会爆ULL_MAX！！于是特判了一个点</p>
+<p>吃⑩吧CCF出这种坑人题。</p>
+<p>30分钟做完</p>
+<h1 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h1><p>不会，打了许多暴力，然后挂了许多。考场上脑残连LAZY标记都想不出来。</p>
+<h1 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h1><p>暴力。</p>
+<h1 id="自测"><a href="#自测" class="headerlink" title="自测"></a>自测</h1><h2 id="OITIKU"><a href="#OITIKU" class="headerlink" title="OITIKU"></a>OITIKU</h2><p>今年的自测有点意思……首先是OITIKU，我一测：</p>
+<ul>
+<li>T1忘记考虑输入=0，瞬间90</li>
+<li>T2莫名其妙T一个点，95</li>
+<li>T3只有20了？？</li>
+<li>T4正常</li>
+</ul>
+<p>然后是</p>
+<blockquote>
+<p>我T3暴力拿了75！！</p>
+<p>–Zhuky.RLG</p>
+</blockquote>
+<p>心态崩了。</p>
+<h2 id="Luogu"><a href="#Luogu" class="headerlink" title="Luogu"></a>Luogu</h2><p>于是我又到洛谷上平衡一下心态。我再一测：</p>
+<ul>
+<li>T1还是90</li>
+<li>T2全T了，只剩65</li>
+<li>T3还是20</li>
+<li>T4稳稳地40</li>
+</ul>
+<p>这可不行！！！</p>
+<h2 id="Newcoder"><a href="#Newcoder" class="headerlink" title="Newcoder"></a>Newcoder</h2><p>我一看，好地方。我一测：</p>
+<ul>
+<li>T1直接0分了</li>
+<li>T2 85</li>
+<li>T3 竟然跑到了30</li>
+<li>T4还是40</li>
+</ul>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>今年自测什么乱七八糟的？？？看来需要祈祷官方数据比较良心了。</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" data-id="ckhex4dyn000c1hldgf1y9mv2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/10/24/ability-and-beast/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">【RTiFE】能力、凶兽与DLord</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
