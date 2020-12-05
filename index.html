@@ -101,7 +101,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc-top/" data-id="ckibq2eee001n1hl27lb6g2ye" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc-top/" data-id="ckibsvqk4001i1hllgyih5clb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/" rel="tag">Test</a></li></ul>
@@ -153,10 +153,60 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="ckibq2ee9001b1hl2670a1t5p" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="ckibsvqk000191hlldpnb0hog" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/" rel="tag">Test</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-zzzyt-ml" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/12/05/zzzyt-ml/" class="article-date">
+  <time datetime="2020-12-05T22:25:00.000Z" itemprop="datePublished">2020-12-05</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/Apple/">Apple</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/05/zzzyt-ml/">Zzzyt语录判断器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>打完NOIP后要退役了，闲着无聊写了Zzzyt语言判断器。</p>
+<h1 id="第一步：获取数据"><a href="#第一步：获取数据" class="headerlink" title="第一步：获取数据"></a>第一步：获取数据</h1><p>从Skype上下载聊天历史数据，并进行处理，可以参考这篇文章<a href="">HHS Blog</a>。</p>
+<p>这是我的源码供参考修改：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line">print(<span class="string">&quot;text,label&quot;</span>)</span><br><span class="line"></span><br><span class="line">d=dict()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">deal</span>(<span class="params">s</span>):</span></span><br><span class="line">    <span class="keyword">if</span> s==<span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    moved=<span class="string">&quot;&quot;</span></span><br><span class="line">    s=s.replace(<span class="string">&quot;,&quot;</span>,<span class="string">&quot;，&quot;</span>).replace(<span class="string">&quot;&amp;apos;&quot;</span>,<span class="string">&quot;&#x27;&quot;</span>).replace(<span class="string">&quot;&amp;lt;&quot;</span>,<span class="string">&quot;&lt;&quot;</span>).replace(<span class="string">&quot;&amp;gt;&quot;</span>,<span class="string">&quot;&gt;&quot;</span>).replace(<span class="string">&quot;&amp;quot;&quot;</span>,<span class="string">&quot;\&quot;&quot;</span>).replace(<span class="string">&quot;\n&quot;</span>,<span class="string">&quot;\\n&quot;</span>).replace(<span class="string">&quot;\r&quot;</span>,<span class="string">&quot;&quot;</span>).replace(<span class="string">&quot;&amp;amp;&quot;</span>,<span class="string">&quot;&amp;&quot;</span>)</span><br><span class="line">    layer=<span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,min(<span class="number">50</span>,len(s))):</span><br><span class="line">        <span class="keyword">if</span> s[i]==<span class="string">&#x27;&lt;&#x27;</span>:</span><br><span class="line">            layer+=<span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> s[i]==<span class="string">&#x27;&gt;&#x27;</span>:</span><br><span class="line">            layer-=<span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> layer==<span class="number">0</span>:</span><br><span class="line">            moved+=s[i]</span><br><span class="line">    <span class="keyword">return</span> moved</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">&quot;messages.json&quot;</span>,<span class="string">&quot;r&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    data=json.loads(<span class="string">&quot;\n&quot;</span>.join(f.readlines()))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> conv <span class="keyword">in</span> data[<span class="string">&#x27;conversations&#x27;</span>]:</span><br><span class="line">        <span class="keyword">for</span> msg <span class="keyword">in</span> conv[<span class="string">&#x27;MessageList&#x27;</span>]:</span><br><span class="line">            usr=msg[<span class="string">&#x27;displayName&#x27;</span>]</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> usr==<span class="literal">None</span>:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            txt=deal(msg[<span class="string">&#x27;content&#x27;</span>])</span><br><span class="line"><span class="comment">#            print(msg[&#x27;content&#x27;],&#x27;-&gt;&#x27;,txt)</span></span><br><span class="line">            <span class="keyword">if</span> usr==<span class="string">&quot;Zzzyt&quot;</span>:</span><br><span class="line">                d[txt]=<span class="string">&quot;Zzzyt&quot;</span></span><br><span class="line">            <span class="keyword">elif</span> txt <span class="keyword">not</span> <span class="keyword">in</span> d:</span><br><span class="line">                d[txt]=<span class="string">&quot;Other&quot;</span></span><br><span class="line"><span class="comment">#            if txt!=None and txt not in d:</span></span><br><span class="line"><span class="comment">#                d[txt]=usr</span></span><br><span class="line"><span class="comment">#            elif d[txt]!=usr and d[txt]!=&quot;Zzzyt:</span></span><br><span class="line"><span class="comment">#                d[txt]=&quot;Common&quot;</span></span><br><span class="line"></span><br><span class="line">count=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> d:</span><br><span class="line">    count+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> d[i]==<span class="string">&quot;Zzzyt&quot;</span>:</span><br><span class="line">        print(i,<span class="string">&quot;Zzzyt&quot;</span>,sep=<span class="string">&quot;,&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(i,<span class="string">&quot;Not Zzzyt&quot;</span>,sep=<span class="string">&quot;,&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="第二步-导入数据到Create-ML"><a href="#第二步-导入数据到Create-ML" class="headerlink" title="第二步 导入数据到Create ML"></a>第二步 导入数据到Create ML</h1><p>将输出文件导入到Create ML中，进行简单训练。 （毕竟我也是ML弟弟，也懒得花时间真正去写tf什么的）</p>
+<h1 id="第三步-查看效果"><a href="#第三步-查看效果" class="headerlink" title="第三步 查看效果"></a>第三步 查看效果</h1><p><img src="https://i.loli.net/2020/12/05/RwBYFy2hkG1f6M7.png" alt="啊啊啊"></p>
+<p>经过简单测试，本模型已经可以简单识别Zzzyt语言习惯，比如im，：？等常用短语表情。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/12/05/zzzyt-ml/" data-id="ckibsvqkj002a1hll0doi9320" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CreateML/" rel="tag">CreateML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li></ul>
 
     </footer>
   </div>
@@ -210,7 +260,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/05/NOIP-2020%E6%B8%B8%E8%AE%B0/" data-id="ckibq2ee4000z1hl28qbf1eh5" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/05/NOIP-2020%E6%B8%B8%E8%AE%B0/" data-id="ckibsvqjv000y1hlla3c4b8ty" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
@@ -288,7 +338,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/29/max-world-release/" data-id="ckibq2eev00251hl238y808et" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/29/max-world-release/" data-id="ckibsvqke001z1hll6p1t0358" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li></ul>
@@ -354,7 +404,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/28/NFLSPC-3%E6%B8%B8%E8%AE%B0/" data-id="ckibq2ee3000x1hl29h8t1j1o" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/28/NFLSPC-3%E6%B8%B8%E8%AE%B0/" data-id="ckibsvqju000w1hll15rnc7uy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
@@ -403,7 +453,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/19/touhou-r18-research/" data-id="ckibq2eew00271hl2ayqaee4g" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/19/touhou-r18-research/" data-id="ckibsvqkh00251hll9esafbt1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -446,7 +496,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/17/scp-s2-2020-update/" data-id="ckibq2eer00201hl26bgw18vn" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/17/scp-s2-2020-update/" data-id="ckibsvqkg00221hll71h5g5ky" class="article-share-link">Share</a>
       
       
     </footer>
@@ -550,7 +600,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/16/java-3/" data-id="ckibq2eeq001x1hl24i682215" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/16/java-3/" data-id="ckibsvqkd001w1hll5wqxh8b8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
@@ -624,138 +674,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/13/get-good-at-kotlin-round/" data-id="ckibq2eeb001g1hl2cjzoe5cn" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-CSP-S2-2020游记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" class="article-date">
-  <time datetime="2020-11-12T22:07:27.000Z" itemprop="datePublished">2020-11-12</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/OI/">OI</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/">CSP-S2 2020游记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>啊，又是一年CSP（不过是第二年啊）</p>
-<h1 id="TL-DR"><a href="#TL-DR" class="headerlink" title="TL;DR"></a>TL;DR</h1><p>分数表：</p>
-<table>
-<thead>
-<tr>
-<th>Platform</th>
-<th>T1</th>
-<th>T2</th>
-<th>T3</th>
-<th>T4</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>OITIKU</td>
-<td>90</td>
-<td>95</td>
-<td>20</td>
-<td>40</td>
-</tr>
-<tr>
-<td>Luogu</td>
-<td>90</td>
-<td>65</td>
-<td>20</td>
-<td>40</td>
-</tr>
-<tr>
-<td>Newcoder</td>
-<td>90</td>
-<td>85</td>
-<td>30</td>
-<td>40</td>
-</tr>
-<tr>
-<td>Luogu(Official)</td>
-<td>90</td>
-<td>90</td>
-<td>20</td>
-<td>40</td>
-</tr>
-<tr>
-<td>CCF</td>
-<td>90</td>
-<td>100</td>
-<td>20</td>
-<td>40</td>
-</tr>
-</tbody></table>
-<h1 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h1><p>一上来先看了T1，震惊！！竟然是大模拟！！数学BYEBYE,我要打表。</p>
-<p>不过，当时打表的时候连续写错3次“求一个日期的下一天”。xs</p>
-<p>然后40分钟不到大样例就过了。</p>
-<h1 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h1><p>我一看，好像很难的样子！！再一看，水题！！</p>
-<p>轻松秒掉，然后一看不对劲，<code>1ll&lt;&lt;i</code> 写成了 <code>1&lt;&lt;i</code></p>
-<p>再一看，要用 <code>unsigned long long</code>。怎么读入呢？<code>%lld</code>，<code>%ull</code> 还是 <code>%llu</code>（是我） 呢？</p>
-<p>然后再一看答案会爆ULL_MAX！！于是特判了一个点</p>
-<p>吃⑩吧CCF出这种坑人题。</p>
-<p>30分钟做完</p>
-<h1 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h1><p>不会，打了许多暴力，然后挂了许多。考场上脑残连LAZY标记都想不出来。</p>
-<h1 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h1><p>暴力。</p>
-<h1 id="自测"><a href="#自测" class="headerlink" title="自测"></a>自测</h1><h2 id="OITIKU"><a href="#OITIKU" class="headerlink" title="OITIKU"></a>OITIKU</h2><p>今年的自测有点意思……首先是OITIKU，我一测：</p>
-<ul>
-<li>T1忘记考虑输入=0，瞬间90</li>
-<li>T2莫名其妙T一个点，95</li>
-<li>T3只有20了？？</li>
-<li>T4正常</li>
-</ul>
-<p>然后是</p>
-<blockquote>
-<p>我T3暴力拿了75！！</p>
-<p>–Zhuky.RLG</p>
-</blockquote>
-<p>心态崩了。</p>
-<h2 id="Luogu"><a href="#Luogu" class="headerlink" title="Luogu"></a>Luogu</h2><p>于是我又到洛谷上平衡一下心态。我再一测：</p>
-<ul>
-<li>T1还是90</li>
-<li>T2全T了，只剩65</li>
-<li>T3还是20</li>
-<li>T4稳稳地40</li>
-</ul>
-<p>这可不行！！！</p>
-<h2 id="Newcoder"><a href="#Newcoder" class="headerlink" title="Newcoder"></a>Newcoder</h2><p>我一看，好地方。我一测：</p>
-<ul>
-<li>T1直接0分了</li>
-<li>T2 85</li>
-<li>T3 竟然跑到了30</li>
-<li>T4还是40</li>
-</ul>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>今年自测什么乱七八糟的？？？看来需要祈祷官方数据比较良心了。</p>
-<h2 id="UPD-2020-11-17"><a href="#UPD-2020-11-17" class="headerlink" title="UPD:2020/11/17"></a>UPD:2020/11/17</h2><p>成绩出来了，事实上CCF的机子跑得飞快，非常感谢。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" data-id="ckibq2eds000c1hl2el8cerxu" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/13/get-good-at-kotlin-round/" data-id="ckibsvqk3001g1hll5u9d07oe" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
@@ -782,7 +701,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/MC-Mod/">MC Mod</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/">Game</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Mahjong/">Mahjong</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/OC-Setting/">OC Setting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/Segicverse/">Segicverse</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tip/">Tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Apple/">Apple</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/MC-Mod/">MC Mod</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/">Game</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Mahjong/">Mahjong</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/OC-Setting/">OC Setting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/Segicverse/">Segicverse</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tip/">Tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a></li></ul>
     </div>
   </div>
 
@@ -792,7 +711,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/" rel="tag">Test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CreateML/" rel="tag">CreateML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test/" rel="tag">Test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
     </div>
   </div>
 
@@ -802,7 +721,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/Dev/" style="font-size: 15px;">Dev</a> <a href="/tags/English/" style="font-size: 18.33px;">English</a> <a href="/tags/Java/" style="font-size: 13.33px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 11.67px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OC/" style="font-size: 18.33px;">OC</a> <a href="/tags/OI/" style="font-size: 16.67px;">OI</a> <a href="/tags/Segicverse/" style="font-size: 13.33px;">Segicverse</a> <a href="/tags/Test/" style="font-size: 13.33px;">Test</a> <a href="/tags/Test-Blog/" style="font-size: 11.67px;">Test Blog</a> <a href="/tags/ZKY/" style="font-size: 13.33px;">ZKY</a>
+      <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 16px;">Dev</a> <a href="/tags/English/" style="font-size: 18px;">English</a> <a href="/tags/Java/" style="font-size: 14px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 12px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OC/" style="font-size: 18px;">OC</a> <a href="/tags/OI/" style="font-size: 16px;">OI</a> <a href="/tags/Segicverse/" style="font-size: 14px;">Segicverse</a> <a href="/tags/Test/" style="font-size: 14px;">Test</a> <a href="/tags/Test-Blog/" style="font-size: 12px;">Test Blog</a> <a href="/tags/ZKY/" style="font-size: 14px;">ZKY</a>
     </div>
   </div>
 
@@ -824,6 +743,10 @@
       <ul>
         
           <li>
+            <a href="/2020/12/05/zzzyt-ml/">Zzzyt语录判断器</a>
+          </li>
+        
+          <li>
             <a href="/2020/12/05/NOIP-2020%E6%B8%B8%E8%AE%B0/">NOIP 2020游记</a>
           </li>
         
@@ -837,10 +760,6 @@
         
           <li>
             <a href="/2020/11/19/touhou-r18-research/">Touhou R18 Rate Research</a>
-          </li>
-        
-          <li>
-            <a href="/2020/11/17/scp-s2-2020-update/">「CSP-S2 2020游记」更新</a>
           </li>
         
       </ul>
