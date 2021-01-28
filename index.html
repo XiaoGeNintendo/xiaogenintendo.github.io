@@ -115,10 +115,137 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="ckkap94tx001f1imd5a6r0g22" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="ckkg90tw7001g1ilh9bqz5gun" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Adding-Chars-In-PC2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/01/28/Adding-Chars-In-PC2/" class="article-date">
+  <time datetime="2021-01-28T10:02:00.000Z" itemprop="datePublished">2021-01-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/28/Adding-Chars-In-PC2/">Modding and Adding Characters to Pressing Competition 2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p><em>Pressing Competition 2</em> or <em>Typing Competition 2</em> is a Godot game which allows you to choose characters and fight against each other.</p>
+<p>It’s open-sourced under MIT <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source">here</a></p>
+<p>You can find the showcase <a target="_blank" rel="noopener" href="https://xgn.itch.io/pressing-competition-2">here</a></p>
+<p>It’s developed with Godot Mono 3.2.3</p>
+<h1 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h1><h2 id="Preparation"><a href="#Preparation" class="headerlink" title="Preparation"></a>Preparation</h2><p>What you need:</p>
+<ul>
+<li>Godot Mono 3.2.3 or later</li>
+<li>Source code from <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source">Github</a></li>
+</ul>
+<p>In the tutorial, you want to get ZJS from Hell Hole Studios into the game.</p>
+<h2 id="1-Import"><a href="#1-Import" class="headerlink" title="1. Import"></a>1. Import</h2><p>Download source code and import it as Godot project. You are done!</p>
+<h2 id="2-Adding-a-Character-Group"><a href="#2-Adding-a-Character-Group" class="headerlink" title="2. Adding a Character Group"></a>2. Adding a Character Group</h2><p>Create a new folder under <code>res://script/characters/Groups</code> called <code>HHS</code> and add a new script extending <code>CharGroup</code>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">extends CharGroup</span><br><span class="line">class_name HHSGroup <span class="comment">#Group Class Name</span></span><br><span class="line"></span><br><span class="line">func _init().(<span class="string">&quot;Hell Hole Studios&quot;</span>,[</span><br><span class="line">	ZJS.new() <span class="comment"># We will define ZJS later</span></span><br><span class="line">    ]):</span><br><span class="line">	<span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+<p>Provide two parameters to <code>super._init()</code>:</p>
+<ul>
+<li><code>name</code>:<em>String</em>, the name of the group</li>
+<li><code>chars</code>:<em>Array</em>, the <code>CharacterBase</code>s in this group</li>
+</ul>
+<p>Register your group at <code>res://script/characters/AvailableCharacters.gd</code>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">extends Node</span><br><span class="line"><span class="comment"># Contains all available characters in groups</span></span><br><span class="line">var chars=[</span><br><span class="line">	MainGroup.new(),</span><br><span class="line">	EoSDGroup.new(),</span><br><span class="line">	PCBGroup.new(),</span><br><span class="line">	INGroup.new(),</span><br><span class="line">	PoFVGroup.new(),</span><br><span class="line">    HHSGroup.new() <span class="comment">#Add here</span></span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-Adding-a-character"><a href="#3-Adding-a-character" class="headerlink" title="3. Adding a character"></a>3. Adding a character</h2><p>Create file <code>res://script/characters/Groups/HHS/ZJS.gd</code> extending <code>CharacterBase</code>:</p>
+<p>Let’s say ZJS’s skill is to deal 1000 damage to himself</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">extends CharacterBase</span><br><span class="line"></span><br><span class="line">class_name ZJS</span><br><span class="line"></span><br><span class="line">func onSkill(me,enemy,scene):</span><br><span class="line">    scene.emit_signal(<span class="string">&quot;damage_given&quot;</span>,me,<span class="number">1000</span>)</span><br><span class="line">	<span class="keyword">pass</span></span><br><span class="line">	</span><br><span class="line">func _init():</span><br><span class="line">	self.maxhp=<span class="number">450</span></span><br><span class="line">	self.atk=<span class="number">1</span></span><br><span class="line">	self.name=<span class="string">&quot;ZJS&quot;</span></span><br><span class="line">	self.skillCost=<span class="number">500</span></span><br><span class="line">	self.image=<span class="string">&quot;res://pic/ZJS.png&quot;</span></span><br><span class="line">	self.heal=<span class="number">1</span></span><br><span class="line">	self.desc=<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">Skill: Crazy Dance</span></span><br><span class="line"><span class="string">Dance crazily and hurt yourself by 1000 HP</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-1-The-init-function"><a href="#3-1-The-init-function" class="headerlink" title="3.1 The init function"></a>3.1 The init function</h3><p>Define the following properities here:</p>
+<ul>
+<li><code>maxhp</code>:<em>Int</em>(1-1000)</li>
+<li><code>atk</code>:<em>Int</em>(1-5)</li>
+<li><code>name</code>:<em>String</em></li>
+<li><code>skillCost</code>:<em>Int</em>(1-2000). Don’t set it to 0 unless it’s a passive skill.</li>
+<li><code>image</code>:<em>String</em> Image path</li>
+<li><code>heal</code>:<em>Int</em>(1-5)</li>
+<li><code>desc</code>:<em>String</em> Description</li>
+<li><code>skillType</code>:<em>Int</em>(0-1). Can be ignored. Set this to 1 to set the skill to be a passive type.</li>
+</ul>
+<h3 id="3-2-The-onSkill-function"><a href="#3-2-The-onSkill-function" class="headerlink" title="3.2 The onSkill function"></a>3.2 The onSkill function</h3><p><code>onSkill</code> function comes with 3 parameters. It’s called when player uses a skill. It’s called every frame if it’s a passive skill.</p>
+<ul>
+<li><code>me</code>:<em>Character</em> the skill user</li>
+<li><code>enemy</code>:<em>Character</em> skill user’s enemy</li>
+<li><code>scene</code>:<em>GameSubview</em> current GameSubview scene</li>
+</ul>
+<p>Let’s take a look at what’s in the class <code>Character</code> so you know what you can do:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Character.gd</span></span><br><span class="line">extends Object</span><br><span class="line"></span><br><span class="line">class_name Character</span><br><span class="line"></span><br><span class="line">var hp: int <span class="comment"># Current HP.</span></span><br><span class="line">var base: CharacterBase <span class="comment"># It&#x27;s character base. READ-ONLY</span></span><br><span class="line">var skillGauge: int <span class="comment"># Current Skill Gauge</span></span><br><span class="line">var status: Array <span class="comment"># Current Buffs</span></span><br><span class="line">var maxhp: int <span class="comment"># Current Max HP</span></span><br><span class="line">var skillCost: int <span class="comment"># Current Skill Cost</span></span><br><span class="line">var atk: int <span class="comment"># Current Attack</span></span><br><span class="line">var heal: int <span class="comment"># Current Heal</span></span><br><span class="line">var role: int <span class="comment">#Role: 0 = player 1, 1 = player 2. MODIFY IT MAY CAUSE UNEXPECTED BEHAVIOUR</span></span><br><span class="line">var vars: Dictionary = &#123;&#125; <span class="comment">#Custom Variables you can store</span></span><br><span class="line">var ai: int <span class="comment">#AI Level 0=player control</span></span><br></pre></td></tr></table></figure>
+
+<p>CharacterBase uses Singleton design method so:</p>
+<p><strong><code>base</code> is read-only. Writing it will cause next round to be corrupted. Write to corresponding variables instead</strong></p>
+<p><strong>Do not use <code>self</code> or internal variables in onSkill. Writing it will cause next round to be corrupted. Write to <code>me</code> or <code>me.vars</code> instead</strong></p>
+<p><strong>Use <code>scene.emit_signal(&quot;damage_given&quot;,...,...)</code> to deal damage or the HP will not be displayed correctly</strong></p>
+<p>Some common scenario:</p>
+<ul>
+<li>Increase attack by 1: <code>me.atk+=1</code></li>
+<li>Double skill cost: <code>enemy.skillCost*=2</code></li>
+<li>Adding Status: <code>enemy.status.add(GDBuff.new(&quot;test&quot;,600,1,2))</code></li>
+<li>Deal 60 damage: <code>scene.emit_signal(&quot;damage_given&quot;,enemy,60)</code></li>
+<li>Heal 60 HP: <code>scene.emit_signal(&quot;damage_given&quot;,me,-60)</code></li>
+<li>Writing to user variable: <code>me.vars[&quot;123&quot;]+=1</code></li>
+<li>Writing to scene objects: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/main/script/characters/Groups/IN/Lorelei.gd">Lorelei</a></li>
+</ul>
+<h3 id="3-3-Adding-pictures"><a href="#3-3-Adding-pictures" class="headerlink" title="3.3 Adding pictures"></a>3.3 Adding pictures</h3><p>The last step is to put your picture in the path you set to. Make sure it’s facing right. It’s recommended to put it under <code>res://pic</code></p>
+<h2 id="4-Status"><a href="#4-Status" class="headerlink" title="4. Status"></a>4. Status</h2><p>Use status to create lengthy events!</p>
+<h3 id="4-1-Built-in-Status"><a href="#4-1-Built-in-Status" class="headerlink" title="4.1 Built-in Status"></a>4.1 Built-in Status</h3><p>System comes with built-in status:</p>
+<ul>
+<li><p><code>GDBuff.new(name,duration,damage,interval)</code> will inflict a status called <code>name</code> and is <code>duration</code> frames long. It will cause <code>damage</code> damage every <code>interval</code> frames</p>
+</li>
+<li><p><code>GSBuff.new(name,duration,damage,interval)</code> will inflict a status called <code>name</code> and is <code>duration</code> frames long. It will lose <code>damage</code> skill gauge every <code>interval</code> frames</p>
+</li>
+<li><p><code>GDRBuff.new(name,duration,da,db,interval)</code> will inflict a status called <code>name</code> and is <code>duration</code> frames long. It will cause <code>da</code> to <code>db</code> damage randomly every <code>interval</code> frames</p>
+</li>
+</ul>
+<h3 id="4-2-Custom-Status"><a href="#4-2-Custom-Status" class="headerlink" title="4.2 Custom Status"></a>4.2 Custom Status</h3><p>Custom Status should extends <code>Status</code>:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">extends Status</span><br><span class="line"></span><br><span class="line">class_name TimestopBuff <span class="comment">#Class name</span></span><br><span class="line"></span><br><span class="line">func onCast(me, scene): <span class="comment">#Required. Called every frame. me is a Character and scene is a GameSubview</span></span><br><span class="line">	me.skillGauge=<span class="number">0</span></span><br><span class="line">	</span><br><span class="line">func _init():</span><br><span class="line">	self.name=<span class="string">&quot;Timestop&quot;</span> <span class="comment">#Required</span></span><br><span class="line">	self.time=<span class="number">300</span> <span class="comment">#Required. In frames</span></span><br></pre></td></tr></table></figure>
+
+<p>This is another example:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">extends Status</span><br><span class="line"></span><br><span class="line">class_name YuyukoBuff</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">func onCast(me, scene):</span><br><span class="line">	<span class="keyword">if</span> me.hp&lt;=me.maxhp*<span class="number">0.2</span>:</span><br><span class="line">		scene.emit_signal(<span class="string">&quot;damage_given&quot;</span>,me,-me.maxhp)</span><br><span class="line">		self.time=<span class="number">0</span></span><br><span class="line">func _init():</span><br><span class="line">	self.name=<span class="string">&quot;Barrier&quot;</span></span><br><span class="line">	self.time=<span class="number">600</span></span><br></pre></td></tr></table></figure>
+
+<p>Note that using self and internal variables are okay:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">extends Status</span><br><span class="line"></span><br><span class="line">class_name GDBuff</span><br><span class="line"></span><br><span class="line">var val=<span class="number">0</span></span><br><span class="line">var interval=<span class="number">0</span></span><br><span class="line">var damage=<span class="number">0</span></span><br><span class="line"></span><br><span class="line">func onCast(me, scene):</span><br><span class="line">	val+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">if</span> val%interval==<span class="number">0</span>:</span><br><span class="line">		scene.emit_signal(<span class="string">&quot;damage_given&quot;</span>,me,damage)</span><br><span class="line">func _init(name,time,damage,interval):</span><br><span class="line">	self.name=name</span><br><span class="line">	self.time=time</span><br><span class="line">	self.interval=interval</span><br><span class="line">	self.damage=damage</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-Global"><a href="#5-Global" class="headerlink" title="5. Global"></a>5. Global</h2><p><code>scene.Global</code> contains the Global variables, use them if you need:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Global.gd</span></span><br><span class="line">extends Node</span><br><span class="line">var p1: Character=Character.new(Reimu.new())</span><br><span class="line">var p2: Character=Character.new(Reimu.new())</span><br><span class="line"></span><br><span class="line">var incMana = <span class="number">2</span></span><br><span class="line">var decMana = <span class="number">1</span></span><br><span class="line">var death = <span class="number">0</span> <span class="comment">#Sudden Death damage</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="6-Refer-to-source-code-for-30-examples"><a href="#6-Refer-to-source-code-for-30-examples" class="headerlink" title="6. Refer to source code for 30+ examples!"></a>6. Refer to source code for 30+ examples!</h2><h2 id="7-Build-and-release"><a href="#7-Build-and-release" class="headerlink" title="7. Build and release!"></a>7. Build and release!</h2><h1 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h1><p>You should release your own version of PC2 with credits and link to the original version. You can also have your characters included in the main version with a pull request.</p>
+<p>So, with that being said, enjoy modding and creating!</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2021/01/28/Adding-Chars-In-PC2/" data-id="ckkg90tvk000c1ilhgjgp1izd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
 
     </footer>
   </div>
@@ -174,7 +301,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/24/pc2release/" data-id="ckkap94ul00351imd0ga7e7bj" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/24/pc2release/" data-id="ckkg90twx00361ilh9rpahbdv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -674,7 +801,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/19/touhou-status/" data-id="ckkap94ur003j1imddcjjfxim" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/19/touhou-status/" data-id="ckkg90tx2003l1ilh0d6q3qv7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li></ul>
@@ -798,7 +925,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/18/about-me/" data-id="ckkap94u2001m1imdcciv254t" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/18/about-me/" data-id="ckkg90twc001n1ilhh4bbhffc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -844,7 +971,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/16/jizou-osz-release/" data-id="ckkap94uf002m1imdgek08vtg" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/16/jizou-osz-release/" data-id="ckkg90twq002l1ilhbdiagn0v" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Osu/" rel="tag">Osu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -887,7 +1014,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/01/hello-2021/" data-id="ckkap94u7001z1imddlxjd9i1" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/01/hello-2021/" data-id="ckkg90twg001y1ilh4wpr4u4k" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -936,7 +1063,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/30/animate-bg-release/" data-id="ckkap94u4001r1imd7j3a28r4" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/30/animate-bg-release/" data-id="ckkg90twd001q1ilhcsae528e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -1027,7 +1154,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/26/zky2020THO%E6%B8%B8%E8%AE%B0/" data-id="ckkap94ut003m1imd6zmb1qmq" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/26/zky2020THO%E6%B8%B8%E8%AE%B0/" data-id="ckkg90tx4003p1ilh50hcaxi0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -1097,156 +1224,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/26/NJTho-2020%E6%B8%B8%E8%AE%B0/" data-id="ckkap94tt00121imdap8l6mdo" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/26/NJTho-2020%E6%B8%B8%E8%AE%B0/" data-id="ckkg90tw100161ilhhqss3iig" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Afterlife-LSS-Short" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/12/19/Afterlife-LSS-Short/" class="article-date">
-  <time datetime="2020-12-19T21:47:00.000Z" itemprop="datePublished">2020-12-19</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Literature/">Literature</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/12/19/Afterlife-LSS-Short/">Afterlife - LSS Short</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><p>I hate writing long articles, so I will make the story shorter.</p>
-<p>Oh right, LSS does not exist anymore. Then it means, this world will be forgotten and removed soon. Don’t feel bad, it’s only a branch after all! Read <a href="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc/">Further Reading: How to know my OC</a> first, won’t you?</p>
-<h1 id="ONE"><a href="#ONE" class="headerlink" title="ONE"></a>ONE</h1><blockquote>
-<p>The wheels of fortune,</p>
-<p>going round and round.</p>
-<p>Carrying greetings and farewells, happiness and sorrow, birth and death.</p>
-<p>When it halts finally,</p>
-<p>Everything will be silence.</p>
-</blockquote>
-<p>……</p>
-<p>No one knows why, no one knows how, but Ninetail is dead. There’s a rumor saying that she was murdered. But no one can confirm it anymore.</p>
-<p>“…… As the most beloved maid for Miss Ninetail. I feel extremely guilty and sad. I can’t protect her.”</p>
-<p>“However, as she always have told me: I have to live on my own. So, in order to follow her after-death order, I, Hikari are determined to live independently!” </p>
-<p>“……”</p>
-<p>That’s Hikari. She speaks with eyes of fire of enthusiastic and a holding fist. Unlike those weak creatures like Ookami, XGN and Doragon, she seems not to be dropping any tears, even not a sense of sadness. Maybe that’s how she was trained as a maid at the first place?</p>
-<p>“Hikari, that’s optimistic of you to say that~ I was moved by that speech.” said XGN, sobbing quietly, “I believe you can do it! You are PROFESSIONAL, after all!”</p>
-<p>“Believe me! I will still treat you like my ex-master!”</p>
-<p>Wagging her tail, pointing out her fingers at XGN, smiling as her, this is our adorable and affectionate Hikari.</p>
-<h1 id="TWO"><a href="#TWO" class="headerlink" title="TWO"></a>TWO</h1><p>House.</p>
-<p><em>Ring, ring</em></p>
-<p><em>Knock, knock</em></p>
-<p>“Master XGN, it’s time to get up~ Time for a new school day~” Behind the doors was the gentle voice of Hikari. It’s not hard to imagine a dragon in its human form knocking with a big smile.</p>
-<p>“Today’s breakfast is sweet bean bread and my speciality, cheese cake!”</p>
-<p>On the table there were glasses of milk with a little steam coming out, golden brown bread with porcelain plates holding perfect and charming cakes. What’s more, a glorious red sheet was holding all of these things, making it more appetizing.</p>
-<p>“Wow! That’s, that’s, far more than LUXURIOUS!” shouted Doragon.</p>
-<p>“It tastes good too!”</p>
-<p>“Hey! Don’t eat so fast!”</p>
-<p>“How much time does it take to make all these?”</p>
-<p>“…..”</p>
-<p>“If Miss Ninetail were here, she would be really amazed at your food! I really hope she could enjoy this!” XGN looked at Hikari, who had been standing back waiting. He wanted to cheer her up, apparently.</p>
-<p>“Thank you for appreciation!”</p>
-<p>Thus, she watched XGN and his classmates left.</p>
-<p>“So what shall I do now?” Hikari sat down, began combing her scales on tail, “When will Miss Ninetail be back?”</p>
-<p>“So they REALLY thought Miss Ninetail died, how stupid.” giggled Hikari, “Don’t they realize that last time Miss Ninetail ‘died’, she returned only in 2 weeks? And, how could such a strong and god-like fox die with no clue?”</p>
-<p>Outside, there was noise from cars, roaring down the street. Inside, there was our Hikari, sitting quietly.</p>
-<h1 id="THREE"><a href="#THREE" class="headerlink" title="THREE"></a>THREE</h1><p>Kitchen.</p>
-<p>“So, this should do it.” </p>
-<p>After nicely covered the cake with aluminum foil, Hikari put it inside the fridge.</p>
-<p>“If Miss Ninetail comes back early, she will be able to enjoy this food without waiting~”</p>
-<p>“And, how about I clean the room for her? It will be a BIG surprise~”, giggled Hikari, again.</p>
-<p>After a hour’s work or less, Ninetail’s room became as tidy as new, shining in the sunlight.</p>
-<p>“Report: Miss Ninetail may be back in any minute, so I have to be ready! And I shall not let her friends down, or she will blame me when she comes back! Exp. Date: 12/19.”</p>
-<p>……</p>
-<p>“Maybe I should keep two cakes. Everyone needs to eat after all”</p>
-<p>Hikari put another cake into the fridge.</p>
-<p>“Today I will clear her wardrobe too!”</p>
-<p>Passionate, lovely as her, this is our Hikari.</p>
-<p>……</p>
-<p>One day, two days, three days. Then there was seven leaving and greeting.</p>
-<p>Soon, the fridge was full of dim sum and desserts of different types. The house had been cleaned 10 or 100 times.</p>
-<p>“Calm down, Hikari.. You are being TOO passionate. Don’t push yourself too hard.” said XGN with an embarassed face.</p>
-<p>“OK… I will try not to overdo it… I will only do what you say from now on.”</p>
-<p>Two weeks, three weeks, and Christmas came. However, there was no symbol that Ninetail would be back.</p>
-<p>The cakes in fridge had turned bad, there was dust covering Ninetail’s room again.</p>
-<p>“Report: Nothing today. Exp. Date: 12/25”</p>
-<p>“Report: Nothing today. Exp. Date: 12/26”</p>
-<p>“Report: Nothing today. Exp. Date: 12/30”</p>
-<p>“Report: Nothing today. Exp. Date: 1/1”</p>
-<p>“……”</p>
-<p>This is our Hikari, who gets bored easily for doing nothing.</p>
-<h1 id="FOUR"><a href="#FOUR" class="headerlink" title="FOUR"></a>FOUR</h1><p>It’s 1st Jan finally.</p>
-<p>Living room.</p>
-<p>“Hey! Do you have any questions to ask me today? I can PREDICT your future and fortune for the next year! But one question only, OK?” said XGN proudly.</p>
-<p>XGN knows almost everything that happened in the past and would take place in the future.</p>
-<p>“When will Miss Ninetail be back?” whispered Hikari to XGN. She wasn’t that enthusiastic and happy as December now, it seemed.</p>
-<p>“Hasn’t she passed away, about 1 month ago? You should know that.”</p>
-<p>“Oh..? Aren’t you pretendi..? Sorry… Thank you very much.” </p>
-<p>Hikari gave XGN a big hug, nearly making him suffocate.</p>
-<h1 id="FIVE"><a href="#FIVE" class="headerlink" title="FIVE"></a>FIVE</h1><p>Living Room. 2nd Jan.</p>
-<p>“See you, my friends~”</p>
-<p>“See you afternoon!”</p>
-<p>Sighed, and again. After sending them off, Hikari opened the door which she hadn’t touched in half a month.</p>
-<p>The bed made a very loud noise, but she climbed on. dipping feather in the ink, as she wrote:</p>
-<blockquote>
-<p>A contract can make a life.It can also leave a wanderer.</p>
-</blockquote>
-<p>She laid on bed, with a glass bottle in her hand.</p>
-<p>“Sorry. This is farewell……? I hope it’s not……?”</p>
-<p>This is our Hikari. Lying peacefully and silently, sparkling in the warm sunlight.</p>
-<p>With an eternal smile as she, with a dream and goal like this, this is the greatest happiness one can have, in her standard.</p>
-<p><strong>THE END OF CHAPTER AFTERLIFE</strong></p>
-<h1 id="Some-murmur"><a href="#Some-murmur" class="headerlink" title="Some murmur"></a>Some murmur</h1><p>I hate writing stuff. They are really a waste of time.</p>
-<p>This time, as always, I wrote something too common to be good. You have guessed its ending in the first chapter, haven’t you?</p>
-<p>Ah, as for Hikari. She is a dragon heavily controlled and limited by the contract. To her, Ninetail was her whole purpose for life. Yes, she was born to be her maid. Knowing this, why not re-read the article again?</p>
-<p>I won’t explain how Ninetail died. <del>I haven’t thought of it yet</del></p>
-<p>Anyway, I hope you find this article very boring as much as I do.</p>
-<p>BTW, have you played Ace Attorney 4? The poem, yes, you know it.</p>
-<p>Damn, I want to sleep when writing this. I really want to make Hikari’s death longer and more fancy, but it turns out bad actually. Nice try.</p>
-<h1 id="Quick-Q-and-A"><a href="#Quick-Q-and-A" class="headerlink" title="Quick Q and A"></a>Quick Q and A</h1><p>Q: Is Ninetail really dead?</p>
-<p>A: Yes</p>
-<p>Q: Is Hikari dead?</p>
-<p>A: Yes</p>
-<p>Q: Will we still be able to see them in future problems?</p>
-<p>A: Yes</p>
-<p>Q: You suck at English!</p>
-<p>A: Yes</p>
-<p>Q: What takes you so long to update this?</p>
-<p>A: <em>Spice and Wolf</em></p>
-<p>Q: You are such an animal!</p>
-<p>A: Yes, as I want to be.</p>
-<p>Q: Is Hikari really a dragon?</p>
-<p>A: Yes</p>
-<p>Q: Who are these bullshits??</p>
-<p>A: Read the link over top.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/19/Afterlife-LSS-Short/" data-id="ckkap94te000c1imd46yibtpg" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
 
     </footer>
   </div>
@@ -1290,7 +1271,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17.14px;">Dev</a> <a href="/tags/English/" style="font-size: 20px;">English</a> <a href="/tags/Java/" style="font-size: 12.86px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 12.86px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 12.86px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18.57px;">OC</a> <a href="/tags/OI/" style="font-size: 17.14px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 15.71px;">Release</a> <a href="/tags/Segicverse/" style="font-size: 12.86px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 11.43px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 11.43px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 14.29px;">ZKY</a>
+      <a href="/tags/Chinese/" style="font-size: 18.75px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17.5px;">Dev</a> <a href="/tags/English/" style="font-size: 20px;">English</a> <a href="/tags/Java/" style="font-size: 12.5px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 12.5px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 12.5px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 17.5px;">OC</a> <a href="/tags/OI/" style="font-size: 16.25px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 15px;">Release</a> <a href="/tags/Segicverse/" style="font-size: 12.5px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 11.25px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 11.25px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 13.75px;">ZKY</a>
     </div>
   </div>
 
@@ -1312,6 +1293,10 @@
       <ul>
         
           <li>
+            <a href="/2021/01/28/Adding-Chars-In-PC2/">Modding and Adding Characters to Pressing Competition 2</a>
+          </li>
+        
+          <li>
             <a href="/2021/01/24/pc2release/">Pressing Competition 2 Release</a>
           </li>
         
@@ -1325,10 +1310,6 @@
         
           <li>
             <a href="/2021/01/16/jizou-osz-release/">Jizou Osu beatmap release</a>
-          </li>
-        
-          <li>
-            <a href="/2021/01/01/hello-2021/">Goodbye 2020! Hello 2021!</a>
           </li>
         
       </ul>
