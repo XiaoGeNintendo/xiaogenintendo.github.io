@@ -15,7 +15,7 @@
 <meta property="og:description" content="IntroductionPressing Competition 2 or Typing Competition 2 is a Godot game which allows you to choose characters and fight against each other. It’s open-sourced under MIT here You can find the showcas">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-28T10:02:00.000Z">
-<meta property="article:modified_time" content="2021-01-28T14:49:28.237Z">
+<meta property="article:modified_time" content="2021-01-30T13:16:19.918Z">
 <meta property="article:author" content="XGN">
 <meta property="article:tag" content="Dev">
 <meta property="article:tag" content="English">
@@ -108,6 +108,7 @@
 <li>Source code from <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source">Github</a></li>
 </ul>
 <p>In the tutorial, you want to get ZJS from Hell Hole Studios into the game.</p>
+<h2 id="0-Note"><a href="#0-Note" class="headerlink" title="0. Note"></a>0. Note</h2><p>This tutorial is updated on <em>2021/1/30</em> and is aimed for version 1.5</p>
 <h2 id="1-Import"><a href="#1-Import" class="headerlink" title="1. Import"></a>1. Import</h2><p>Download source code and import it as Godot project. You are done!</p>
 <h2 id="2-Adding-a-Character-Group"><a href="#2-Adding-a-Character-Group" class="headerlink" title="2. Adding a Character Group"></a>2. Adding a Character Group</h2><p>Create a new folder under <code>res://script/characters/Groups</code> called <code>HHS</code> and add a new script extending <code>CharGroup</code>:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">extends CharGroup</span><br><span class="line">class_name HHSGroup <span class="comment">#Group Class Name</span></span><br><span class="line"></span><br><span class="line">func _init().(<span class="string">&quot;Hell Hole Studios&quot;</span>,[</span><br><span class="line">	ZJS.new() <span class="comment"># We will define ZJS later</span></span><br><span class="line">	]):</span><br><span class="line">	<span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
@@ -148,7 +149,7 @@
 <p><strong><code>base</code> is read-only. Writing it will cause next round to be corrupted. Write to corresponding variables instead</strong></p>
 <p><strong>Do not use <code>self</code> or internal variables in onSkill. Writing it will cause next round to be corrupted. Write to <code>me</code> or <code>me.vars</code> instead</strong></p>
 <p><strong>Use <code>scene.emit_signal(&quot;damage_given&quot;,...,...)</code> to deal damage or the HP will not be displayed correctly</strong></p>
-<p>Some common scenario:</p>
+<p><strong>Some common scenario</strong></p>
 <ul>
 <li>Increase attack by 1: <code>me.atk+=1</code></li>
 <li>Double skill cost: <code>enemy.skillCost*=2</code></li>
@@ -156,7 +157,17 @@
 <li>Deal 60 damage: <code>scene.emit_signal(&quot;damage_given&quot;,enemy,60)</code></li>
 <li>Heal 60 HP: <code>scene.emit_signal(&quot;damage_given&quot;,me,-60)</code></li>
 <li>Writing to user variable: <code>me.vars[&quot;123&quot;]+=1</code></li>
-<li>Writing to scene objects: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/main/script/characters/Groups/IN/Lorelei.gd">Lorelei</a></li>
+<li>Writing to scene objects: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/b7aa7f0dde4513ed40ebb597e6b4e7c3705ab00a/script/characters/Groups/IN/Lorelei.gd#L6">Lorelei:6</a></li>
+<li>Initalizing a variable fast: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/b7aa7f0dde4513ed40ebb597e6b4e7c3705ab00a/script/characters/Groups/SA/Koishi.gd#L6">Koishi:6</a></li>
+</ul>
+<p><strong>Key controls(&gt;=1.5)</strong></p>
+<ul>
+<li>Use <code>Character.checkAction(&quot;attack/defense/skill/gauge&quot;)</code> to check if a character is attacking/healing/gauge-filling/using skill at the same frame this is called.</li>
+<li><code>Character.key</code> holds the bitmask for the actions at this frame</li>
+<li>Use <code>Character.checkA1(&quot;attack/defense/skill/gauge&quot;)</code> to check if a key is <strong>just</strong> pressed</li>
+<li>Use <code>Character.checkA2(&quot;attack/defense/skill/gauge&quot;)</code> to check if a key is pressed/hold</li>
+<li>Use <code>Character.checkB1(&quot;attack/defense/skill/gauge&quot;,default)</code> to check if a key is <strong>just</strong> pressed or return default if it’s AI</li>
+<li>Use <code>Character.checkB2(&quot;attack/defense/skill/gauge&quot;,default)</code> to check if a key is pressed/hold or return default if it’s AI</li>
 </ul>
 <h3 id="3-3-Adding-pictures"><a href="#3-3-Adding-pictures" class="headerlink" title="3.3 Adding pictures"></a>3.3 Adding pictures</h3><p>The last step is to put your picture in the path you set to. Make sure it’s facing right. It’s recommended to put it under <code>res://pic</code></p>
 <h2 id="4-Status"><a href="#4-Status" class="headerlink" title="4. Status"></a>4. Status</h2><p>Use status to create lengthy events!</p>
@@ -187,7 +198,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/28/Adding-Chars-In-PC2/" data-id="ckkgz4ma8000c1hny9zdrhaei" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/28/Adding-Chars-In-PC2/" data-id="ckkjqoewe000c1irn133scjbp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
