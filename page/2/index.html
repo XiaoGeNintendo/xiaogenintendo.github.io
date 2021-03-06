@@ -106,7 +106,8 @@
 <li>Source code from <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source">Github</a></li>
 </ul>
 <p>In the tutorial, you want to get ZJS from Hell Hole Studios into the game.</p>
-<h2 id="0-Note"><a href="#0-Note" class="headerlink" title="0. Note"></a>0. Note</h2><p>This tutorial is updated on <em>2021/1/30</em> and is aimed for version 1.5</p>
+<h2 id="0-Note"><a href="#0-Note" class="headerlink" title="0. Note"></a>0. Note</h2><p><del>This tutorial is updated on <em>2021/1/30</em> and is aimed for version 1.5</del></p>
+<p>This tutorial is updated agin on <em>2021/3/6</em> to match 1.10</p>
 <h2 id="1-Import"><a href="#1-Import" class="headerlink" title="1. Import"></a>1. Import</h2><p>Download source code and import it as Godot project. You are done!</p>
 <h2 id="2-Adding-a-Character-Group"><a href="#2-Adding-a-Character-Group" class="headerlink" title="2. Adding a Character Group"></a>2. Adding a Character Group</h2><p>Create a new folder under <code>res://script/characters/Groups</code> called <code>HHS</code> and add a new script extending <code>CharGroup</code>:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">extends CharGroup</span><br><span class="line">class_name HHSGroup <span class="comment">#Group Class Name</span></span><br><span class="line"></span><br><span class="line">func _init().(<span class="string">&quot;Hell Hole Studios&quot;</span>,[</span><br><span class="line">	ZJS.new() <span class="comment"># We will define ZJS later</span></span><br><span class="line">	]):</span><br><span class="line">	<span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
@@ -121,9 +122,9 @@
 
 <h2 id="3-Adding-a-character"><a href="#3-Adding-a-character" class="headerlink" title="3. Adding a character"></a>3. Adding a character</h2><p>Create file <code>res://script/characters/Groups/HHS/ZJS.gd</code> extending <code>CharacterBase</code>:</p>
 <p>Let’s say ZJS’s skill is to deal 1000 damage to himself</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">extends CharacterBase</span><br><span class="line"></span><br><span class="line">class_name ZJS</span><br><span class="line"></span><br><span class="line">func onSkill(me,enemy,scene):</span><br><span class="line">	scene.emit_signal(<span class="string">&quot;damage_given&quot;</span>,me,<span class="number">1000</span>)</span><br><span class="line">	</span><br><span class="line">func _init():</span><br><span class="line">	self.maxhp=<span class="number">450</span></span><br><span class="line">	self.atk=<span class="number">1</span></span><br><span class="line">	self.name=<span class="string">&quot;ZJS&quot;</span></span><br><span class="line">	self.skillCost=<span class="number">500</span></span><br><span class="line">	self.image=<span class="string">&quot;res://pic/ZJS.png&quot;</span></span><br><span class="line">	self.heal=<span class="number">1</span></span><br><span class="line">	self.desc=<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">Skill: Crazy Dance</span></span><br><span class="line"><span class="string">Dance crazily and hurt yourself by 1000 HP</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">extends CharacterBase</span><br><span class="line"></span><br><span class="line">class_name ZJS</span><br><span class="line"></span><br><span class="line"><span class="comment"># Only after 1.10</span></span><br><span class="line">func onSkillA(me,sub,enemy,enemySub,scene,isSub):</span><br><span class="line">	scene.emit_signal(<span class="string">&quot;damage_given&quot;</span>,me,<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Before 1.10:</span></span><br><span class="line"><span class="comment"># func onSkill(me,enemy,scene):</span></span><br><span class="line"><span class="comment"># 	scene.emit_signal(&quot;damage_given&quot;,me,1000)</span></span><br><span class="line"></span><br><span class="line">func _init():</span><br><span class="line">	self.maxhp=<span class="number">450</span></span><br><span class="line">	self.atk=<span class="number">1</span></span><br><span class="line">	self.name=<span class="string">&quot;ZJS&quot;</span></span><br><span class="line">	self.skillCost=<span class="number">500</span></span><br><span class="line">	self.image=<span class="string">&quot;res://pic/ZJS.png&quot;</span></span><br><span class="line">	self.heal=<span class="number">1</span></span><br><span class="line">	self.version=<span class="number">1</span> <span class="comment"># Only after 1.10</span></span><br><span class="line">	self.desc=<span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">Skill: Crazy Dance</span></span><br><span class="line"><span class="string">Dance crazily and hurt yourself by 1000 HP</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="3-1-The-init-function"><a href="#3-1-The-init-function" class="headerlink" title="3.1 The init function"></a>3.1 The init function</h3><p>Define the following properities here:</p>
+<h3 id="3-1-The-init-function"><a href="#3-1-The-init-function" class="headerlink" title="3.1 The init function"></a>3.1 The init function</h3><p>Define the following properties here:</p>
 <ul>
 <li><code>maxhp</code>:<em>Int</em>(1-1000)</li>
 <li><code>atk</code>:<em>Int</em>(1-5)</li>
@@ -132,20 +133,31 @@
 <li><code>image</code>:<em>String</em> Image path</li>
 <li><code>heal</code>:<em>Int</em>(1-5)</li>
 <li><code>desc</code>:<em>String</em> Description</li>
-<li><code>skillType</code>:<em>Int</em>(0-1). Can be ignored. Set this to 1 to set the skill to be a passive type.</li>
+<li><code>skillType</code>:<em>Int</em>(0-1). Optional. Set this to 1 to set the skill to be a <em>passive</em> type.</li>
+<li><code>version</code>:<em>Int</em>(0-1). Optional. Set this to 1 for a more advanced skill overwrite. <strong>1 is recommended for &gt;=1.10 users</strong></li>
+<li><code>nosub</code>:<em>Bool</em> Optional. Setting this to true will make the character unavailable for minions</li>
 </ul>
-<h3 id="3-2-The-onSkill-function"><a href="#3-2-The-onSkill-function" class="headerlink" title="3.2 The onSkill function"></a>3.2 The onSkill function</h3><p><code>onSkill</code> function comes with 3 parameters. It’s called when player uses a skill. It’s called every frame if it’s a passive skill.</p>
+<h3 id="3-2-The-onSkillA-function"><a href="#3-2-The-onSkillA-function" class="headerlink" title="3.2 The onSkillA function"></a>3.2 The onSkillA function</h3><p><code>onSkillA</code> function comes with 6 parameters. It’s called when player uses a skill. It’s also called every frame if it’s a passive skill. This method won’t be called unless <code>version</code> is set to 1.</p>
+<ul>
+<li><code>me</code>: <em>Character</em> the skill user side’s <strong>master</strong></li>
+<li><code>sub</code>: <em>Character</em> the skill user side’s <strong>minion</strong></li>
+<li><code>enemy</code>: <em>Character</em> the skill enemy side’s <strong>master</strong></li>
+<li><code>enemySub</code>: <em>Character</em> the skill enemy side’s <strong>minion</strong></li>
+<li><code>scene</code>: <em>GameSubview</em> current scene</li>
+<li><code>isSub</code>: <em>Bool</em> whether the skill was called by a minion</li>
+</ul>
+<h3 id="3-3-The-onSkill-function"><a href="#3-3-The-onSkill-function" class="headerlink" title="3.3 The onSkill function"></a>3.3 The onSkill function</h3><p><code>onSkill</code> is an easier version of <code>onSkillA</code>. This method won’t be called unless <code>version</code> is set to 0(default).</p>
 <ul>
 <li><code>me</code>:<em>Character</em> the skill user</li>
 <li><code>enemy</code>:<em>Character</em> skill user’s enemy</li>
 <li><code>scene</code>:<em>GameSubview</em> current GameSubview scene</li>
 </ul>
-<p>Let’s take a look at what’s in the class <code>Character</code> so you know what you can do:</p>
+<h3 id="3-4-Character-Properties"><a href="#3-4-Character-Properties" class="headerlink" title="3.4 Character Properties"></a>3.4 Character Properties</h3><p>Let’s take a look at what’s in the class <code>Character</code> so you know what you can do:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Character.gd</span></span><br><span class="line">extends Object</span><br><span class="line"></span><br><span class="line">class_name Character</span><br><span class="line"></span><br><span class="line">var hp: int <span class="comment"># Current HP.</span></span><br><span class="line">var base: CharacterBase <span class="comment"># It&#x27;s character base. READ-ONLY</span></span><br><span class="line">var skillGauge: int <span class="comment"># Current Skill Gauge</span></span><br><span class="line">var status: Array <span class="comment"># Current Buffs</span></span><br><span class="line">var maxhp: int <span class="comment"># Current Max HP</span></span><br><span class="line">var skillCost: int <span class="comment"># Current Skill Cost</span></span><br><span class="line">var atk: int <span class="comment"># Current Attack</span></span><br><span class="line">var heal: int <span class="comment"># Current Heal</span></span><br><span class="line">var role: int <span class="comment">#Role: 0 = player 1, 1 = player 2. MODIFY IT MAY CAUSE UNEXPECTED BEHAVIOUR</span></span><br><span class="line">var vars: Dictionary = &#123;&#125; <span class="comment">#Custom Variables you can store</span></span><br><span class="line">var ai: int <span class="comment">#AI Level 0=player control</span></span><br></pre></td></tr></table></figure>
 
-<p>CharacterBase uses Singleton design method so:</p>
-<p><strong><code>base</code> is read-only. Writing it will cause next round to be corrupted. Write to corresponding variables instead</strong></p>
-<p><strong>Do not use <code>self</code> or internal variables in onSkill. Writing it will cause next round to be corrupted. Write to <code>me</code> or <code>me.vars</code> instead</strong></p>
+<p>CharacterBase uses Singleton design principle so:</p>
+<p><strong><code>base</code> is read-only. Writing it will cause the next round to be corrupted. Write to corresponding variables instead</strong></p>
+<p><strong>Do not use <code>self</code> or internal variables in onSkill. Writing it will cause the next round to be corrupted. Write to <code>me</code> or <code>me.vars</code> instead</strong></p>
 <p><strong>Use <code>scene.emit_signal(&quot;damage_given&quot;,...,...)</code> to deal damage or the HP will not be displayed correctly</strong></p>
 <p><strong>Some common scenario</strong></p>
 <ul>
@@ -157,9 +169,10 @@
 <li>Writing to user variable: <code>me.vars[&quot;123&quot;]+=1</code></li>
 <li>Writing to scene objects: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/b7aa7f0dde4513ed40ebb597e6b4e7c3705ab00a/script/characters/Groups/IN/Lorelei.gd#L6">Lorelei:6</a></li>
 <li>Initalizing a variable fast: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/b7aa7f0dde4513ed40ebb597e6b4e7c3705ab00a/script/characters/Groups/SA/Koishi.gd#L6">Koishi:6</a></li>
+<li>Checking minion: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/b8d72f5b76a08d30c7f5f298dcf667144d3da453/script/characters/Groups/HSiFS/Satono.gd#L6">Satono:6</a></li>
+<li>Calling others’ skill: <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/TypingCompetition2-Source/blob/b8d72f5b76a08d30c7f5f298dcf667144d3da453/script/characters/Groups/EoSD/Rin.gd#L8">Rin:8</a></li>
 </ul>
-<p><strong>Key controls(&gt;=1.5)</strong></p>
-<ul>
+<h3 id="3-5-Key-controls-gt-1-5"><a href="#3-5-Key-controls-gt-1-5" class="headerlink" title="3.5 Key controls(&gt;=1.5)"></a>3.5 Key controls(&gt;=1.5)</h3><ul>
 <li>Use <code>Character.checkAction(&quot;attack/defense/skill/gauge&quot;)</code> to check if a character is attacking/healing/gauge-filling/using skill at the same frame this is called.</li>
 <li><code>Character.key</code> holds the bitmask for the actions at this frame</li>
 <li>Use <code>Character.checkA1(&quot;attack/defense/skill/gauge&quot;)</code> to check if a key is <strong>just</strong> pressed</li>
@@ -167,7 +180,7 @@
 <li>Use <code>Character.checkB1(&quot;attack/defense/skill/gauge&quot;,default)</code> to check if a key is <strong>just</strong> pressed or return default if it’s AI</li>
 <li>Use <code>Character.checkB2(&quot;attack/defense/skill/gauge&quot;,default)</code> to check if a key is pressed/hold or return default if it’s AI</li>
 </ul>
-<h3 id="3-3-Adding-pictures"><a href="#3-3-Adding-pictures" class="headerlink" title="3.3 Adding pictures"></a>3.3 Adding pictures</h3><p>The last step is to put your picture in the path you set to. Make sure it’s facing right. It’s recommended to put it under <code>res://pic</code></p>
+<h3 id="3-6-Adding-pictures"><a href="#3-6-Adding-pictures" class="headerlink" title="3.6 Adding pictures"></a>3.6 Adding pictures</h3><p>The last step is to put your picture in the path you set to. Make sure it’s facing right. It’s recommended to put it under <code>res://pic</code></p>
 <h2 id="4-Status"><a href="#4-Status" class="headerlink" title="4. Status"></a>4. Status</h2><p>Use status to create lengthy events!</p>
 <h3 id="4-1-Built-in-Status"><a href="#4-1-Built-in-Status" class="headerlink" title="4.1 Built-in Status"></a>4.1 Built-in Status</h3><p>System comes with built-in status:</p>
 <ul>
@@ -188,15 +201,18 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">extends Status</span><br><span class="line"></span><br><span class="line">class_name GDBuff</span><br><span class="line"></span><br><span class="line">var val=<span class="number">0</span></span><br><span class="line">var interval=<span class="number">0</span></span><br><span class="line">var damage=<span class="number">0</span></span><br><span class="line"></span><br><span class="line">func onCast(me, scene):</span><br><span class="line">	val+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">if</span> val%interval==<span class="number">0</span>:</span><br><span class="line">		scene.emit_signal(<span class="string">&quot;damage_given&quot;</span>,me,damage)</span><br><span class="line">func _init(name,time,damage,interval):</span><br><span class="line">	self.name=name</span><br><span class="line">	self.time=time</span><br><span class="line">	self.interval=interval</span><br><span class="line">	self.damage=damage</span><br></pre></td></tr></table></figure>
 
 <h2 id="5-Global"><a href="#5-Global" class="headerlink" title="5. Global"></a>5. Global</h2><p><code>scene.Global</code> contains the Global variables, use them if you need:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Global.gd</span></span><br><span class="line">extends Node</span><br><span class="line">var p1: Character=Character.new(Reimu.new())</span><br><span class="line">var p2: Character=Character.new(Reimu.new())</span><br><span class="line"></span><br><span class="line">var incMana = <span class="number">2</span></span><br><span class="line">var decMana = <span class="number">1</span></span><br><span class="line">var death = <span class="number">0</span> <span class="comment">#Sudden Death damage</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Global.gd</span></span><br><span class="line">extends Node</span><br><span class="line">var p1: Character=Character.new(Reimu.new()) <span class="comment">#Player 1</span></span><br><span class="line">var p2: Character=Character.new(Reimu.new()) <span class="comment">#Minion 1</span></span><br><span class="line">var s1: Character=Character.new(Reimu.new()) <span class="comment">#Player 2</span></span><br><span class="line">var s2: Character=Character.new(Reimu.new()) <span class="comment">#Minion 2</span></span><br><span class="line"></span><br><span class="line">var incMana = <span class="number">2</span> <span class="comment">#gauge increase speed (per frame)</span></span><br><span class="line">var decMana = <span class="number">1</span> <span class="comment">#gauge decrease speed (per frame)</span></span><br><span class="line">var death = <span class="number">0</span> <span class="comment">#Sudden Death damage</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="6-Refer-to-source-code-for-30-examples"><a href="#6-Refer-to-source-code-for-30-examples" class="headerlink" title="6. Refer to source code for 30+ examples!"></a>6. Refer to source code for 30+ examples!</h2><h2 id="7-Build-and-release"><a href="#7-Build-and-release" class="headerlink" title="7. Build and release!"></a>7. Build and release!</h2><h1 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h1><p>You should release your own version of PC2 with credits and link to the original version. You can also have your characters included in the main version with a pull request.</p>
+<h2 id="6-Minions-gt-1-10"><a href="#6-Minions-gt-1-10" class="headerlink" title="6. Minions (&gt;=1.10)"></a>6. Minions (&gt;=1.10)</h2><p><strong>Minions</strong> are a new concept and game mechanics in 1.10. The minion is stored in <code>Global.s1</code> and <code>Global.s2</code> as a character. It’s basically a character with their HP,heal,atk unused, so don’t deal damage or cast status on them. You can set <code>nosub</code> to true to prevent a character being selected as minion.</p>
+<p>The minion gauge is stored in minion’s <code>skillGauge</code> variable and the threshold is in <code>skillCost</code>.</p>
+<p>When master attacks, gauge will increase by 10. When master gets hurt, gauge will increase by <code>damage</code>.</p>
+<h2 id="7-Refer-to-source-code-for-100-examples"><a href="#7-Refer-to-source-code-for-100-examples" class="headerlink" title="7. Refer to source code for 100+ examples!"></a>7. Refer to source code for 100+ examples!</h2><h2 id="8-Build-and-release"><a href="#8-Build-and-release" class="headerlink" title="8. Build and release!"></a>8. Build and release!</h2><h1 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h1><p>You should release your own version of PC2 with credits and link to the original version. You can also have your characters included in the main version with a pull request.</p>
 <p>So, with that being said, enjoy modding and creating!</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/28/Adding-Chars-In-PC2/" data-id="cklnvb69e000g1in87ztv4nuq" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/28/Adding-Chars-In-PC2/" data-id="cklxcg4bz000e1ks7deq9a95t" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -255,7 +271,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/24/pc2release/" data-id="cklnvb6bb003d1in89t478isw" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/24/pc2release/" data-id="cklxcg4dg003a1ks7601n6smn" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -755,7 +771,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/19/touhou-status/" data-id="cklnvb6bk00401in8dkxt1mpt" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/19/touhou-status/" data-id="cklxcg4dp003x1ks72isd4o94" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li></ul>
@@ -879,7 +895,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/18/about-me/" data-id="cklnvb6ag001r1in82fsza5qn" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/18/about-me/" data-id="cklxcg4cr001s1ks7d98wajcz" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -926,7 +942,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/16/jizou-osz-release/" data-id="cklnvb6b1002q1in885mi5jcl" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/16/jizou-osz-release/" data-id="cklxcg4d7002m1ks795nxcc4r" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Osu/" rel="tag">Osu</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -969,7 +985,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/01/hello-2021/" data-id="cklnvb6ap00211in88vhq9yim" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/01/hello-2021/" data-id="cklxcg4cx001y1ks730x5e9q3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -1019,7 +1035,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/30/animate-bg-release/" data-id="cklnvb6aj001u1in8gyyw81rz" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/30/animate-bg-release/" data-id="cklxcg4cp001q1ks7d3li6yu5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -1110,7 +1126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/26/zky2020THO%E6%B8%B8%E8%AE%B0/" data-id="cklnvb6bu004g1in81bjb1aa3" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/26/zky2020THO%E6%B8%B8%E8%AE%B0/" data-id="cklxcg4dw004d1ks75dsofgyp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -1180,7 +1196,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/26/NJTho-2020%E6%B8%B8%E8%AE%B0/" data-id="cklnvb6a500191in8hazd615r" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/26/NJTho-2020%E6%B8%B8%E8%AE%B0/" data-id="cklxcg4cf00191ks73bimbq9c" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -1326,7 +1342,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/12/19/Afterlife-LSS-Short/" data-id="cklnvb69j000k1in82rvwhims" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/12/19/Afterlife-LSS-Short/" data-id="cklxcg4c1000i1ks7a6mvahc5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
