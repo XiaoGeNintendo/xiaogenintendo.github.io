@@ -70,6 +70,137 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-CSP-S2-2020游记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" class="article-date">
+  <time datetime="2020-11-12T22:07:27.000Z" itemprop="datePublished">2020-11-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/OI/">OI</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/">CSP-S2 2020游记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>啊，又是一年CSP（不过是第二年啊）</p>
+<h1 id="TL-DR"><a href="#TL-DR" class="headerlink" title="TL;DR"></a>TL;DR</h1><p>分数表：</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>T1</th>
+<th>T2</th>
+<th>T3</th>
+<th>T4</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OITIKU</td>
+<td>90</td>
+<td>95</td>
+<td>20</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Luogu</td>
+<td>90</td>
+<td>65</td>
+<td>20</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Newcoder</td>
+<td>90</td>
+<td>85</td>
+<td>30</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Luogu(Official)</td>
+<td>90</td>
+<td>90</td>
+<td>20</td>
+<td>40</td>
+</tr>
+<tr>
+<td>CCF</td>
+<td>90</td>
+<td>100</td>
+<td>20</td>
+<td>40</td>
+</tr>
+</tbody></table>
+<h1 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h1><p>一上来先看了T1，震惊！！竟然是大模拟！！数学BYEBYE,我要打表。</p>
+<p>不过，当时打表的时候连续写错3次“求一个日期的下一天”。xs</p>
+<p>然后40分钟不到大样例就过了。</p>
+<h1 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h1><p>我一看，好像很难的样子！！再一看，水题！！</p>
+<p>轻松秒掉，然后一看不对劲，<code>1ll&lt;&lt;i</code> 写成了 <code>1&lt;&lt;i</code></p>
+<p>再一看，要用 <code>unsigned long long</code>。怎么读入呢？<code>%lld</code>，<code>%ull</code> 还是 <code>%llu</code>（是我） 呢？</p>
+<p>然后再一看答案会爆ULL_MAX！！于是特判了一个点</p>
+<p>吃⑩吧CCF出这种坑人题。</p>
+<p>30分钟做完</p>
+<h1 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h1><p>不会，打了许多暴力，然后挂了许多。考场上脑残连LAZY标记都想不出来。</p>
+<h1 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h1><p>暴力。</p>
+<h1 id="自测"><a href="#自测" class="headerlink" title="自测"></a>自测</h1><h2 id="OITIKU"><a href="#OITIKU" class="headerlink" title="OITIKU"></a>OITIKU</h2><p>今年的自测有点意思……首先是OITIKU，我一测：</p>
+<ul>
+<li>T1忘记考虑输入=0，瞬间90</li>
+<li>T2莫名其妙T一个点，95</li>
+<li>T3只有20了？？</li>
+<li>T4正常</li>
+</ul>
+<p>然后是</p>
+<blockquote>
+<p>我T3暴力拿了75！！</p>
+<p>–Zhuky.RLG</p>
+</blockquote>
+<p>心态崩了。</p>
+<h2 id="Luogu"><a href="#Luogu" class="headerlink" title="Luogu"></a>Luogu</h2><p>于是我又到洛谷上平衡一下心态。我再一测：</p>
+<ul>
+<li>T1还是90</li>
+<li>T2全T了，只剩65</li>
+<li>T3还是20</li>
+<li>T4稳稳地40</li>
+</ul>
+<p>这可不行！！！</p>
+<h2 id="Newcoder"><a href="#Newcoder" class="headerlink" title="Newcoder"></a>Newcoder</h2><p>我一看，好地方。我一测：</p>
+<ul>
+<li>T1直接0分了</li>
+<li>T2 85</li>
+<li>T3 竟然跑到了30</li>
+<li>T4还是40</li>
+</ul>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>今年自测什么乱七八糟的？？？看来需要祈祷官方数据比较良心了。</p>
+<h2 id="UPD-2020-11-17"><a href="#UPD-2020-11-17" class="headerlink" title="UPD:2020/11/17"></a>UPD:2020/11/17</h2><p>成绩出来了，事实上CCF的机子跑得飞快，非常感谢。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" data-id="ckxvud22y000k1jpe1zcd1oog" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-ability-and-beast" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/24/ability-and-beast/" class="article-date">
@@ -287,7 +418,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/24/ability-and-beast/" data-id="ckxvtnnoj001q2gmzem9x223t" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/24/ability-and-beast/" data-id="ckxvud23n001q1jpebz23dizm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -410,7 +541,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/24/Segicverse-Finale/" data-id="ckxvtnnof001g2gmz23ys0ydx" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/24/Segicverse-Finale/" data-id="ckxvud23i001g1jpe7p1o6799" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -540,7 +671,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-2/" data-id="ckxvtnnoz002n2gmzdemcadni" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-2/" data-id="ckxvud245002n1jpe0sgeeoyh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
@@ -605,7 +736,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-1/" data-id="ckxvtnnoy002l2gmz7qnudszi" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-1/" data-id="ckxvud244002l1jpe081gdtoq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
@@ -775,7 +906,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc/" data-id="ckxvtnnov002f2gmz6wsj62n8" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc/" data-id="ckxvud241002f1jpedtfbdz0z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -918,7 +1049,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/" data-id="ckxvtnnqr00782gmzg9rseg5x" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/" data-id="ckxvud27g00ab1jpe2y003umt" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -1068,7 +1199,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/20/%E3%80%90Segicverse-Extra%E3%80%91%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%B8%8A%E5%88%B0%E5%BA%95%E9%83%BD%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9D%80%E4%BB%80%E4%B9%88%EF%BC%9F-zky%E8%A7%86%E8%A7%92-%E8%A2%AB%E5%81%B7%E5%81%B7%E7%BF%BB%E7%9C%8B%E7%9A%84%E6%97%A5%E8%AE%B0/" data-id="ckxvtnnqs007c2gmzd1rhfj5n" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/20/%E3%80%90Segicverse-Extra%E3%80%91%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%B8%8A%E5%88%B0%E5%BA%95%E9%83%BD%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9D%80%E4%BB%80%E4%B9%88%EF%BC%9F-zky%E8%A7%86%E8%A7%92-%E8%A2%AB%E5%81%B7%E5%81%B7%E7%BF%BB%E7%9C%8B%E7%9A%84%E6%97%A5%E8%AE%B0/" data-id="ckxvud27i00af1jpec29thby5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -1158,7 +1289,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Introduction-to-Touhou-Rinko/" data-id="ckxvtnno7000y2gmz44yu3c4c" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Introduction-to-Touhou-Rinko/" data-id="ckxvud237000y1jpe3zoq339w" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -1207,57 +1338,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Mahjong-1/" data-id="ckxvtnno900112gmzdphd0uxt" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Mahjong-1/" data-id="ckxvud23900111jpe92xp17tx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-CSP-S初赛汇报" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/10/11/CSP-S%E5%88%9D%E8%B5%9B%E6%B1%87%E6%8A%A5/" class="article-date">
-  <time datetime="2020-10-11T21:00:51.000Z" itemprop="datePublished">2020-10-11</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/OI/">OI</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/11/CSP-S%E5%88%9D%E8%B5%9B%E6%B1%87%E6%8A%A5/">2020 CSP-S初赛汇报</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今年CSP来的异常的早（还是我的错觉）</p>
-<p>还没复习就初赛了，于是<del>轻装上阵</del>手无寸铁的上阵了。</p>
-<p>TM到的时候就9：15了，还没带铅笔。题目难度奇葩，第三篇阅读非常weird。</p>
-<p>然后就被坑爹题给坑了（xs）</p>
-<p>83.5，满上！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/CSP-S%E5%88%9D%E8%B5%9B%E6%B1%87%E6%8A%A5/" data-id="ckxvtnno3000q2gmzhvrrho10" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
 
     </footer>
   </div>
@@ -1323,6 +1407,10 @@
       <ul>
         
           <li>
+            <a href="/2022/01/01/unweekly-11/">Unweekly Report 2022 No. 11</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/01/tho21-diary/">NJTHO 2021 游记</a>
           </li>
         
@@ -1336,10 +1424,6 @@
         
           <li>
             <a href="/2021/10/22/unweekly-10/">Unweekly Report 2021 No. 10</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/11/unweekly-9/">Unweekly Report 2021 No. 9</a>
           </li>
         
       </ul>

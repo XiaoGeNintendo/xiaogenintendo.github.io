@@ -70,6 +70,82 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-blog-how-to" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/02/15/blog-how-to/" class="article-date">
+  <time datetime="2021-02-15T10:41:00.000Z" itemprop="datePublished">2021-02-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tip/">Tip</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/02/15/blog-how-to/">Upload to Hell Hole Studios Blog - Howto</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>The HHS new blog has been deployed for almost half a year, yet there are still some people who don’t know how to upload blog. Here’s a tutorial &amp; cheatsheet in case someone forgets. </p>
+<p><strong>The HHS blog is only available for HHS members. You can send me a mail if you want to write fan article there</strong></p>
+<h1 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h1><p>Prepare your md file:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># This is my blog</span></span><br><span class="line">Hello :)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Add-Pictures"><a href="#Add-Pictures" class="headerlink" title="Add Pictures"></a>Add Pictures</h2><p>You can use <a target="_blank" rel="noopener" href="https://sm.ms/">sm.ms</a> or <a target="_blank" rel="noopener" href="https://img.wang/">img.wang</a> to upload photos and pictures</p>
+<h2 id="Add-Tables"><a href="#Add-Tables" class="headerlink" title="Add Tables"></a>Add Tables</h2><p>You can use <a target="_blank" rel="noopener" href="https://www.tablesgenerator.com/markdown_tables#">this website</a> to generate noob tables.</p>
+<h2 id="Add-Mathjax"><a href="#Add-Mathjax" class="headerlink" title="Add Mathjax"></a>Add Mathjax</h2><p>You need to use <code>&#123;% mathjax %&#125;` before your mathjax and `&#123;% endmathjax %&#125;</code> after your mathjax</p>
+<p>You can also use this tool to quick replace: <a target="_blank" rel="noopener" href="https://gist.github.com/XiaoGeNintendo/01f86d40bc3c129bdbae8e014a2826d3">Tool</a>. Install Python3, put your blog at <code>in.txt</code> and run the code.</p>
+<h1 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h1><p>Add front-matter. Here’s a template:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Upload</span> <span class="string">to</span> <span class="string">Hell</span> <span class="string">Hole</span> <span class="string">Studios</span> <span class="string">Blog</span> <span class="bullet">-</span> <span class="string">Howto</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2021-2</span><span class="number">-15</span> <span class="number">10</span><span class="string">:41:00</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">Tip</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">English</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">XGN</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>Be sure to write your:</p>
+<ul>
+<li>creation time</li>
+<li>title</li>
+<li>category</li>
+<li>tags<ul>
+<li>your name</li>
+<li>post language</li>
+</ul>
+</li>
+</ul>
+<p>so your blog should look like this:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Upload to Hell Hole Studios Blog - Howto</span><br><span class="line">date: 2021-2-15 10:41:00</span><br><span class="line">categories:</span><br><span class="line"><span class="bullet">-</span> Tip</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">-</span> English</span><br><span class="line"><span class="bullet">-</span> XGN</span><br><span class="line">---</span><br><span class="line"><span class="section"># This is my blog</span></span><br><span class="line">Hello :)</span><br></pre></td></tr></table></figure>
+<h2 id="When-using-Typora"><a href="#When-using-Typora" class="headerlink" title="When using Typora"></a>When using Typora</h2><p>When using Typora, make sure there are no <code>```</code> before and after your front-matter! You can manually check it by opening markdown file in notepad</p>
+<h1 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h1><p>Upload to <a target="_blank" rel="noopener" href="https://github.com/HellHoleStudios/blog-private/tree/master/source/_posts">Private Repo</a> with proper name.</p>
+<p>Use dash and avoid English special characters.</p>
+<ul>
+<li><strong>BAD</strong>: source/_posts/2021.2.14 无想山游记 zky视角.md </li>
+<li><strong>GOOD</strong>: source/_posts/20210214-无想山游记-zky视角.md </li>
+</ul>
+<h1 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h1><p>Wait for several minutes for the Github action to work. If you see a × here, please report to administrator</p>
+<p><img src="https://i.loli.net/2021/02/15/cMjCUrYONR8aBZw.png" alt="Here"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2021/02/15/blog-how-to/" data-id="ckxvud23s00201jpe3ajjevzl" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-wxs-diary" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/02/14/wxs-diary/" class="article-date">
@@ -124,7 +200,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/14/wxs-diary/" data-id="ckxvtnnqn006w2gmz5rq11zd3" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/14/wxs-diary/" data-id="ckxvud27c00a11jpeby2a422o" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -253,7 +329,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/13/random-diary-2/" data-id="ckxvtnnpm00462gmzb78u0shk" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/13/random-diary-2/" data-id="ckxvud26c007l1jpeabc4b6g2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -402,7 +478,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/10/learn-Ryuujin/" data-id="ckxvtnnp800362gmz4hdi3r93" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/10/learn-Ryuujin/" data-id="ckxvud24a002y1jpebqfg6tj8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -445,7 +521,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/10/RTiFE-clone/" data-id="ckxvtnnrl00cn2gmz8sbngsue" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/10/RTiFE-clone/" data-id="ckxvud27l00al1jpe19b9hbzh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -493,7 +569,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/10/2021-typing-game-release/" data-id="ckxvtnnnv000c2gmz96s963wy" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/10/2021-typing-game-release/" data-id="ckxvud22r000c1jpeem6oc1y7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -692,7 +768,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/08/unweekly2021-1/" data-id="ckxvtnnql006o2gmzdcfdg39q" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/08/unweekly2021-1/" data-id="ckxvud278009u1jpe7wsc8jkk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -848,7 +924,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/28/Adding-Chars-In-PC2/" data-id="ckxvtnnny000i2gmzg89v3vli" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/28/Adding-Chars-In-PC2/" data-id="ckxvud22v000i1jpef970emxr" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -907,7 +983,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/24/pc2release/" data-id="ckxvtnnpl00422gmz1qugepzx" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/24/pc2release/" data-id="ckxvud269007g1jpearol7nav" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -1499,136 +1575,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/19/touhou-status/" data-id="ckxvtnnq6005l2gmz0sut7jre" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/01/19/touhou-status/" data-id="ckxvud26u008t1jpe3oe57oc0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-about-me" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/01/18/about-me/" class="article-date">
-  <time datetime="2021-01-18T20:40:00.000Z" itemprop="datePublished">2021-01-18</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Random/">Random</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/01/18/about-me/">About Me</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>中文在文章底部。</p>
-<p>Hello, everyone! This page copies the format of Zzzyt’s homepage.</p>
-<p>I usually appear online under the name XGN. It stands for XiaoGeNintendo because when I was in primary school I really liked Mario games. Now I usually don’t call myself by this name because of copyright problem. My user IDs and other links are in the <a href="https://xiaogenintendo.github.io/xgn-homepage-test/contact.html">Review::Link</a> page.</p>
-<p>Other basic introduction please go to <a href="https://xiaogenintendo.github.io/xgn-homepage-test/index.html">Review::Introduction</a></p>
-<p>I’m a member of HellHoleStudios. Never mind its name, that’s just a Tell Tale Game parody.</p>
-<h1 id="Programming"><a href="#Programming" class="headerlink" title="Programming"></a>Programming</h1><p>I’ve explored many areas of programming, including:</p>
-<ul>
-<li>competitive programming</li>
-<li>games with tons of framework(Cocos, Godot, Unreal, DMF, Unitale, GDevelop, Scratch and so on)</li>
-<li>java web (using Tomcat)</li>
-<li>tiny but useful tools</li>
-<li>a bit of machine learning</li>
-<li>Swift and WWDC</li>
-</ul>
-<p>I use C++ for CP, java as my main language for large projects and use python for scripts. Of course, I use Swift but not ObjC to develop iOS stuff. I am now preparing for WWDC21 and will learn node.js</p>
-<p>You can pay a visit to <a href="https://xiaogenintendo.github.io/2021/05/30/my-editor/">My Software Preference</a></p>
-<h1 id="Game-Anime"><a href="#Game-Anime" class="headerlink" title="Game/Anime"></a>Game/Anime</h1><p>I am a very easy-going person. I play a lot of different genres. You may have <em>a lot</em> in common with me.</p>
-<p>I am currently interested/involved in the following genres/franchise:</p>
-<ul>
-<li>Mario (Kart/Party/Paper) (Can’t play well)</li>
-<li>Kirby (Cleared some games?)</li>
-<li>Touhou Project and Len’en Project(Struggling to clear normal)</li>
-<li>Taiko no Tatsujin (Currently playing on Hard)</li>
-<li>Osu (You bet, I suck)</li>
-<li>Spice and Wolf (Start recently)</li>
-<li>Minecraft</li>
-<li>Rune Factory (Start at 4Sp)</li>
-<li>Pokemon</li>
-<li>Miss Kobayoshi’s Dragon Maid</li>
-<li>Kemono Friends</li>
-<li>Ace attorney (Finished 1/2/3/4/6/Dai1/Dai2)</li>
-<li>Danganronpa (Finished Game 1/2)</li>
-<li>Undertale (Including DR)</li>
-<li><del>Aola Star</del> (Haven’t played since 3 years ago)</li>
-<li><del>Zelda</del> (Not really into this thing)</li>
-<li><del>Monster Hunter</del> (Really suck)</li>
-<li><del>Harvest Moon</del> (Stopped subscribing after a while)</li>
-<li><del>Puzzles and Dragons</del></li>
-<li><del>Terraria</del></li>
-<li><del>ScribbleNauts</del> (Only played Unlimited still uncleared)</li>
-<li>…</li>
-</ul>
-<p>Can you find something in common?😜 Mostly furry/Nintendo stuff.</p>
-<h1 id="Art"><a href="#Art" class="headerlink" title="Art"></a>Art</h1><p>I <em>do</em> use FL Studios and Famitracker. I <em>do</em> have Blender. But my art and music skill equals 0. Nevermind.</p>
-<h1 id="中文-Baidu-Fanyi"><a href="#中文-Baidu-Fanyi" class="headerlink" title="中文(Baidu Fanyi)"></a>中文(Baidu Fanyi)</h1><p>大家好！这个页面复制了ZZZYT主页的格式。</p>
-<p>我通常以XGN的名字出现在网上。它代表着XiaoGeNintendo，因为当我在小学的时候，我真的很喜欢马里奥游戏。因为版权问题，我通常不叫这个名字。我的用户ID和其他链接在<a href="https://xiaogenintendo.github.io/xgn-homepage-test/contact.html">Review::Link</a>中</p>
-<p>其他基本介绍请访问<a href="https://xiaogenintendo.github.io/xgn-homepage-test/index.html">Review::Introduction</a></p>
-<p>我是HellHoleStudios的一员。别管它的名字，那只是一个故事游戏的模仿。</p>
-<p>我探索了许多编程领域，包括：</p>
-<ul>
-<li>竞争性编程(OI)</li>
-<li>游戏（Cocos、Godot、Unreal、DMF、Unitale、GDevelop、Scratch等）</li>
-<li>java web（使用Tomcat）</li>
-<li>微小但有用的工具</li>
-<li>一点机器学习</li>
-<li>Swift和WWDC<br>我用C++作为OI，java作为我的大型语言的主要语言，并使用Python写脚本。当然，我使用Swift而不是ObjC来开发iOS。我现在正在为WWDC21做准备，并将学习node.js</li>
-</ul>
-<p>来看看<a href="https://xiaogenintendo.github.io/2021/05/30/my-editor/">软件偏好(ENG)</a></p>
-<p>我是一个很随和的人。我演奏很多不同的流派。你可能和我有很多共同点。<br>我目前对以下类型/系列 感兴趣/参与其中：</p>
-<ul>
-<li>马里奥（卡丁车/派对/报纸）（打得不好）</li>
-<li>星之卡比（清除了一些游戏？）</li>
-<li>东方和连缘（努力清理正常）</li>
-<li>太鼓达人（目前正在努力）</li>
-<li>Osu（当然，我很烂）</li>
-<li>狼与香辛料（最近开始）</li>
-<li>我的世界</li>
-<li>符文工厂（从4Sp开始）</li>
-<li>口袋妖怪</li>
-<li>龙女仆</li>
-<li>兽娘动物园</li>
-<li>逆转裁判（完成1/2/3/4/6/大1/大2）</li>
-<li>弹丸论破（完成游戏1/2）</li>
-<li>传说之下（包括DR）</li>
-<li><del>奥拉星</del>（3年前就没玩过了）</li>
-<li><del>塞尔达</del>（不太喜欢这个东西）</li>
-<li><del>怪物猎人</del>（真是糟透了）</li>
-<li><del>牧场物语</del>（过了一会儿就不玩了）</li>
-<li><del>智龙迷城</del></li>
-<li><del>泰拉瑞亚</del></li>
-<li><del>涂鸦者</del>（只玩了无限仍未通关）</li>
-<li>…<br>你能找到共同点吗？😜 大部分是兽圈/任天堂的东西。</li>
-</ul>
-<p>本人不穿fur suit！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/01/18/about-me/" data-id="ckxvtnnom001w2gmzehgk81k1" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
 
     </footer>
   </div>
@@ -1694,6 +1644,10 @@
       <ul>
         
           <li>
+            <a href="/2022/01/01/unweekly-11/">Unweekly Report 2022 No. 11</a>
+          </li>
+        
+          <li>
             <a href="/2022/01/01/tho21-diary/">NJTHO 2021 游记</a>
           </li>
         
@@ -1707,10 +1661,6 @@
         
           <li>
             <a href="/2021/10/22/unweekly-10/">Unweekly Report 2021 No. 10</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/11/unweekly-9/">Unweekly Report 2021 No. 9</a>
           </li>
         
       </ul>
