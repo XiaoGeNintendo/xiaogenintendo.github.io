@@ -70,6 +70,69 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-obcysio-44" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/03/14/obcysio-44/" class="article-date">
+  <time datetime="2021-03-14T16:14:00.000Z" itemprop="datePublished">2021-03-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/OBCYSIO/">OBCYSIO</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/03/14/obcysio-44/">Orange Boy Can You Solve It Out? Ep.44</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>String 思考题!!</p>
+<h1 id="Boggle-Constructor"><a href="#Boggle-Constructor" class="headerlink" title="Boggle Constructor"></a>Boggle Constructor</h1><p>Ninetail is a clever fox girl. She loves to play <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Boggle">Boggle</a>!</p>
+<p>the rules are simple:</p>
+<blockquote>
+<p>Each player searches for words that can be constructed from the letters of sequentially adjacent cubes, where “adjacent” cubes are those horizontally, vertically, and diagonally neighboring. Words must be at least three letters long, may include singular and plural (or other derived forms) separately, but may not use the same letter cube more than once per word. </p>
+<p>(wikipedia)</p>
+</blockquote>
+<p>Today she has many words and she wants to put all of them in a 4*4 Boggle board. Each cell should contain only 1 character.</p>
+<p>Show a possible construction or say it’s impossible.</p>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><p>words={eat,ate,tea,tae,note,work,eater,workers,rest,sons}</p>
+<p>Output</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">EANS</span><br><span class="line">WTOT</span><br><span class="line">OERS</span><br><span class="line">RKET</span><br></pre></td></tr></table></figure>
+
+<p>the answer is not unique</p>
+<p>words={internationalization}</p>
+<p>Output</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Impossible</span><br></pre></td></tr></table></figure>
+
+<h1 id="Constraints"><a href="#Constraints" class="headerlink" title="Constraints"></a>Constraints</h1><p>Subtask1(10%), <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="15.944ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 7047.2 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-3-TEX-SO-2211" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path><path id="MJX-3-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-3-TEX-I-1D464" d="M580 385Q580 406 599 424T641 443Q659 443 674 425T690 368Q690 339 671 253Q656 197 644 161T609 80T554 12T482 -11Q438 -11 404 5T355 48Q354 47 352 44Q311 -11 252 -11Q226 -11 202 -5T155 14T118 53T104 116Q104 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 293 29 315T52 366T96 418T161 441Q204 441 227 416T250 358Q250 340 217 250T184 111Q184 65 205 46T258 26Q301 26 334 87L339 96V119Q339 122 339 128T340 136T341 143T342 152T345 165T348 182T354 206T362 238T373 281Q402 395 406 404Q419 431 449 431Q468 431 475 421T483 402Q483 389 454 274T422 142Q420 131 420 107V100Q420 85 423 71T442 42T487 26Q558 26 600 148Q609 171 620 213T632 273Q632 306 619 325T593 357T580 385Z"></path><path id="MJX-3-TEX-I-1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path><path id="MJX-3-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-3-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path><path id="MJX-3-TEX-I-1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path><path id="MJX-3-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-3-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-3-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-3-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use xlink:href="#MJX-3-TEX-SO-2211"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1222.7, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-3-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(1500.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D464"></use></g><g data-mml-node="mi" transform="translate(2216.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D45C"></use></g><g data-mml-node="mi" transform="translate(2701.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D45F"></use></g><g data-mml-node="mi" transform="translate(3152.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D451"></use></g><g data-mml-node="msub" transform="translate(3672.7, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-3-TEX-I-1D460"></use></g><g data-mml-node="mi" transform="translate(469, -150) scale(0.707)"><use xlink:href="#MJX-3-TEX-I-1D456"></use></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4435.6, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-3-TEX-N-7C"></use></g></g><g data-mml-node="mo" transform="translate(4991.4, 0)"><use xlink:href="#MJX-3-TEX-N-2264"></use></g><g data-mml-node="mn" transform="translate(6047.2, 0)"><use xlink:href="#MJX-3-TEX-N-31"></use><use xlink:href="#MJX-3-TEX-N-36" transform="translate(500, 0)"></use></g></g></g></svg></mjx-container></p>
+<p>Subtask2(90%), <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="16.857ex" height="2.538ex" role="img" focusable="false" viewBox="0 -871.8 7450.7 1121.8" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-3-TEX-SO-2211" d="M61 748Q64 750 489 750H913L954 640Q965 609 976 579T993 533T999 516H979L959 517Q936 579 886 621T777 682Q724 700 655 705T436 710H319Q183 710 183 709Q186 706 348 484T511 259Q517 250 513 244L490 216Q466 188 420 134T330 27L149 -187Q149 -188 362 -188Q388 -188 436 -188T506 -189Q679 -189 778 -162T936 -43Q946 -27 959 6H999L913 -249L489 -250Q65 -250 62 -248Q56 -246 56 -239Q56 -234 118 -161Q186 -81 245 -11L428 206Q428 207 242 462L57 717L56 728Q56 744 61 748Z"></path><path id="MJX-3-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path id="MJX-3-TEX-I-1D464" d="M580 385Q580 406 599 424T641 443Q659 443 674 425T690 368Q690 339 671 253Q656 197 644 161T609 80T554 12T482 -11Q438 -11 404 5T355 48Q354 47 352 44Q311 -11 252 -11Q226 -11 202 -5T155 14T118 53T104 116Q104 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Q21 293 29 315T52 366T96 418T161 441Q204 441 227 416T250 358Q250 340 217 250T184 111Q184 65 205 46T258 26Q301 26 334 87L339 96V119Q339 122 339 128T340 136T341 143T342 152T345 165T348 182T354 206T362 238T373 281Q402 395 406 404Q419 431 449 431Q468 431 475 421T483 402Q483 389 454 274T422 142Q420 131 420 107V100Q420 85 423 71T442 42T487 26Q558 26 600 148Q609 171 620 213T632 273Q632 306 619 325T593 357T580 385Z"></path><path id="MJX-3-TEX-I-1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path><path id="MJX-3-TEX-I-1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-3-TEX-I-1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path><path id="MJX-3-TEX-I-1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path><path id="MJX-3-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-3-TEX-N-2264" d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path><path id="MJX-3-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-3-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-3-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mo"><use xlink:href="#MJX-3-TEX-SO-2211"></use></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(1222.7, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-3-TEX-N-7C"></use></g></g><g data-mml-node="mi" transform="translate(1500.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D464"></use></g><g data-mml-node="mi" transform="translate(2216.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D45C"></use></g><g data-mml-node="mi" transform="translate(2701.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D45F"></use></g><g data-mml-node="mi" transform="translate(3152.7, 0)"><use xlink:href="#MJX-3-TEX-I-1D451"></use></g><g data-mml-node="msub" transform="translate(3672.7, 0)"><g data-mml-node="mi"><use xlink:href="#MJX-3-TEX-I-1D460"></use></g><g data-mml-node="mi" transform="translate(469, -150) scale(0.707)"><use xlink:href="#MJX-3-TEX-I-1D456"></use></g></g><g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(4435.6, 0)"><g data-mml-node="mo"><use xlink:href="#MJX-3-TEX-N-7C"></use></g></g><g data-mml-node="mo" transform="translate(4991.4, 0)"><use xlink:href="#MJX-3-TEX-N-2264"></use></g><g data-mml-node="msup" transform="translate(6047.2, 0)"><g data-mml-node="mn"><use xlink:href="#MJX-3-TEX-N-31"></use><use xlink:href="#MJX-3-TEX-N-30" transform="translate(500, 0)"></use></g><g data-mml-node="mn" transform="translate(1000, 393.1) scale(0.707)"><use xlink:href="#MJX-3-TEX-N-34"></use></g></g></g></g></svg></mjx-container></p>
+<p>Each word contains at least 3 characters</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2021/03/14/obcysio-44/" data-id="ckzwkrnmd003z1jl9cu868ntr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OBCYSIO/" rel="tag">OBCYSIO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-the-great-japanese-challenge" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/03/09/the-great-japanese-challenge/" class="article-date">
@@ -109,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/03/09/the-great-japanese-challenge/" data-id="ckzvdv53x005r1kpbhkbh8kub" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/03/09/the-great-japanese-challenge/" data-id="ckzwkrnn4005m1jl9dkg8bvea" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -255,7 +318,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/27/those-who-influence-me-most/" data-id="ckzvdv540005z1kpbaxqt1i94" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/27/those-who-influence-me-most/" data-id="ckzwkrnn6005p1jl97v4n5vhh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -318,7 +381,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/22/unweekly2021-2/" data-id="ckzvdv54l007e1kpb8bw6c0x1" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/22/unweekly2021-2/" data-id="ckzwkrnnx007d1jl94tyvh33g" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -394,7 +457,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/15/blog-how-to/" data-id="ckzvdv520001y1kpbhgychl1a" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/15/blog-how-to/" data-id="ckzwkrnle00201jl93o4i4m81" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -460,7 +523,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/14/wxs-diary/" data-id="ckzvdv54o007m1kpb5s8bda2c" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/14/wxs-diary/" data-id="ckzwkrnny007h1jl9636udjlk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -589,7 +652,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/13/random-diary-2/" data-id="ckzvdv53d004o1kpbazaq3gu2" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/13/random-diary-2/" data-id="ckzwkrnmm004i1jl9g2a8bzcc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -740,7 +803,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/10/learn-Ryuujin/" data-id="ckzvdv52q003g1kpbhcqz0p5d" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/10/learn-Ryuujin/" data-id="ckzwkrnm000341jl9bbhpajxj" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ryujin/" rel="tag">Ryujin</a></li></ul>
@@ -783,7 +846,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/10/RTiFE-clone/" data-id="ckzvdv55y00d21kpb8zj98mf9" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/10/RTiFE-clone/" data-id="ckzwkrnoz00dj1jl9d3d1e5td" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -831,209 +894,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/10/2021-typing-game-release/" data-id="ckzvdv50y000c1kpb8cy1g0lk" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2021/02/10/2021-typing-game-release/" data-id="ckzwkrnkf000c1jl985ah5vw7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-unweekly2021-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/02/08/unweekly2021-1/" class="article-date">
-  <time datetime="2021-02-08T11:41:00.000Z" itemprop="datePublished">2021-02-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/Unweekly/">Unweekly</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/02/08/unweekly2021-1/">Unweekly Report 2021 No. 1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <strong>Unweekly Report</strong>! This is the first report of 2021. Please read the content:</p>
-<h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><ul>
-<li>What’s this report??</li>
-<li>Ace attorney 5</li>
-<li>Spice and Wolf</li>
-<li>Pressing Competition 2</li>
-<li>Schedule for the winter holiday</li>
-</ul>
-<h2 id="I-What’s-this-report"><a href="#I-What’s-this-report" class="headerlink" title="I. What’s this report"></a>I. What’s this report</h2><p>Welcome to Unweekly report by XGN! In these posts, I will report some recent progresses and share some life details with you! This may update not very often.</p>
-<p>This report concludes the life from 2021/1/29 to 2021/2/8</p>
-<h2 id="II-Ace-Attorney-5"><a href="#II-Ace-Attorney-5" class="headerlink" title="II. Ace Attorney 5"></a>II. Ace Attorney 5</h2><p>Recently I got a Chinese copy from Baidu Tieba. However it comes with 3DS format which I had to decrypt to CIA to install. </p>
-<p>Unfortunately I haven’t installed GodMode9 or anything else than Luma on my 3DS so I had to do it. </p>
-<p>It’s like the god of luck is battling against me and it showed a black screen while trying to open the payload chain. It’s a bug of Luma.</p>
-<p>About the game, the graphics and system has improved a lot. But the story might be worse.</p>
-<p>I have only cleared the first episode. I need further investigation. Stay tuned for my Game Review Page!</p>
-<h2 id="III-Spice-and-Wolf"><a href="#III-Spice-and-Wolf" class="headerlink" title="III. Spice and Wolf"></a>III. Spice and Wolf</h2><p>Recently I finished Spice and Wolf Volume 1 to 17, all main books. Very nice series!</p>
-<p>Although it’s hard to understand at some time, the main line is clear and can be followed with no difficulty.</p>
-<p>Also I finished the VR game 2.</p>
-<p>Here’s a spoiler-free meme one-word conclusion for each volume:</p>
-<table>
-<thead>
-<tr>
-<th>Book/Story</th>
-<th>One-word Conclusion</th>
-<th>Rating</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Vol.1</td>
-<td>Underground</td>
-<td>B</td>
-</tr>
-<tr>
-<td>Vol.2</td>
-<td>Smuggle</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Vol.3</td>
-<td>Lover</td>
-<td>S</td>
-</tr>
-<tr>
-<td>Vol.4</td>
-<td>Faith</td>
-<td>B</td>
-</tr>
-<tr>
-<td>Vol.5</td>
-<td>Collateral</td>
-<td>S</td>
-</tr>
-<tr>
-<td>Vol.6</td>
-<td>Boat</td>
-<td>B</td>
-</tr>
-<tr>
-<td>Vol.7A</td>
-<td>Play</td>
-<td>B</td>
-</tr>
-<tr>
-<td>Vol.7B</td>
-<td>Prosperous</td>
-<td>B</td>
-</tr>
-<tr>
-<td>Vol.7C</td>
-<td>Sick</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Vol.8&amp;9</td>
-<td>Non-understandable</td>
-<td>C</td>
-</tr>
-<tr>
-<td>Vol.10</td>
-<td>Goat</td>
-<td>S</td>
-</tr>
-<tr>
-<td>Vol.11A</td>
-<td>Promise</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Vol.11B</td>
-<td>Path</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Vol.11C</td>
-<td>Cradle</td>
-<td>C</td>
-</tr>
-<tr>
-<td>Vol.12</td>
-<td>Mystery</td>
-<td>C</td>
-</tr>
-<tr>
-<td>Vol.13A</td>
-<td>Part-time</td>
-<td>B</td>
-</tr>
-<tr>
-<td>Vol.13B</td>
-<td>Coin</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Vol.13C</td>
-<td>Pricetag</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Vol.13D</td>
-<td>Priesthood</td>
-<td>B</td>
-</tr>
-<tr>
-<td>Vol.14</td>
-<td>Crossway</td>
-<td>S</td>
-</tr>
-<tr>
-<td>Vol.15</td>
-<td>Peace</td>
-<td>A</td>
-</tr>
-<tr>
-<td>Vol.16</td>
-<td>Coin</td>
-<td>S</td>
-</tr>
-<tr>
-<td>Epilogue</td>
-<td>Kiss</td>
-<td>S</td>
-</tr>
-</tbody></table>
-<h2 id="IV-Pressing-Competition-2"><a href="#IV-Pressing-Competition-2" class="headerlink" title="IV. Pressing Competition 2"></a>IV. Pressing Competition 2</h2><p>It’s game I am working on recently. Huge thanks to Zzzyt and MonkeyKing to help playtesting!</p>
-<p>This game will receive a few updates more, mostly character update. Stay tuned if you like it!</p>
-<h2 id="V-Schedules"><a href="#V-Schedules" class="headerlink" title="V. Schedules"></a>V. Schedules</h2><p>I had OI classes from Jan 29th to Jan 31st and had 1 hour to use my computer every day.</p>
-<p>Then from Feb 1st to Feb 7th I had full day class. I had to get up at 9am and get back home at 9pm. I had a 2h rest in the noon but I was at Zhuky.RLG’s house and cannot use computer. So I had to spend the time watching Spice and Wolf.</p>
-<p>Start from Feb 8th I will be free in the afternoon and evening. I will be working on several projects:</p>
-<ul>
-<li>Pressing Competition 2</li>
-<li>Play Ace Attorney 5</li>
-<li>Play Super Mario 3D World</li>
-<li>WWDC Project</li>
-<li>Continue reading Spice and Wolf</li>
-<li>2021 Typing Game (Coming Soon™)</li>
-<li>Homework</li>
-</ul>
-<h2 id="Hope-you-enjoy-this-report"><a href="#Hope-you-enjoy-this-report" class="headerlink" title="Hope you enjoy this report!"></a>Hope you enjoy this report!</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2021/02/08/unweekly2021-1/" data-id="ckzvdv54n007j1kpbe3k753x8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
 
     </footer>
   </div>
@@ -1077,7 +941,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Chinese/" style="font-size: 18.89px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 16.67px;">Dev</a> <a href="/tags/English/" style="font-size: 20px;">English</a> <a href="/tags/Java/" style="font-size: 12.22px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 13.33px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 14.44px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 17.78px;">OC</a> <a href="/tags/OI/" style="font-size: 16.67px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 15.56px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 12.22px;">Ryujin</a> <a href="/tags/Segicverse/" style="font-size: 12.22px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 11.11px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 12.22px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 13.33px;">ZKY</a>
+      <a href="/tags/Chinese/" style="font-size: 18.89px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 16.67px;">Dev</a> <a href="/tags/English/" style="font-size: 20px;">English</a> <a href="/tags/Java/" style="font-size: 12.22px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 13.33px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 14.44px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 17.78px;">OC</a> <a href="/tags/OI/" style="font-size: 16.67px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 15.56px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 13.33px;">Ryujin</a> <a href="/tags/Segicverse/" style="font-size: 12.22px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 11.11px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 12.22px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 13.33px;">ZKY</a>
     </div>
   </div>
 
@@ -1099,11 +963,15 @@
       <ul>
         
           <li>
+            <a href="/2022/02/21/ryuujin-vocab-1/">龙人语词汇手册一——地理</a>
+          </li>
+        
+          <li>
             <a href="/2022/02/20/learn-new-Ryuujin/">新龙人语教程</a>
           </li>
         
           <li>
-            <a href="/2022/02/20/ryuujin-text-1/">新（外）龙人语样例文本其一</a>
+            <a href="/2022/02/20/ryuujin-text-1/">新（外）龙人语样例文本其一-《社中龙》</a>
           </li>
         
           <li>
@@ -1112,10 +980,6 @@
         
           <li>
             <a href="/2022/01/01/unweekly-11/">Unweekly Report 2022 No. 11</a>
-          </li>
-        
-          <li>
-            <a href="/2022/01/01/tho21-diary/">NJTHO 2021 游记</a>
           </li>
         
       </ul>
