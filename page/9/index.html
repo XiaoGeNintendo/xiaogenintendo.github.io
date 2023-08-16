@@ -70,6 +70,371 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-java-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/23/java-2/" class="article-date">
+  <time datetime="2020-10-23T22:15:00.000Z" itemprop="datePublished">2020-10-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/Java/">Java</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/23/java-2/">Dev Club Java Class Lesson 2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>欢迎欢迎！这是Java课堂的第二节课。我是XGN，今天开始学习Java基础语法。</p>
+<p>内容：</p>
+<ul>
+<li>创建类</li>
+<li>输入和输出</li>
+<li>变量的创建</li>
+</ul>
+<h1 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h1><ol>
+<li><p>在src文件夹上右键，选择创建Class。<br><img src="https://i.loli.net/2020/10/23/MBXI2bSGktDluU8.png" alt="create.PNG"></p>
+</li>
+<li><p>填写类名，包名，勾选main函数，点击Finish，详情请见附录1.</p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2020/10/23/yuKGfk32lPrzbTF.png" alt="create2.PNG"></p>
+<ol start="3">
+<li>看上去像这样：</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hhs.xgn.zjstest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">附录1</span><br><span class="line">类名和包名的规范</span><br><span class="line"></span><br><span class="line">类名，简单来说就是文件名，也是这个public class的名字。</span><br><span class="line">包名，简单来说就是别人想要导入你的程序时的地址，也是package的名字。</span><br><span class="line"></span><br><span class="line">类名使用双驼峰，即每个单词的首字母大写，一般不用下划线。比如FirstClass, WalkingAnimationSystem等等</span><br><span class="line"></span><br><span class="line">包名常用个人网站域名倒写+工程名+具体内容</span><br><span class="line">比如说&quot;xgn.com&quot;的&quot;Jade&quot;工程的工具一般会放在com.xgn.jade.util包下</span><br></pre></td></tr></table></figure>
+<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;字符串&quot;</span>); <span class="comment">//带换行</span></span><br><span class="line">System.out.print(<span class="string">&quot;字符串&quot;</span>); <span class="comment">//不带换行</span></span><br></pre></td></tr></table></figure>
+
+<p>运行。<br><img src="https://i.loli.net/2020/10/23/X9zk5jpDtGyvOnE.png" alt="result.PNG"></p>
+<h1 id="变量的定义"><a href="#变量的定义" class="headerlink" title="变量的定义"></a>变量的定义</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">类型名 变量名=初始值; <span class="comment">//just like C++!! so easy so fast!!</span></span><br></pre></td></tr></table></figure>
+
+<p>比如说</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">2</span>,c=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">float</span> x=<span class="number">6</span>;</span><br><span class="line"><span class="keyword">double</span> zjs=<span class="number">8</span>;</span><br><span class="line">String varName=<span class="string">&quot;zjs&quot;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>常用转型表</p>
+<table>
+<thead>
+<tr>
+<th>Java</th>
+<th>C++</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>int</td>
+<td>int</td>
+<td>32-bit Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>long long</td>
+<td>64-bit integer</td>
+</tr>
+<tr>
+<td>float</td>
+<td>float</td>
+<td>float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>double</td>
+<td>double</td>
+</tr>
+<tr>
+<td>String</td>
+<td>string</td>
+<td>String</td>
+</tr>
+<tr>
+<td>char</td>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>？</td>
+<td>8-bit integer</td>
+</tr>
+<tr>
+<td>short</td>
+<td>short</td>
+<td>16-bit integer</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>bool</td>
+<td>true/false</td>
+</tr>
+</tbody></table>
+<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Scanner s=<span class="keyword">new</span> Scanner(System.in); <span class="comment">//定义输入捕获装置</span></span><br><span class="line"><span class="keyword">int</span> x=s.nextInt();</span><br><span class="line">String y=s.next(); <span class="comment">//get next token. similar to cin&gt;&gt;y</span></span><br><span class="line"><span class="keyword">boolean</span> z=s.hasNext(); <span class="comment">//reach End-of-file?</span></span><br><span class="line"></span><br><span class="line">s.close(); <span class="comment">//使用完毕需要关掉</span></span><br></pre></td></tr></table></figure>
+<p>运行，在控制台中输入好吃(qi)的。<br><img src="https://i.loli.net/2020/10/23/zoEG3KAwg6lbyef.png" alt="result2.PNG"></p>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p><img src="https://i.loli.net/2020/10/23/MPaBzf9kiq5w8x3.png" alt="problem1.PNG"></p>
+<p>简单来说就是C++里的没有include。点击Import Scanner即可自动导包。<br><img src="https://i.loli.net/2020/10/23/7SuVH5FW19oLzvP.png" alt="problem2.PNG"></p>
+<p>没有close</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-2/" data-id="clldw1ew6002y2ep86nj8fgi8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-java-1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/23/java-1/" class="article-date">
+  <time datetime="2020-10-23T22:04:00.000Z" itemprop="datePublished">2020-10-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/Java/">Java</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/23/java-1/">Dev Club Java Class Lesson 1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>欢迎欢迎！这是Java课堂的第一节课。我是XGN，我们来做好学习的准备。</p>
+<p>内容：</p>
+<ul>
+<li>安装并下载Eclipse</li>
+<li>创建Java工程</li>
+<li>为以后学习打好基础</li>
+</ul>
+<h1 id="课堂准备"><a href="#课堂准备" class="headerlink" title="课堂准备"></a>课堂准备</h1><p>请大家先到<a target="_blank" rel="noopener" href="https://eclipse.org/">Here</a>上下载最新版Eclipse Installer。在Installer中下载并安装Java Developer的版本。或者，你可以使用其他IDE，但是本课程不支持。</p>
+<p>然后登录<a target="_blank" rel="noopener" href="https://www.hackerrank.com/dev-club-java-class">Hackerrank</a>并注册该比赛。这里会是以后的（一部分）作业区。</p>
+<p>注意：</p>
+<ul>
+<li>上课版本为Java8，但是最新的Eclipse支持Java11以上。</li>
+<li>你不需要认识Ookami等人是谁</li>
+<li>请在QQ上提问</li>
+<li>请认真完成作业</li>
+</ul>
+<h1 id="创建工程"><a href="#创建工程" class="headerlink" title="创建工程"></a>创建工程</h1><ol>
+<li>打开你的搞基IDE Eclipse，选择Workspace（保存工程文件）的位置。</li>
+<li>在Welcome Page上选择“Create New Java Project”或者在Project View右键New选择Java Project<br><img src="https://i.loli.net/2020/10/23/GJwf2Snt6ophMkm.png" alt="create.PNG"></li>
+<li>填写Project Name，其余选项跳过并选择Finish。如果出现创建module的提示，选择稍后创建。<br><img src="https://i.loli.net/2020/10/23/pPbZwWAG6cydiOF.png" alt="create2.PNG"></li>
+<li>完成<br><img src="https://i.loli.net/2020/10/23/yHvM8EqIu1ZC7nQ.png" alt="done.PNG"></li>
+</ol>
+<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><p>创建工程</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-1/" data-id="clldw1ew4002t2ep885v47hav" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-how-to-know-oc" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/10/21/how-to-know-oc/" class="article-date">
+  <time datetime="2020-10-21T22:30:00.000Z" itemprop="datePublished">2020-10-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Random/">Random</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/21/how-to-know-oc/">How to know my OC</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="How-to-know-my-OC-如何了解我（or-ZKY）的原创人物"><a href="#How-to-know-my-OC-如何了解我（or-ZKY）的原创人物" class="headerlink" title="How to know my OC / 如何了解我（or ZKY）的原创人物"></a>How to know my OC / 如何了解我（or ZKY）的原创人物</h1><p>中文在文章底部。</p>
+<p>First you should know that most characters in my universe and Segicverse are the same. Also, history contains <em>mainline story</em> and <em>branch story</em>. Branch stories are used to show personalities and interesting facts about a certain characters while mainline stories are stories that really happened.</p>
+<p>Currently, you can access to my world in the follow way:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Story type</th>
+<th>Author</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Roaming Travellers in Fantasy Extravaganza</td>
+<td>Official</td>
+<td>XGN</td>
+<td>On this site</td>
+</tr>
+<tr>
+<td>Segicverse</td>
+<td>Official</td>
+<td>Zhuky.RLG</td>
+<td><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5224967">https://www.bilibili.com/read/cv5224967</a></td>
+</tr>
+<tr>
+<td>LSS Short</td>
+<td>Branch</td>
+<td>XGN</td>
+<td>On this site</td>
+</tr>
+<tr>
+<td>LSS Problemset</td>
+<td>Branch</td>
+<td>XGN</td>
+<td>Dead</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Also, you can see OC (rarely) from Hell Hole Studios Games. They are all branch stories. You can search them on <a target="_blank" rel="noopener" href="https://hellholestudios.github.io/HHS-Project-Site/">HHS Project</a></p>
+<table>
+<thead>
+<tr>
+<th>Game Name</th>
+<th>OC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The Lost Forest</td>
+<td>Terra*, Ookami</td>
+</tr>
+<tr>
+<td>TestSTG 3</td>
+<td>Kazami Ryoryu*, Nanjin Yatsujitera*, Hikari^</td>
+</tr>
+<tr>
+<td>Jade(In Dev)</td>
+<td>Hikari</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* &#x3D; Not main characters in the story</span><br><span class="line">^ &#x3D; Not main characters in the game</span><br></pre></td></tr></table></figure>
+<p>首先，您应该知道，我的宇宙中的大多数角色和Segicverse都是相同的。此外，历史记录还包含“主线故事”和“分支故事”。分支故事用于显示有关某些角色的个性和有趣的事实，而主线故事则是真实发生的故事。</p>
+<p>目前，您可以通过以下方式访问我的世界：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>故事类型</th>
+<th>作者</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Roaming Travellers in Fantasy Extravaganza</td>
+<td>主线</td>
+<td>XGN</td>
+<td>本站</td>
+</tr>
+<tr>
+<td>Segicverse</td>
+<td>主线</td>
+<td>Zhuky.RLG</td>
+<td><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5224967">https://www.bilibili.com/read/cv5224967</a></td>
+</tr>
+<tr>
+<td>LSS Short</td>
+<td>分支</td>
+<td>XGN</td>
+<td>本站</td>
+</tr>
+<tr>
+<td>LSS Problemset</td>
+<td>分支</td>
+<td>XGN</td>
+<td>链接已死</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>某些游戏中也会含有我的OC。请见<a target="_blank" rel="noopener" href="https://hellholestudios.github.io/HHS-Project-Site/">HHS Project</a></p>
+<table>
+<thead>
+<tr>
+<th>游戏名</th>
+<th>OC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The Lost Forest</td>
+<td>Terra*, Ookami</td>
+</tr>
+<tr>
+<td>TestSTG 3</td>
+<td>Kazami Ryoryu*, Nanjin Yatsujitera*, Hikari^</td>
+</tr>
+<tr>
+<td>Jade(In Dev)</td>
+<td>Hikari</td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* &#x3D; 旁支角色</span><br><span class="line">^ &#x3D; 在游戏中承担配角</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc/" data-id="clldw1ew0002i2ep8gk6r6558" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-【Segicverse-Extra】Extra1里的各种设定" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/" class="article-date">
@@ -201,7 +566,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/" data-id="clk2dd7p300922eo1hpfpebdb" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/" data-id="clldw1ez300992ep867n385xx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -351,7 +716,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/20/%E3%80%90Segicverse-Extra%E3%80%91%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%B8%8A%E5%88%B0%E5%BA%95%E9%83%BD%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9D%80%E4%BB%80%E4%B9%88%EF%BC%9F-zky%E8%A7%86%E8%A7%92-%E8%A2%AB%E5%81%B7%E5%81%B7%E7%BF%BB%E7%9C%8B%E7%9A%84%E6%97%A5%E8%AE%B0/" data-id="clk2dd7p400962eo19nz3bgfd" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/20/%E3%80%90Segicverse-Extra%E3%80%91%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%B8%8A%E5%88%B0%E5%BA%95%E9%83%BD%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9D%80%E4%BB%80%E4%B9%88%EF%BC%9F-zky%E8%A7%86%E8%A7%92-%E8%A2%AB%E5%81%B7%E5%81%B7%E7%BF%BB%E7%9C%8B%E7%9A%84%E6%97%A5%E8%AE%B0/" data-id="clldw1ez6009d2ep86xd36p3p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -441,7 +806,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Introduction-to-Touhou-Rinko/" data-id="clk2dd7ln000y2eo12ctx6wv6" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Introduction-to-Touhou-Rinko/" data-id="clldw1ev0000y2ep86b2t8wis" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -490,7 +855,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Mahjong-1/" data-id="clk2dd7lp00122eo1dk8v9s0v" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/18/Mahjong-1/" data-id="clldw1ev200122ep820ipgqss" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li></ul>
@@ -537,7 +902,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/CSP-S%E5%88%9D%E8%B5%9B%E6%B1%87%E6%8A%A5/" data-id="clk2dd7lh000m2eo11co63gt5" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/11/CSP-S%E5%88%9D%E8%B5%9B%E6%B1%87%E6%8A%A5/" data-id="clldw1eux000s2ep8bbtd44gd" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
@@ -581,7 +946,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Manual-Test/" data-id="clk2dd7lq00142eo1b1j80d2i" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Manual-Test/" data-id="clldw1ev300142ep8a5100g78" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li></ul>
@@ -624,209 +989,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Test-Blog/" data-id="clk2dd7lx001k2eo172fl9f68" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Test-Blog/" data-id="clldw1evb001m2ep82v48ha09" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Dream-LSS-Short" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/05/02/Dream-LSS-Short/" class="article-date">
-  <time datetime="2020-05-02T08:35:26.000Z" itemprop="datePublished">2020-05-02</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Literature/">Literature</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/02/Dream-LSS-Short/">Dream - LSS Short</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>This is part of the upcoming <a target="_blank" rel="noopener" href="https://http.cat/401">LSS 5</a> by XGN.</p>
-<h2>ONE</h2>
-
-<blockquote>
-  When we wake up from a dream, are we in reality or another dream?
-</blockquote>
-
-<p>White hall, I garb in the purest white clothes I could find, waiting for the “other one” to arrive. Deep breathing, in and out, I am quite nervous right now. This is my first time to wear like this and in a place like this, and I kinda hope it is the last time.</p>
-<p>The guests are coming one by one. Soon, the hall is filled with people and therianthropes from different places. Since he has not appeared, I’d like to calm myself down with something, like, this book? <em>Dream come true</em> by Ventuswill senpai. “I hope I can get something to deal with the situation in this leaflet..” I thought.</p>
-<p>My name is Doragon, an aqua dragon girl. Currently 495 years old, unmarried.</p>
-<p>With the door sound, he comes, in a hurry. “Sorry, I am late. You didn’t get mad, did you?” He mopped the sweat from his brow, doing his best to manage it all.</p>
-<p>“As everyone is here. We shall start.”</p>
-<p>“Doragon, do you take to be your husband, to love, honor and cherish him forever more?”</p>
-<p>Wait, what’s that? I’ve never heard I am going to do that. Actually, I don’t even know why I am here. “This must be a dream..” I thought,” so that means, I can do whatever I want?!?!”</p>
-<p>“OF COURSE I DO~” After all, this is one of the happiest moments in my life, even though it is only a dream.</p>
-<p>“Itaka, do you take to be your wife, to love, honor and cherish her forever more?”</p>
-<p>“Yes, I do.”</p>
-<p>This is going crazy!</p>
-<p>“You may now kiss the bride”</p>
-<p>It has been 3 hours. I should have been woken up… But this is such a lengthy dream, isn’t it?</p>
-<p>……</p>
-<p>The dream seems not to be ending. This is interesting. The wedding is over, but my mind is still a complete blank.</p>
-<p>“Honey, what’s wrong with you? Why are you staring at the ceiling for long? Are you hungry? Are you being too nervous? Or you are not comfortable to be in this suit?”</p>
-<p>Hungry? I am peckish though. Nervous? A bit afraid to wake up. Uncomfortable? Yes, I indeed feel painful in these stupid white clothes - they don’t fit, they are too small.</p>
-<p>Wait. If I can feel the pain, it means it is not a dream, right? So that means…</p>
-<p>I AM A NEWLYWED NOW!</p>
-<p>I am glad he’s Itaka, the prince of the country. I don’t remember why he comes for me, but at least, I am a royal dragon now. I don’t have to hide from the public anymore!</p>
-<h2>TWO</h2>
-
-<p>Time flies. It has been nearly 15 years. Weirdly, 15 years seem like 1 second in my point of view. Maybe that’s the power of happiness.</p>
-<p>We have got a child, Yuqi. A boy with draconic features and a cute human body. Today is his 10-year-old birthday. According to the custom, the boys are supposed to go out hunting for one day and one night alone. In this way, he will become more independent and braver.</p>
-<p>“Take care!” I definitely want to accompany him, but my husband stops me from doing so. So instead, I stand there until I cannot see his back.</p>
-<p>“Yuqi… That’s a weird name. Who gives him this name? I can’t remember anything now.” I whisper to myself, “This is such a weird storyline.”</p>
-<p>“You are just too nervous. Just sleep until he comes back.” Itaka sensed my weirdness.</p>
-<p>“That’s a good idea.”</p>
-<h2>THREE</h2>
-
-<p>………</p>
-<p><em>Unnamed Plain, a boy is walking through the tallgrasses, holding a gun shaking in his hand. Nobody can be heard and nobody can hear him. “This is gonna be all right…” the boy whispers to himself.</em></p>
-<p><em>“Wooof!” Wolf roaring can be heard in the distance. The boy starts to shake harder. Then, there are walking sounds all around him. “Who…are there?” Nobody answers, but the sound does not end. Poor child, he is lost in the tallgrass. He thought it was safe to stay because no one would notice him. But it turned out that he is the one who can’t see</em></p>
-<p><em>Right now, he is surrounded by a herd of wolves. “Evil human, take my attack!” one wolf jumps up and gives him a bite. “Help! Help! Mama and daddy!” The boy shouts, even without realizing he was holding a gun. But it was too late, a wolf in human form, or werewolf, appears and takes his gun away,”it’s time to get our revenge!”</em></p>
-<p><em>A gunshot can be heard in the distance. Another star appears in the sky.</em></p>
-<h2>FOUR</h2>
-
-<p>……</p>
-<p><em>“What is that??????”Doragon wakes up, out of breath. “I’d better check out what’s going on”</em></p>
-<p><em>Doragon opens her door. She is surprised. Itaka, her beloved husband, was lying on the ground, covered in blood. The whole castle, her room, was on fire. “!!??What happened when I was sleeping? Anyone help?”</em></p>
-<p><em>“She is there!” some folks heard the shout and rushed towards Doragon. “Hugh, I am saved”, she thought. But again, to her surprise, they did not save her, but instead knock her out.</em></p>
-<p><em>When Doragon is awoke, she finds herself tied to a cross. Her clothes have gone missing, leaving her naked. Many villagers can be seen. They are shouting: “Kill her! Kill her!”</em></p>
-<p><em>“What did I do wrong?”Doragon shouted. “You evil dragon, shut up! It’s you and that evil king who made this kingdom like a hell!”</em></p>
-<p><em>“What’s going on?” Doragon is confused, but nobody trusts her. The executioner appears. “Goodbye” With these words, he tears down her tail bloodily. “It’s time to end you bastard!” The crowds brust into cheers. The executioner takes out a knife, cuts open her chest, tears down her heart and shows it to the public.</em></p>
-<h2>FIVE</h2>
-
-<p>…….</p>
-<p>“Mom, wake up! Today is father’s birthday!”</p>
-<p>Oh? Who is that? Is it my “dead” son Yuqi?</p>
-<p>I’ve had a bad dream, no, two bad dreams actually. What’s wrong with me?</p>
-<p>“Oh? Really? Let’s prepare a cake for him, ok?” I try to pretend nothing wrong happened to me, giving him a smile.</p>
-<p>It is so lucky that I am still alive after visiting so many hells.</p>
-<p><em>But Doragon does not know, some angry folks have planned a fire outside the castle. Her second dream is happening again, but in reality… Or not?</em></p>
-<h2>SIX</h2>
-
-<p>……</p>
-<p>“Doragon, time to wake up!” XGN shouts.</p>
-<p>“Zzzzz. Just let me sleep..” Doragon says with unsatisfactory,”Wait??? THAT IS ALL A DREAM???? REALLY A LENGTHY DREAM???”</p>
-<p>“What are you talking about? Time for heading to school!” XGN puts down his manga book.</p>
-<p>“Alright…”</p>
-<p>Is this reality? I hope it is not. Dream or no, it can only be a nightmare.</p>
-<p><strong>The End Of Chapter Dream</strong></p>
-<h2>Ending</h2>
-
-<p>It takes too much time writing this shit. This is probably the last LSS Short you will find.</p>
-<p>And, I am not going to proofread this. This gonna take so much time.</p>
-<p>I want to keep the story interesting, but I also want to make it serious.</p>
-<p>Also, I am too lazy to propose problems for you. Inspired by <a target="_blank" rel="noopener" href="https://therunefactory.fandom.com/wiki/Ventuswill">Ventuswill’s Another Episode in Rune Factory 4 Speical</a></p>
-<p>A practise for English writing.</p>
-<h2>Easter eggs?</h2>
-
-<ol>
-<li><p>Yuqi is the name of HHS Member Zzzyt</p></li>
-<li><p>495 is the age of Flandre Scarlet</p></li>
-<li><p>ChONE contains many sentences from Venti's Another Episode</p></li>
-<li><p>The werewolf is Ookami, one of the characters from LSS.</p></li>
-</ol>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/05/02/Dream-LSS-Short/" data-id="clk2dd7lm000w2eo187pzeujw" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Dandelion-LSS-Short" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/04/28/Dandelion-LSS-Short/" class="article-date">
-  <time datetime="2020-04-28T12:20:40.000Z" itemprop="datePublished">2020-04-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Literature/">Literature</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/28/Dandelion-LSS-Short/">Dandelion - LSS Short</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><em>Repost from HHS Blog</em></p>
-<p>This story is part of LSS4 by XGN.</p>
-<p><em>Dandelion,dandelion,where will you fly? Will you take my heart away?</em></p>
-<p>“I am feeling not good today” It’s late night, and Ookami the werewolf girl still could’t fall asleep. “Damn the math test.. It must be the test that makes me feel sick…”</p>
-<p>“Damn, my head is getting heavier and heavier, I think.”  Dizzily, our cute girl fell into sleep.</p>
-<p><em>Don’t let… the hu..man catch.. us… cough…cough… Run!Run!Run…(Gunshot)</em></p>
-<p>“Ahh!!!” Ookami was woken by the nightmare. “What kind of dream is that?” She thought, “Wait… This is not my house. Where am I?”</p>
-<p>Looking around, she found herself in a place she never went before: white walls, white beds, white women… Isn’t this the hospital?</p>
-<p>“You are finally awake.” A woman in dress said, smiling.</p>
-<p>“Why I am in hospital?”</p>
-<p>“At one night one of your neighbours complaint about your loud coughing. He thought you may have infected the flu COVID-99. After our examination, unfortunately, so you did.”</p>
-<p>“Am… I going to die?”</p>
-<p>“No. Please be confident. You will recover after several operations.”</p>
-<p>“Operations??” Ookami thought, “That’s not nice. They will find out I am not a human… They will KILL me! They really caught me this time..”</p>
-<p>“You seems still worried. Be confident, and we will help you recover! Believe in us! You can recover in at most 1 month.”</p>
-<p>“Yey, I am going to <em>die</em> in 1 month” Ookami thought.</p>
-<p>The nurse went out of the room, so Ookami decided to hang around. “A bed, a window, a desk, that’s all. How lonely I am in this one-man room.” Out the window, she couldn’t see anything because the room was too high. When she stopped talking, there was no sound in the room. Everything was just deadly quiet. The hospital, more like a white jail, trapped our girl inside.</p>
-<p><em>Dandelion, dandelion, where will you go? Will you take me to see the mountain and the flow?</em></p>
-<p><em>Listen, my girl. Your dear mom is coming to rescue you.. Just hang there! Wait, and you will be fine! Don’t be afraid, my little girl. “How.. do I know how long I will wait?..” “Just take this dendelion. When you know how much seeds are there, mom will come”</em></p>
-<p>“What a dream is that?” Ookami woke with a huge dandelion in her hand, “To count how many seeds? It seems fun.”</p>
-<p>“1st 2nd 3rd 4th…” The easy task wasn’t easy for our girl, for she was taken out several times to measure the temperature. It took her a long time, but she still couldn’t finish the task. The seeds were so much as if they magically regenerated.</p>
-<p><em>Dandelion, dandelion, where will you stay? Can you help me get through this May?</em></p>
-<p>Days have passed, weeks have passed. It’s time for our girl to have operations. Surprisingly, our girl didn’t feel worried during it, because all her mind was flooded by dandelion seeds. She knowed that, if she miscounted, her mom would never come.</p>
-<p>“You are recovered and you can go now! Your friends are waiting for you at the gate!” One day, the nurse said so.</p>
-<p>“Really? But I haven’t finished counting…” Ookami wanted to say, but she swallowed her remaining words. “OK!”</p>
-<p>“You are finally recovered!” Over the gate, XGN, Doragon and Ninetails had been waiting for a long time.</p>
-<p>“Hey, you guys? Do you know that how I passed through these days? My mom told me to count these…” Ookami was proudly sharing her “life experience”</p>
-<p>After the story, the friends were amazed except XGN. He smiled and looked at this foolish girl. “She still didn’t know a thing.” XGN thought,”Her mother was shot dead on the day she was born. How could she come to save her?”</p>
-<p>“oh by the way, how’s my Math test?” Ookami asked curiously.</p>
-<p>“You? You failed it <em>again</em>!” XGN bursted into laughter</p>
-<p>“Oh come on please!!! I tried so hard!!”</p>
-<p><em>The End of Chapter Dandelion</em></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/04/28/Dandelion-LSS-Short/" data-id="clk2dd7lk000s2eo13px4fz8i" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
 
     </footer>
   </div>
@@ -839,7 +1005,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/8/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span>
+    <a class="extend prev" rel="prev" href="/page/8/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/10/">Next &amp;raquo;</a>
   </nav>
 
 </section>
@@ -870,7 +1036,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17px;">Dev</a> <a href="/tags/English/" style="font-size: 19px;">English</a> <a href="/tags/Java/" style="font-size: 12px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 13px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 14px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18px;">OC</a> <a href="/tags/OI/" style="font-size: 17px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 15px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 16px;">Ryujin</a> <a href="/tags/Segicverse/" style="font-size: 12px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 11px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 13px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 13px;">ZKY</a>
+      <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17.27px;">Dev</a> <a href="/tags/English/" style="font-size: 19.09px;">English</a> <a href="/tags/Java/" style="font-size: 11.82px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 12.73px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 13.64px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18.18px;">OC</a> <a href="/tags/OI/" style="font-size: 16.36px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 14.55px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 15.45px;">Ryujin</a> <a href="/tags/Segicverse/" style="font-size: 11.82px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 10.91px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 12.73px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 12.73px;">ZKY</a>
     </div>
   </div>
 
@@ -879,7 +1045,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
     </div>
   </div>
 
@@ -892,23 +1058,23 @@
       <ul>
         
           <li>
+            <a href="/2023/08/16/jpnblog/">日行紀要（XGN）</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/14/unweekly-12/">Unweekly Report 2023 No. 12</a>
+          </li>
+        
+          <li>
+            <a href="/2023/07/14/ryuujin-dict-release/">龙人语在线词典发布</a>
+          </li>
+        
+          <li>
             <a href="/2023/07/14/learn-new-Ryuujin-verb-phrase/">新龙人语教程5 - 多汉字词</a>
           </li>
         
           <li>
             <a href="/2022/08/11/learn-new-Ryuujin-time/">新龙人语教程4 - 日期与时间</a>
-          </li>
-        
-          <li>
-            <a href="/2022/08/05/learn-new-Ryuujin-number/">新龙人语教程3 - 数字</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/30/zjstg2-release-note/">ZJSTG2发布后记</a>
-          </li>
-        
-          <li>
-            <a href="/2022/06/19/random-diary-11/">Random Diary No. 11 - 「狐狸在等我 The fox awaits me」游戏简评</a>
           </li>
         
       </ul>
