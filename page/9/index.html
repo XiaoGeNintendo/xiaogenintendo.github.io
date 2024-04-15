@@ -101,7 +101,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/17/scp-s2-2020-update/" data-id="clv101023008sx8ib3ahxbugj" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/17/scp-s2-2020-update/" data-id="clv11guem00bejoib9diy8rzj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -143,69 +143,15 @@
 <li>学习Java中类型的区别</li>
 <li>学习null是什么</li>
 </ul>
-<h1 id="类型的类型"><a href="#类型的类型" class="headerlink" title="类型的类型"></a>类型的类型</h1><p>在Java中，变量的类型可以是像<code>int</code>,<code>long</code>这样比较单纯，只保存一种信息的基本类型（暂且这么叫）。</p>
-<p>同时也有包含着方法、成员变量的<code>String</code>,<code>Scanner</code>这样的复杂类型（非专业术语）。</p>
-<p>更有着数组。</p>
-<p>那么，三者有什么区别呢？ 请看表：</p>
-<table>
-<thead>
-<tr>
-<th>Characteristic</th>
-<th>Basic Type</th>
-<th>Complex Type</th>
-<th>Array</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Examples</td>
-<td>int, long, boolean</td>
-<td>String, BigInteger</td>
-<td>int[], String[]</td>
-</tr>
-<tr>
-<td>Passed in function</td>
-<td>Pass Value</td>
-<td>Pass Address</td>
-<td>Pass Address</td>
-</tr>
-<tr>
-<td>Default Value</td>
-<td>0/false</td>
-<td>null</td>
-<td>null</td>
-</tr>
-<tr>
-<td>Stored Value</td>
-<td>value</td>
-<td>pointer</td>
-<td>pointer</td>
-</tr>
-<tr>
-<td>Query equal?</td>
-<td>a==b</td>
-<td>a.equals(b)</td>
-<td>Arrays.equals(a,b)</td>
-</tr>
-<tr>
-<td>compare?</td>
-<td>a&gt;b a&lt;b</td>
-<td>a.compareTo(b)</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Create?</td>
-<td>int a=3</td>
-<td>keyword new</td>
-<td>keyword new</td>
-</tr>
-</tbody></table>
-<p>Java中绝大多数类型是复杂类型，其变量实质包含的是一个<strong>指向该对象的指针</strong>。</p>
-<h1 id="什么是null"><a href="#什么是null" class="headerlink" title="什么是null"></a>什么是null</h1><p>null，及空指针，指向虚无的指针。对于null调用任何东西会运行时错误，有如从虚空中取物品，非常好理解。</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/11/16/java-3/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/16/java-3/" data-id="clv10101o0057x8ib2czqa5hu" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/16/java-3/" data-id="clv11gudo003gjoibeqwq4yw7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
@@ -251,35 +197,15 @@
 <li>一定的OI基础</li>
 <li><strong>掌握Java语言</strong></li>
 </ul>
-<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><p>以<a target="_blank" rel="noopener" href="https://codeforces.com/contest/1431/problem/A">Selling Hamburgers</a>为例</p>
-<h2 id="1-新建一个类，写下你的Java代码："><a href="#1-新建一个类，写下你的Java代码：" class="headerlink" title="1.新建一个类，写下你的Java代码："></a>1.新建一个类，写下你的Java代码：</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * A Template Used For Competitive Programming</span></span><br><span class="line"><span class="comment"> * By XGN from HHS 2020</span></span><br><span class="line"><span class="comment"> * Intellij is too hard to use...</span></span><br><span class="line"><span class="comment"> * Code created at 2020/11/13 22:30</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">A1431</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        A1431 me = <span class="keyword">new</span> A1431();</span><br><span class="line">        me.solve(args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    InputReader in;</span><br><span class="line">    PrintWriter out;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">solve</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        in=<span class="keyword">new</span> InputReader(System.in);</span><br><span class="line">        out=<span class="keyword">new</span> PrintWriter(System.out);</span><br><span class="line">        <span class="keyword">int</span> t=in.nextInt();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;t;i++)&#123;</span><br><span class="line">            subtask();</span><br><span class="line">        &#125;</span><br><span class="line">        out.flush();</span><br><span class="line">        out.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">subtask</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n=in.nextInt();</span><br><span class="line">        <span class="keyword">long</span>[] bur=<span class="keyword">new</span> <span class="keyword">long</span>[n];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            bur[i]=Long.parseLong(in.next());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Arrays.sort(bur);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">long</span> max=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            max=Math.max(max,bur[i]*(n-i));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        out.println(max);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">InputReader</span> </span>&#123;</span><br><span class="line">        <span class="keyword">public</span> BufferedReader reader;</span><br><span class="line">        <span class="keyword">public</span> StringTokenizer tokenizer;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">InputReader</span><span class="params">(InputStream stream)</span> </span>&#123;</span><br><span class="line">            reader = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(stream), <span class="number">32768</span>);</span><br><span class="line">            tokenizer = <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">next</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">while</span> (tokenizer == <span class="keyword">null</span> || !tokenizer.hasMoreTokens()) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    tokenizer = <span class="keyword">new</span> StringTokenizer(reader.readLine());</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(e);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> tokenizer.nextToken();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">nextInt</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> Integer.parseInt(next());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>并且调试好</p>
-<h2 id="2-按Ctrl-Alt-Shift-K，产生如下代码："><a href="#2-按Ctrl-Alt-Shift-K，产生如下代码：" class="headerlink" title="2.按Ctrl+Alt+Shift+K，产生如下代码："></a>2.按Ctrl+Alt+Shift+K，产生如下代码：</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*</span><br><span class="line"><span class="keyword">import</span> java.io.*</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * A Template Used For Competitive Programming</span></span><br><span class="line"><span class="comment"> * By XGN from HHS 2020</span></span><br><span class="line"><span class="comment"> * Intellij is too hard to use...</span></span><br><span class="line"><span class="comment"> * Code created at 2020/11/13 22:30</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A1431</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">var</span> `<span class="keyword">in</span>`: InputReader</span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">var</span> <span class="keyword">out</span>: PrintWriter</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">solve</span><span class="params">(args: <span class="type">Array</span>&lt;<span class="type">String</span>&gt;)</span></span> &#123;</span><br><span class="line">        `<span class="keyword">in</span>` = InputReader(System.`<span class="keyword">in</span>`)</span><br><span class="line">        <span class="keyword">out</span> = PrintWriter(System.<span class="keyword">out</span>)</span><br><span class="line">        <span class="keyword">val</span> t = `<span class="keyword">in</span>`.nextInt()</span><br><span class="line">        <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">0</span> until t) &#123;</span><br><span class="line">            subtask()</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">out</span>.flush()</span><br><span class="line">        <span class="keyword">out</span>.close()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">internal</span> <span class="function"><span class="keyword">fun</span> <span class="title">subtask</span><span class="params">()</span></span> &#123;</span><br><span class="line">        <span class="keyword">val</span> n = `<span class="keyword">in</span>`.nextInt()</span><br><span class="line">        <span class="keyword">val</span> bur = LongArray(n)</span><br><span class="line">        <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">0</span> until n) &#123;</span><br><span class="line">            bur[i] = java.lang.<span class="built_in">Long</span>.parseLong(`<span class="keyword">in</span>`.next())</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Arrays.sort(bur)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> max: <span class="built_in">Long</span> = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">0</span> until n) &#123;</span><br><span class="line">            max = Math.max(max, bur[i] * (n - i))</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">out</span>.println(max)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">internal</span> <span class="class"><span class="keyword">class</span> <span class="title">InputReader</span></span>(stream: InputStream) &#123;</span><br><span class="line">        <span class="keyword">var</span> reader: BufferedReader</span><br><span class="line">        <span class="keyword">var</span> tokenizer: StringTokenizer? = <span class="literal">null</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">init</span> &#123;</span><br><span class="line">            reader = BufferedReader(InputStreamReader(stream), <span class="number">32768</span>)</span><br><span class="line">            tokenizer = <span class="literal">null</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">operator</span> <span class="function"><span class="keyword">fun</span> <span class="title">next</span><span class="params">()</span></span>: String &#123;</span><br><span class="line">            <span class="keyword">while</span> (tokenizer == <span class="literal">null</span> || !tokenizer!!.hasMoreTokens()) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    tokenizer = StringTokenizer(reader.readLine())</span><br><span class="line">                &#125; <span class="keyword">catch</span> (e: IOException) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> RuntimeException(e)</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> tokenizer!!.nextToken()</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">fun</span> <span class="title">nextInt</span><span class="params">()</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> Integer.parseInt(next())</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">companion</span> <span class="keyword">object</span> &#123;</span><br><span class="line">        <span class="meta">@JvmStatic</span></span><br><span class="line">        <span class="function"><span class="keyword">fun</span> <span class="title">main</span><span class="params">(args: <span class="type">Array</span>&lt;<span class="type">String</span>&gt;)</span></span> &#123;</span><br><span class="line">            <span class="keyword">val</span> me = A1431()</span><br><span class="line">            me.solve(args)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-检查编译和转换结果。一般情况下，需要在-定义在类里的非基本类型加上optional标志，即’-’并手动赋初值null"><a href="#3-检查编译和转换结果。一般情况下，需要在-定义在类里的非基本类型加上optional标志，即’-’并手动赋初值null" class="headerlink" title="3.检查编译和转换结果。一般情况下，需要在 定义在类里的非基本类型加上optional标志，即’?’并手动赋初值null"></a>3.检查编译和转换结果。一般情况下，需要在 <em>定义在类里的非基本类型加上optional标志，即’?’并手动赋初值null</em></h2><p>比如</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">internal</span> <span class="keyword">var</span> <span class="keyword">out</span>: PrintWriter</span><br></pre></td></tr></table></figure>
-
-<p>to</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">internal</span> <span class="keyword">var</span> <span class="keyword">out</span>: PrintWriter? = <span class="literal">null</span></span><br></pre></td></tr></table></figure>
-
-<p>然后在要用的地方（赋值的地方不要）加上<code>!!</code></p>
-<p>比如</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">out</span>.println(<span class="string">&quot;Yes&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>to</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">out</span>!!.println(<span class="string">&quot;Yes&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-添加"><a href="#4-添加" class="headerlink" title="4.添加"></a>4.添加</h2><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    ClassName.main(arrayOf(<span class="string">&quot;&quot;</span>))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>Classname</code>是你java的类名</p>
-<h2 id="5-提交，AC"><a href="#5-提交，AC" class="headerlink" title="5.提交，AC!!"></a>5.提交，AC!!</h2><p><a target="_blank" rel="noopener" href="https://codeforces.com/contest/1431/submission/98288001">最终程序</a></p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>此方法可以快速化不熟悉为熟悉，避免查表等问题，非常好用。</p>
-<h1 id="此外，附赠IDEA模板一份"><a href="#此外，附赠IDEA模板一份" class="headerlink" title="此外，附赠IDEA模板一份"></a>此外，附赠IDEA模板一份</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">import</span> java.io.*;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">A Template Used For Competitive Programming</span></span><br><span class="line"><span class="comment">By XGN from HHS 2020</span></span><br><span class="line"><span class="comment">Intellij is too hard to use...</span></span><br><span class="line"><span class="comment">Code created at $&#123;DATE&#125; $&#123;TIME&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> $</span>&#123;NAME&#125;&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        $&#123;NAME&#125; me=<span class="keyword">new</span> $&#123;NAME&#125;();</span><br><span class="line">        me.solve(args);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">solve</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        InputReader in=<span class="keyword">new</span> InputReader(System.in);</span><br><span class="line">        PrintWriter out=<span class="keyword">new</span> PrintWriter(System.out);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//TODO code here</span></span><br><span class="line">        </span><br><span class="line">        out.flush();</span><br><span class="line">        out.close();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">InputReader</span> </span>&#123;</span><br><span class="line">        <span class="keyword">public</span> BufferedReader reader;</span><br><span class="line">        <span class="keyword">public</span> StringTokenizer tokenizer;</span><br><span class="line"> </span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">InputReader</span><span class="params">(InputStream stream)</span> </span>&#123;</span><br><span class="line">            reader = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(stream), <span class="number">32768</span>);</span><br><span class="line">            tokenizer = <span class="keyword">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">next</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">while</span> (tokenizer == <span class="keyword">null</span> || !tokenizer.hasMoreTokens()) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    tokenizer = <span class="keyword">new</span> StringTokenizer(reader.readLine());</span><br><span class="line">                &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                    <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(e);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> tokenizer.nextToken();</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">nextInt</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> Integer.parseInt(next());</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/11/13/get-good-at-kotlin-round/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/13/get-good-at-kotlin-round/" data-id="clv10101i004ix8ibdo4pfhsu" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/13/get-good-at-kotlin-round/" data-id="clv11gudi002bjoib22qnhnse" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
@@ -365,52 +291,15 @@
 <td>40</td>
 </tr>
 </tbody></table>
-<h1 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h1><p>一上来先看了T1，震惊！！竟然是大模拟！！数学BYEBYE,我要打表。</p>
-<p>不过，当时打表的时候连续写错3次“求一个日期的下一天”。xs</p>
-<p>然后40分钟不到大样例就过了。</p>
-<h1 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h1><p>我一看，好像很难的样子！！再一看，水题！！</p>
-<p>轻松秒掉，然后一看不对劲，<code>1ll&lt;&lt;i</code> 写成了 <code>1&lt;&lt;i</code></p>
-<p>再一看，要用 <code>unsigned long long</code>。怎么读入呢？<code>%lld</code>，<code>%ull</code> 还是 <code>%llu</code>（是我） 呢？</p>
-<p>然后再一看答案会爆ULL_MAX！！于是特判了一个点</p>
-<p>吃⑩吧CCF出这种坑人题。</p>
-<p>30分钟做完</p>
-<h1 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h1><p>不会，打了许多暴力，然后挂了许多。考场上脑残连LAZY标记都想不出来。</p>
-<h1 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h1><p>暴力。</p>
-<h1 id="自测"><a href="#自测" class="headerlink" title="自测"></a>自测</h1><h2 id="OITIKU"><a href="#OITIKU" class="headerlink" title="OITIKU"></a>OITIKU</h2><p>今年的自测有点意思……首先是OITIKU，我一测：</p>
-<ul>
-<li>T1忘记考虑输入=0，瞬间90</li>
-<li>T2莫名其妙T一个点，95</li>
-<li>T3只有20了？？</li>
-<li>T4正常</li>
-</ul>
-<p>然后是</p>
-<blockquote>
-<p>我T3暴力拿了75！！</p>
-<p>–Zhuky.RLG</p>
-</blockquote>
-<p>心态崩了。</p>
-<h2 id="Luogu"><a href="#Luogu" class="headerlink" title="Luogu"></a>Luogu</h2><p>于是我又到洛谷上平衡一下心态。我再一测：</p>
-<ul>
-<li>T1还是90</li>
-<li>T2全T了，只剩65</li>
-<li>T3还是20</li>
-<li>T4稳稳地40</li>
-</ul>
-<p>这可不行！！！</p>
-<h2 id="Newcoder"><a href="#Newcoder" class="headerlink" title="Newcoder"></a>Newcoder</h2><p>我一看，好地方。我一测：</p>
-<ul>
-<li>T1直接0分了</li>
-<li>T2 85</li>
-<li>T3 竟然跑到了30</li>
-<li>T4还是40</li>
-</ul>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>今年自测什么乱七八糟的？？？看来需要祈祷官方数据比较良心了。</p>
-<h2 id="UPD-2020-11-17"><a href="#UPD-2020-11-17" class="headerlink" title="UPD:2020/11/17"></a>UPD:2020/11/17</h2><p>成绩出来了，事实上CCF的机子跑得飞快，非常感谢。</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" data-id="clv10100v000nx8ibcuuk5ycn" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/11/12/CSP-S2-2020%E6%B8%B8%E8%AE%B0/" data-id="clv11gud9000qjoibcxeyewum" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
@@ -450,196 +339,15 @@
       
         <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This is a sequal and expansion of <em>RTiFE</em></p>
 <p>Read that before this</p>
-<h1 id="能力"><a href="#能力" class="headerlink" title="能力"></a>能力</h1><p><strong>【概】能力</strong></p>
-<p>Ability</p>
-<p>能力分为3种：</p>
-<ul>
-<li><p><strong>种族能力</strong>：由你的种族<del>class</del>确定。比如说，所有的火龙都会喷火。</p>
-</li>
-<li><p><strong>个体能力</strong>：某个生物具体的独有的能力，通常是天生的或者早期觉醒的，也有可能是他人供给的。比如说，Rinko的“附身鸟和龙的能力”</p>
-</li>
-<li><p><strong>凶兽能力</strong>：某个凶兽通过杀戮获得的能力，短期能力。成为执政凶兽后容易忘记。比如Rinko的“拍照使物品静止的能力”</p>
-</li>
-</ul>
-<h1 id="凶兽"><a href="#凶兽" class="headerlink" title="凶兽"></a>凶兽</h1><p><strong>【概】凶兽</strong></p>
-<p>Beast</p>
-<p>凶兽是世界中重要的一部分，（一般来说）代表着黑暗与杀戮。<del>好像Temmie的世界观中也有类似的设定</del></p>
-<p>凶兽的（一般）特性：</p>
-<ul>
-<li><p>有着杀戮的欲望。存在凶兽基因，会在虐待他人时获得快感，这种快感在受害者与自己关系越好时越强烈。</p>
-</li>
-<li><p>能够通过杀死其他有能力的人复制能力</p>
-</li>
-<li><p>能够通过杀戮和吞噬生物精华（心脏等）获得凶兽能力。</p>
-</li>
-<li><p>在成为执政凶兽后非常温顺</p>
-</li>
-</ul>
-<p><strong>【概】半凶兽</strong></p>
-<p>Half Beast</p>
-<ul>
-<li><p>半凶兽指有着类似凶兽的能力但是不宣告成为凶兽的生物。比如说早期的Rinko有着强大的个体能力但不是凶兽。</p>
-</li>
-<li><p>半凶兽不可复制能力，没有凶兽基因，没有凶兽能力。</p>
-</li>
-</ul>
-<p><strong>【概】自由凶兽 extends 凶兽</strong></p>
-<p>Free Beast</p>
-<ul>
-<li><p>自由凶兽指 <em>自主</em> 宣告成为凶兽的半凶兽。</p>
-</li>
-<li><p>可以成为执政凶兽，可复制能力，有凶兽基因，有凶兽能力。</p>
-</li>
-<li><p>龙族不可以成为自由凶兽</p>
-</li>
-</ul>
-<p><strong>【概】契约凶兽 extends 凶兽</strong></p>
-<p>Contract Beast</p>
-<ul>
-<li><p>契约凶兽指利用龙王的力量宣告成为凶兽的半凶兽。</p>
-</li>
-<li><p><em>不</em> 可以成为执政凶兽，但可复制能力，有凶兽基因，有凶兽能力。</p>
-</li>
-<li><p>龙族可以成为契约凶兽</p>
-</li>
-</ul>
-<p><strong>【概】执政凶兽</strong></p>
-<p>No English Translation</p>
-<ul>
-<li><p>执政凶兽是凶兽的一种状态。触发于毁灭世界或者击败上一届执政凶兽和龙王之后。</p>
-</li>
-<li><p>执政凶兽可以控制龙王，作为世界代表。</p>
-</li>
-<li><p>毁灭世界的凶兽有权力定义新世界规则。</p>
-</li>
-</ul>
-<h1 id="龙王"><a href="#龙王" class="headerlink" title="龙王"></a>龙王</h1><p>龙王</p>
-<p>D. Lord</p>
-<p>种族： 龙</p>
-<p>年龄： N/A</p>
-<p>能力： N/A</p>
-<p>介绍：</p>
-<ul>
-<li><p>龙王一般显人形，不显尾、翼、角。红色火龙。</p>
-</li>
-<li><p>世界的Administrator。拥有的力量基本上是inf。唯一的制约是受到执政凶兽的控制。</p>
-</li>
-<li><p>检验凶兽是否有资格成为执政凶兽。</p>
-</li>
-<li><p>战斗时永远不使用过大的力量。（大概肉体力量的10%）</p>
-</li>
-<li><p>掌握全部龙族的力量和世界的定义权。所有龙族必须服从龙王的命令。</p>
-</li>
-</ul>
-<h1 id="早期OC角色一览"><a href="#早期OC角色一览" class="headerlink" title="早期OC角色一览"></a>早期OC角色一览</h1><table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Status</th>
-<th>Political</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Ookami</td>
-<td>H</td>
-<td>D</td>
-<td>N</td>
-</tr>
-<tr>
-<td>Doragon</td>
-<td>H</td>
-<td>D</td>
-<td>N</td>
-</tr>
-<tr>
-<td>Ninetail</td>
-<td>F</td>
-<td>D</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>Hikari</td>
-<td>F</td>
-<td>N</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>ZKY</td>
-<td>C</td>
-<td>D</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>Segic</td>
-<td>H</td>
-<td>D</td>
-<td>N</td>
-</tr>
-<tr>
-<td>Hypret</td>
-<td>H</td>
-<td>N</td>
-<td>N</td>
-</tr>
-<tr>
-<td>RLG</td>
-<td>F</td>
-<td>N</td>
-<td>Y</td>
-</tr>
-<tr>
-<td>Rinri</td>
-<td>C</td>
-<td>D</td>
-<td>N</td>
-</tr>
-<tr>
-<td>Rinko</td>
-<td>H</td>
-<td>D</td>
-<td>N</td>
-</tr>
-<tr>
-<td>Orimare</td>
-<td>H</td>
-<td>D</td>
-<td>N</td>
-</tr>
-<tr>
-<td>Ender Snake</td>
-<td>F</td>
-<td>D</td>
-<td>Y</td>
-</tr>
-</tbody></table>
-<p>Type</p>
-<ul>
-<li>H=半凶兽</li>
-<li>F=自由凶兽</li>
-<li>C=契约凶兽</li>
-</ul>
-<p>Status</p>
-<ul>
-<li>D=死亡</li>
-<li>H=存活</li>
-<li>N=存活+一次复活权力</li>
-</ul>
-<p>Political</p>
-<ul>
-<li>N=曾经不是执政凶兽</li>
-<li>Y=曾经是执政凶兽</li>
-</ul>
-<p>有意思的地方</p>
-<ul>
-<li>ZKY是契约凶兽但是是执政凶兽</li>
-<li>Hikari是龙族但是是自由凶兽</li>
-</ul>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/10/24/ability-and-beast/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/24/ability-and-beast/" data-id="clv10101e003zx8ib3knic6t5" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/24/ability-and-beast/" data-id="clv11gudh0025joib2njw0mzs" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -689,80 +397,15 @@
 <p>Of you sins crawling on your back?      –Stronger than you</p>
 </blockquote>
 <p><strong>However, I cannot even save my best friends… I can’t live on with my sins, I will… sacrifice myself… Goodbye, please, don’t forget me!</strong></p>
-<h1 id="Here…we-go"><a href="#Here…we-go" class="headerlink" title="Here…we go."></a>Here…we go.</h1><p>这个世界的龙族，已经完全凶兽化，天空被阴云遮蔽，那极速飞行的骇人光影是空中无数疯狂杀戮的龙，昔日辉煌宏伟的城市如今硝烟四起，直插云霄的高楼被巨大的火球拦腰炸裂，被强大的冲击力推向天空，砸在奋力支撑着人们逃亡的街道上，巨石迸溅。烧尽的汽车，破碎的玻璃，摇摇欲坠的楼房。空中的飞船无法躲避漫天的飞弹，燃烧着撞向皇宫的楼顶，又坠落在街道上，一阵火光冲向天边，在爆炸中被飞船压住的人们声嘶力竭地哭喊着，却只能眼睁睁看着自己被从身后漫延而来的烈焰烧死。子弹列车在轨道上速度渐渐变缓，还没能停下来，从天而降的冰晶就将列车拦腰截断，后面的车厢冲撞向前，翻下轨道，落入桥下的谷底。</p>
-<p><strong>I’ve expected this, but I knew I will never be prepared for this when the day comes.</strong></p>
-<p>狂风吹开了晚上已经被锁上的窗户，我猛然惊醒，看向窗外，一道光束顺着墙壁划过，我向旁边一闪，才勉强躲过，Hikari，为什么她没有喊我起床，难道她…？不是和龙王大人在一起吗？不会有危险吧？不…龙王大人不会有事的！</p>
-<p><strong>How could you? Find him now!</strong></p>
-<p>虽然这么想着，我以最快的速度叫醒了所有人，不顾一切地向龙王大人的房间冲去，疾跑在走廊上，突然一场剧烈的大爆炸把我狠狠撞在了墙上，大理石柱倒塌在地上，走廊的一侧被炸出了一个大洞，我迅速爬起来，看向爆炸的方向，龙王大人，他也已经凶兽化了，Hikari还在阻挡他，没有了能量来源，Hikari已经精疲力竭，完全在靠残存的意识在战斗。我愣住了，这是一场终极异变，而我……没有考虑的机会了……魔法契约在我的灵魂中回响，“永远忠于龙王大人，以生命保护龙王大人”。</p>
-<p><strong>Be loyal… Be submissive…</strong></p>
-<p>这个世界，最让人神往的，就是这样超越生死的契约，龙王大人，不论你是龙还是凶兽，不论你要的是和平还是毁灭。即使是屠杀整个世界，我也站在你一边，为了你，我愿与整个世界为敌，我永远不会质疑，错的不可能是龙王大人，只可能是这个世界！</p>
-<p><strong>I don’t care even a bit about the world, cuz you have already become my world.</strong></p>
-<p>生命算是什么？自我又有什么价值？绝对服从于我永远的龙王大人，永远的神，才是对我而言世界的真理。我腾空而起，战争的热血再一次涌向我的全身，我知道我就算不被我的对手击杀，也会被龙王大人杀死，这样龙王大人会获得更多能量，但我愿意，我愿意战死此地，我愿意为龙王大人而献出生命，这是无上的牺牲，这就是我的命运！</p>
-<p><strong>Just listen to your heart!</strong></p>
-<p>OP之剑在我的手中颤抖着，无限的能力随时将要爆发出来。其他人都已经赶到了，来吧，你们知道我为什么会成为你们的对手，可你们怎么击败我呢？</p>
-<p>你一定是疯了，zky，你怎么会到了这时候仍然坚持着你的执念。好吧，我知道你一向是一个从不改变自己意识的人，我不怪你。Segic丢下了手中的光剑：也许是我还不了解你，但为了这个世界，也是为了你自己，我今天必须了结了你！</p>
-<p>我看着迎面从来的Segic，丝毫没有迟疑，甚至…是一种冲动。他手中汇聚了全部的灵魂力量……</p>
-<p>“Soul Break Blaster!”</p>
-<p>“Sword of OP: Destroyer Level!”</p>
-<p>为什么？他已经完全失去理智了，Segic的眼神中完全无法相信发生的一切，灵魂被OP之剑瞬间爆发的能量摧毁。他仰望着天空中同样飞速下落的我，最后的目光中充满了不解和无奈。</p>
-<p>直接是超额透支自己使用最强的灵魂攻击吗？我睁大了双眼，灵魂在胸膛中粉碎，意识渐渐模糊……龙王大人，我要永远离开你了，我尽力了，没有我，你要好好地活下去，要每天……都开开心心的呀！</p>
-<p>我的后背重重地撞击在瓷砖地面上，断裂的骨头发出一声脆响，鲜血从嘴角流出。渐渐难以呼吸，我用余光看见龙王大人将Hikari甩在墙上，微微一笑，最后一次闭上了眼睛……</p>
-<p><strong>Legends die. Their names written down in the eternity will still be erased without mercy…</strong></p>
-<hr>
-<p>“告诉我，Rinri在哪里！”zhukyRLG跳下浮游炮，向着狂笑着的Rinko跑去。</p>
-<p>“好吧，不瞒你说，我已经把他杀了！”</p>
-<p>“你…连自己的亲哥哥都杀？你还是不是龙？你怎么可以…”zhukyRLG回想起zky最后的嘱托，杀了Rinko，如果他附身了时空相关的龙，整个战局就不由我们控制了。</p>
-<p>zhukyRLG咬紧牙关，Rinko也是我们的朋友，怎么可以……Rinko突然举起相机，zhukyRLG见势不妙，浮游炮发射出巨大的绿色火球，却突然悬停在空中。那个相机，会静止拍摄到的一切，只不过……</p>
-<p>一个浮游炮悄悄从后方靠近，一炮夺走了这个已经癫狂的可怜生命。</p>
-<hr>
-<p>“我来拖住他，你赶快加速净化！”，Hypret持剑挡下龙王大人刺来的利爪，另一只手拖着一道绿光在空中挥舞着，一个响指，龙王大人消失在空中，“快点，一个结界支撑不了多久！”话还没说完，结界就又一次崩塌，烈焰从里面喷射出来，Hypret一个瞬移闪到地面上，却被跳下来的龙王大人扑倒在地上。Hypret的右手摸到一个依然温热的剑柄，瞬间持于胸前。</p>
-<p>“Sword of OP: Universe Level!”</p>
-<p>光束挡住了龙王大人愤怒的利爪，但龙王大人的攻击一次比一次猛烈，而Hypret的魔法值已经快要接近0了。</p>
-<p>“净化！”白色的光束覆盖了龙王大人全身，他的眼神重新汇聚，若有所思地收回了正要再一次刺下的利爪，站了起来。</p>
-<hr>
-<p>“Orimare！你为什么不明白！我是不会骗你的，所有具有龙基因的生物都已经凶兽化了，你现在做出的事情，是你根本就不想做的，你现在根本不是你自己。”</p>
-<p>“在这样一个唯心的世界里，为什么要跟我谈这些，如果杀了你们会让我感到刺激，那就让我这么做吧。”</p>
-<p>“那样你会后悔的！”X-Gekrot的眼睛闪着金光，那些本来看不见的原魔法能量球，纷纷也一起闪着光，改变轨道，向着四周打去，“我不想攻击你，我也快要没有能量了，你应该也一样，我们可以回头的，随时都可以！”</p>
-<p>“真没意思，”Orimare手指向天空，召唤，原魔法终极毁灭，“这一波，你不可能再操控这些。”</p>
-<p>“那…真的…对不起了，”X-Gekrot看着如同海啸一般俯冲下来的魔法能量，右眼闪出了蓝光…</p>
-<hr>
-<p>“没有办法了，这个世界已经完全混乱了”Hypret把OP之剑交给zhukyRLG，“它的末路，只能是毁灭，而我现在把这个机会交给你，成为新一代执政凶兽吧，下一个时代，会和现在不一样的。”</p>
-<p>zhukyRLG双手悬在空中，不知所措，Hypret走上前去，把剑柄放在他的手心：“你是zky意识体最后的幸存者，也是我最后的信念了，从现在开始，你是OP了。”</p>
-<p>【第一人称视角转换！】</p>
-<p>我拿下OP之剑，紧紧握住，郑重地点点头，深呼吸一口：“我宣布，我自立为凶兽，掌握毁灭多元宇宙组的最高六维能力，将作为下一个宇宙的新执政凶兽！”</p>
-<p>“THE SWORD OF OP: DESTORYER LEVEL, Multiverset Collision!”</p>
-<p>我走进中转结界，回头最后望向我们生活了很久的宇宙，有些人永远地留在了这里，zky，Segic，Rinri，Rinko，我不会忘记你们，我不会忘记这个宇宙。</p>
-<p>“还有，Orimare，”X-Gekrot的声音颤抖着，泪水从眼角流下，哽咽着再说不出一句话来。</p>
-<p>“Ookami…我永远对不起她，”Doragon看着沾满血迹的三叉戟，完全无法接受自己所做的一切，低着头地跪在地上，失声痛哭。</p>
-<p>再见！</p>
-<hr>
-<blockquote>
-<p>风沙，湮没了石刻的丰碑</p>
-<p>海浪，带走了走过的足迹</p>
-<p>秋风，吹落了凝霜的红叶</p>
-<p>晚霞，沉没了希望的光芒</p>
-<p>难忘记，那仰望星空的夜晚</p>
-<p>星夜里微笑的少年，早已随风逝去</p>
-<p>仍忆起，那小店里香喷喷的面包</p>
-<p>沐浴着阳光的小龙，在记忆中远走…</p>
-<p>不会有人记起那奋勇决战的英雄</p>
-<p>不会有人想起那谈笑风生的朋友</p>
-<p>当镌刻于永恒的名字被无情地拭去</p>
-<p>没有人再去回忆</p>
-<p>只因那年月下注定的一念</p>
-<p>风起雨落永相随</p>
-<p>只为心中最后燃烧的执念</p>
-<p>弥留之间终不悔</p>
-<p>再回头，念往昔岁月</p>
-<p>举杯泪落</p>
-<p>路还在前方</p>
-</blockquote>
-<p><em>《Segicverse》完结</em></p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/10/24/Segicverse-Finale/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/24/Segicverse-Finale/" data-id="clv10101c003tx8ib8p0w3wsc" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/24/Segicverse-Finale/" data-id="clv11gudg001wjoib0tjm1i6q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
@@ -807,92 +450,15 @@
 <li>输入和输出</li>
 <li>变量的创建</li>
 </ul>
-<h1 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h1><ol>
-<li><p>在src文件夹上右键，选择创建Class。<br><img src="https://i.loli.net/2020/10/23/MBXI2bSGktDluU8.png" alt="create.PNG"></p>
-</li>
-<li><p>填写类名，包名，勾选main函数，点击Finish，详情请见附录1.</p>
-</li>
-</ol>
-<p><img src="https://i.loli.net/2020/10/23/yuKGfk32lPrzbTF.png" alt="create2.PNG"></p>
-<ol start="3">
-<li>看上去像这样：</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hhs.xgn.zjstest;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FirstClass</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">// TODO Auto-generated method stub</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">附录1</span><br><span class="line">类名和包名的规范</span><br><span class="line"></span><br><span class="line">类名，简单来说就是文件名，也是这个public class的名字。</span><br><span class="line">包名，简单来说就是别人想要导入你的程序时的地址，也是package的名字。</span><br><span class="line"></span><br><span class="line">类名使用双驼峰，即每个单词的首字母大写，一般不用下划线。比如FirstClass, WalkingAnimationSystem等等</span><br><span class="line"></span><br><span class="line">包名常用个人网站域名倒写+工程名+具体内容</span><br><span class="line">比如说&quot;xgn.com&quot;的&quot;Jade&quot;工程的工具一般会放在com.xgn.jade.util包下</span><br></pre></td></tr></table></figure>
-<h1 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;字符串&quot;</span>); <span class="comment">//带换行</span></span><br><span class="line">System.out.print(<span class="string">&quot;字符串&quot;</span>); <span class="comment">//不带换行</span></span><br></pre></td></tr></table></figure>
-
-<p>运行。<br><img src="https://i.loli.net/2020/10/23/X9zk5jpDtGyvOnE.png" alt="result.PNG"></p>
-<h1 id="变量的定义"><a href="#变量的定义" class="headerlink" title="变量的定义"></a>变量的定义</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">类型名 变量名=初始值; <span class="comment">//just like C++!! so easy so fast!!</span></span><br></pre></td></tr></table></figure>
-
-<p>比如说</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> b=<span class="number">2</span>,c=<span class="number">3</span>;</span><br><span class="line"><span class="keyword">float</span> x=<span class="number">6</span>;</span><br><span class="line"><span class="keyword">double</span> zjs=<span class="number">8</span>;</span><br><span class="line">String varName=<span class="string">&quot;zjs&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>常用转型表</p>
-<table>
-<thead>
-<tr>
-<th>Java</th>
-<th>C++</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>int</td>
-<td>int</td>
-<td>32-bit Integer</td>
-</tr>
-<tr>
-<td>long</td>
-<td>long long</td>
-<td>64-bit integer</td>
-</tr>
-<tr>
-<td>float</td>
-<td>float</td>
-<td>float</td>
-</tr>
-<tr>
-<td>double</td>
-<td>double</td>
-<td>double</td>
-</tr>
-<tr>
-<td>String</td>
-<td>string</td>
-<td>String</td>
-</tr>
-<tr>
-<td>char</td>
-<td>char</td>
-<td>Character</td>
-</tr>
-<tr>
-<td>byte</td>
-<td>？</td>
-<td>8-bit integer</td>
-</tr>
-<tr>
-<td>short</td>
-<td>short</td>
-<td>16-bit integer</td>
-</tr>
-<tr>
-<td>boolean</td>
-<td>bool</td>
-<td>true/false</td>
-</tr>
-</tbody></table>
-<h1 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Scanner s=<span class="keyword">new</span> Scanner(System.in); <span class="comment">//定义输入捕获装置</span></span><br><span class="line"><span class="keyword">int</span> x=s.nextInt();</span><br><span class="line">String y=s.next(); <span class="comment">//get next token. similar to cin&gt;&gt;y</span></span><br><span class="line"><span class="keyword">boolean</span> z=s.hasNext(); <span class="comment">//reach End-of-file?</span></span><br><span class="line"></span><br><span class="line">s.close(); <span class="comment">//使用完毕需要关掉</span></span><br></pre></td></tr></table></figure>
-<p>运行，在控制台中输入好吃(qi)的。<br><img src="https://i.loli.net/2020/10/23/zoEG3KAwg6lbyef.png" alt="result2.PNG"></p>
-<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p><img src="https://i.loli.net/2020/10/23/MPaBzf9kiq5w8x3.png" alt="problem1.PNG"></p>
-<p>简单来说就是C++里的没有include。点击Import Scanner即可自动导包。<br><img src="https://i.loli.net/2020/10/23/7SuVH5FW19oLzvP.png" alt="problem2.PNG"></p>
-<p>没有close</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/10/23/java-2/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-2/" data-id="clv10101k004zx8ibesxu4hi6" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-2/" data-id="clv11gudn0038joib0cb5a5bc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
@@ -937,27 +503,15 @@
 <li>创建Java工程</li>
 <li>为以后学习打好基础</li>
 </ul>
-<h1 id="课堂准备"><a href="#课堂准备" class="headerlink" title="课堂准备"></a>课堂准备</h1><p>请大家先到<a target="_blank" rel="noopener" href="https://eclipse.org/">Here</a>上下载最新版Eclipse Installer。在Installer中下载并安装Java Developer的版本。或者，你可以使用其他IDE，但是本课程不支持。</p>
-<p>然后登录<a target="_blank" rel="noopener" href="https://www.hackerrank.com/dev-club-java-class">Hackerrank</a>并注册该比赛。这里会是以后的（一部分）作业区。</p>
-<p>注意：</p>
-<ul>
-<li>上课版本为Java8，但是最新的Eclipse支持Java11以上。</li>
-<li>你不需要认识Ookami等人是谁</li>
-<li>请在QQ上提问</li>
-<li>请认真完成作业</li>
-</ul>
-<h1 id="创建工程"><a href="#创建工程" class="headerlink" title="创建工程"></a>创建工程</h1><ol>
-<li>打开你的搞基IDE Eclipse，选择Workspace（保存工程文件）的位置。</li>
-<li>在Welcome Page上选择“Create New Java Project”或者在Project View右键New选择Java Project<br><img src="https://i.loli.net/2020/10/23/GJwf2Snt6ophMkm.png" alt="create.PNG"></li>
-<li>填写Project Name，其余选项跳过并选择Finish。如果出现创建module的提示，选择稍后创建。<br><img src="https://i.loli.net/2020/10/23/pPbZwWAG6cydiOF.png" alt="create2.PNG"></li>
-<li>完成<br><img src="https://i.loli.net/2020/10/23/yHvM8EqIu1ZC7nQ.png" alt="done.PNG"></li>
-</ol>
-<h1 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h1><p>创建工程</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/10/23/java-1/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-1/" data-id="clv10101n0052x8ib4dd4bf4z" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/23/java-1/" data-id="clv11gudm0031joiba3535k24" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li></ul>
@@ -1038,96 +592,15 @@
 <td></td>
 </tr>
 </tbody></table>
-<p>Also, you can see OC (rarely) from Hell Hole Studios Games. They are all branch stories. You can search them on <a target="_blank" rel="noopener" href="https://hellholestudios.github.io/HHS-Project-Site/">HHS Project</a></p>
-<table>
-<thead>
-<tr>
-<th>Game Name</th>
-<th>OC</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>The Lost Forest</td>
-<td>Terra*, Ookami</td>
-</tr>
-<tr>
-<td>TestSTG 3</td>
-<td>Kazami Ryoryu*, Nanjin Yatsujitera*, Hikari^</td>
-</tr>
-<tr>
-<td>Jade(In Dev)</td>
-<td>Hikari</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* &#x3D; Not main characters in the story</span><br><span class="line">^ &#x3D; Not main characters in the game</span><br></pre></td></tr></table></figure>
-<p>首先，您应该知道，我的宇宙中的大多数角色和Segicverse都是相同的。此外，历史记录还包含“主线故事”和“分支故事”。分支故事用于显示有关某些角色的个性和有趣的事实，而主线故事则是真实发生的故事。</p>
-<p>目前，您可以通过以下方式访问我的世界：</p>
-<table>
-<thead>
-<tr>
-<th>方法</th>
-<th>故事类型</th>
-<th>作者</th>
-<th>链接</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Roaming Travellers in Fantasy Extravaganza</td>
-<td>主线</td>
-<td>XGN</td>
-<td>本站</td>
-</tr>
-<tr>
-<td>Segicverse</td>
-<td>主线</td>
-<td>Zhuky.RLG</td>
-<td><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5224967">https://www.bilibili.com/read/cv5224967</a></td>
-</tr>
-<tr>
-<td>LSS Short</td>
-<td>分支</td>
-<td>XGN</td>
-<td>本站</td>
-</tr>
-<tr>
-<td>LSS Problemset</td>
-<td>分支</td>
-<td>XGN</td>
-<td>链接已死</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>某些游戏中也会含有我的OC。请见<a target="_blank" rel="noopener" href="https://hellholestudios.github.io/HHS-Project-Site/">HHS Project</a></p>
-<table>
-<thead>
-<tr>
-<th>游戏名</th>
-<th>OC</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>The Lost Forest</td>
-<td>Terra*, Ookami</td>
-</tr>
-<tr>
-<td>TestSTG 3</td>
-<td>Kazami Ryoryu*, Nanjin Yatsujitera*, Hikari^</td>
-</tr>
-<tr>
-<td>Jade(In Dev)</td>
-<td>Hikari</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* &#x3D; 旁支角色</span><br><span class="line">^ &#x3D; 在游戏中承担配角</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/10/21/how-to-know-oc/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc/" data-id="clv10101p005ax8ibccmtbpi4" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/21/how-to-know-oc/" data-id="clv11gudn0033joib5xd5ea3u" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -1167,110 +640,15 @@
       
         <h1 id="Disclaimer"><a href="#Disclaimer" class="headerlink" title="Disclaimer"></a>Disclaimer</h1><p>本文为Zhuky.RLG <del>屑</del> 作品，又一次争得作者允许后发布。其他个人和团体不可复制，转载。</p>
 <h1 id="Prologue"><a href="#Prologue" class="headerlink" title="Prologue"></a>Prologue</h1><p>Extra #1里面设定是不是太多了，在这里解释一下吧~</p>
-<h1 id="Mon"><a href="#Mon" class="headerlink" title="Mon"></a>Mon</h1><p>1.zky喜欢睡懒觉，我在初三时几乎每天迟到，幸好班主任比较和蔼，没把我暴揍</p>
-<ol start="2">
-<li><p>Hikari会给zky小队做早餐，手艺真的不错！</p>
-</li>
-<li><p>关于USLT等级考试，我们找到了一些当时的手稿，可惜是全英文的，估计是因为zky对他的英语比较自信（什么鬼啊！）</p>
-</li>
-</ol>
-<p><strong>注：不感兴趣 or if you cannot understand English well请跳过吧</strong></p>
-<p>Universal Skill Level Test (USLT)</p>
-<p>Contestants will be tested skills in 4 aspects：</p>
-<ol>
-<li><p>Fighting skills</p>
-</li>
-<li><p>Technology/Knowledge skills</p>
-</li>
-<li><p>Living skills</p>
-</li>
-<li><p>Problem/Daily problem solving skills</p>
-</li>
-</ol>
-<p>Every contestant will be scored for each aspect. We can call the scores Single Score:s1,s2,s3,s4.</p>
-<p>Then we define:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Fighting score (FS)&#x3D;max(s1,s2)*0.8+min(s1,s2)*0.2</span><br><span class="line">Living score (LS)&#x3D;max(s3,s4)*0.6+min(s3,s4)*0.4</span><br></pre></td></tr></table></figure>
-
-<p>That’s the scores really shown.</p>
-<p>If a contestant’s FS or LS is higher than 6.5 or FS and LS both higher than 5.5 he/she will be registed as Special Skill Creature(SSC). And members of SSC can get money from the government.</p>
-<p>How can we take part in the contests?</p>
-<p>Single Scores are non-negative float numbers less than 10. The integer part is called Level while the rest is called Addition Score(AS)</p>
-<p>Contestant can only participant in contest of a certain level. If the AS is more than or equals 0.5, the contest of Level+1 is available, or else you can only take part in the contest of your original level.</p>
-<p>In each contest of level L, you will get a new level which is either L(remaining the same) or L+1(a new level, but it doesn’t mean you can take part in a higher level test if your AS is not enough). Also, your AS will be judged according to your performance and your level.</p>
-<p>Contests whose level is less than 4, are often held for they are judged by machines and computers.</p>
-<p>However contests from level 4 to level 9 are held only three times a year. The contestants will face the real experts during the contests. The scoring system is the same. In fact the experts won’t be very busy because of this as few creatures can reach the level 5.</p>
-<p>Some scoring standards has been set:</p>
-<p>Segic can get an s1 of 9.0</p>
-<p>Hypret can get an s1 of 8.5 and s2 of 9.0</p>
-<p>RLG can get an s1 of 7.8 and s2 of 7.5</p>
-<p>zky… He got less than 1 in s1,s2 and s3 and 6 in s4.</p>
-<p>X-gekrot got s1 of 8.2</p>
-<p>Orimare got s1 of 8 and s3 of 7(thanks to Hikari)</p>
-<p>zky said that he should be given a higher score to meet his status and has been thrown out of the window at once.</p>
-<p>What’s the real use of SSC:</p>
-<p>To know the SSC members better in case someday they will be our enemies.</p>
-<p>Not to worry about money for some OCs.</p>
-<p><strong>这里是那段手稿的结束</strong></p>
-<ol start="4">
-<li><p>实际上zky的英语不只是a bit的 off，别以为他有时候考得还行</p>
-</li>
-<li><p>zky常常能偷懒就偷懒，课前演讲不背稿子是常态</p>
-</li>
-<li><p>zky喜欢听音乐</p>
-</li>
-</ol>
-<h1 id="Tue"><a href="#Tue" class="headerlink" title="Tue"></a>Tue</h1><ol>
-<li><p>Rinko是Rinri的妹妹，有附身龙与鸟程度的能力，详见之前xgn自己写的设定blog</p>
-</li>
-<li><p>Rinri在首都有一家小店，卖面包，也有一些饮品，zky一般会在这里买面包，价格不算太贵，不过从来没有买过饮品 (编者注：详见RTiFE)</p>
-</li>
-</ol>
-<h1 id="Wed"><a href="#Wed" class="headerlink" title="Wed"></a>Wed</h1><ol>
-<li><p>zky此前一直对自己的逻辑推理能力十分自信，知道他和龙王大人等人玩Among Us…</p>
-</li>
-<li><p>Among Us之所以可以真人版游戏是因为龙王大人拥有五维的能力（其中有两个维度都是时间维度），可以开启 Alternative Universe，在Alternative Universe发生的事情都不会同步到主世界，但（如果需要）可以保留记忆</p>
-</li>
-</ol>
-<h1 id="Thu"><a href="#Thu" class="headerlink" title="Thu"></a>Thu</h1><ol>
-<li><p>文中“欲戴王冠，必承其重”是指zky身为执政凶兽的意思，执政凶兽可以在宇宙创立之初设定宇宙原理，在皇宫内承担部分政治职务，等着被下一代凶兽磨爪子</p>
-</li>
-<li><p>Hikari是能量源于龙王大人的光龙，经常会做Booktalk，这次因为去观光，所以地点在流金乡 （编者注：详见RTiFE）</p>
-</li>
-<li><p>Kero是新兴凶兽，种族为暗属性精灵，有归零，暗黑两个球（后来变成三个），会召唤暗黑精灵（属性越来越强），精神分裂，深夜以杀人为乐</p>
-</li>
-</ol>
-<h1 id="Fri"><a href="#Fri" class="headerlink" title="Fri"></a>Fri</h1><ol>
-<li><p>我敢肯定我们的编者xgn看到Sword of Souls的时候也是一脸懵逼，好你个zky又来搞什么设定，但是呃，这玩意几个月前就有了，只是第一次用，是集合了zky中心四人的灵魂能力的剑，这次没发挥什么用场 （编者注：扯淡）</p>
-</li>
-<li><p>Sword of OP，字面意思，OP之剑，已经在文中标注了大概意思，这把剑消耗法力很大，zky一个人是无法使用这把剑的，除非有能量源或者是Final/Final Plus形态 （编者注：详见<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv5224967">Segicverse正作</a>)</p>
-</li>
-<li><p>X-Gekrot的能力中有一项操控物质程度的能力，详见Segicverse Season7 和Season 8</p>
-</li>
-</ol>
-<h1 id="Sat"><a href="#Sat" class="headerlink" title="Sat"></a>Sat</h1><p>这种狂想哪来的新设定？</p>
-<h1 id="Sun"><a href="#Sun" class="headerlink" title="Sun"></a>Sun</h1><ol>
-<li><p>《风神录》，指东方风神录，纯粹是封神和风神的谐音，哦对，zky喜欢听Active Neets的《风神少女》</p>
-</li>
-<li><p>小诗第三句有致敬Bilibili up主 风男不是猫 填词的 《九九八十一 sans》的意思</p>
-</li>
-<li><p>自己都不明白的小诗：</p>
-</li>
-</ol>
-<blockquote>
-<p>远古之世吹来的风，载着传说奔向未来。</p>
-<p>大地吮吸尽的鲜血，却早已被黄沙湮没。</p>
-<p>豪情跌宕争锋虚妄，落泪成罪悔极莫追。</p>
-<p>癫狂熔成坚韧铸铁，执念凝作易碎冰心。</p>
-</blockquote>
-<p>前两句运用对比的手法，写出传说会千年不朽，而无数为此牺牲的配角总是同样伟大却早已被忘却，两者形成鲜明的对比，体现出了历史的残酷，生活的艰险，呼应了上文zky的狂想</p>
-<p>第三句暗示了Segicverse Season 4 和 Season 6的内容，以一腔跌宕的豪情与世争锋最终只能在虚妄中迷失自我，落泪痛心是却早已成罪，悔极莫追，说明了一切都没有反悔的机会，发生过的事情永远不会被抹去，体现了zky对不堪当年的回忆和深思。</p>
-<p>第四局则是全诗的核心，内心的癫狂只会熔成铸铁，而信仰与对世界美好的执念却如同冰心，铸铁坚韧无比，却不若冰心之光洁美丽，可那样的执念却又是易碎的，表达了对美好事物容易被毁灭而黑暗常常会笼罩世界的慨叹。可此时全诗的走向可以读出，作者的内心就是那易碎的冰心，在封神山巅留下此诗，可不是为自己的封神？</p>
-<h1 id="编者后记"><a href="#编者后记" class="headerlink" title="编者后记"></a>编者后记</h1><p>还是要补充……请大家继续关注RTiFE Update (facepalm)</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/" data-id="clv10102f00bix8ibgtz8ctsj" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/21/%E3%80%90Segicverse-Extra%E3%80%91Extra1%E9%87%8C%E7%9A%84%E5%90%84%E7%A7%8D%E8%AE%BE%E5%AE%9A/" data-id="clv11guey00dxjoib1hj203pq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>

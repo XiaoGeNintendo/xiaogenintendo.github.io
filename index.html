@@ -115,7 +115,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="clv10101d003vx8ib7e4s6vo0" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="clv11gudg001yjoib4l4h94a2" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -163,7 +163,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/04/15/mytrip-release/" data-id="clv10101v006kx8ibb14n2ofo" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/04/15/mytrip-release/" data-id="clv11gudu004rjoib2zr75eam" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
@@ -203,63 +203,15 @@
       
         <p><strong>Note: This is a April Fools’ Joke</strong></p>
 <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Nowadays, as most programming languages are built on top of English grammar and syntax, it is sometimes difficult for Latin, Spanish or French speakers to get used to the syntax in programming. Inspried by the <code>type-safe</code> every modern language is persuing, here in HHS, we introduce another two new concepts for the ease for internationalization of a programming language: <em>gender-safe</em> and <em>tense-safe</em> for our new programming language <strong>Espaj</strong>!! Please read below for the cool features for Espaj:</p>
-<h1 id="Basic-Syntax"><a href="#Basic-Syntax" class="headerlink" title="Basic Syntax"></a>Basic Syntax</h1><p>As the name suggests, Espaj is similar to Java. It has a OOP structure and statements like <code>if</code> <code>for</code> idential to Java(or C++)’s. However, it introduces concepts like gender and tense to functions and classes.</p>
-<h1 id="Genders"><a href="#Genders" class="headerlink" title="Genders"></a>Genders</h1><h2 id="Basic-Concept"><a href="#Basic-Concept" class="headerlink" title="Basic Concept"></a>Basic Concept</h2><p>Each class now must be explicitly specified as <strong>masculine</strong> or <strong>feminine</strong>. When calling the functions, you must use corresponding masculine or feminine variants. Usually the rule is: <code>-a</code> for feminine variants and <code>-e</code> for masculine variants. Note: to fully distinguish variants, operators are not supported. You must use words to replace them. </p>
-<p>Here are some genders for the basic types:</p>
-<ul>
-<li><code>byte</code>: masculine</li>
-<li><code>short</code>: feminine</li>
-<li><code>int</code>: masculine</li>
-<li><code>long</code>: feminine</li>
-<li><code>short</code>: feminine</li>
-<li><code>double</code>: masculine</li>
-<li><code>char</code>: feminine</li>
-<li><code>String</code>: masculine</li>
-<li><code>boolean</code>: feminine</li>
-<li><code>Object</code>: masculine<br>…</li>
-</ul>
-<p>For example the following code in Java: <code>if(number%2==0)</code> can be written into Espaj as:</p>
-<p><code>if(number mode 2 equale 0)</code> if number is int or<br><code>if(number moda 2 equala 0)</code> if number is long.</p>
-<p>If you used the incorrect variants, you will be met with a <em>Runtime Error</em>. So be careful!</p>
-<h2 id="First-person-Usage"><a href="#First-person-Usage" class="headerlink" title="First-person Usage"></a>First-person Usage</h2><p>When using <code>this</code> as the object, you need to use first-person variants of the functions. Usually this is to add <code>-o</code> for m and <code>-oa</code> for f.</p>
-<p>For example: <code>this.equals(another)</code> can be written as <code>this.equalo(another)</code> for m or <code>this.equaloa(another)</code> for f.</p>
-<h2 id="Defining-new-classes"><a href="#Defining-new-classes" class="headerlink" title="Defining new classes"></a>Defining new classes</h2><p>Now you need to specify the gender when creating a class:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Masculine</span> <span class="comment">//it is male!</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Perro</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">	<span class="comment">//sth...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Interfaces don’t have genders. :)</p>
-<h2 id="Defining-new-methods"><a href="#Defining-new-methods" class="headerlink" title="Defining new methods"></a>Defining new methods</h2><p>Now when you define a function, the compiler will automatically create variants for you!</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Masculine</span> <span class="comment">//it is male!</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Perro</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">	<span class="comment">//Will automatically create barko barka barke barkoa etc... But you cannot directly call &quot;bark&quot;!</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">bark</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="comment">//do sth...</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//other code</span></span><br><span class="line"><span class="function">Perro p is new <span class="title">Perro</span><span class="params">()</span></span>; <span class="comment">//new - newa. is - es.</span></span><br><span class="line">p.barke(); <span class="comment">//OK</span></span><br><span class="line">p.barka(); <span class="comment">//RE</span></span><br><span class="line">p.barko(); <span class="comment">//RE. barko can only be used on &quot;this&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>You can also specify special cases that do not apply the rule or opt-out several use cases:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Masculine</span> <span class="comment">//it is male!</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Perro</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">	<span class="meta">@FMP(&quot;meBark&quot;)</span> <span class="comment">//short for First-person masculine present tense</span></span><br><span class="line">	<span class="meta">@FFP(&quot;feBark&quot;)</span></span><br><span class="line">	<span class="meta">@TFP(&quot;fBark&quot;)</span> <span class="comment">//third-person feminine present tense</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">bark</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="comment">//do sth...</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@NoVariants</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">say</span><span class="params">()</span></span>&#123; <span class="comment">//can call say directly! Return to plain old Java.</span></span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//other code</span></span><br><span class="line"><span class="keyword">this</span>.meBark(); <span class="comment">//OK</span></span><br><span class="line"><span class="keyword">this</span>.barko(); <span class="comment">//RE</span></span><br><span class="line">p.barke(); <span class="comment">//RE. Without @ThirdM means this function cannot be called as third-person masculine.</span></span><br></pre></td></tr></table></figure>
-<p>So easy!!!</p>
-<h2 id="Static-functions"><a href="#Static-functions" class="headerlink" title="Static functions"></a>Static functions</h2><p>Static methods are treated as <strong>feminine</strong>.</p>
-<h2 id="Gender-Polymorphism"><a href="#Gender-Polymorphism" class="headerlink" title="Gender Polymorphism"></a>Gender Polymorphism</h2><p>Gender polymorphism can be a bit tricky as functions should be used according to <strong>real type</strong>.</p>
-<p>For example:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Feminine</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">nam</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Masculine</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dog</span> <span class="keyword">extends</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">nam</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">Animal a es newa <span class="title">Animal</span><span class="params">()</span></span>;</span><br><span class="line">a.name(); <span class="comment">//RE</span></span><br><span class="line">a.nama(); <span class="comment">//OK</span></span><br><span class="line"><span class="function">a es new <span class="title">Dog</span><span class="params">()</span></span>; <span class="comment">//gender change :O</span></span><br><span class="line">a.name(); <span class="comment">//OK</span></span><br><span class="line">a.nama(); <span class="comment">//RE</span></span><br></pre></td></tr></table></figure>
-
-<p>But we can use the new operator <code>isMasculine</code> to check the gender of an object: <code>if(a isMasculine)</code> or <code>if(nota a isMasculine)</code>.</p>
-<h2 id="Genders-for-arrays-and-generics"><a href="#Genders-for-arrays-and-generics" class="headerlink" title="Genders for arrays and generics"></a>Genders for arrays and generics</h2><p>Genders for arrays, lists, etc are just their underlying type.</p>
-<p>When using generic, you can specify the gender-determining type using the <code>gender</code> keyword and <code>@VariableGender</code> annotation:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@VariableGender</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">gender</span> <span class="title">T1</span>,<span class="title">T2</span>&gt; </span>&#123; <span class="comment">//the gender of pair is the same as T1&#x27;s gender</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Genders-for-anonymous-classes"><a href="#Genders-for-anonymous-classes" class="headerlink" title="Genders for anonymous classes"></a>Genders for anonymous classes</h2><p>It inherits its super class.</p>
-<h1 id="Tense"><a href="#Tense" class="headerlink" title="Tense"></a>Tense</h1><h2 id="Basic-Concepts"><a href="#Basic-Concepts" class="headerlink" title="Basic Concepts"></a>Basic Concepts</h2><p>Calling methods should use their corresponding tense: present tense or future tense(lambda tense). This helps developers to distinguish different context.</p>
-<h2 id="Present-tense"><a href="#Present-tense" class="headerlink" title="Present tense"></a>Present tense</h2><p>Present tense is used in normal functions. </p>
-<h2 id="Future-tense"><a href="#Future-tense" class="headerlink" title="Future tense"></a>Future tense</h2><p>Future tense must be used when in a lambda. Usually it’s adding prefix <code>fi-</code> to the method name. For example:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="meta">@Masculine</span></span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Concatenate</span> </span>&#123;</span><br><span class="line">  <span class="function">String <span class="title">combin</span><span class="params">(String str1, String str2)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Masculine</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LambdaExample</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="function">Concatenate concat <span class="title">is</span> <span class="params">(str1, str2)</span> -&gt; str1 fipluse &quot; &quot; fipluse str2</span>;</span><br><span class="line">    </span><br><span class="line">    String fullName is concat.combine(<span class="string">&quot;John&quot;</span>, <span class="string">&quot;Doe&quot;</span>);</span><br><span class="line">    System.out.printlne(<span class="string">&quot;Full Name: &quot;</span> pluse fullName);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>You can add annotations like <code>@FFF</code>(first-person feminine future tense) to functions to add custom variants.</p>
-<h1 id="Other-Forms"><a href="#Other-Forms" class="headerlink" title="Other Forms"></a>Other Forms</h1><h2 id="Polite-Forms"><a href="#Polite-Forms" class="headerlink" title="Polite Forms"></a>Polite Forms</h2><p>In Japanese, we must be polite to our superiors. In Espaj, this is the same. When calling <code>super</code> functions you must add <code>-shimasu</code>(super is m) or <code>-imasu</code>(super is f) after the base method name. When reading/writing <code>super</code> attributes, you must add <code>go-</code> before the variable name.</p>
-<p>For example: <code>super.barkshimasu()</code>/ <code>super.barkimasu()</code>(for method bark) or <code>super.goname</code>(for attribute name).</p>
-<p>You can customize it with <code>@PoliteFormM</code> and <code>@PoliteFormF</code></p>
-<h1 id="Downloads-and-Installation"><a href="#Downloads-and-Installation" class="headerlink" title="Downloads and Installation"></a>Downloads and Installation</h1><p>Now you have read about all features! So where can you get hands on this cool language? The language will be available for download on 2024.4.99!!</p>
-<p>Thank you for reading!</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2024/04/01/2024-april-fool/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/04/01/2024-april-fool/" data-id="clv10100s000dx8ib6glidp5v" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/04/01/2024-april-fool/" data-id="clv11gud9000mjoib5am8drfv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -298,6 +250,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>本文为2024年2月XGN（笔者）与ZKY前往上海City Walk的游记。 题目<del>为了体现上海的洋文氛围</del>使用了拉丁语。</p>
+<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>春节期间，国铁部门为了更快的响应旅客春节期间过年回家的需求，加开了许多临时列车。而其中又有这样的几辆车，考虑到人民收入水平不均，价格十分的低廉。笔者关注到从上海02:05发车的K4026次列车返回南京只需要8.5¥，特前往体验之。</p>
+<p>此外，笔者从来没有认真的游玩过上海，上一次去上海更只是作了出国的跳板（详见「日行纪要」），所以也决定约上「上海通」ZKY同学来一次上海的短途旅行（2天2夜）。</p>
+<p><del>另一个重大的原因是，笔者想去上海买谷子。</del></p>
+<p>施工状态：<br>文章：Done<br>图片：Done</p>
+<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><h2 id="上海到着！"><a href="#上海到着！" class="headerlink" title="上海到着！"></a>上海到着！</h2><p>如何廉价而有高效的到达上海成为了第一大问题。某跑的和直达一样快的动车只要70¥属实让人心动，但是46.5¥的快速也可以考虑。最后考虑到ZKY同学18年生活在云中的豪华府邸中从未触地体验过老百姓的生活，体验过中国国民硬卧车，最终选择了100¥的硬卧。9:00从南京发车，不到3个小时到上海。考虑到便宜的动车高铁也只有110¥，硬卧属实性价比不高。<br><img src="https://blog.hellholestudios.top/wp-content/uploads/2024/03/5633AC88-1EEC-41C5-A8EE-19E32339CDFC-768x1024.jpg"><br><em>▲朝南京站</em></p>
         
           <p class="article-more-link">
             <a href="/2024/03/21/shanghai-in-caligine/#more">Read More</a>
@@ -306,7 +263,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/03/21/shanghai-in-caligine/" data-id="clv101024008zx8ib38uc1j56" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/03/21/shanghai-in-caligine/" data-id="clv11guen00bhjoibbfmc312d" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -354,7 +311,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/12/23/tierlist-nju-class-1-1/" data-id="clv1010250098x8ibhxeeb5j2" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2023/12/23/tierlist-nju-class-1-1/" data-id="clv11guep00c0joibbutwe0ef" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -398,15 +355,15 @@
 <li>Massao 青墨<br>富有浪漫感、文采和情趣的龙之少年。青缘的哥哥。作为吟游诗人的他，平常以浪迹天涯、作诗饮酒为乐，虽然深爱着自己的妹妹，但是有相当一部分时间两人之间有着物理上等的距离。</li>
 </ul>
 <h1 id="本篇"><a href="#本篇" class="headerlink" title="本篇"></a>本篇</h1><p>放眼无边的天空，是龙族的天堂；散落天穹的浮岛，是龙族的归宿。在此处，凡人仰望星空方可所见之物，不过是每日伴侣般的触手可及；世人千万年才得以涉足之地，不过是如往邻里亲戚般来去自由。在这无数的浮岛上，诞生着无穷的物语，请允许我以一个普通的旁观者的视角，去讲述这个故事。</p>
-<p>在千万个岛屿的一个之上，一立草屋平躺在矮草之上，草屋里一少女望着桌案上摊开的书卷，随意地席地而坐着。三万八千公里以外月亮女神伊娜奇撒下的银光透过茅草与木板的间隙，落在少女翠绿的头发上，默默的为她加护。「倘若是这样拆分的话，这一部分又该怎么计算呢？」她漫不经心地，用那稚嫩的手指在杂乱的笔画中画上一个红圈。尽管没有得到她的许可，我还是偷偷瞄了一眼那草纸般的书卷，只可惜上面写的，既不是生灵所通用的龙人语，更不是也不可能是地上所用的人语。不过，至少按照她的说法，她一定是在进行着什么高深莫测的运算和研究吧。只是这一番草庐的景象反而可能相比科学家和数学家来说更符合哲学家的氛围。</p>
-<p>在我躲在角落做着哲学与数学的论述之时，“草庐”的大门被一下推开，外界的星河也一同泄了进来。「阁下又在算您那小九九啦？君见，今夜乃千百年不见之美月，阁下何不同不才一起出门走走？」开门的人，是一个年纪稍长的男孩子，以人类的视角和度量来看，但也恐怕没有十八岁。。「哥哥，都多少百年啦，你还拥着你那阴阳怪气的文句，哪怕以六品古龙的时间观来看，你也OUT了！」或许是研究被打断的不满使然，少女嘟起了小嘴挖苦道。「不才此举不也是为了营造一个与今夜同伴浪漫的氛围吗？阁下曾言，宇宙的真理是亘古不变的，永恒的探究，又安缺与不才之一夜？」「善哉善哉，听君便是。」少女无可奈何，以一种拙劣的腔调模仿着她的哥哥。于是，在反复拉扯之下，少女还是换上了淡蓝色的旗袍，被牵着手出门而去。一时间，房间里只剩下了我与无处安放的女神的祝福。寻思着我一人也无事，反不如随他们出去走走。</p>
-<p>「阁下请见，此可谓“九天龙吟星河下，五里雾中漫山出”！在此胜景之时，不才多愿与阁下跳一支华尔兹！」他所言其实，包裹着这座小岛屿的天幕之中，与涓涓细流般徜徉的流光相映衬的，是无数的星辰划破寂静的幕布燃烧着奔流而下。如流星雨一般绮丽，又是另一个层面的宏伟和壮阔。而一切彷佛近在眼前又远在天边。我曾听说，夏日之时，地球上的某处，人们有着举行花火大会的习俗，让闪耀天空的一瞬的光，去带走夏日的烦恼，冷却燥热的心灵。恐怕这正是这位富有浪漫感与情趣的哥哥所想要表达的吧。</p>
-<p>在这真夏之时，悄悄地，少女的尾巴已卷上了哥哥的裤腿……</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2023/08/17/Cakeslice1/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/08/17/Cakeslice1/" data-id="clv10100x0011x8ib2z2id1ul" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2023/08/17/Cakeslice1/" data-id="clv11gudc0013joibcnez5g30" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cakeslice/" rel="tag">Cakeslice</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
@@ -459,266 +416,15 @@
 <h2 id="行程概述"><a href="#行程概述" class="headerlink" title="行程概述"></a>行程概述</h2><p>在八天的时光中，笔者前往日本大阪、奈良、京都、东京的神社、寺庙、山河等多个热门景点进行打卡。</p>
 <p>笔者从上海浦东机场出发前往关西国际机场，并在大阪留宿3日，再乘坐新干线到达东京留宿4天，并从成田机场回国。</p>
 <h2 id="施工状态"><a href="#施工状态" class="headerlink" title="施工状态"></a>施工状态</h2><p>文章 TODO<br>图片 TODO</p>
-<h1 id="Day0"><a href="#Day0" class="headerlink" title="Day0"></a>Day0</h1><p>今日行程<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_1c0493a093aabc496539b543c81afa83.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_1c0493a093aabc496539b543c81afa83.jpg"></a><br>考虑到「提前三个小时到达机场」的建议，也考虑到笔者18年未曾出过国的事实，想要赶上12：25的飞机就不得不：</p>
-<ul>
-<li>9：25到达机场</li>
-<li>7：40到达上海虹桥</li>
-<li>5：xx到达南京（南）站</li>
-<li>4~5am起床？？</li>
-</ul>
-<p>显然这不是很现实的（虽然大概6、7年前赶夜班火车也是这个时刻表），于是我们决定提前一天出发。选择了比较近的南京站，<del>节约经费的</del>选择了晚上6点多的动车组列车前往上海。</p>
-<p>在候车室，南京站已经恢复了以前的<del>荣光</del>拥挤。本来就不大的候车室挤满了乘坐K、T、Z绿皮车的人和少数C、D、G的乘客。由于境外势力的影响，当晚的列车莫名多数晚点，不论是前往银川的快速列车还是到徐州或者上海的高铁，都有5-10分钟不等的延误。某南京始发的高铁在发车前就晚点了27分钟……所幸笔者所乘坐的动车是一股清流，在众多红色的大字中不自污，正点发出。<del>虽然在出了南京站后一度保持7kph缓慢运行，最后晚点8分</del></p>
-<p>到达虹桥站后乘坐地铁二号线。14站没有座位可谓折磨。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_5798594dad03959678e999b5f05b5978.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_5798594dad03959678e999b5f05b5978.jpg"></a><br><em>▲南京站</em><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_671d383c53b78be6f829ad3c24044ad3.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_671d383c53b78be6f829ad3c24044ad3.jpg"></a><br><em>▲上海的夜</em></p>
-<h1 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h1><p>今日行程<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_daca3cdcbd4fb6167b3b39c4042afe10.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_daca3cdcbd4fb6167b3b39c4042afe10.jpg"></a></p>
-<p>笔者早上继续搭乘上海地铁二号线到达终点站浦东机场。浦东机场与南京的X口机场不同，十分的现代，十分的国际化，有十万甚至九万个来自不同国家的外国人。保安和工作人员也都会说英语、韩语等多国语言。</p>
-<p>办理了值机手续后过了安检和出境。其中日本的入境申报出了点小问题：</p>
-<ul>
-<li>母氏并不习惯手机上邮箱注册的模式耽误了点时间</li>
-<li>问题中要求精确到丁目的地址十分讨厌，而且府县市区全部是罗马字？！？！我的中文适配呢？但是笔者日语水平<del>十分上手</del>勉强凑合，很迅速的就找到了正确的地址和罗马字。</li>
-</ul>
-<blockquote>
-<p>注意：海关申报可以提前完成提高效率。</p>
-</blockquote>
-<p>结果是安检和国内航班的严格程度差不多，出境审查也就是刷一下护照自助过检，比想象中简单不少。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_1e035e0773c36f3612aa609efe11e242.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_1e035e0773c36f3612aa609efe11e242.jpg"></a><br><em>▲浦东机场前往卫星楼的方式是站内轨道交通，对于我这种乡下土猪来说十分新奇。</em><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b353bf2b75cf457041a1e388d3b7ae26.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b353bf2b75cf457041a1e388d3b7ae26.jpg"></a><br><em>▲到了登机口以后人不算很多，大部分地方都过于空旷了，或许是疫情的影响吧</em></p>
-<p>乘坐春秋9C8999，非常的便宜。与传统航班相比：</p>
-<ul>
-<li>座位比较狭小、不可调节</li>
-<li>人很多</li>
-<li>没有餐食（可以50r购买）</li>
-<li>含有机上广播广告海淘内容</li>
-</ul>
-<p>由于是中午的航班，景色十分的美丽。航班提前约20分钟到达关西国际机场。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_a97ffd5b70c011089c005fefcb3f8045.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_a97ffd5b70c011089c005fefcb3f8045.jpg"></a><br><em>▲ワクワク走行中</em></p>
-<p>落地日本后手机会自动切换时区（Smart！）。接下来是入关工作，在机上就可以填写纸质的入境申报单，但是笔者考虑到自己已在线上填过就没有填写。结果落地以后发现关西机场网络速度堪比火星，根本连接不上，不得已重新在纸上填写（悲）。当地的服务人员会说英语，口音不算特别严重。由于母氏在理解日式英语上有障碍（“Both fingers”）所以耽误了一点时间，但是总体十分顺利。大部分的流程都可以自助完成，而自助机器都有中文支持，非常的没问题。只是排队时间很长……入关行李检查更是让你填一个表就可以了，并不会仔细翻看你的背包行李检查。整个手续约30min-1h。<del>还是比我想象的简单的</del></p>
-<p>PS：笔者当时的行李检查官貌似只会说日语。反正听到「パスポート」就递给他护照吧。<del>可以说はい来假装你听懂了</del></p>
-<p>（T2航站楼）出来后可以乘坐免费的接驳车到Aeroplaza（片假名请自行转换），在这里可以换乘其他主流交通工具。笔者住的酒店在心斋桥附近，乘坐南海线前往。</p>
-<blockquote>
-<p>请注意：</p>
-<ul>
-<li>请看懂时刻表，可以提前预习</li>
-<li>南海每小时的第一班车是<strong>特急</strong>，需要<strong>特急券</strong>。</li>
-<li>分清楚南海和JR的线路</li>
-<li>JR的haruka（平假名自行转换）是<strong>特急</strong>，但是可能有优惠，有某些通票的或是想要前往京都的同志可以乘坐。</li>
-</ul>
-</blockquote>
-<p>一路上风景是乱七八糟横七竖八的日式平房和公寓，比较旧，不是很好看（让人怀疑大阪大都市的含金量）。</p>
-<p>母：「你看那些房子横七竖八的采光怎么好啊」</p>
-<p>母：「这房子看上去就像没人住一样」</p>
-<p>……可能日本人不会在公寓楼的走廊里放东西吧</p>
-<p>南海的车开得挺慢的，1h才能到难波。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_40cf395d2efc32cb5a7c9d77f321397a.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_40cf395d2efc32cb5a7c9d77f321397a.jpg"></a><br><em>▲南海电车</em></p>
-<p>难波是一个大交通枢纽，离笔者酒店1.5km左右，笔者决定走过去。结果遇到施工、导航精度不佳等情况多次走错,,ԾㅂԾ,,</p>
-<blockquote>
-<p>关于hearton心斋桥，地理位置非常的好，周围<strong>百步以内</strong>有FamilyMart、小超市（母氏曾以日式快餐中蔬菜太少为由到其中购买蔬菜水果。之后几天购买了小番茄、Aomori的fuji苹果、幸水梨等，都比较好吃）、地铁站（Yotsubashi）、药店（比较小、免税、有中国服务员）、nakau（日式快餐店），笔者写过携程点评，请参考。</p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_6b2f874669224fccddbb11a3921eb039.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_6b2f874669224fccddbb11a3921eb039.jpg"></a><br><em>▲nakau快餐</em></p>
-<blockquote>
-<p>注意：</p>
-<ul>
-<li>FamilyMart可以微信支付宝银联Suica</li>
-<li>日本水果价格较高，梨子2个约30r</li>
-<li>所有商店免税基本都是5000y开始免税</li>
-<li>吃完饭要将餐盘回收到“反却口”</li>
-<li>日本热≈国内温、冷≈国内冰</li>
-<li>小心被忽悠过度消费</li>
-</ul>
-</blockquote>
-<h1 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h1><p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2c89ca282d35458f28f89263f6fd3cd4.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2c89ca282d35458f28f89263f6fd3cd4.jpg"></a></p>
-<p>奈良。 (行程图中有点小typo，相信大家都会看出来的)</p>
-<p>近铁奈良离奈良公园十分近。可以步行。走出不远就可以看到很多的梅花鹿，笔者象征性的花200y买鹿仙贝喂了喂它们，结果就被贪婪的鹿给咬了。虽然可以使劲rua，<del>但笔者感觉手感一般</del>。奈良公园老外十分多，鹿也十分多（小心poop），而且到处（无论走了多深）都能看到老外和鹿戏耍的场景。部分鹿会鞠躬，你可以模仿，他们也会模仿你。夏天大概是因为鹿喜欢躲在阴凉的地方，光线不好，难以拍照。（母「拍了那么多张都是废照片」）</p>
-<blockquote>
-<p>PS：鹿仙贝的纸也是鹿可食用的。</p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e4a5013de962f6bce2d8ec1b5a65c6ad.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e4a5013de962f6bce2d8ec1b5a65c6ad.jpg"></a><br><em>▲名物：鹿</em></p>
-<p>兴福寺中有五层塔，但是笔者前往时正在修缮不允许进入。国宝馆要门票（笔者当时700y），进去以后可以看到一些佛像等国宝。涉及宗教内容我就不介绍了。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f69c2c016a3a3d68a7a35e49da25218e.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f69c2c016a3a3d68a7a35e49da25218e.jpg"></a><br><em>▲可以做游戏背景的兴福寺</em></p>
-<blockquote>
-<p>请注意进博物馆：</p>
-<ul>
-<li>要把伞收好</li>
-<li>不可以吃喝。水杯也要收好</li>
-<li>大部分区域不可拍照</li>
-<li>保持安静</li>
-</ul>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_8f200927f948881e40b3fdcdb5368267.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_8f200927f948881e40b3fdcdb5368267.jpg"></a><br><em>▲很神奇，日本很多东西都是木雕的，最后上漆让他有金属光泽</em></p>
-<p>奈良国立博物馆主馆（有料）主要是佛像和中国青铜器，和国宝馆、TNM（东京国立博物馆）部分内容相似，三者可以有所取舍。笔者反正是都去了，<del>结果被无聊死了</del></p>
-<p>春日大社中不出所料也到处是鹿。表参道在树林中，两侧有一排排的献灯，如果你走表参道上去的话还要走不少的距离（恐怕是检验你的诚心？）。在春日大社旁边还有一个展览馆和一个植物园，笔者都没有参观。春日大社如果深入需要收费，无料区域都在贩卖御守等神具和纪念品。笔者决定收集御朱印。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_95b88d3c76545c517a85187dd31fa22c.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_95b88d3c76545c517a85187dd31fa22c.jpg"></a><br><em>▲献灯の参道</em></p>
-<blockquote>
-<p>请注意：</p>
-<ul>
-<li>春日大社抽签（mikuji）价格比较贵</li>
-<li>御朱印有料，需要有专门的本子</li>
-</ul>
-</blockquote>
-<p>从大社出来右转走一会儿就会到——餐馆水谷茶屋，周围是水谷神社。小社、流水、小鹿、灯笼、树荫让这个地方充满了神圣感，在这里就餐也十分有氛围感。参考价格40-60r。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_4aa99f252bc2978f269fdb8784e6dcbf.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_4aa99f252bc2978f269fdb8784e6dcbf.jpg"></a><br><em>▲@水谷茶屋</em></p>
-<p>再往前走就是若草山，门票8r（RLG君：「主打一个象征一下」），可以看到的是一大片山上的草地<del>或许可以滑草</del>，还可以深入到树林里。由于外观过于单调，笔者没有进去，倒是有不少老外进去了。从这里乘坐bus（100y固定票价）回到春日大社、东大寺门口。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_87f4cda51e1eb6ae75e459857420ac38.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_87f4cda51e1eb6ae75e459857420ac38.jpg"></a><br><em>▲空旷的若草山</em></p>
-<p>东大寺十分气派，与中国的寺院建筑风格略有不同，进入最中间的主殿需要门票，主殿中有大佛。同样的，在门口也有鹿，还有非常有夏祭气氛的小摊售卖着刨冰和苹果糖等。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_303340ab9c02656208c21cac5072ddfc.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_303340ab9c02656208c21cac5072ddfc.jpg"></a><br><em>▲游戏品质的东大寺</em></p>
-<blockquote>
-<p>请注意：</p>
-<ul>
-<li>东大寺门槛台阶都很高</li>
-<li>东大寺也有御朱印（300y），还有纪念章，不是一个东西</li>
-<li>某个柱子下有一个洞可以钻，钻过去代表好运（Z氏：会被做成meme）</li>
-</ul>
-</blockquote>
-<p>在东大寺旁边有冰室神社，里面有着向赛钱箱里投入300y就可享受刨冰的活动（其实很便宜）。笔者严重感觉这是信仰变质、物质功利化的存在，极力反对。</p>
-<p>返回酒店。</p>
-<h1 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h1><p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_fcb8dac1eb824e3abc9dc592bc967318.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_fcb8dac1eb824e3abc9dc592bc967318.jpg"></a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_fe94e895363567bc377c3d9710046c57.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_fe94e895363567bc377c3d9710046c57.jpg"></a></p>
-<p>今日前往京都，日本的古都。JR提供的新快速简直是不得了的服务，据说可以跑到130km/h，从大阪到东京只有3站路、29min车程，吊打某些特急。然而G-XXXXX地图给出的最快的路线却（有时）是特急，是把大家当大财子是吧？<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_64146adff8901613c1394e61d1213704.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_64146adff8901613c1394e61d1213704.jpg"></a></p>
-<p>人非常之多，特别是老外，早上便下起了雨。虽然天气灰蒙蒙的影响了拍照效果，但是天气也凉了不少。</p>
-<h2 id="伏见稻荷大社"><a href="#伏见稻荷大社" class="headerlink" title="伏见稻荷大社"></a>伏见稻荷大社</h2><p>伏见稻荷大社是供奉狐狸（不是）的神社。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b5aa3c32ac2373f8b8b82f5321839b34.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b5aa3c32ac2373f8b8b82f5321839b34.jpg"></a><br><em>▲竟然都是FAQ第一条</em></p>
-<p>稻荷大神的种种不是日本神学见习的笔者可以充分了解的，详见Wikipedia。</p>
-<p>稻荷大社里充满了神使——狐狸的雕像。<del>为什么不像春日大社一样弄真的狐狸</del>。本殿旁边有一个祈愿学习合格和进步的小社，里面有绘马和千纸鹤，可以看看。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_d028f02faaf10ef49d2ae848ab7a6e5f.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_d028f02faaf10ef49d2ae848ab7a6e5f.jpg"></a><br>在本殿后面就是稻荷山，前往稻荷山的路上要经过著名的千本鸟居。这些鸟居来自日本各地，聚集着无数的信仰。<del>但是如果你反向来看到捐赠者名单，就能看到功利的一面</del>。不难发现，其中也有一些新建的。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e322e9df8741d7dde4e8ff293766f4e0.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e322e9df8741d7dde4e8ff293766f4e0.jpg"></a><br><em>▲新建于未来</em></p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2630f195281a4652a86cedfbe37e0513.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2630f195281a4652a86cedfbe37e0513.jpg"></a><br>然而由于笔者一开始就走了反路，并没有看到千本鸟居就上了稻荷山。稻荷山上有很多小社，龙王大社的前面也是狐狸，其中也有新的贡品的。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_ce1770be548e9444125de6393f12a0c0.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_ce1770be548e9444125de6393f12a0c0.jpg"></a><br>稻荷山可以再往上，但是由于母氏腿脚不好，就没有上去。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_3ad144f791440e1b9776386d44b61574.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_3ad144f791440e1b9776386d44b61574.jpg"></a><br><em>▲休息场所</em></p>
-<p>如果正常的游览，在千本鸟居之后就到达了一片开阔地，有着「轻重石」（笔者了解轻重石是来自日本的新闻）和名物——狐狸绘马。请欣赏来自世界各地的创造：</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f57deaa36b02da894afe4afcfe977918.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f57deaa36b02da894afe4afcfe977918.jpg"></a><br><em>▲荆轲</em></p>
-<p>不出所料，购物区中也全部是狐狸。不仅有冰箱贴，玩偶（100r+），还有瓷做的狐狸（怎么带回去啊，不会碎吗），甚至还有二次元产品。没错，就有<a target="_blank" rel="noopener" href="http://bgm.tv/subject/268165">它</a>。</p>
-<p>但是伏见稻荷的御朱印不是手写的，极度差评！</p>
-<p>门口无论是伏见稻荷站还是稻荷站都非常有特色，体现了当地的重视。<del>著名的</del>XGN的某届微信运动封面就来自这里。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_41054ae6d639f24fcd9b5c58842fb9d3.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_41054ae6d639f24fcd9b5c58842fb9d3.jpg"></a><br><em>▲似曾相识？</em></p>
-<p>总体来说还是和中国的运营模式十分相似的，除了不需要门票以外。</p>
-<h2 id="清水寺"><a href="#清水寺" class="headerlink" title="清水寺"></a>清水寺</h2><p>在前往清水寺前在清水五条站旁边的鸡料理店吃了亲子丼和刨冰。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0aebd4cadd4be5746853c50511956ce1.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0aebd4cadd4be5746853c50511956ce1.jpg"></a></p>
-<p>清水寺由于母氏的反对（原因复杂），加上其特点没有十分鲜明，笔者没有详细参观。可以参见Z氏的文章。</p>
-<p>三年阪是商业街。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_c7bab99942448a770cceeb753cc55dea.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_c7bab99942448a770cceeb753cc55dea.jpg"></a><br><em>▲三年阪w/ lots of tourists</em></p>
-<h2 id="京都御所"><a href="#京都御所" class="headerlink" title="京都御所"></a>京都御所</h2><p>京都御所和京都御苑都是天皇的老家，现在是公园。感谢8月的延长开放时间让我们有机会进入京都御所查看（不然到了就关门惹）。京都御苑里古树自然的生长，弥补了城市其他地方的死气沉沉和呆板。被围墙围起来的就是京都御所，进入时还要查包领取狗牌方便管理。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_c0630b8f62aedb7b1951246967032067.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_c0630b8f62aedb7b1951246967032067.jpg"></a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_dfdfc7dd250387dd203a04464fad868b.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_dfdfc7dd250387dd203a04464fad868b.jpg"></a><br>非常可惜的是大部分地方都不开放，只能远观。独特的炭黑色还是有名的。</p>
-<h2 id="大丸"><a href="#大丸" class="headerlink" title="大丸"></a>大丸</h2><p>在大阪站周围发现了这个综合商业体！</p>
-<p>凭借着<del>优秀</del>的片假名阅读能力，笔者迅速发现了13楼的Nintendo Osaka, Pokemon Center Osaka和Capcom Umeda。凭借着IP的优势，价格都不算很低。但是还是有许多<strong>中国人</strong>在爆买（笑）毕竟国内买不到嘛。其实在这里你也真正看到Pokemon和Nintendo作为世界第一IP和其运营的影响力，顾客从老到小都有。<del>国内现状？</del><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_63f5e1a370a6fd936320d9f76b4b3cb7.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_63f5e1a370a6fd936320d9f76b4b3cb7.jpg"></a><br>笔者在这里食用了寿司。不得不说，寿司看着很小但是还是挺抵饱的，就是价格也比较高……Counter前面坐着许多大叔大姐在那边激情聊天，与我所知的日本传统是相同的，非常有烟火气的一面。笔者由于自觉不懂规矩就没有掺和其中。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_ee97c7a5bda86d94fa4982c8c5e5b63b.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_ee97c7a5bda86d94fa4982c8c5e5b63b.jpg"></a><br>返回酒店。</p>
-<h1 id="Day4"><a href="#Day4" class="headerlink" title="Day4"></a>Day4</h1><p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_ecaf5c42a4c3bf7e1455022e7a49bbac.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_ecaf5c42a4c3bf7e1455022e7a49bbac.jpg"></a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2c1ab2f8cc3473ec284eb1dba2f3f44f.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2c1ab2f8cc3473ec284eb1dba2f3f44f.jpg"></a></p>
-<h2 id="大阪城公园"><a href="#大阪城公园" class="headerlink" title="大阪城公园"></a>大阪城公园</h2><p>大阪城是一个市民公园，天守阁需要买票，性质等同于博物馆。在上面有展望台，请欣赏：<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f66c6e40867089932f73c6c08f0d32c5.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f66c6e40867089932f73c6c08f0d32c5.jpg"></a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_81d28159e8bb945ee969fb9347079a7b.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_81d28159e8bb945ee969fb9347079a7b.jpg"></a><br>主要还介绍了丰臣秀吉和德川家族的故事，笔者没有RLG君那样优秀的历史人物素养，就请读者自行Wikipedia了。</p>
-<p>大阪城据说总共有3代，本以为应该是黑色的，没想到却是铜绿色，十分显眼和独特。</p>
-<p>在大坂城旁边还有元日军基地，现在是商场了。</p>
-<h2 id="道顿堀-amp-心斋桥"><a href="#道顿堀-amp-心斋桥" class="headerlink" title="道顿堀&amp;心斋桥"></a>道顿堀&amp;心斋桥</h2><p>大阪最有名的商业街，啥都有，整个街道的装扮充满了年轻气息。笔者在此处发现了比国内价格低很多的Switch和Pokemon Ad（在国外不应该很常见吗）。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_cc2c91a475d155127cbf14f5f97ee182.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_cc2c91a475d155127cbf14f5f97ee182.jpg"></a><br>由于财力、空间有限（笔者就带了一个12寸的箱子），很可惜，笔者没有在此处购买东西。</p>
-<p>回酒店。</p>
-<h2 id="新干线"><a href="#新干线" class="headerlink" title="新干线"></a>新干线</h2><p>昔々、新干线是人们必来打卡的地方，然而由于中国高铁的发达，很少有人来日本特意乘坐了。笔者从新大阪站一口气乘坐到东京。非常悲惨，当日的指定席好位子都被卖完哩，只能做靠走廊的BC位了。不得不说，JR真坑钱，一张票700r+。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_273ac4401f0e87867ee3eaaa574c3c66.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_273ac4401f0e87867ee3eaaa574c3c66.jpg"></a><br>新干线车上比中国好的是：</p>
-<ul>
-<li>一等座的座椅宽度和设计，有头枕、快捷WiFi、杯架</li>
-<li>十分安静！大家素质都很高，没人外放没人大声聊天</li>
-<li>会显示当前正在通过没停的车站</li>
-</ul>
-<p>但是：</p>
-<ul>
-<li>车速只有270</li>
-<li>贵</li>
-<li>运行声音略大</li>
-<li>有十分幽默的LED广告</li>
-</ul>
-<p>车厢里偶尔还飘过几个警察和乘务员。按照惯例，乘务员进入车厢和离开车厢时都要鞠躬，笔者是注意到了。请读者下次也关注一下哦。</p>
-<p>有常识可知，在行驶方向左侧某时某刻可以看到富士山，行驶方向右侧某时某刻可以看到海。但是左侧的窗户遮阳板全部放下来了，右侧还没看到就进入隧道里（悲）。</p>
-<p>坐A位置的<del>社畜</del>OL上车时还拿着书读，之后就开始睡觉，睡醒了开始打游戏（原形毕露），最后到横滨下车了。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_d7902b8412a7e9c394f467552ae73430.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_d7902b8412a7e9c394f467552ae73430.jpg"></a><br><em>▲  東  京</em><br>话说回来Anime&amp;Comic诚不欺我，日本很多人都是一副OL社畜模样带着白色衣服和手提公文包，每天没啥活力的样子。</p>
-<p>东京酒店比大阪更小，而且离地铁站等设施更远一点（但还是可以接受的），房间质量更差一点。就不怎么推荐了。特点是便宜w</p>
-<p>话说回来，东京站人真的很多。</p>
-<h1 id="Day5"><a href="#Day5" class="headerlink" title="Day5"></a>Day5</h1><p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_9c5e8aca055903e10d884e8828819c3c.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_9c5e8aca055903e10d884e8828819c3c.jpg"></a></p>
-<p>浅草寺。经过雷门就到了，一如既往的外国人很多。浅草寺中到处都有售卖「人形烧」（话说为什么人形町没有人形烧）</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_6a693798da56f23e69a323f351233d7f.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_6a693798da56f23e69a323f351233d7f.jpg"></a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f7b20c1c8ed5075299ae7afdfecec152.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_f7b20c1c8ed5075299ae7afdfecec152.jpg"></a><br><em>▲他给的实在是太多了</em></p>
-<p>浅草寺不大，类似市民公园，抽签（<del>抽卡</del>）也比较便宜，100y。笔者斩获末吉。</p>
-<p>然后到达秋叶原。秋叶原众所周知是二次元圣地，特此圣地巡礼。Melonbooks中排满了人，等待收银的人环绕了店面一圈。商场中手办、卡牌、小周边居多，书籍漫画大多独栋。特别的，R-18和普通内容虽然就分割线但是很模糊有意无意就会进入R18区域，未见R-18G内容。笔者没有购买任何内容。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e53f71eaac6cd1e1d2c29d0162786252.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e53f71eaac6cd1e1d2c29d0162786252.jpg"></a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0dda723b839c5e662b3bf59a7e19fb6b.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0dda723b839c5e662b3bf59a7e19fb6b.jpg"></a><br><em>▲：我〇、原</em></p>
-<p>下一站：银座。没钱没看，略。</p>
-<p>下一站：东京站和皇宫外苑。东京站的设计可是大名鼎鼎的，不过看过就是看过，请欣赏：<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0641fdf6c7f944aa4b92fe083b5ef1b4.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0641fdf6c7f944aa4b92fe083b5ef1b4.jpg"></a></p>
-<p>皇宫外苑是天皇的花园，到处都种满了松树。请欣赏：</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_3b95d8780458753448af7b2fc9a69ce1.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_3b95d8780458753448af7b2fc9a69ce1.jpg"></a><br>下一站：东京塔。东京塔是地标性建筑，可以登上去观赏夜景。工作人员会告诉你日落的时间方便你一次拍出白天和晚上的景色。本质上就是瞭望台。 0w0</p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_6d8a366beef410b941cf7c6cc7251f97.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_6d8a366beef410b941cf7c6cc7251f97.jpg"></a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_995b1199067471c7de5d5ef5cc567ca3.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_995b1199067471c7de5d5ef5cc567ca3.jpg"></a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_12cf40db63d600ea4a04ab5fa97b1c8f.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_12cf40db63d600ea4a04ab5fa97b1c8f.jpg"></a><br>到了晚上还会有氛围灯打在墙壁上，确实营造出了很绚丽的效果。而且更是有东京塔乃至整个东京的历史介绍片供你欣赏。很可惜：东京塔上不怎么能看到铁路，公路居多。笔者有幸在塔上看到了百公里外的江东花火大会，远程体会到了日本夏日的习俗（雾）。<del>谁叫第二天东京的花火大会要收钱</del></p>
-<p>除此外，东京塔还有十分抽象的指引动画。blog上难以展示，请读者前往时多留意。</p>
-<blockquote>
-<p>PS:下塔要排长队</p>
-</blockquote>
-<h1 id="Day6"><a href="#Day6" class="headerlink" title="Day6"></a>Day6</h1><p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_c3a8a230964999267b4e792e98bd60aa.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_c3a8a230964999267b4e792e98bd60aa.jpg"></a></p>
-<p>今日前往富士山。前一天笔者没有抢到富士回游的票，于是早上不得不在大月中转。没想到去大月的特急kaiji就是和富士回游重联的，真是气死偶类……富士回游只有3两编组，票很快就卖完了是很正常的。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_28de846d12cd45a1d4315494125cec7e.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_28de846d12cd45a1d4315494125cec7e.jpg"></a><br><em>▲乡下的景色。如果乘坐秘境线路，那么一大乐趣就是将自己溶于日式的乡下，去体会慢慢的生活，去感受无数日本作品中所描绘的「电车文化」，这一点不是越快越能达到的</em></p>
-<p>富士急行慢悠悠的晃到富士山时已经是11am了，母氏在车上快速拍下了没有被云蒙蔽的富士山的景色（伏笔）。</p>
-<p>到达河口湖站后要前往富士五湖中的河口湖需要乘坐bus R-Line。通票售票处挤满了人，所以笔者不得不放弃通票直接上车。</p>
-<blockquote>
-<p>请注意：富士山旁边的公交线路需要整理券。请自行搜索日本公交车攻略。</p>
-</blockquote>
-<p>结果到了河口湖十分失望，湖泊虽然映衬着青山还算美丽，但是大小比不上太湖等国内湖泊，青山也比较单调。恐怕春天和秋天更加美丽吧。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_aa681ddf00220389e2fc1c49e0c11049.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_aa681ddf00220389e2fc1c49e0c11049.jpg"></a><br><em>▲河口湖大桥？</em></p>
-<p>乘坐缆车前往富士见台——看富士山的地方。缆车要排1h……所幸价格不贵。<del>PS：这个鸟缆车是公交式的，不是循环式，运载量奇低无比</del></p>
-<p>上到富士见台的过程中可以欣赏到狸猫与兔子的日本传统故事，详情请Wikipedia。只不过，等到笔者登上见台时已经是下午了，富士山被层云环抱看不见了（大悲）</p>
-<blockquote>
-<p>请注意：</p>
-<ul>
-<li>富士见台上大量内容需要收费</li>
-<li>向上走有一个免费的展望台</li>
-</ul>
-</blockquote>
-<p>请欣赏残缺的美：<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_bf272db896f29bff8d2c8894793bbbab.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_bf272db896f29bff8d2c8894793bbbab.jpg"></a><br><em>▲from 展望台</em><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2abbe27a8bfc108eb448f9075a15972f.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_2abbe27a8bfc108eb448f9075a15972f.jpg"></a><br><em>▲from 富士山站</em><br>非常可惜，由于时间太紧，笔者没能揭开富士山神秘的面纱，也没有涉足登山。</p>
-<p>最后请欣赏反转：</p>
-<ul>
-<li>来的时候没有拿到富士回游的票（悲）</li>
-<li>回去的时候抢到了最后两张富士回游的票（喜）</li>
-<li>票是连着的、靠窗的（大喜）</li>
-<li>富士回游重联晚点了（悲）</li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_57a88745325d3c3b44808be7bd50d96b.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_57a88745325d3c3b44808be7bd50d96b.jpg"></a><br><em>▲笔者今日抽出了小羊</em></p>
-<blockquote>
-<p>建议：</p>
-<ul>
-<li>安排多于一天，在当地住宿（连通票都是2d的）</li>
-<li>在富士山站/河口湖站有到达五合目的M bus，来回178r可以考虑坐一下减轻爬山的痛苦</li>
-<li>早上和上午拍照云会少很多</li>
-<li>不要夏天来，人又多又没什么特别的意思</li>
-</ul>
-</blockquote>
-<h1 id="Day7"><a href="#Day7" class="headerlink" title="Day7"></a>Day7</h1><p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b581e6407a6c7998d672b854295dd76c.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b581e6407a6c7998d672b854295dd76c.jpg"></a></p>
-<p>今天主要前往了笔者向往的CM102.显然笔者前往的是Day2.关于CM的介绍请Google。</p>
-<p>到达CM的百合海鸥线是1995年开业的无人驾驶轻轨新交通，现代感拉满。虽然绕了不少路但是可以看到彩虹大桥的大回环、顺带欣赏东京湾的魅力、感受国际大都市的新区（与大阪相对比）<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_859717a976552288290b2fded24ebca6.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_859717a976552288290b2fded24ebca6.jpg"></a><br>到达CM是10：30，笔者午前入场理应是11：00.但是：</p>
-<ul>
-<li>笔者日语水平不足，只能跟着人流走</li>
-<li>很多地方都要做一些你不知道为什么要做的动作，包括但不限于边走路边举手、<del>振臂高呼</del>展示腕带、<del>神秘的</del>鼓掌、<del>在停车场中</del>坐下起立、<del>在太阳下</del>收伞<del>下雨后</del>打伞 <del>邪教仪式既视感</del></li>
-<li>飞机的轰鸣随时从头上传来（会场周围是机场）</li>
-<li>在停车场曝晒N小时后的11：30以后才进场</li>
-<li>因CM里空调不足和过于复杂的会场被折磨的头疼</li>
-<li>买了东西放不下</li>
-<li>2un不找零<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0332033e0f9ec769b4e311d84b43f453.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_0332033e0f9ec769b4e311d84b43f453.jpg"></a><br><em>▲排队中</em></li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_de976da79d61906f9eaef74f13d42a3c.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_de976da79d61906f9eaef74f13d42a3c.jpg"></a><br><em>▲地灵们的归宅</em><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_4ecd3d0242afbb36ba295a97cbc9d9d9.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_4ecd3d0242afbb36ba295a97cbc9d9d9.jpg"></a></p>
-<blockquote>
-<p><strong>请注意：CM国际化做的十分欠缺、大部分地方是japanese only</strong></p>
-<p>建议：</p>
-<ul>
-<li>请尽可能准备好：防晒霜、（空调背心）、遮阳伞、（便携座椅）、大量飲み物、大袋子、毛巾、零钱、<strong>Catalog或地图信息</strong>、休闲娱乐内容（如游戏、书本）</li>
-<li>需要有一定日语水平</li>
-<li>提前看好自己想去的摊位</li>
-</ul>
-</blockquote>
-<p>笔者由于社恐，没有拍摄Coser。请读者自行体验。</p>
-<p>最后，非常感谢以下社团提供了购买之物：</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="https://touhou-project.news/news/9810/">上海爱丽丝幻乐团 - Touhou19碟片（1500y）</a></li>
-<li><a target="_blank" rel="noopener" href="http://www.nagomiko.net/">和なごみ - 梦想白狐戏画肆（1500y）</a></li>
-<li><a target="_blank" rel="noopener" href="http://10less.net/alma/">てんれす - 龍のアルマ (1000y)</a></li>
-<li><a target="_blank" rel="noopener" href="https://twitter.com/kushidayo">くしだ - MAPLECOMB 12(500y)</a></li>
-<li><a target="_blank" rel="noopener" href="http://yoshihal.sakura.ne.jp/">Yoshihal</a>&amp;<a target="_blank" rel="noopener" href="http://tsukibue.com/">Tsukibue</a> - 龍と魔法の薬屋さん (500y)</li>
-<li><a target="_blank" rel="noopener" href="https://twitter.com/yukiagasa">桃色电波塔 - BLESS(500y)</a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_7559b90668a49f7f4281054baa8df964.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_7559b90668a49f7f4281054baa8df964.jpg"></a><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e506453e8614c434bee0bb1489285efa.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_e506453e8614c434bee0bb1489285efa.jpg"></a><br><em>▲日本特供？双层巨无霸4*肉饼，套餐50r</em></li>
-</ul>
-<h1 id="Day8"><a href="#Day8" class="headerlink" title="Day8"></a>Day8</h1><p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_a6d4c74799764d8fb3dc91044263128d.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_a6d4c74799764d8fb3dc91044263128d.jpg"></a></p>
-<p>今日前往TNM。本来TNM周一闭馆，但是由于盂兰盆节的缘故临时开馆力（喜）。请见：<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b26c52af3583ef1211160a50948a0344.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_b26c52af3583ef1211160a50948a0344.jpg"></a><br><em>▲憨憨的大狸子</em><br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_a7992d17ab08f427d1f33f6f8483660b.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_a7992d17ab08f427d1f33f6f8483660b.jpg"></a><br>成田机场设计的很灵动，个人认为比浦X机场好看，<del>而且充满了pkmn</del>。回程的春秋航空晚点了（悲）。有趣的是，哪怕从日本起飞大部分机内广播都没有日语，乘坐的也大部分是中国人，属实幽默。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_73000b6daa5b389716d1a1cd975fd49f.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_73000b6daa5b389716d1a1cd975fd49f.jpg"></a><br><em>▲旁边展示了从第一世代开始的御三家及其进化型直到第九世代</em></p>
-<p><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_3e47c76f3f884e593806f0c2f60bbe75.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2023/08/wp_editor_md_3e47c76f3f884e593806f0c2f60bbe75.jpg"></a><br><em>▲小心二次元</em></p>
-<p>空港守夜线还行吧，比地铁快，略。</p>
-<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>本次旅行其实准备了很久，大概是2023年2月就开始有了最初的提案，当时期望至少有3家一同前往，当时的规划不同点包括7天的行程（JR Pass）和一天的秘境线路。</p>
-<p>在规划和准备的过程中遇到了许多困难。行程经过了许多次的大调和重新规划，例如富士山从11号转移到了12号，为了迎合Tokyo Wide Pass的时间；例如11号的东京杂项游玩，为了高效地使用Tokyo Metro通票；例如为了迎合春秋14号的低价飞机，给东京增加了一天。由于交通费的超出预想，行程的期望预算也从10000r/p提升到了15000r/p。（最后人均消费12500r）。在7月份也发现实际参加的人数远小于期望人数。办理签证时也被告知出签的难度和手续的繁琐。此外，旅行的ふたり也是第一次出国，在日本也可谓是ひとり。但是热情和相互鼓励克服了上述困难，造就了这一次长途旅行。</p>
-<p>迷信的、因此，在旅行中各项事情可谓大吉：</p>
-<ul>
-<li>恰好抢到了富士回游的票</li>
-<li>大阪没有怎么受到台风6号的影响</li>
-<li>TNM的临时开馆</li>
-<li>没有受到台风7号的影响（据说影响了1w多外国游客、新干线停运）</li>
-<li>没有怎么遇到语言障碍</li>
-<li>做了自己想做的事、吃了自己想吃的饭、去了自己想去的地方、体会了自己规划旅游的乐趣、打破了自己原有的认知和刻板印象、按照自己的pace去感受</li>
-</ul>
-<p>これは、ほんもののタビだよ！</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2023/08/16/jpnblog/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/08/16/jpnblog/" data-id="clv10101q005hx8ib5a0dfrnq" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2023/08/16/jpnblog/" data-id="clv11gudp003jjoib4x8rgap6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
@@ -783,7 +489,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/07/14/unweekly-12/" data-id="clv10102900a4x8ibb5ziem7o" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2023/07/14/unweekly-12/" data-id="clv11guer00cijoib4c6qe0o6" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -827,7 +533,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/07/14/oc-database-release/" data-id="clv10101x0078x8ib5gtw3vzj" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2023/07/14/oc-database-release/" data-id="clv11gue1005ejoibb6o000z1" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -871,7 +577,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/07/14/ryuujin-dict-release/" data-id="clv101022008gx8ib2huihrms" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2023/07/14/ryuujin-dict-release/" data-id="clv11guem00bbjoib1l1w37j9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ryujin/" rel="tag">Ryujin</a></li></ul>
