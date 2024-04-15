@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>2021 Swift Student Challenge(WWDC)参加感想与经验 | XGN&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="大家好，我是XGN，这次是在Mac上写这篇文章。这次来谈一谈WWDC Swift Student Challenge 2021. 传送门苹果官网 在我的Blog上阅读 代码和文书参考 工程介绍我的工程是MIST，MayISolveIt，是一个教育游戏为一体的2D Playground。在游戏中你扮演一名返乡有志青年希望通过自己的技术和政府的补助帮助当地的老乡脱贫致富。 在游戏中，你需要摆放建筑，考">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2021 Swift Student Challenge(WWDC)参加感想与经验">
+<meta property="og:url" content="https://xiaogenintendo.github.io/2021/04/19/2021wwdc/index.html">
+<meta property="og:site_name" content="XGN&#39;s blog">
+<meta property="og:description" content="大家好，我是XGN，这次是在Mac上写这篇文章。这次来谈一谈WWDC Swift Student Challenge 2021. 传送门苹果官网 在我的Blog上阅读 代码和文书参考 工程介绍我的工程是MIST，MayISolveIt，是一个教育游戏为一体的2D Playground。在游戏中你扮演一名返乡有志青年希望通过自己的技术和政府的补助帮助当地的老乡脱贫致富。 在游戏中，你需要摆放建筑，考">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_db419793f627c0e663499c7d345633fe.jpg">
+<meta property="og:image" content="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_a5c985f3cd517af68b150526d99faeab.jpg">
+<meta property="og:image" content="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_5c57d6b3df860f361558596992cd8259.jpg">
+<meta property="article:published_time" content="2021-04-19T11:31:00.000Z">
+<meta property="article:modified_time" content="2023-09-12T01:00:50.556Z">
+<meta property="article:author" content="XGN">
+<meta property="article:tag" content="Dev">
+<meta property="article:tag" content="Chinese">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_db419793f627c0e663499c7d345633fe.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="XGN&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">XGN&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://xiaogenintendo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2021wwdc" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/04/19/2021wwdc/" class="article-date">
+  <time datetime="2021-04-19T11:31:00.000Z" itemprop="datePublished">2021-04-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/Apple/">Apple</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      2021 Swift Student Challenge(WWDC)参加感想与经验
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>大家好，我是XGN，这次是在Mac上写这篇文章。这次来谈一谈WWDC Swift Student Challenge 2021.</p>
+<h1 id="传送门"><a href="#传送门" class="headerlink" title="传送门"></a>传送门</h1><p><a target="_blank" rel="noopener" href="https://developer.apple.com/wwdc21/swift-student-challenge/">苹果官网</a></p>
+<p><a href="https://xiaogenintendo.github.io/2021/04/19/2021wwdc/">在我的Blog上阅读</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/MIST">代码和文书参考</a></p>
+<h1 id="工程介绍"><a href="#工程介绍" class="headerlink" title="工程介绍"></a>工程介绍</h1><p>我的工程是MIST，MayISolveIt，是一个教育游戏为一体的2D Playground。在游戏中你扮演一名返乡有志青年希望通过自己的技术和政府的补助帮助当地的老乡脱贫致富。</p>
+<p>在游戏中，你需要摆放建筑，考虑到自己的经济因素和老乡们对环境的要求，实现和谐自然的可持续发展。</p>
+<p>该项目开源。</p>
+<h1 id="段1"><a href="#段1" class="headerlink" title="段1"></a>段1</h1><p>事情的开头是2020年9月，也就是我上高一的第一个学期，LS不知道怎么的开设了Apple WWDC的选修课，作为无路可选的我于是就报名了课程。当时的我一无所有，没有iphone，没有mac，只有一个ipad mini。ls老师第一节课果然就说：「你们必须有mac，不然上你🐎！」于是我就花重金买了一个macbook Pro<del>我的9000啊</del>。当时还犹豫了好久，还考虑过退课的事情。但是ls说选修课下学期还会有只是不开课后我就觉得蛮值得，就下定决心买了。<del>结果高一下没有了，ls啊</del></p>
+<p>然后跟着hqy学长学习了一个学期的SwiftUI和乱七八糟的东西（说实在的，每次上课前我就已经把之后好多课的东西写完了）。同时也批判了一个学期的Swift语法和编辑器……当时还写了好多测试项目。hqy学长的课一开始还有许多人来上，后来人就越来越少，最后就没几个了，还有好多摸鱼的……</p>
+<p>总体来说，苹果对开发者不算特别友好，尽管他们的用户体验绝对NB。买回mac后被炫酷的设计、高级的UI和动画惊艳了。顺便说一下，这个键盘用起来也很爽，输入法比Windows的不知道智能到哪里去了。</p>
+<h1 id="段2"><a href="#段2" class="headerlink" title="段2"></a>段2</h1><p>差不多2021年1月左右我们就开始为WWDC做准备了。当时，hqy和ls让我们想一个idea，不想出来不许走，要求用上「SwiftUI」，「CreateML」或者是「ARKit」，还要结合时事。于是当时MIST的想法就诞生了：</p>
+<blockquote>
+<p>摆放道具，帮助村民脱贫致富。需要考虑许多自然、人文因素，要因地制宜。</p>
+</blockquote>
+<p>这就是MIST的雏形。</p>
+<h1 id="段3"><a href="#段3" class="headerlink" title="段3"></a>段3</h1><p>MIST的一开始想要通过纯SwiftUI实现，毕竟swiftUI中也有拖拽事件什么的。本着这样的想法，我写了MIST v1。结果发现SwiftUI难用的一批，再加上不知道是我的问题还是苹果框架的bug，实现起来非常不优雅，也非常困难。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_db419793f627c0e663499c7d345633fe.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_db419793f627c0e663499c7d345633fe.jpg"></a><br>MIST v1，非常的丑陋。</p>
+<h1 id="段4"><a href="#段4" class="headerlink" title="段4"></a>段4</h1><p>为了解决swiftUI不给力的问题，我将目光转向了sprite kit。简单评价一下SK，SK是一个非常强力的框架，它的动画系统和引擎理念都非常先进，只不过生不逢地，选在了Swift这一语言，而且是苹果独占，结果实现效率也不太行（详见TestSTG4）。假如有人能够完整的实现SK的动画系统，再加一点优化，让他全平台化，一定能成为非常NB的引擎。</p>
+<p>于是我就采用了SK和swiftUI结合的方式开发v2。不过我当时非常憨憨的写了一个XCode App，还是为iOS设计的App……于是，当时的MIST中就有了陀螺仪的功能。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_a5c985f3cd517af68b150526d99faeab.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_a5c985f3cd517af68b150526d99faeab.jpg"></a><br>MIST v2，其中部分内容是SwiftUI，部分内容是SK。</p>
+<p>不过开发中由于我的Swift功底实在不行，还得感谢Stackoverflow上的同志们和Google这一强大的搜索引擎。差不多到这个时候这个工程的总用时已经达到了50小时。</p>
+<p>一切似乎非常顺利，直到我知道要做Swift Playground……</p>
+<h1 id="段5"><a href="#段5" class="headerlink" title="段5"></a>段5</h1><p>我从Apple官网上下载了Playground的模版，准备移植。本来以为移植只是简单地把代码复制过去加一点playground的特色，没想到大错特错了。</p>
+<p>结果是playground的doc非常少，Xcode的debug工具也用不了，每次测试时还需使用AirDrop转移到ipad上测试，非常的繁琐（这个时候我还把代码合并到了一个文件），而且代码崩溃了只有简单的一句错误信息「Playground出现了错误，请检查你的代码是否有问题」然后让你重置playground。到了后期又发现swiftui在ipad上总是崩溃，运行效果跟没有一样，甚至做到了把整个ios搞崩溃的程度。</p>
+<p>这个时候我得知可以做macos项目。于是我就转向了macOS的Playground。期间还升级了好多次系统和XCode。</p>
+<h1 id="段6"><a href="#段6" class="headerlink" title="段6"></a>段6</h1><p>之后的事情反而非常顺利，部署在Playground上不是很困难。<br><a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_5c57d6b3df860f361558596992cd8259.jpg"><img src="https://blog.hellholestudios.top/wp-content/uploads/2021/04/wp_editor_md_5c57d6b3df860f361558596992cd8259.jpg"></a><br>最终发布版</p>
+<p>最终发布版中删除了陀螺仪的功能，并且提高了SK的比重。</p>
+<p>而文书对于我<del>这个外语天才</del>也并不难写，很快就凑满了500词。</p>
+<p>于是在2021/4/16晚9点CST我提交了作品。</p>
+<p>2021/4/20晚9点CST开源并添加到<a target="_blank" rel="noopener" href="https://github.com/wwdc/2021">Github WWDC21</a></p>
+<h1 id="EXTRA"><a href="#EXTRA" class="headerlink" title="EXTRA"></a>EXTRA</h1><p>其实在这个过程中，我还在偷偷的干其它工程，比如Pressing Competition 2和TestSTG4，以及大量的音乐创作。学业的繁忙和苹果的开发难度曾让我不知多少次想要退出，可是只要一写起代码就开始无尽的探索了。www</p>
+<p>非常感谢ls老师和hqy学长从头到尾的支持和帮助！非常感谢NFLS能够给我提供这个平台和机会。</p>
+<p>此外，非常感谢：</p>
+<ul>
+<li>Zzzyt和Zhuky.RLG一直陪伴着我在这条未知的道路上前进并且为文书提出建议。</li>
+<li>Zhuky.RLG为MIST的设想提出建议。</li>
+<li>Hikari和Ninetail大人一直充实着我的精神生活，鼓励着我。</li>
+<li>MonkeyKing的热情似火</li>
+<li>XIZCM为本文章提供稿费</li>
+<li>一直读到现在的你</li>
+</ul>
+<h1 id="给后辈的建议"><a href="#给后辈的建议" class="headerlink" title="给后辈的建议"></a>给后辈的建议</h1><ul>
+<li>钻研精神</li>
+<li>学好英语好写文书。</li>
+<li>先学Java，C#或其他语言后再开始学习Swift</li>
+<li>优先掌握SwiftUI。</li>
+<li>有点💰。无论是macos还是ipad还是去美国的✈️都不便宜。</li>
+<li>平时多参加一些信息方面的活动，比如社团、比赛、开发等。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2021/04/19/2021wwdc/" data-id="clv10100q0007x8ibahz6883i" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/04/25/unweekly-4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Unweekly Report 2021 No. 4
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/04/13/hhs-new-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">HHS New Wordpress Site is Up</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Apple/">Apple</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/MC-Mod/">MC Mod</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Unweekly/">Unweekly</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/">Game</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Mahjong/">Mahjong</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Osu/">Osu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Touhou/">Touhou</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/OC-Setting/">OC Setting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/Segicverse/">Segicverse</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OBCYSIO/">OBCYSIO</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tip/">Tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cakeslice/" rel="tag">Cakeslice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CreateML/" rel="tag">CreateML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OBCYSIO/" rel="tag">OBCYSIO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Osu/" rel="tag">Osu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release/" rel="tag">Release</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ryujin/" rel="tag">Ryujin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Cakeslice/" style="font-size: 10px;">Cakeslice</a> <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17.27px;">Dev</a> <a href="/tags/English/" style="font-size: 19.09px;">English</a> <a href="/tags/Java/" style="font-size: 11.82px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 12.73px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 13.64px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18.18px;">OC</a> <a href="/tags/OI/" style="font-size: 16.36px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 14.55px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 15.45px;">Ryujin</a> <a href="/tags/Segicverse/" style="font-size: 11.82px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 10.91px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 12.73px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 12.73px;">ZKY</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/04/15/mytrip-release/">MyTrips Release</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/01/2024-april-fool/">Upload to Hell Hole Studios Blog - Howto</a>
+          </li>
+        
+          <li>
+            <a href="/2024/03/21/shanghai-in-caligine/">Shanghai in Caligine</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/23/tierlist-nju-class-1-1/">NJU Classes Tierlist - Freshman Term 1</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/17/Cakeslice1/">Cakeslice No.1</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2024 XGN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
