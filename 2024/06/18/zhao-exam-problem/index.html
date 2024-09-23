@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>2024春南京大学信计强基信息与计算科学实践考试题目速报(Prof. Jianhua Zhao) | XGN&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="120分钟满分100，闭卷。手写代码C++。 P1(10pts) public protected private成员对（类内部、子类、外部、友元）的可见性？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2024春南京大学信计强基信息与计算科学实践考试题目速报(Prof. Jianhua Zhao)">
+<meta property="og:url" content="https://xiaogenintendo.github.io/2024/06/18/zhao-exam-problem/index.html">
+<meta property="og:site_name" content="XGN&#39;s blog">
+<meta property="og:description" content="120分钟满分100，闭卷。手写代码C++。 P1(10pts) public protected private成员对（类内部、子类、外部、友元）的可见性？">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-06-18T11:49:00.000Z">
+<meta property="article:modified_time" content="2024-09-23T15:39:07.491Z">
+<meta property="article:author" content="XGN">
+<meta property="article:tag" content="Chinese">
+<meta property="article:tag" content="School">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="XGN&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">XGN&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://xiaogenintendo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-zhao-exam-problem" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2024/06/18/zhao-exam-problem/" class="article-date">
+  <time datetime="2024-06-18T11:49:00.000Z" itemprop="datePublished">2024-06-18</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/School/">School</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      2024春南京大学信计强基信息与计算科学实践考试题目速报(Prof. Jianhua Zhao)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>120分钟满分100，闭卷。手写代码C++。</p>
+<h1 id="P1"><a href="#P1" class="headerlink" title="P1"></a>P1</h1><p>(10pts) public protected private成员对（类内部、子类、外部、友元）的可见性？</p>
+<span id="more"></span>
+<h1 id="P2"><a href="#P2" class="headerlink" title="P2"></a>P2</h1><p>(15pts)</p>
+<p>有形如这样的单链表：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span><span class="keyword">int</span> data; Node* link;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>满足data在链表上严格递增。</p>
+<p>给出两个链表头<code>first</code>和<code>second</code>，判断这两个链表有没有相同的尾部。（即存不存在一个节点又是first的某个后继又是second的某个后继）</p>
+<p>要求：额外空间常数级，每个链表上的每个节点访问不超过1次。</p>
+<h1 id="P3"><a href="#P3" class="headerlink" title="P3"></a>P3</h1><h2 id="1"><a href="#1" class="headerlink" title="(1)"></a>(1)</h2><p>(10pts)<br>用泛型和数组实现栈：<code>class Stack</code>，其数据类型为<code>TYPE</code>,数组最大大小为<code>N</code>。要求实现<code>push</code>, <code>pop</code>, <code>isEmpty</code>和构造函数。</p>
+<h2 id="（2）"><a href="#（2）" class="headerlink" title="（2）"></a>（2）</h2><p>(5pts)<br>用两个上述Stack实现int类型的Queue，要求实现<code>push</code>和<code>dequeue</code>。</p>
+<h1 id="P4"><a href="#P4" class="headerlink" title="P4"></a>P4</h1><p>(15pts)<br>用数学归纳法证明该程序一定终止并且能将A数组的$[L,R)$区间从小到大排序。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Sort</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> L, <span class="keyword">int</span> R)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(L+<span class="number">1</span>&gt;=R)&#123;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(L+<span class="number">2</span>==R)&#123;</span><br><span class="line">		<span class="keyword">if</span>(a[L]&gt;a[L+<span class="number">1</span>])&#123;</span><br><span class="line">			<span class="built_in">swap</span>(a[L],a[L+<span class="number">1</span>]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">int</span> mid1=L+(R-L)/<span class="number">3</span>;</span><br><span class="line">	<span class="keyword">int</span> mid2=R-(R-L)/<span class="number">3</span>;</span><br><span class="line">	<span class="built_in">Sort</span>(A,mid1,R);</span><br><span class="line">	<span class="built_in">Sort</span>(A,L,mid2);</span><br><span class="line">	<span class="built_in">Sort</span>(A,mid1,R);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="P5"><a href="#P5" class="headerlink" title="P5"></a>P5</h1><p>(10pts)<br>给出整数数组$A$和大小$N$.求$A$的最大连续区间和。</p>
+<p>要求：额外空间常数，A中每个元素访问不超过1次。</p>
+<h1 id="P6"><a href="#P6" class="headerlink" title="P6"></a>P6</h1><p>(15pts)<br>给定字符串S，判断S是identifier（字母+字母/数字），int（数字），float（数字+点+数字）还是error（其他情况）。S末尾可能有空格。返回值要求是<code>enum TokenType&#123;INT,FLOAT,IDENTIFIER,ERROR&#125;</code></p>
+<h1 id="P7"><a href="#P7" class="headerlink" title="P7"></a>P7</h1><p>有虚基类<code>Figure</code>和虚函数：</p>
+<ul>
+<li><code>draw()</code> :不要求实现</li>
+<li><code>Rectangle getRect()</code>：Rectangle是一个结构，有top,bottom,left,right四个参数。getRect应该返回包括该图形的最小矩形。</li>
+<li><code>Move(int x,int y)</code>： 向左移动x，下移动y。</li>
+</ul>
+<p>*没错，原题就是命名方式大小写不一致的</p>
+<p>另有复合图形是多个图形的组合，在移动时所有的子图形都会移动。</p>
+<h2 id="1-1"><a href="#1-1" class="headerlink" title="(1)"></a>(1)</h2><p>(15pts)</p>
+<p>请设计：</p>
+<ul>
+<li>Circle和Rectangle类</li>
+<li>复合图形类</li>
+</ul>
+<h2 id="2"><a href="#2" class="headerlink" title="(2)"></a>(2)</h2><p>(5pts)</p>
+<p>假设有<code>bool isValid</code> <code>Rectangle rect</code> <code>Figure* parent</code>三个新成员变量，其中rect只有在isValid为真时有意义。重写<code>Move()</code>和<code>getRect()</code>以实现<code>getRect()</code>的高效求解方法，使得如果该图形和其子图形没有移动过，<code>getRect()</code>是$O(1)$的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2024/06/18/zhao-exam-problem/" data-id="cm1f6lvtx00fbccib5kmo8dgo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/School/" rel="tag">School</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/06/25/gyc-exam-problem/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2024春南京大学大学物理期末考试题目速报(Prof. Yachong Guo)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/06/14/zy-exam-problem/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">2024春南京大学信计强基离散数学期末考试题目速报(Prof. Yuan Zhang, Penghui Yao)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Apple/">Apple</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/DS/">DS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/MC-Mod/">MC Mod</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/OI/">OI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Web/">Web</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Unweekly/">Unweekly</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/">Game</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Mahjong/">Mahjong</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Osu/">Osu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Touhou/">Touhou</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/OC-Setting/">OC Setting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/Segicverse/">Segicverse</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OBCYSIO/">OBCYSIO</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/School/">School</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tip/">Tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cakeslice/" rel="tag">Cakeslice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CreateML/" rel="tag">CreateML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OBCYSIO/" rel="tag">OBCYSIO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Osu/" rel="tag">Osu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release/" rel="tag">Release</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ryujin/" rel="tag">Ryujin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/School/" rel="tag">School</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Cakeslice/" style="font-size: 10px;">Cakeslice</a> <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17px;">Dev</a> <a href="/tags/English/" style="font-size: 19px;">English</a> <a href="/tags/Java/" style="font-size: 12px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 13px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 14px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18px;">OC</a> <a href="/tags/OI/" style="font-size: 17px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 16px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 15px;">Ryujin</a> <a href="/tags/School/" style="font-size: 13px;">School</a> <a href="/tags/Segicverse/" style="font-size: 12px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 11px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 13px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 13px;">ZKY</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">September 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">June 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/09/23/avl/">一种基于维护高度的无递归、无栈、无parent指针的AVL树实现方式</a>
+          </li>
+        
+          <li>
+            <a href="/2024/09/13/2024-april-fool-more/">Building a Clear Programming Language for Newcomers</a>
+          </li>
+        
+          <li>
+            <a href="/2024/09/06/display-frontend-pdf/">Displaying Attachment PDF with Frontend Javascript</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/25/gyc-exam-problem/">2024春南京大学大学物理期末考试题目速报(Prof. Yachong Guo)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/18/zhao-exam-problem/">2024春南京大学信计强基信息与计算科学实践考试题目速报(Prof. Jianhua Zhao)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2024 XGN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

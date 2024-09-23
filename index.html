@@ -115,7 +115,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="cm1f5y35w0029kcib2ov639sb" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2020/10/11/Welcome-Post/" data-id="cm1f6lvsk0028ccib5yrog7wh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -153,7 +153,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h1><p>AVL树有种种实现方式，其中最自然的是采用递归的写法，毕竟AVL树是递归定义的。但是，有的老师认为“递归时间常数大”，觉得应该用迭代。但是，还有老师认为迭代要用栈，“栈空间大（指占用了 $O(\log n)$ ）空间”，不能用栈。自然，我们可以用parent指针规避掉这一问题，但是显然parent指针需要使用的额外内存更大，这位老师还是不喜欢。所以现在我们被要求实现三无AVL——无递归、无栈、无parent指针。</p>
+        <h1 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h1><p>AVL树有种种实现方式，其中最自然的是采用递归的写法，毕竟AVL树是递归定义的。但是，有的老师认为“递归时间常数大”，觉得应该用迭代。但是，还有老师认为迭代要用栈，“栈空间大（指占用了 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex" xmlns="http://www.w3.org/2000/svg" width="8.112ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 3585.7 1000" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-1-TEX-I-1D442" d="M740 435Q740 320 676 213T511 42T304 -22Q207 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435ZM637 476Q637 565 591 615T476 665Q396 665 322 605Q242 542 200 428T157 216Q157 126 200 73T314 19Q404 19 485 98T608 313Q637 408 637 476Z"></path><path id="MJX-1-TEX-N-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path id="MJX-1-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path id="MJX-1-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z"></path><path id="MJX-1-TEX-N-67" d="M329 409Q373 453 429 453Q459 453 472 434T485 396Q485 382 476 371T449 360Q416 360 412 390Q410 404 415 411Q415 412 416 414V415Q388 412 363 393Q355 388 355 386Q355 385 359 381T368 369T379 351T388 325T392 292Q392 230 343 187T222 143Q172 143 123 171Q112 153 112 133Q112 98 138 81Q147 75 155 75T227 73Q311 72 335 67Q396 58 431 26Q470 -13 470 -72Q470 -139 392 -175Q332 -206 250 -206Q167 -206 107 -175Q29 -140 29 -75Q29 -39 50 -15T92 18L103 24Q67 55 67 108Q67 155 96 193Q52 237 52 292Q52 355 102 398T223 442Q274 442 318 416L329 409ZM299 343Q294 371 273 387T221 404Q192 404 171 388T145 343Q142 326 142 292Q142 248 149 227T179 192Q196 182 222 182Q244 182 260 189T283 207T294 227T299 242Q302 258 302 292T299 343ZM403 -75Q403 -50 389 -34T348 -11T299 -2T245 0H218Q151 0 138 -6Q118 -15 107 -34T95 -74Q95 -84 101 -97T122 -127T170 -155T250 -167Q319 -167 361 -139T403 -75Z"></path><path id="MJX-1-TEX-N-2061" d=""></path><path id="MJX-1-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-1-TEX-N-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-1-TEX-I-1D442"></use></g><g data-mml-node="mo" transform="translate(763, 0)"><use xlink:href="#MJX-1-TEX-N-28"></use></g><g data-mml-node="mi" transform="translate(1152, 0)"><use xlink:href="#MJX-1-TEX-N-6C"></use><use xlink:href="#MJX-1-TEX-N-6F" transform="translate(278, 0)"></use><use xlink:href="#MJX-1-TEX-N-67" transform="translate(778, 0)"></use></g><g data-mml-node="mo" transform="translate(2430, 0)"><use xlink:href="#MJX-1-TEX-N-2061"></use></g><g data-mml-node="mi" transform="translate(2596.7, 0)"><use xlink:href="#MJX-1-TEX-I-1D45B"></use></g><g data-mml-node="mo" transform="translate(3196.7, 0)"><use xlink:href="#MJX-1-TEX-N-29"></use></g></g></g></svg></mjx-container> ）空间”，不能用栈。自然，我们可以用parent指针规避掉这一问题，但是显然parent指针需要使用的额外内存更大，这位老师还是不喜欢。所以现在我们被要求实现三无AVL——无递归、无栈、无parent指针。</p>
 <p>AVL树的维护方法有两种：维护高度和balance factor（BF）。笔者认为Balance Factor不够优雅、泛用性低、过于特殊化，故采用维护高度的方式。</p>
 <p>所以，本文认为，三无AVL实现的重点在于 <strong>快速的维护每个节点子树的高度</strong>。</p>
         
@@ -164,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/09/23/avl/" data-id="cm1f5y35x002ekcibh63w8p3o" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/09/23/avl/" data-id="cm1f6lvsl002hccib8ynact6f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
@@ -217,7 +217,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/09/13/2024-april-fool-more/" data-id="cm1f5y35l000ckcib2a6y7cyx" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/09/13/2024-april-fool-more/" data-id="cm1f6lvsa000iccibgd0fbglu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
@@ -271,7 +271,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/09/06/display-frontend-pdf/" data-id="cm1f5y35y002nkcib2lq71y6k" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/09/06/display-frontend-pdf/" data-id="cm1f6lvsm002lccib6m881e6s" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li></ul>
@@ -283,14 +283,14 @@
 
 
   
-    <article id="post-mytrip-release" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-gyc-exam-problem" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2024/04/15/mytrip-release/" class="article-date">
-  <time datetime="2024-04-15T07:24:00.000Z" itemprop="datePublished">2024-04-15</time>
+    <a href="/2024/06/25/gyc-exam-problem/" class="article-date">
+  <time datetime="2024-06-25T06:42:00.000Z" itemprop="datePublished">2024-06-25</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Dev/">Dev</a>
+    <a class="article-category-link" href="/categories/School/">School</a>
   </div>
 
   </div>
@@ -301,7 +301,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/15/mytrip-release/">MyTrips Release</a>
+      <a class="article-title" href="/2024/06/25/gyc-exam-problem/">2024春南京大学大学物理期末考试题目速报(Prof. Yachong Guo)</a>
     </h1>
   
 
@@ -309,20 +309,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>MyTrips is a website for tracking and visualizing my journey data!</p>
-<p>Please visit <a href="https://xiaogenintendo.github.io/MyTrips/">here</a>. Feel free to clone and make your own version with source code <a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/MyTrips">here</a>.</p>
-<h1 id="Known-bugs"><a href="#Known-bugs" class="headerlink" title="Known bugs"></a>Known bugs</h1><ul>
-<li>Sometimes it displays Russian locales for the timeline.</li>
-<li>Date calculation might fail on certain browsers like Chrome for iPhone due to date conversion problem.</li>
-</ul>
-
+        <h1 id="概括"><a href="#概括" class="headerlink" title="概括"></a>概括</h1><p>原文为英文，本文是回忆版，具体数据可能有误。考完收试卷、草稿纸。可以携带一张A4手写笔记。不可以带计算器。</p>
+<p>120分钟5题.</p>
+        
+          <p class="article-more-link">
+            <a href="/2024/06/25/gyc-exam-problem/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/04/15/mytrip-release/" data-id="cm1f5y369004vkcibg32d3x6x" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/06/25/gyc-exam-problem/" data-id="cm1f6lvsn002vccibe0nw3elb" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Release/" rel="tag">Release</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/School/" rel="tag">School</a></li></ul>
 
     </footer>
   </div>
@@ -331,14 +331,14 @@
 
 
   
-    <article id="post-2024-april-fool" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-zhao-exam-problem" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2024/04/01/2024-april-fool/" class="article-date">
-  <time datetime="2024-04-01T07:10:00.000Z" itemprop="datePublished">2024-04-01</time>
+    <a href="/2024/06/18/zhao-exam-problem/" class="article-date">
+  <time datetime="2024-06-18T11:49:00.000Z" itemprop="datePublished">2024-06-18</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/Java/">Java</a>
+    <a class="article-category-link" href="/categories/School/">School</a>
   </div>
 
   </div>
@@ -349,7 +349,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2024/04/01/2024-april-fool/">Introducing a gender-safe and tense-safe programming language</a>
+      <a class="article-title" href="/2024/06/18/zhao-exam-problem/">2024春南京大学信计强基信息与计算科学实践考试题目速报(Prof. Jianhua Zhao)</a>
     </h1>
   
 
@@ -357,20 +357,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>Note: This is a April Fools’ Joke</strong></p>
-<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Nowadays, as most programming languages are built on top of English grammar and syntax, it is sometimes difficult for Latin, Spanish or French speakers to get used to the syntax in programming. Inspried by the <code>type-safe</code> every modern language is persuing, here in HHS, we introduce another two new concepts for the ease for internationalization of a programming language: <em>gender-safe</em> and <em>tense-safe</em> for our new programming language <strong>Espaj</strong>!! Please read below for the cool features for Espaj:</p>
+        <p>120分钟满分100，闭卷。手写代码C++。</p>
+<h1 id="P1"><a href="#P1" class="headerlink" title="P1"></a>P1</h1><p>(10pts) public protected private成员对（类内部、子类、外部、友元）的可见性？</p>
         
           <p class="article-more-link">
-            <a href="/2024/04/01/2024-april-fool/#more">Read More</a>
+            <a href="/2024/06/18/zhao-exam-problem/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/04/01/2024-april-fool/" data-id="cm1f5y35n000ikcib2pqkgnrz" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/06/18/zhao-exam-problem/" data-id="cm1f6lvtx00fbccib5kmo8dgo" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/" rel="tag">English</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/School/" rel="tag">School</a></li></ul>
 
     </footer>
   </div>
@@ -379,14 +379,14 @@
 
 
   
-    <article id="post-shanghai-in-caligine" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-zy-exam-problem" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2024/03/21/shanghai-in-caligine/" class="article-date">
-  <time datetime="2024-03-21T12:17:00.000Z" itemprop="datePublished">2024-03-21</time>
+    <a href="/2024/06/14/zy-exam-problem/" class="article-date">
+  <time datetime="2024-06-14T15:36:00.000Z" itemprop="datePublished">2024-06-14</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+    <a class="article-category-link" href="/categories/School/">School</a>
   </div>
 
   </div>
@@ -397,7 +397,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2024/03/21/shanghai-in-caligine/">Shanghai in Caligine</a>
+      <a class="article-title" href="/2024/06/14/zy-exam-problem/">2024春南京大学信计强基离散数学期末考试题目速报(Prof. Yuan Zhang, Penghui Yao)</a>
     </h1>
   
 
@@ -405,24 +405,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>本文为2024年2月XGN（笔者）与ZKY前往上海City Walk的游记。 题目<del>为了体现上海的洋文氛围</del>使用了拉丁语。</p>
-<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>春节期间，国铁部门为了更快的响应旅客春节期间过年回家的需求，加开了许多临时列车。而其中又有这样的几辆车，考虑到人民收入水平不均，价格十分的低廉。笔者关注到从上海02:05发车的K4026次列车返回南京只需要8.5¥，特前往体验之。</p>
-<p>此外，笔者从来没有认真的游玩过上海，上一次去上海更只是作了出国的跳板（详见「日行纪要」），所以也决定约上「上海通」ZKY同学来一次上海的短途旅行（2天2夜）。</p>
-<p><del>另一个重大的原因是，笔者想去上海买谷子。</del></p>
-<p>施工状态：<br>文章：Done<br>图片：Done</p>
-<h1 id="Day-1"><a href="#Day-1" class="headerlink" title="Day 1"></a>Day 1</h1><h2 id="上海到着！"><a href="#上海到着！" class="headerlink" title="上海到着！"></a>上海到着！</h2><p>如何廉价而有高效的到达上海成为了第一大问题。某跑的和直达一样快的动车只要70¥属实让人心动，但是46.5¥的快速也可以考虑。最后考虑到ZKY同学18年生活在云中的豪华府邸中从未触地体验过老百姓的生活，体验过中国国民硬卧车，最终选择了100¥的硬卧。9:00从南京发车，不到3个小时到上海。考虑到便宜的动车高铁也只有110¥，硬卧属实性价比不高。</p>
-        
-          <p class="article-more-link">
-            <a href="/2024/03/21/shanghai-in-caligine/#more">Read More</a>
-          </p>
-        
+        <p>2小时，100分满分，内容是图论，开卷，可带电子设备，可查阅课程笔记和资料，不可上网。点击长图查看：</p>
+<img src="https://blog.hellholestudios.top/wp-content/uploads/2024/06/图论期末考试.png" alt="" width="170" height="1024" class="alignnone size-large wp-image-1409" />
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2024/03/21/shanghai-in-caligine/" data-id="cm1f5y36k007ikcib0g1w1naf" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/06/14/zy-exam-problem/" data-id="cm1f6lvty00flccibcgwp4c4c" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/School/" rel="tag">School</a></li></ul>
 
     </footer>
   </div>
@@ -431,14 +422,14 @@
 
 
   
-    <article id="post-tierlist-nju-class-1-1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-yzht-3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2023/12/23/tierlist-nju-class-1-1/" class="article-date">
-  <time datetime="2023-12-23T15:11:00.000Z" itemprop="datePublished">2023-12-23</time>
+    <a href="/2024/05/17/yzht-3/" class="article-date">
+  <time datetime="2024-05-17T12:06:00.000Z" itemprop="datePublished">2024-05-17</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/Random/">Random</a>
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/OI/">OI</a>
   </div>
 
   </div>
@@ -449,7 +440,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023/12/23/tierlist-nju-class-1-1/">NJU Classes Tierlist - Freshman Term 1</a>
+      <a class="article-title" href="/2024/05/17/yzht-3/">YZHT Ep.3 简单最小割</a>
     </h1>
   
 
@@ -457,20 +448,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这里是XGN的评价时间！在南京大学即将度过一个学期，是时候评价一下所选的各位课程、老师、助教了！</p>
-<h1 id="TL-DR"><a href="#TL-DR" class="headerlink" title="TL;DR"></a>TL;DR</h1><p><img src="https://s2.loli.net/2023/12/23/UPzD9Ek7CjRTeNL.png" alt="image.png"></p>
-        
-          <p class="article-more-link">
-            <a href="/2023/12/23/tierlist-nju-class-1-1/#more">Read More</a>
-          </p>
-        
+        <p>呃呃，笔者最大流水平真是哈哈了，请见本题：</p>
+<p><a target="_blank" rel="noopener" href="https://codeforces.com/gym/104871/problem/C">104871C</a></p>
+<p>一眼网络流，怎么构图？</p>
+<p><strong>Hint:有费用的网络但是不是最小费用流？那就考虑一下最小割吧！</strong> </p>
+<p>一个蛋糕可以考虑成：选择蛋糕-&gt;选择工具。一个蛋糕被创造需要：选择蛋糕、选择所有工具。<strong>「所有」</strong>二字让我们考虑最小割！</p>
+<p>割蛋糕=不做蛋糕，做了蛋糕就必须割工具，表示选择工具。easy！</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/12/23/tierlist-nju-class-1-1/" data-id="cm1f5y36n0082kcib7uozajd9" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/05/17/yzht-3/" data-id="cm1f6lvtx00f7ccibbehx7y7b" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
 
     </footer>
   </div>
@@ -479,14 +470,14 @@
 
 
   
-    <article id="post-Cakeslice1" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-yzht-2" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2023/08/17/Cakeslice1/" class="article-date">
-  <time datetime="2023-08-17T14:03:00.000Z" itemprop="datePublished">2023-08-17</time>
+    <a href="/2024/05/17/yzht-2/" class="article-date">
+  <time datetime="2024-05-17T10:33:00.000Z" itemprop="datePublished">2024-05-17</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Literature/">Literature</a>
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/OI/">OI</a>
   </div>
 
   </div>
@@ -497,7 +488,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023/08/17/Cakeslice1/">Cakeslice No.1</a>
+      <a class="article-title" href="/2024/05/17/yzht-2/">YZHT Ep.2 少见的三分</a>
     </h1>
   
 
@@ -505,24 +496,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>This is the <em>Cakeslice</em> series, a series focusing on writing Chinese short stories <del>that appeal to myself only</del>.</p>
-<h1 id="本期出场角色"><a href="#本期出场角色" class="headerlink" title="本期出场角色"></a>本期出场角色</h1><ul>
-<li>Midori 青缘<br>研究着古代精灵族的遗迹与技术的龙之少女。虽然没有着能走在前列的智力，但仍然把分析和计算作为坚持着的爱好，经常整日整夜的沉浸在算数推理之中。</li>
-<li>Massao 青墨<br>富有浪漫感、文采和情趣的龙之少年。青缘的哥哥。作为吟游诗人的他，平常以浪迹天涯、作诗饮酒为乐，虽然深爱着自己的妹妹，但是有相当一部分时间两人之间有着物理上等的距离。</li>
-</ul>
-<h1 id="本篇"><a href="#本篇" class="headerlink" title="本篇"></a>本篇</h1><p>放眼无边的天空，是龙族的天堂；散落天穹的浮岛，是龙族的归宿。在此处，凡人仰望星空方可所见之物，不过是每日伴侣般的触手可及；世人千万年才得以涉足之地，不过是如往邻里亲戚般来去自由。在这无数的浮岛上，诞生着无穷的物语，请允许我以一个普通的旁观者的视角，去讲述这个故事。</p>
-        
-          <p class="article-more-link">
-            <a href="/2023/08/17/Cakeslice1/#more">Read More</a>
-          </p>
-        
+        <p>题目：给出一个圆和两点，求这两点间最短路线的距离，要求路线经过圆内部或边上的任意一点。</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://codeforces.com/gym/104871/problem/G">104871G</a></p>
+<p>如果两个点有一个在圆内（上）就好了……</p>
+<p>如果两个都在圆外，设经过的圆上一点有仰角<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex" xmlns="http://www.w3.org/2000/svg" width="1.448ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 640 453" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-8-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-8-TEX-I-1D6FC"></use></g></g></g></svg></mjx-container>，那么注意到答案关于<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex" xmlns="http://www.w3.org/2000/svg" width="1.448ex" height="1.025ex" role="img" focusable="false" viewBox="0 -442 640 453" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="MJX-7-TEX-I-1D6FC" d="M34 156Q34 270 120 356T309 442Q379 442 421 402T478 304Q484 275 485 237V208Q534 282 560 374Q564 388 566 390T582 393Q603 393 603 385Q603 376 594 346T558 261T497 161L486 147L487 123Q489 67 495 47T514 26Q528 28 540 37T557 60Q559 67 562 68T577 70Q597 70 597 62Q597 56 591 43Q579 19 556 5T512 -10H505Q438 -10 414 62L411 69L400 61Q390 53 370 41T325 18T267 -2T203 -11Q124 -11 79 39T34 156ZM208 26Q257 26 306 47T379 90L403 112Q401 255 396 290Q382 405 304 405Q235 405 183 332Q156 292 139 224T121 120Q121 71 146 49T208 26Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><g data-mml-node="math"><g data-mml-node="mi"><use xlink:href="#MJX-7-TEX-I-1D6FC"></use></g></g></g></svg></mjx-container>一定只有一个极小值。就可以三分了！</p>
+<p>难度不高，但是可以复习一下三分法。<br>三分法的分析：<a target="_blank" rel="noopener" href="https://oi-wiki.org/basic/binary/#&#37;E4&#37;B8&#37;89&#37;E5&#37;88&#37;86&#37;E6&#37;B3&#37;95">OI-wiki</a></p>
+<p>听说也可以分析凹凸性用二分就可以完成？</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/08/17/Cakeslice1/" data-id="cm1f5y35q0010kcib68hg4sfo" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/05/17/yzht-2/" data-id="cm1f6lvtw00f0ccibb1qx2w14" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cakeslice/" rel="tag">Cakeslice</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OC/" rel="tag">OC</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
 
     </footer>
   </div>
@@ -531,14 +518,14 @@
 
 
   
-    <article id="post-jpnblog" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-yzht-1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2023/08/16/jpnblog/" class="article-date">
-  <time datetime="2023-08-16T15:12:00.000Z" itemprop="datePublished">2023-08-16</time>
+    <a href="/2024/05/16/yzht-1/" class="article-date">
+  <time datetime="2024-05-16T15:44:00.000Z" itemprop="datePublished">2024-05-16</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/OI/">OI</a>
   </div>
 
   </div>
@@ -549,7 +536,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023/08/16/jpnblog/">日行紀要（XGN）</a>
+      <a class="article-title" href="/2024/05/16/yzht-1/">YZHT Ep.1 最大流+图论优质好题</a>
     </h1>
   
 
@@ -557,33 +544,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>本文在HHS Blog上书写，在本blog上可能格式有异常，建议阅览<a target="_blank" rel="noopener" href="https://github.com/XiaoGeNintendo/public-resource-hut/blob/master/jpblog.pdf">下载备份版</a></p>
-<p>本文为XGN（后文称笔者）与其母（后文称母）于令和五年八月六日到十四日的日本国游记，在HHS博客上发表，XGN博客上转录。</p>
-<h2 id="「日行紀要」（にこうきよう）？"><a href="#「日行紀要」（にこうきよう）？" class="headerlink" title="「日行紀要」（にこうきよう）？"></a>「日行紀要」（にこうきよう）？</h2><p>在笔者之前，已经有一篇翔实而又生动的游记——<a target="_blank" rel="noopener" href="https://blog.hellholestudios.top/archives/578">日本国游记</a></p>
-<p>笔者不及Z氏的文笔和才华，本文也只是简单概述所记之事，如流水帐一般，并不能成为合格的游记，故称「紀要」</p>
-<h2 id="标记注解"><a href="#标记注解" class="headerlink" title="标记注解"></a>标记注解</h2><ul>
-<li>▲ 图片注解</li>
-<li>r 人民币（按1r=20y大致换算）</li>
-<li>y 日元</li>
-</ul>
-<blockquote>
-<p>引用模式：一般的旅游建议</p>
-</blockquote>
-<h2 id="行程概述"><a href="#行程概述" class="headerlink" title="行程概述"></a>行程概述</h2><p>在八天的时光中，笔者前往日本大阪、奈良、京都、东京的神社、寺庙、山河等多个热门景点进行打卡。</p>
-<p>笔者从上海浦东机场出发前往关西国际机场，并在大阪留宿3日，再乘坐新干线到达东京留宿4天，并从成田机场回国。</p>
-<h2 id="施工状态"><a href="#施工状态" class="headerlink" title="施工状态"></a>施工状态</h2><p>文章 TODO<br>图片 TODO</p>
-        
-          <p class="article-more-link">
-            <a href="/2023/08/16/jpnblog/#more">Read More</a>
-          </p>
-        
+        <p>欢迎来到YZHT系列，这个系列我将分享我遇到的OI好题。</p>
+<h1 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h1><p>笔者最近正在学习数学图论，但是在OI中正巧碰到了这样一道从来没见过的最大流题。虽然难度不大，但是思路比较新：</p>
+<p><a target="_blank" rel="noopener" href="https://codeforces.com/gym/104945/problem/B">Problem B of 2023-2024 ICPC Southwestern European Regional Contest (SWERC 2023)</a></p>
+<p>顺便说一下这一场欧洲的题可能机子不太行，特别喜欢把时间和内存锁的很紧，A题卡了我一小时常熟，笔者表示强烈谴责！</p>
+<p>这道题一看网络流，但是笔者第一眼思考了很多传统的建图方式都没有想出来。但是，它本质上其实是一个二分图的<strong>最小顶点覆盖</strong>，而二分图中有<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/K%C5%91nig%27s_theorem_(graph_theory)">Konig Theorem</a>，就可以把他转化为最大匹配问题，而最大匹配问题又可以转化成最大流，做完了！</p>
+<p>所以现在最大流不仅要考虑建图、最小割转化、最大匹配转化，还要尝试一下最小顶点覆盖转化。话是这么说，做题切忌陷入形式当中。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://xiaogenintendo.github.io/2023/08/16/jpnblog/" data-id="cm1f5y364003skcib5s068z5j" class="article-share-link">Share</a>
+      <a data-url="https://xiaogenintendo.github.io/2024/05/16/yzht-1/" data-id="cm1f6lvtv00exccib3utu0kag" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/" rel="tag">OI</a></li></ul>
 
     </footer>
   </div>
@@ -607,7 +581,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Apple/">Apple</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/DS/">DS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/MC-Mod/">MC Mod</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Web/">Web</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Unweekly/">Unweekly</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/">Game</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Mahjong/">Mahjong</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Osu/">Osu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Touhou/">Touhou</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/OC-Setting/">OC Setting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/Segicverse/">Segicverse</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OBCYSIO/">OBCYSIO</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tip/">Tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Apple/">Apple</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/DS/">DS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/MC-Mod/">MC Mod</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/OI/">OI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Web/">Web</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Unweekly/">Unweekly</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/">Game</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Mahjong/">Mahjong</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Osu/">Osu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Touhou/">Touhou</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/OC-Setting/">OC Setting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/Segicverse/">Segicverse</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OBCYSIO/">OBCYSIO</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/School/">School</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tip/">Tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a></li></ul>
     </div>
   </div>
 
@@ -617,7 +591,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cakeslice/" rel="tag">Cakeslice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CreateML/" rel="tag">CreateML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OBCYSIO/" rel="tag">OBCYSIO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Osu/" rel="tag">Osu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release/" rel="tag">Release</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ryujin/" rel="tag">Ryujin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cakeslice/" rel="tag">Cakeslice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CreateML/" rel="tag">CreateML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OBCYSIO/" rel="tag">OBCYSIO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Osu/" rel="tag">Osu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release/" rel="tag">Release</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ryujin/" rel="tag">Ryujin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/School/" rel="tag">School</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
     </div>
   </div>
 
@@ -627,7 +601,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Cakeslice/" style="font-size: 10px;">Cakeslice</a> <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17.27px;">Dev</a> <a href="/tags/English/" style="font-size: 19.09px;">English</a> <a href="/tags/Java/" style="font-size: 11.82px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 12.73px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 13.64px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18.18px;">OC</a> <a href="/tags/OI/" style="font-size: 16.36px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 15.45px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 14.55px;">Ryujin</a> <a href="/tags/Segicverse/" style="font-size: 11.82px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 10.91px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 12.73px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 12.73px;">ZKY</a>
+      <a href="/tags/Cakeslice/" style="font-size: 10px;">Cakeslice</a> <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17px;">Dev</a> <a href="/tags/English/" style="font-size: 19px;">English</a> <a href="/tags/Java/" style="font-size: 12px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 13px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 14px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18px;">OC</a> <a href="/tags/OI/" style="font-size: 17px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 16px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 15px;">Ryujin</a> <a href="/tags/School/" style="font-size: 13px;">School</a> <a href="/tags/Segicverse/" style="font-size: 12px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 11px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 13px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 13px;">ZKY</a>
     </div>
   </div>
 
@@ -636,7 +610,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">September 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">September 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">June 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
     </div>
   </div>
 
@@ -661,11 +635,11 @@
           </li>
         
           <li>
-            <a href="/2024/04/15/mytrip-release/">MyTrips Release</a>
+            <a href="/2024/06/25/gyc-exam-problem/">2024春南京大学大学物理期末考试题目速报(Prof. Yachong Guo)</a>
           </li>
         
           <li>
-            <a href="/2024/04/01/2024-april-fool/">Introducing a gender-safe and tense-safe programming language</a>
+            <a href="/2024/06/18/zhao-exam-problem/">2024春南京大学信计强基信息与计算科学实践考试题目速报(Prof. Jianhua Zhao)</a>
           </li>
         
       </ul>
