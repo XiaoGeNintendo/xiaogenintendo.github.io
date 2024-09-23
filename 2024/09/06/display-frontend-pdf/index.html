@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Displaying Attachment PDF with Frontend Javascript | XGN&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="背景笔者最近在参加某校在线平台前端的开发，收到了这样的要求：  将服务器传输过来的文件尽可能（图片&#x2F;PDF）在网页中就显示下来，这样就不用下载了！  笔者劈里啪啦敲下了如下代码（由于渲染问题，美元符号已替换为人民币符号！！！）： 123456789101112131415161718192021222324252627282930313233var xhr &#x3D; new XMLHttpRequest">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Displaying Attachment PDF with Frontend Javascript">
+<meta property="og:url" content="https://xiaogenintendo.github.io/2024/09/06/display-frontend-pdf/index.html">
+<meta property="og:site_name" content="XGN&#39;s blog">
+<meta property="og:description" content="背景笔者最近在参加某校在线平台前端的开发，收到了这样的要求：  将服务器传输过来的文件尽可能（图片&#x2F;PDF）在网页中就显示下来，这样就不用下载了！  笔者劈里啪啦敲下了如下代码（由于渲染问题，美元符号已替换为人民币符号！！！）： 123456789101112131415161718192021222324252627282930313233var xhr &#x3D; new XMLHttpRequest">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-09-06T15:15:00.000Z">
+<meta property="article:modified_time" content="2024-09-23T15:24:17.041Z">
+<meta property="article:author" content="XGN">
+<meta property="article:tag" content="Chinese">
+<meta property="article:tag" content="Dev">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="XGN&#39;s blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">XGN&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://xiaogenintendo.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-display-frontend-pdf" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2024/09/06/display-frontend-pdf/" class="article-date">
+  <time datetime="2024-09-06T15:15:00.000Z" itemprop="datePublished">2024-09-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Dev/">Dev</a>►<a class="article-category-link" href="/categories/Dev/Web/">Web</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Displaying Attachment PDF with Frontend Javascript
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>笔者最近在参加某校在线平台前端的开发，收到了这样的要求：</p>
+<blockquote>
+<p>将服务器传输过来的文件尽可能（图片/PDF）在网页中就显示下来，这样就不用下载了！</p>
+</blockquote>
+<p>笔者劈里啪啦敲下了如下代码（由于渲染问题，美元符号已替换为人民币符号！！！）：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line"></span><br><span class="line">￥.ajax(&#123;</span><br><span class="line">	url: <span class="string">&#x27;download_link&#x27;</span>,</span><br><span class="line">	type: <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">	data: &#123;&#125;,</span><br><span class="line">	xhr: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> xhr;</span><br><span class="line">	&#125;,</span><br><span class="line">	success: <span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">const</span> params = <span class="keyword">new</span> URLSearchParams(xhr.responseURL);</span><br><span class="line">		<span class="keyword">const</span> para1 = params.get(<span class="string">&#x27;filename&#x27;</span>);</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">&quot;Returned url:&quot;</span>+xhr.responseURL);</span><br><span class="line">		<span class="built_in">console</span>.log(para1);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (para1 == <span class="literal">null</span>) &#123;</span><br><span class="line">			￥(<span class="string">&#x27;#fast_load&#x27;</span>).text(<span class="string">&#x27;&#x27;</span>);</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (para1.endsWith(<span class="string">&quot;.png&quot;</span>) || para1.endsWith(<span class="string">&quot;.jpg&quot;</span>) || para1.endsWith(<span class="string">&quot;.gif&quot;</span>) || para1.endsWith(<span class="string">&quot;.bmp&quot;</span>)) &#123;</span><br><span class="line">			￥(<span class="string">&#x27;#fast_load&#x27;</span>).html(<span class="string">`用户上传的图片（为正常显示，已缩放。请点击下载按钮下载原图。）&lt;br/&gt;&lt;br/&gt;&lt;img src=&quot;￥&#123;xhr.responseURL&#125;&quot; style=&quot;max-width:600px;width:100%&quot;/&gt;`</span>);</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(para1.endsWith(<span class="string">&quot;.pdf&quot;</span>))&#123;</span><br><span class="line">			￥(<span class="string">&#x27;#fast_load&#x27;</span>).html(<span class="string">`用户上传的PDF&lt;br/&gt;&lt;br/&gt;&lt;object class=&quot;pdf&quot; data=&quot;￥&#123;xhr.responseURL&#125;&quot; width=&quot;100%&quot; height=&quot;1500&quot;&gt;&lt;/object&gt;`</span>);</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		￥(<span class="string">&#x27;#fast_load&#x27;</span>).text(<span class="string">`用户上传了文件：￥&#123;para1&#125;，请按下载按钮下载。请注意：本网站不对用户上传内容进行检查，文件有可能包含恶意内容。`</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>上述代码可以正确分辨并显示各种常用类型的图片文件，然而pdf文件则会直接下载，不会显示在object中，令人迷惑。</p>
+<h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>原来，服务器返回的是Content-Type是<code>application/octet-stream</code>，而又是以<code>attachment</code>的形式送给我们的，这时候无论<code>iframe</code> <code>embed</code> 还是 <code>object</code>都不会尝试在浏览器中渲染该pdf，而是直接下载。我们无法改变服务器发送的数据类型，于是我们尝试在客户端层面解决问题。</p>
+<h1 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h1><p>用<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/API/Blob">Blob</a>类型接受response然后本地改变Content-Type到<code>application/pdf</code>，再用本地数据渲染。</p>
+<h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h1><p>首先，我们需要以Blob类型处理response，然而<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/34586671/download-pdf-file-using-jquery-ajax">据说</a>jquery处理blob类型有许多问题（事实上笔者也确实碰到了问题），所以我们换用普通的Ajax：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> req = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">req.open(<span class="string">&quot;GET&quot;</span>, <span class="string">&quot;...&quot;</span>, <span class="literal">true</span>);</span><br><span class="line">req.responseType = <span class="string">&quot;blob&quot;</span>;</span><br><span class="line"></span><br><span class="line">req.onload = <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> blob=req.response;</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">req.send();</span><br></pre></td></tr></table></figure>
+
+<p>接下来，我们发现Blob的类型还是<code>octet-stream</code>，直接放入object中仍然失败，所以我们需要修改其<code>type</code>。然而Blob是immutable的，我们无法直接修改其参数。根据<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/18998543/set-content-type-on-blob">本文</a>，我们这么修改<code>blob</code>的类型：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//hacky solution!!</span></span><br><span class="line">blob = blob.slice(<span class="number">0</span>, blob.size, <span class="string">&quot;application/pdf&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>最后我们使用非常强大的<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/URL/createObjectURL_static">URL工具</a>创建本地URL：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(para1.endsWith(<span class="string">&quot;.pdf&quot;</span>))&#123;</span><br><span class="line">	blob=blob.slice(<span class="number">0</span>,blob.size,<span class="string">&quot;application/pdf&quot;</span>);</span><br><span class="line">	<span class="keyword">const</span> url=URL.createObjectURL(blob);</span><br><span class="line">	￥(<span class="string">&#x27;#fast_load&#x27;</span>).html(<span class="string">`用户上传的PDF&lt;br/&gt;&lt;br/&gt;&lt;object class=&quot;pdf&quot; data=&quot;￥&#123;url&#125;&quot; width=&quot;100%&quot; height=&quot;1500&quot;&gt;&lt;/object&gt;`</span>);</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该URL会随着document卸载而卸载，本场景下不用手动卸载。</p>
+<p>（欸，我的代码中的美元都到哪去了？）</p>
+<h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><ul>
+<li>如何获取服务器上的Blob数据</li>
+<li>如何修改Blob的类型</li>
+<li>如何用Blob创建本地URL</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://xiaogenintendo.github.io/2024/09/06/display-frontend-pdf/" data-id="cm1f5t35t002abgib1wevbb0m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/09/13/2024-april-fool-more/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Building a Clear Programming Language for Newcomers
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/04/15/mytrip-release/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">MyTrips Release</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/">Dev</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Apple/">Apple</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/DS/">DS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Java/">Java</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/MC-Mod/">MC Mod</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Dev/Web/">Web</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/OI/">OI</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/Unweekly/">Unweekly</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/">Game</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Mahjong/">Mahjong</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Osu/">Osu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Game/Touhou/">Touhou</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/">Literature</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/OC-Setting/">OC Setting</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Literature/Segicverse/">Segicverse</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/OBCYSIO/">OBCYSIO</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Random/">Random</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Test/">Test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tip/">Tip</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Update/">Update</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cakeslice/" rel="tag">Cakeslice</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chinese/" rel="tag">Chinese</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CreateML/" rel="tag">CreateML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Dev/" rel="tag">Dev</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/" rel="tag">English</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSS-Short/" rel="tag">LSS Short</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mahjong/" rel="tag">Mahjong</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Minecraft/" rel="tag">Minecraft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OBCYSIO/" rel="tag">OBCYSIO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OC/" rel="tag">OC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/" rel="tag">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Osu/" rel="tag">Osu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Release/" rel="tag">Release</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ryujin/" rel="tag">Ryujin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Segicverse/" rel="tag">Segicverse</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Test-Blog/" rel="tag">Test Blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Touhou/" rel="tag">Touhou</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ZKY/" rel="tag">ZKY</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Cakeslice/" style="font-size: 10px;">Cakeslice</a> <a href="/tags/Chinese/" style="font-size: 20px;">Chinese</a> <a href="/tags/CreateML/" style="font-size: 10px;">CreateML</a> <a href="/tags/Dev/" style="font-size: 17.27px;">Dev</a> <a href="/tags/English/" style="font-size: 19.09px;">English</a> <a href="/tags/Java/" style="font-size: 11.82px;">Java</a> <a href="/tags/LSS-Short/" style="font-size: 12.73px;">LSS Short</a> <a href="/tags/Mahjong/" style="font-size: 10px;">Mahjong</a> <a href="/tags/Minecraft/" style="font-size: 10px;">Minecraft</a> <a href="/tags/OBCYSIO/" style="font-size: 13.64px;">OBCYSIO</a> <a href="/tags/OC/" style="font-size: 18.18px;">OC</a> <a href="/tags/OI/" style="font-size: 16.36px;">OI</a> <a href="/tags/Osu/" style="font-size: 10px;">Osu</a> <a href="/tags/Release/" style="font-size: 15.45px;">Release</a> <a href="/tags/Ryujin/" style="font-size: 14.55px;">Ryujin</a> <a href="/tags/Segicverse/" style="font-size: 11.82px;">Segicverse</a> <a href="/tags/Test-Blog/" style="font-size: 10.91px;">Test Blog</a> <a href="/tags/Touhou/" style="font-size: 12.73px;">Touhou</a> <a href="/tags/ZKY/" style="font-size: 12.73px;">ZKY</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/09/">September 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/04/">April 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/03/">March 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">August 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/11/">November 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/08/">August 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/11/">November 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/09/23/avl/">一种基于维护高度的无递归、无栈、无parent指针的AVL树实现方式</a>
+          </li>
+        
+          <li>
+            <a href="/2024/09/13/2024-april-fool-more/">Building a Clear Programming Language for Newcomers</a>
+          </li>
+        
+          <li>
+            <a href="/2024/09/06/display-frontend-pdf/">Displaying Attachment PDF with Frontend Javascript</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/15/mytrip-release/">MyTrips Release</a>
+          </li>
+        
+          <li>
+            <a href="/2024/04/01/2024-april-fool/">Introducing a gender-safe and tense-safe programming language</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2024 XGN<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
